@@ -2,6 +2,7 @@ using System;
 using UnityEngine;
 using UnityStandardAssets.CrossPlatformInput;
 using UnityStandardAssets.Utility;
+using Photon.Pun;
 using Random = UnityEngine.Random;
 
 namespace UnityStandardAssets.Characters.FirstPerson
@@ -41,7 +42,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
         private float m_NextStep;
         private bool m_Jumping;
         private AudioSource m_AudioSource;
-
+        PhotonView view;
         // Use this for initialization
         private void Start()
         {
@@ -55,6 +56,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
             m_Jumping = false;
             m_AudioSource = GetComponent<AudioSource>();
 			m_MouseLook.Init(transform , m_Camera.transform);
+            view = GetComponent<PhotonView>();
         }
 
 
@@ -94,7 +96,8 @@ namespace UnityStandardAssets.Characters.FirstPerson
 
         private void FixedUpdate()
         {
-            float speed;
+            if (view.IsMine)
+            {float speed;
             GetInput(out speed);
             // always move along the camera forward as it is the direction that it being aimed at
             Vector3 desiredMove = transform.forward*m_Input.y + transform.right*m_Input.x;
@@ -131,6 +134,8 @@ namespace UnityStandardAssets.Characters.FirstPerson
             UpdateCameraPosition(speed);
 
             m_MouseLook.UpdateCursorLock();
+            }
+            
         }
 
 
@@ -202,7 +207,8 @@ namespace UnityStandardAssets.Characters.FirstPerson
 
 
         private void GetInput(out float speed)
-        {
+        { 
+            
             // Read input
             float horizontal = CrossPlatformInputManager.GetAxis("Horizontal");
             float vertical = CrossPlatformInputManager.GetAxis("Vertical");
