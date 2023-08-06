@@ -3,13 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using Photon.Pun;
 using UnityEngine.SceneManagement;
-using UnityEngine.UI;
+using TMPro;
 
 public class ConnectToServer : MonoBehaviourPunCallbacks
 {
     // Start is called before the first frame update
-    public Text buttonText;
-    public InputField userName;
+    public TMP_Text buttonText;
+    public TMP_InputField userName;
 
     public void OnClickConnect()
     {
