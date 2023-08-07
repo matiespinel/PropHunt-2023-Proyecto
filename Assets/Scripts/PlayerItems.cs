@@ -1,18 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
+using Photon.Pun;
+using Photon.Realtime;
 
 public class PlayerItems : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public TMP_Text playerName;
+    public void SetPlayerInfo(Player _player)
     {
-        
+        playerName.text = _player.NickName;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+
 }
