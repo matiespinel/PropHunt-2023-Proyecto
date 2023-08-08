@@ -17,6 +17,7 @@ public class ConnectToServer : MonoBehaviourPunCallbacks
         {
             PhotonNetwork.NickName = userName.text;
             buttonText.text = "Conectando....";
+            PhotonNetwork.AutomaticallySyncScene = true; // conecta a todos al master client asi todos cargan lo que carga el.
             PhotonNetwork.ConnectUsingSettings();
         }
     }

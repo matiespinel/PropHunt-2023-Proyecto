@@ -21,15 +21,17 @@ public class CreateAndJoinRooms : MonoBehaviourPunCallbacks
     public List<PlayerItems> playerItemsList = new List<PlayerItems>();
     public PlayerItems playerItemsPrefab;
     public Transform playerItemsParents;
+
+    public GameObject playButton;
     private void Start()
     {
         PhotonNetwork.JoinLobby();
     }
-   
+
     public void OnClickCreate()
     {
         if (createInput.text.Length >= 1)
-        PhotonNetwork.CreateRoom(createInput.text, new Photon.Realtime.RoomOptions() { MaxPlayers = 15} );
+            PhotonNetwork.CreateRoom(createInput.text, new Photon.Realtime.RoomOptions() { MaxPlayers = 15 });
     }
     public override void OnJoinedRoom()
     {
@@ -42,10 +44,10 @@ public class CreateAndJoinRooms : MonoBehaviourPunCallbacks
     {
         if (Time.time >= nextUpdateTime)
         {
- UpdateRoomList(roomList);
-        nextUpdateTime = Time.time + timeBetweenUpdates;
+            UpdateRoomList(roomList);
+            nextUpdateTime = Time.time + timeBetweenUpdates;
         }
-       
+
     }
 
     void UpdateRoomList(List<RoomInfo> list)
@@ -63,7 +65,7 @@ public class CreateAndJoinRooms : MonoBehaviourPunCallbacks
             roomItemsList.Add(newRoom);
         }
     }
-    public void JoinRoom (string roomName)
+    public void JoinRoom(string roomName)
     {
         PhotonNetwork.JoinRoom(roomName);
     }
@@ -98,7 +100,7 @@ public class CreateAndJoinRooms : MonoBehaviourPunCallbacks
 
         foreach (KeyValuePair<int, Player> player in PhotonNetwork.CurrentRoom.Players)
         {
-           PlayerItems  newPlayerItem = Instantiate(playerItemsPrefab, playerItemsParents);
+            PlayerItems newPlayerItem = Instantiate(playerItemsPrefab, playerItemsParents);
             newPlayerItem.SetPlayerInfo(player.Value);
             playerItemsList.Add(newPlayerItem);
         }
@@ -114,6 +116,22 @@ public class CreateAndJoinRooms : MonoBehaviourPunCallbacks
         UpdatePlayerList();
     }
 
+    public void Update()
+    {
+        if (PhotonNetwork.IsMasterClient && PhotonNetwork.CurrentRoom.PlayerCount >= 2)
+        {
+            playButton.SetActive(true);
+        }
+        else
+        {
+            playButton.SetActive(false);
+        }
+    }
+
+    public void OnClickPlayButton()
+    {
+        PhotonNetwork.LoadLevel("Game");
+    }
 
 }
 
