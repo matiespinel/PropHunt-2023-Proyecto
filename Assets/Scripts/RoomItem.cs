@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using Photon.Pun;
 using TMPro;
+using UnityEngine.UI;
 
 public class RoomItem : MonoBehaviourPunCallbacks
 {
-    public TMP_Text roomName;
+    public Text roomName;
     CreateAndJoinRooms manager;
 
     private void Start()
@@ -14,8 +15,10 @@ public class RoomItem : MonoBehaviourPunCallbacks
         manager = FindObjectOfType<CreateAndJoinRooms>();
     }
 
-    public void SetRoomName(string _roomName) => roomName.text = _roomName;
-    
+    public void SetRoomName(string _roomName)
+    {
+        roomName.text = _roomName;
+    }
 
     public void OnClickItem()
     {

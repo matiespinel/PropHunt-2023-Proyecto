@@ -2404,7 +2404,7 @@ MonoBehaviour:
   lobbyPanel: {fileID: 1760360770}
   roomPanel: {fileID: 683927275}
   roomName: {fileID: 547048335}
-  roomItemPrefab: {fileID: -722712246528480630, guid: 6ce815c8bef9cab428a20898f77142b4,
+  roomItemPrefab: {fileID: 7291725199063561534, guid: 6ce815c8bef9cab428a20898f77142b4,
     type: 3}
   contentObject: {fileID: 1492990400}
   timeBetweenUpdates: 1.5
