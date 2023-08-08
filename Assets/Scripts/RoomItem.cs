@@ -14,10 +14,8 @@ public class RoomItem : MonoBehaviourPunCallbacks
         manager = FindObjectOfType<CreateAndJoinRooms>();
     }
 
-    public void SetRoomName(string _roomName)
-    {
-        roomName.text = _roomName;
-    }
+    public void SetRoomName(string _roomName) => roomName.text = _roomName;
+    
 
     public void OnClickItem()
     {
