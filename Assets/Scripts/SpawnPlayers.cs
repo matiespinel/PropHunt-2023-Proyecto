@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Photon.Pun;
 
-public class SpawnPlayers : MonoBehaviour
+public class SpawnPlayers : MonoBehaviourPunCallbacks
 {
     public GameObject playerPrefab;
     public float minX;
@@ -12,6 +12,7 @@ public class SpawnPlayers : MonoBehaviour
     public float maxY;
     public float minZ;
     public float maxZ;
+    
 
     public void Start()
     {
@@ -21,7 +22,3 @@ public class SpawnPlayers : MonoBehaviour
 
     
 }
-public enum PlayerRole
-    {
-
-    }
