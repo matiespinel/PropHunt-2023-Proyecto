@@ -9,6 +9,13 @@ using ExitGames.Client.Photon;
 
 public class RoleAssigner : MonoBehaviourPunCallbacks
 {
+
+    public enum PlayerRole
+    {
+        Cazador,
+        Prop
+    }
+
     private void Start()
     {
         if (PhotonNetwork.IsMasterClient)
