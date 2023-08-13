@@ -9,38 +9,69 @@ using ExitGames.Client.Photon;
 
 public class RoleAssigner : MonoBehaviourPunCallbacks
 {
-
-    public enum PlayerRole
+    public int Roles = 0;
+    public static RoleAssigner rol;
+    void Awake()
     {
-        Cazador,
-        Prop
-    }
-
-    private void Start()
-    {
-        if (PhotonNetwork.IsMasterClient)
+        if (RoleAssigner.rol == null)
         {
-            int randomPlayerIndex = Random.Range(0, PhotonNetwork.PlayerList.Length); // Generar un índice aleatorio
-            photonView.RPC("AssignRoles", RpcTarget.All, randomPlayerIndex);
+            RoleAssigner.rol = this;
+            DontDestroyOnLoad(gameObject);
         }
-
-
-
-       
-    }
-
-    [PunRPC]
-    private void AssignRoles(int hunterIndex)
-    {
-        for (int i = 0; i < PhotonNetwork.PlayerList.Length; i++)
+        else
         {
-            Photon.Realtime.Player player = PhotonNetwork.PlayerList[i];
-            PlayerRole playerRole = (i == hunterIndex) ? PlayerRole.Cazador : PlayerRole.Prop;
-
-            ExitGames.Client.Photon.Hashtable playerCustomProperties = new ExitGames.Client.Photon.Hashtable();
-            playerCustomProperties["Role"] = playerRole.ToString();
-
-            player.SetCustomProperties(playerCustomProperties);
+            Destroy(gameObject);
         }
+        
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    //public enum PlayerRole
+    //{
+    //    Cazador,
+    //    Prop
+    //}
+
+    //private void Start()
+    //{
+    //    if (PhotonNetwork.IsMasterClient)
+    //    {
+    //        int randomPlayerIndex = Random.Range(0, PhotonNetwork.PlayerList.Length); // Generar un índice aleatorio
+    //        photonView.RPC("AssignRoles", RpcTarget.All, randomPlayerIndex);
+    //    }
+
+
+
+
+    //}
+
+    //[PunRPC]
+    //private void AssignRoles(int hunterIndex)
+    //{
+    //    for (int i = 0; i < PhotonNetwork.PlayerList.Length; i++)
+    //    {
+    //        Photon.Realtime.Player player = PhotonNetwork.PlayerList[i];
+    //        PlayerRole playerRole = (i == hunterIndex) ? PlayerRole.Cazador : PlayerRole.Prop;
+
+    //        ExitGames.Client.Photon.Hashtable playerCustomProperties = new ExitGames.Client.Photon.Hashtable();
+    //        playerCustomProperties["Role"] = playerRole.ToString();
+
+    //        player.SetCustomProperties(playerCustomProperties);
+    //    }
+    //}
 }
