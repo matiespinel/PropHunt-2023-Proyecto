@@ -10,11 +10,8 @@ public class MetamorfosisScript : MonoBehaviour
     private Animator animator;
     [SerializeField] private GameObject Target;
     bool CM = true;
-    IEnumerator MetaCooldown()
-    {
-        yield return new WaitForSeconds(8);
-        CM = true;
-    }
+    CinemachineFreeLook FreeLook;
+    
     void Start() 
     {
         animator = GetComponent<Animator>();
@@ -30,11 +27,8 @@ public class MetamorfosisScript : MonoBehaviour
         if(Physics.Raycast(ray, out hit, PlayerLayer))// PlayerLayer es la capa de la que forma parte el gameobj. en este parametro se inserta la layer que queres ignorar(porque el raycast sale del interior del player y puede colisionar con su propio collider)
         {
             //esta es una representacion grafica del raycast
-            Debug.DrawRay(ray.origin, ray.direction, Color.black, 50f);
-            Debug.Log("tdftfg");
             if(hit.collider.tag == "Transformable")//hit.collider nos dice con que collider colisiono y con .tag accedemos al tag que le pusimos
             {
-                Debug.Log("Transformable detectado");
                 if(Input.GetKey(KeyCode.Tab) && CM == true)
                 {
                    CM = false;
@@ -56,9 +50,15 @@ public class MetamorfosisScript : MonoBehaviour
         Prop.transform.position = transform.position;
         Prop.AddComponent<MyCharacterController>();
         Prop.AddComponent<Rigidbody>();
+        Prop.GetComponent<Rigidbody>().freezeRotation = true;
         Cam3d.GetComponent<CinemachineFreeLook>().LookAt = Prop.transform;
         Cam3d.GetComponent<CinemachineFreeLook>().Follow = Prop.transform;
         Destroy(this.gameObject);
+    }
+    IEnumerator MetaCooldown()
+    {
+        yield return new WaitForSeconds(8);
+        CM = true;
     }
 
 }

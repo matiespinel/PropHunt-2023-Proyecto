@@ -4,22 +4,16 @@ using UnityEngine;
 
 public class FootIK : MonoBehaviour
 {
-    public float DistanceToGround;
-    public LayerMask playermask;
+    [SerializeField] float DistanceToGround;
+    [SerializeField] LayerMask playermask;
     Animator animator;
     // Start is called before the first frame update
     void Start()
     {
-        //RFoot = Animator.GetBoneTransform(HumanBodyBones.RightFoot);
         animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     private void OnAnimatorIK(int layerIndex) 
     {
         

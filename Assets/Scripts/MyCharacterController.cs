@@ -4,19 +4,39 @@ using UnityEngine;
 
 public class MyCharacterController : MonoBehaviour
 {
-    float Wspeed = 0.5f;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
+    [SerializeField]float speed = 10;
+    [SerializeField]float rSpeed = 10;
+    
     void Update()
     {
         if(Input.GetKey(KeyCode.W))
         {
-            transform.Translate(0,0,Wspeed /* deltatime */);
+            transform.Translate(0,0,speed * Time.fixedDeltaTime);
+        }
+
+        if(Input.GetKey(KeyCode.A))
+        {
+            transform.Translate(-speed * Time.fixedDeltaTime,0,0);
+        }
+
+        if(Input.GetKey(KeyCode.S))
+        {
+            transform.Translate(0,0,-speed * Time.fixedDeltaTime);
+        }
+
+        if(Input.GetKey(KeyCode.D))
+        {
+            transform.Translate(speed * Time.fixedDeltaTime,0,0);
+        }
+
+        if(Input.GetKey(KeyCode.Q))
+        {
+            transform.Rotate(0,rSpeed,0);
+        }
+
+        if(Input.GetKey(KeyCode.E))
+        {
+            transform.Rotate(0,-rSpeed,0);
         }
     }
 }

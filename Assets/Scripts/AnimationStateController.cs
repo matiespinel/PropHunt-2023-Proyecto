@@ -9,10 +9,16 @@ public class AnimationStateController : MonoBehaviour
     int isBackingHash;
     int isStrafingLeftHash;
     int isStrafingRightHash;
-    public GameObject player;
-    public GameObject LookingDirection;
+    //animator puede usar valores hash por sustitucion de int
+    bool isBacking;
+    bool isWalking;
+    bool isStrafingLeft;
+    bool isStrafingRight;
+    //condiciones
+    [SerializeField] GameObject Player;
+    [SerializeField] GameObject LookingDirection;
     Animator playerAnimator;
-    public Camera MainCamera;
+    [SerializeField] Camera MainCamera;
     
     void Start()
     {
@@ -21,29 +27,28 @@ public class AnimationStateController : MonoBehaviour
         isBackingHash = Animator.StringToHash("isBacking");
         isStrafingLeftHash = Animator.StringToHash("isStrafingLeft");
         isStrafingRightHash = Animator.StringToHash("isStrafingRight");
+        isBacking = playerAnimator.GetBool(isBackingHash);
+        isWalking = playerAnimator.GetBool(isWalkingHash);
+        isStrafingLeft = playerAnimator.GetBool(isStrafingLeftHash);
+        isStrafingRight = playerAnimator.GetBool(isStrafingRightHash);
     }
 
-    void Update()
+    void FixedUpdate()
     {
         //listeners
         bool sPressed = Input.GetKey(KeyCode.S);
         bool wPressed = Input.GetKey(KeyCode.W);
         bool aPressed = Input.GetKey(KeyCode.A);
         bool dPressed = Input.GetKey(KeyCode.D);
-        //hashes
-        bool isBacking = playerAnimator.GetBool(isBackingHash);
-        bool isWalking = playerAnimator.GetBool(isWalkingHash);
-        bool isStrafingLeft = playerAnimator.GetBool(isStrafingLeftHash);
-        bool isStrafingRight = playerAnimator.GetBool(isStrafingRightHash);
         //WASD
         //AVANZAR
         if((!isBacking || !isStrafingLeft || !isStrafingRight) && wPressed)
         {
             playerAnimator.SetBool(isWalkingHash, true);
-            if(MainCamera.transform.rotation.y !=  player.transform.rotation.y)
+            if(MainCamera.transform.rotation.y !=  Player.transform.rotation.y)
             {
             var directionVector = (new Vector3(LookingDirection.transform.position.x - transform.position.x,0,LookingDirection.transform.position.z - transform.position.z)).normalized;
-            player.transform.rotation = Quaternion.LookRotation(directionVector, Vector3.up);
+            Player.transform.rotation = Quaternion.LookRotation(directionVector, Vector3.up);
             }
         }
         else
@@ -83,19 +88,16 @@ public class AnimationStateController : MonoBehaviour
              playerAnimator.SetBool(isStrafingRightHash, false);
         }
         
-
+       /*  if(MainCamera.transform.rotation.y > 101)
+        {
+             Quaternion.LookRotation(Vector3.forward, Vector3.left);
+        } */
+        
        /*  if(MainCamera.transform.rotation.y > player.transform.rotation.y)
         {
           RotateTo(player,45f);
           Debug.Log("mmmo");
         } */
     }
-    private void RotateTo(GameObject gameobject, float angle)
-    {
-     while(gameObject.transform.rotation.y != angle)
-     {
-          gameobject.transform.Rotate(0,angle,0); 
-     }
-     }
      
 }
