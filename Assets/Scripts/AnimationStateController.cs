@@ -1,10 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Photon.Pun;
 
 public class AnimationStateController : MonoBehaviour
 {
-    
     int isWalkingHash;
     int isBackingHash;
     int isStrafingLeftHash;
@@ -42,7 +42,9 @@ public class AnimationStateController : MonoBehaviour
         bool dPressed = Input.GetKey(KeyCode.D);
         //WASD
         //AVANZAR
-        if((!isBacking || !isStrafingLeft || !isStrafingRight) && wPressed)
+        if (view.IsMine)
+        {
+ if((!isBacking || !isStrafingLeft || !isStrafingRight) && wPressed)
         {
             playerAnimator.SetBool(isWalkingHash, true);
             if(MainCamera.transform.rotation.y !=  Player.transform.rotation.y)
@@ -87,6 +89,8 @@ public class AnimationStateController : MonoBehaviour
         {
              playerAnimator.SetBool(isStrafingRightHash, false);
         }
+        }
+       
         
        /*  if(MainCamera.transform.rotation.y > 101)
         {
