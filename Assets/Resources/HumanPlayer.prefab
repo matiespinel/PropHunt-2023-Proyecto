@@ -3574,6 +3574,7 @@ MonoBehaviour:
   observableSearch: 2
   ObservedComponents:
   - {fileID: 2913241521859099495}
+  - {fileID: 6100845996456893393}
   sceneViewId: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0
@@ -3624,8 +3625,30 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ShowLayerWeightsInspector: 1
   ShowParameterInspector: 1
-  m_SynchronizeParameters: []
-  m_SynchronizeLayers: []
+  m_SynchronizeParameters:
+  - Type: 4
+    SynchronizeType: 0
+    Name: isWalking
+  - Type: 4
+    SynchronizeType: 0
+    Name: isBacking
+  - Type: 4
+    SynchronizeType: 0
+    Name: isStrafingLeft
+  - Type: 4
+    SynchronizeType: 0
+    Name: isStrafingRight
+  - Type: 1
+    SynchronizeType: 0
+    Name: IKRFWeight
+  - Type: 1
+    SynchronizeType: 0
+    Name: IKLFWeight
+  m_SynchronizeLayers:
+  - SynchronizeType: 0
+    LayerIndex: 0
+  - SynchronizeType: 0
+    LayerIndex: 1
 --- !u!1 &5840860766739150424
 GameObject:
   m_ObjectHideFlags: 0

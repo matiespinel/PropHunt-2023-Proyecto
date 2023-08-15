@@ -443,7 +443,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1edd84c87f8f255409ed3d6dc713efac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerPrefab: {fileID: 5336751063523687298, guid: d1fabd304f7912f40b37508fa4d8ff51,
+  playerPrefab: {fileID: 2221220642742270198, guid: 8fa1a19e03aa42f47813ca6d692121ad,
     type: 3}
   minX: -10
   maxX: 10
