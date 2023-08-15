@@ -3,75 +3,64 @@ using System.Collections.Generic;
 using UnityEngine;
 using Photon.Pun;
 using Photon.Realtime;
-using ExitGames.Client.Photon;
+
 
 
 
 public class RoleAssigner : MonoBehaviourPunCallbacks
 {
-    public int Roles = 0;
+    
     public static RoleAssigner rol;
+    Player[] allPlayer;
+    int hunter;
+ public enum PlayerRole
+    {
+       Cazador,
+       Prop
+    }
+
+       public float minX;
+    public float maxX;
+    public float minZ;
+    public float maxZ;
+    public float min2X;
+    public float max2X;
+    public float min2Z;
+    public float max2Z;
+    public GameObject playerPrefab;
     void Awake()
     {
-        if (RoleAssigner.rol == null)
+        allPlayer = PhotonNetwork.PlayerList;
+        hunter = Random.Range(0, allPlayer.Length);
+        foreach (Player p in allPlayer)
         {
-            RoleAssigner.rol = this;
-            DontDestroyOnLoad(gameObject);
+            if (p.ActorNumber == hunter)
+            {
+                p.SetCustomProperties(new ExitGames.Client.Photon.Hashtable() { { "Role", "Hunter" } });
+            }
+            else
+            {
+                p.SetCustomProperties(new ExitGames.Client.Photon.Hashtable() { { "Role", "Prop" } });
+            }
+        }
+        {
+
+        }
+    }
+    void Start()
+    {
+       if ("Hunter" == PhotonNetwork.LocalPlayer.CustomProperties["Role"].ToString())
+        {
+
+       
+            Vector3 randomPosition = new Vector3(Random.Range(minX, maxX), 0, Random.Range(minZ, maxZ));
+        PhotonNetwork.Instantiate(playerPrefab.name, randomPosition, Quaternion.identity);
+      
         }
         else
         {
-            Destroy(gameObject);
+            Vector3 randomPosition2 = new Vector3(Random.Range(min2X, max2X), 0, Random.Range(min2Z, max2Z));
+            PhotonNetwork.Instantiate(playerPrefab.name, randomPosition2, Quaternion.identity);
         }
-        
-    }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    //public enum PlayerRole
-    //{
-    //    Cazador,
-    //    Prop
-    //}
-
-    //private void Start()
-    //{
-    //    if (PhotonNetwork.IsMasterClient)
-    //    {
-    //        int randomPlayerIndex = Random.Range(0, PhotonNetwork.PlayerList.Length); // Generar un índice aleatorio
-    //        photonView.RPC("AssignRoles", RpcTarget.All, randomPlayerIndex);
-    //    }
-
-
-
-
-    //}
-
-    //[PunRPC]
-    //private void AssignRoles(int hunterIndex)
-    //{
-    //    for (int i = 0; i < PhotonNetwork.PlayerList.Length; i++)
-    //    {
-    //        Photon.Realtime.Player player = PhotonNetwork.PlayerList[i];
-    //        PlayerRole playerRole = (i == hunterIndex) ? PlayerRole.Cazador : PlayerRole.Prop;
-
-    //        ExitGames.Client.Photon.Hashtable playerCustomProperties = new ExitGames.Client.Photon.Hashtable();
-    //        playerCustomProperties["Role"] = playerRole.ToString();
-
-    //        player.SetCustomProperties(playerCustomProperties);
-    //    }
-    //}
+}
 }
