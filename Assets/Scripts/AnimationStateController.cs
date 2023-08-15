@@ -14,6 +14,7 @@ public class AnimationStateController : MonoBehaviour
     bool isWalking;
     bool isStrafingLeft;
     bool isStrafingRight;
+    PhotonView view;
     //condiciones
     [SerializeField] GameObject Player;
     [SerializeField] GameObject LookingDirection;
@@ -31,6 +32,7 @@ public class AnimationStateController : MonoBehaviour
         isWalking = playerAnimator.GetBool(isWalkingHash);
         isStrafingLeft = playerAnimator.GetBool(isStrafingLeftHash);
         isStrafingRight = playerAnimator.GetBool(isStrafingRightHash);
+        view = GetComponent<PhotonView>();
     }
 
     void FixedUpdate()
