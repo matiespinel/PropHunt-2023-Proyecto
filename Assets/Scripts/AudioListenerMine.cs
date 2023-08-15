@@ -10,10 +10,10 @@ public class AudioListenerMine : MonoBehaviour
     void Start()
     {
 
-        view = GetComponenet
+        view = GetComponent<PhotonView>();
         audioListener = GetComponent<AudioListener>();
 
-        if (!photonView.IsMine)
+        if (!view.IsMine)
         {
             audioListener.enabled = false;
         }
