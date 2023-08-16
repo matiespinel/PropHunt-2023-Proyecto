@@ -186,32 +186,32 @@ PrefabInstance:
     - target: {fileID: 6100845996456893393, guid: d1fabd304f7912f40b37508fa4d8ff51,
         type: 3}
       propertyPath: m_SynchronizeParameters.Array.data[0].SynchronizeType
-      value: 0
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6100845996456893393, guid: d1fabd304f7912f40b37508fa4d8ff51,
         type: 3}
       propertyPath: m_SynchronizeParameters.Array.data[1].SynchronizeType
-      value: 0
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6100845996456893393, guid: d1fabd304f7912f40b37508fa4d8ff51,
         type: 3}
       propertyPath: m_SynchronizeParameters.Array.data[2].SynchronizeType
-      value: 0
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6100845996456893393, guid: d1fabd304f7912f40b37508fa4d8ff51,
         type: 3}
       propertyPath: m_SynchronizeParameters.Array.data[3].SynchronizeType
-      value: 0
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6100845996456893393, guid: d1fabd304f7912f40b37508fa4d8ff51,
         type: 3}
       propertyPath: m_SynchronizeParameters.Array.data[4].SynchronizeType
-      value: 0
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6100845996456893393, guid: d1fabd304f7912f40b37508fa4d8ff51,
         type: 3}
       propertyPath: m_SynchronizeParameters.Array.data[5].SynchronizeType
-      value: 0
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d1fabd304f7912f40b37508fa4d8ff51, type: 3}
