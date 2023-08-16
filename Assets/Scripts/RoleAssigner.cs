@@ -49,7 +49,7 @@ public class RoleAssigner : MonoBehaviourPunCallbacks
     }
     void Start()
     {
-        if ("Hunter" != PhotonNetwork.LocalPlayer.CustomProperties["Role"]?.ToString())
+        if ("Hunter" == PhotonNetwork.LocalPlayer.CustomProperties["Role"]?.ToString())
         {
             Vector3 randomPosition2 = new Vector3(Random.Range(min2X, max2X), 0, Random.Range(min2Z, max2Z));
             PhotonNetwork.Instantiate(playerPrefab.name, randomPosition2, Quaternion.identity);
