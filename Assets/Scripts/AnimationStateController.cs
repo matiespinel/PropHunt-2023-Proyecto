@@ -14,7 +14,7 @@ public class AnimationStateController : MonoBehaviour
     bool isWalking;
     bool isStrafingLeft;
     bool isStrafingRight;
-    PhotonView view;
+    
     //condiciones
     [SerializeField] GameObject Player;
     [SerializeField] GameObject LookingDirection;
@@ -32,7 +32,7 @@ public class AnimationStateController : MonoBehaviour
         isWalking = playerAnimator.GetBool(isWalkingHash);
         isStrafingLeft = playerAnimator.GetBool(isStrafingLeftHash);
         isStrafingRight = playerAnimator.GetBool(isStrafingRightHash);
-        view = GetComponent<PhotonView>();
+       
     }
 
     void FixedUpdate()
@@ -44,8 +44,8 @@ public class AnimationStateController : MonoBehaviour
         bool dPressed = Input.GetKey(KeyCode.D);
         //WASD
         //AVANZAR
-        if (view.IsMine)
-        {
+     
+        
  if((!isBacking || !isStrafingLeft || !isStrafingRight) && wPressed)
         {
             playerAnimator.SetBool(isWalkingHash, true);
@@ -91,7 +91,7 @@ public class AnimationStateController : MonoBehaviour
         {
              playerAnimator.SetBool(isStrafingRightHash, false);
         }
-        }
+        
        
         
        /*  if(MainCamera.transform.rotation.y > 101)
