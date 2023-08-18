@@ -23,10 +23,7 @@ public class MetamorfosisManagerScript : MonoBehaviour
    }
    
 
-    void Start()
-    {
-        AddPropUnitsToPool(PropPoolSize);
-    }
+    void Start() => AddPropUnitsToPool(PropPoolSize);
 
     private void AddPropUnitsToPool(int amount)
     {

@@ -5,6 +5,7 @@ using Photon.Pun;
 
 public class AnimationStateController : MonoBehaviour
 {
+    
     int isWalkingHash;
     int isBackingHash;
     int isStrafingLeftHash;
@@ -14,7 +15,6 @@ public class AnimationStateController : MonoBehaviour
     bool isWalking;
     bool isStrafingLeft;
     bool isStrafingRight;
-    
     //condiciones
     [SerializeField] GameObject Player;
     [SerializeField] GameObject LookingDirection;
@@ -32,7 +32,6 @@ public class AnimationStateController : MonoBehaviour
         isWalking = playerAnimator.GetBool(isWalkingHash);
         isStrafingLeft = playerAnimator.GetBool(isStrafingLeftHash);
         isStrafingRight = playerAnimator.GetBool(isStrafingRightHash);
-       
     }
 
     void FixedUpdate()
@@ -44,9 +43,8 @@ public class AnimationStateController : MonoBehaviour
         bool dPressed = Input.GetKey(KeyCode.D);
         //WASD
         //AVANZAR
-     
-        
- if((!isBacking || !isStrafingLeft || !isStrafingRight) && wPressed)
+       
+        if((!isBacking || !isStrafingLeft || !isStrafingRight) && wPressed)
         {
             playerAnimator.SetBool(isWalkingHash, true);
             if(MainCamera.transform.rotation.y !=  Player.transform.rotation.y)
@@ -71,12 +69,7 @@ public class AnimationStateController : MonoBehaviour
         //LADO IZQUIERDO
         if((!isBacking || !isWalking || !isStrafingRight) && aPressed)
         {
-             playerAnimator.SetBool(isStrafingLeftHash, true);
-             /* if(player.transform.rotation != new Quaternion(0f,90f,0f,0f)){
-               player.transform.Rotate(0,-1,0);
-             } nofunciona*/
-             /* player.transform.rotation = Quaternion.LookRotation(new Vector3(-90,0,0), Vector3.zero); */
-             
+             playerAnimator.SetBool(isStrafingLeftHash, true);    
         }
         else
         {
@@ -92,18 +85,6 @@ public class AnimationStateController : MonoBehaviour
              playerAnimator.SetBool(isStrafingRightHash, false);
         }
         
-       
-        
-       /*  if(MainCamera.transform.rotation.y > 101)
-        {
-             Quaternion.LookRotation(Vector3.forward, Vector3.left);
-        } */
-        
-       /*  if(MainCamera.transform.rotation.y > player.transform.rotation.y)
-        {
-          RotateTo(player,45f);
-          Debug.Log("mmmo");
-        } */
     }
      
 }
