@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Photon.Pun;
+using Photon.Realtime;
 
 public abstract class Entity : MonoBehaviour
 {
@@ -12,6 +14,8 @@ public abstract class Entity : MonoBehaviour
     ///<summary>
     ///Funcion que inserta el valor y le resta a la HP el parametro dmg
     ///</summary>
+    ///
+    [PunRPC]
     public void TakeDamage(int dmg) {
         HP -= dmg;
         Debug.Log(HP);

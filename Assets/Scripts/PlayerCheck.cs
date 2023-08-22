@@ -9,6 +9,8 @@ public class PlayerCheck : MonoBehaviour
     PhotonView view;
     void Start()
     {
+        view = GetComponent<PhotonView>();
+
         if (view.IsMine)
         {
             animationStateController.enabled = true;
