@@ -2,6 +2,8 @@ using System.Collections.Generic;
 using System.Collections;
 using UnityEngine;
 using Cinemachine;
+using Photon.Pun;
+using Photon.Realtime;
 
 public class MetamorfosisScript : MonoBehaviour
 {
@@ -11,15 +13,19 @@ public class MetamorfosisScript : MonoBehaviour
     [SerializeField] private GameObject Target;
     bool CM = true;
     CinemachineFreeLook FreeLook;
+
+    PhotonView view; 
     
     void Start() 
     {
         animator = GetComponent<Animator>();
+        view = GetComponent<PhotonView>();
     }
     void FixedUpdate()
     {
-        //creamos rayo, se proyecta desde la posicion del transform del gameobj que tiene el script, y tiene como direccion hacia el frente
-        Ray ray =  new Ray(animator.GetBoneTransform(HumanBodyBones.Head).position, Target.transform.position);
+        if (view.IsMine)
+        {
+Ray ray =  new Ray(animator.GetBoneTransform(HumanBodyBones.Head).position, Target.transform.position);
         
 
         RaycastHit hit;
@@ -29,10 +35,11 @@ public class MetamorfosisScript : MonoBehaviour
             //esta es una representacion grafica del raycast
             if(hit.collider.tag == "Transformable")//hit.collider nos dice con que collider colisiono y con .tag accedemos al tag que le pusimos
             {
+
                 if(Input.GetKey(KeyCode.Tab) && CM == true)
                 {
                    CM = false;
-                   Metamorph(hit.collider.gameObject);
+                   hit.transform.gameObject.GetComponent<PhotonView>().RPC("Metamorph", RpcTarget.All);
                    StartCoroutine(MetaCooldown());
                 }
                 //borrar control humanoide e insertar control objeto
@@ -41,8 +48,13 @@ public class MetamorfosisScript : MonoBehaviour
 
             }
         }
+        }
+        //creamos rayo, se proyecta desde la posicion del transform del gameobj que tiene el script, y tiene como direccion hacia el frente
+        
 
     }
+
+    [PunRPC]
     private void Metamorph(GameObject clone)
     {
         GameObject Cam3d = MetamorfosisManagerScript.Instance.RequestProp();

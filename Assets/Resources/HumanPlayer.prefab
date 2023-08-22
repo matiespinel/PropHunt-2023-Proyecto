@@ -2711,7 +2711,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8247f3f9713f8e445a1bb657cd43c803, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fireButton: 107
+  bulletOrigin: {x: 0, y: 0, z: 0}
+  bulletLine: {fileID: 0}
 --- !u!120 &5102185856038676131
 LineRenderer:
   m_ObjectHideFlags: 0
@@ -3289,11 +3290,10 @@ GameObject:
   - component: {fileID: 5336751063523687355}
   - component: {fileID: 5336751063523687302}
   - component: {fileID: 5336751063523687353}
-  - component: {fileID: 5336751063523687354}
-  - component: {fileID: 5336751063523687357}
   - component: {fileID: -8072129207622309484}
   - component: {fileID: 2913241521859099495}
   - component: {fileID: 6100845996456893393}
+  - component: {fileID: 4786638003309671188}
   m_Layer: 3
   m_Name: HumanPlayer
   m_TagString: Untagged
@@ -3522,38 +3522,6 @@ MonoBehaviour:
   playermask:
     serializedVersion: 2
     m_Bits: 55
---- !u!114 &5336751063523687354
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5336751063523687298}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d2ca725dc486669468e9e3cd2ebc4c9c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PlayerLayer:
-    serializedVersion: 2
-    m_Bits: 55
-  Target: {fileID: 5677867373818333112, guid: 101b8567fd711444a81915d4ee65b6c5, type: 3}
---- !u!114 &5336751063523687357
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5336751063523687298}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e86cd3e913c7eed4ca94036c2b5c6562, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  FirstCam: {fileID: 0}
-  ThirdCam: {fileID: 5677867373818333114, guid: 101b8567fd711444a81915d4ee65b6c5,
-    type: 3}
-  SwitchKey: 32
 --- !u!114 &-8072129207622309484
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3627,28 +3595,44 @@ MonoBehaviour:
   ShowParameterInspector: 1
   m_SynchronizeParameters:
   - Type: 4
-    SynchronizeType: 0
+    SynchronizeType: 2
     Name: isWalking
   - Type: 4
-    SynchronizeType: 0
+    SynchronizeType: 2
     Name: isBacking
   - Type: 4
-    SynchronizeType: 0
+    SynchronizeType: 2
     Name: isStrafingLeft
   - Type: 4
-    SynchronizeType: 0
+    SynchronizeType: 2
     Name: isStrafingRight
   - Type: 1
-    SynchronizeType: 0
+    SynchronizeType: 2
     Name: IKRFWeight
   - Type: 1
-    SynchronizeType: 0
+    SynchronizeType: 2
     Name: IKLFWeight
   m_SynchronizeLayers:
   - SynchronizeType: 0
     LayerIndex: 0
   - SynchronizeType: 0
     LayerIndex: 1
+--- !u!114 &4786638003309671188
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5336751063523687298}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2ca725dc486669468e9e3cd2ebc4c9c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PlayerLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  Target: {fileID: 0}
 --- !u!1 &5840860766739150424
 GameObject:
   m_ObjectHideFlags: 0
