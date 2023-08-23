@@ -6,7 +6,7 @@ using Photon.Pun;
 using Photon.Realtime;
 
 public class MetamorfosisScript : MonoBehaviour
-{
+{   
     // Start is called before the first frame update
     [SerializeField] private LayerMask PlayerLayer;// en el inspector pone EVERYTHING excepto la layer de la que forma parte tu gameobj(la asignas vos)
     private Animator animator;
@@ -20,6 +20,7 @@ public class MetamorfosisScript : MonoBehaviour
     {
         animator = GetComponent<Animator>();
         view = GetComponent<PhotonView>();
+        //PhotonNetwork.OfflineMode = true;
     }
     void FixedUpdate()
     {
