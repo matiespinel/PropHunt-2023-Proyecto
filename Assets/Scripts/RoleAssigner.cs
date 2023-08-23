@@ -53,6 +53,7 @@ public class RoleAssigner : MonoBehaviourPunCallbacks
         {
             Vector3 randomPosition2 = new Vector3(Random.Range(min2X, max2X), 0, Random.Range(min2Z, max2Z));
             PhotonNetwork.Instantiate(playerPrefab.name, randomPosition2, Quaternion.identity);
+            Debug.Log("Hunter");
         }
         else
         {
@@ -60,6 +61,7 @@ public class RoleAssigner : MonoBehaviourPunCallbacks
 
             Vector3 randomPosition = new Vector3(Random.Range(minX, maxX), 0, Random.Range(minZ, maxZ));
             PhotonNetwork.Instantiate(playerPrefab.name, randomPosition, Quaternion.identity);
+            Debug.Log("Prop");
 
         }
     }
