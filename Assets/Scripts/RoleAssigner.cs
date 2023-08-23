@@ -9,8 +9,7 @@ using Photon.Realtime;
 
 public class RoleAssigner : MonoBehaviourPunCallbacks
 {
-    
-    public static RoleAssigner rol;
+  
     Player[] allPlayer;
     int hunter;
  public enum PlayerRole
@@ -34,22 +33,7 @@ public class RoleAssigner : MonoBehaviourPunCallbacks
     }
     void Start()
     {
-          allPlayer = PhotonNetwork.PlayerList;
-        hunter = Random.Range(0, allPlayer.Length - 1);
-        foreach (Player p in allPlayer)
-        {
-            if (p.ActorNumber == hunter)
-            {
-                p.SetCustomProperties(new ExitGames.Client.Photon.Hashtable() { { "Role", "Hunter" } });
-            }
-            else
-            {
-                p.SetCustomProperties(new ExitGames.Client.Photon.Hashtable() { { "Role", "Prop" } });
-            }
-        }
-        {
-
-        }
+        
         if ("Hunter" == PhotonNetwork.LocalPlayer.CustomProperties["Role"]?.ToString())
         {
             Vector3 randomPosition2 = new Vector3(Random.Range(min2X, max2X), 0, Random.Range(min2Z, max2Z));
