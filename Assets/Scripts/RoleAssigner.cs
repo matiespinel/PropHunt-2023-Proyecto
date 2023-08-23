@@ -31,7 +31,7 @@ public class RoleAssigner : MonoBehaviourPunCallbacks
     void Awake()
     {
         allPlayer = PhotonNetwork.PlayerList;
-        hunter = Random.Range(0, allPlayer.Length);
+        hunter = Random.Range(0, allPlayer.Length - 1);
         foreach (Player p in allPlayer)
         {
             if (p.ActorNumber == hunter)
