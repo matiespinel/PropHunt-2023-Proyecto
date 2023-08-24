@@ -2714,6 +2714,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 452a1386a67cb464eb722d43aa6391e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  RoleButton: {fileID: 0}
   createInput: {fileID: 421167244}
   lobbyPanel: {fileID: 1760360770}
   roomPanel: {fileID: 683927275}
@@ -3182,7 +3183,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.35386175, g: 0.18280526, b: 0.49056602, a: 0}
+  m_BackGroundColor: {r: 0.08517267, g: 0.5471698, b: 0.4546821, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0

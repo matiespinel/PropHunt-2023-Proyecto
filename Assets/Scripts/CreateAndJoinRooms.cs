@@ -7,6 +7,7 @@ using Photon.Realtime;
 
 public class CreateAndJoinRooms : MonoBehaviourPunCallbacks
 {
+    public GameObject RoleButton;
     public TMP_InputField createInput;
     public GameObject lobbyPanel;
     public GameObject roomPanel;
@@ -121,10 +122,12 @@ public class CreateAndJoinRooms : MonoBehaviourPunCallbacks
         if (PhotonNetwork.IsMasterClient && PhotonNetwork.CurrentRoom.PlayerCount >= 2)
         {
             playButton.SetActive(true);
+            RoleButton.SetActive(true);
         }
         else
         {
             playButton.SetActive(false);
+            RoleButton.SetActive(false);
         }
     }
 
