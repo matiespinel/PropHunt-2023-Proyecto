@@ -553,6 +553,11 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Untagged
       objectReference: {fileID: 0}
+    - target: {fileID: 5336751063523687302, guid: d1fabd304f7912f40b37508fa4d8ff51,
+        type: 3}
+      propertyPath: LookingDirection
+      value: 
+      objectReference: {fileID: 1097568739169006773}
     - target: {fileID: 6100845996456893393, guid: d1fabd304f7912f40b37508fa4d8ff51,
         type: 3}
       propertyPath: m_SynchronizeParameters.Array.data[0].SynchronizeType
@@ -789,6 +794,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72ece51f2901e7445ab60da3685d6b5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1097568739169006773 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5677867373860638772, guid: 101b8567fd711444a81915d4ee65b6c5,
+    type: 3}
+  m_PrefabInstance: {fileID: 4751454531056018561}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1097568739169006921 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5677867373860639176, guid: 101b8567fd711444a81915d4ee65b6c5,
