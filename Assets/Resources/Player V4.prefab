@@ -2567,7 +2567,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7485782134157456894}
-  m_LocalRotation: {x: 0.31708816, y: 0.23730671, z: 0.06797318, w: 0.9157076}
+  m_LocalRotation: {x: 0.29718608, y: 0.40229166, z: 0.11523083, w: 0.858233}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -2636,6 +2636,7 @@ GameObject:
   - component: {fileID: 5118416897039776808}
   - component: {fileID: 9199421796139406282}
   - component: {fileID: 7534463152785314627}
+  - component: {fileID: 929418634687635169}
   m_Layer: 0
   m_Name: PlayerCamera
   m_TagString: MainCamera
@@ -2650,7 +2651,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7485782134169620548}
-  m_LocalRotation: {x: 0.026928194, y: 0.13602372, z: -0.003698629, w: 0.9903326}
+  m_LocalRotation: {x: 0.02582439, y: 0.31186306, z: -0.008479888, w: 0.94973826}
   m_LocalPosition: {x: 0, y: -0.8760457, z: 0.20372677}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -2819,6 +2820,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerName: {fileID: 1808917433622124929}
   canvasHUD: {fileID: 4121470572660435628}
+--- !u!81 &929418634687635169
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7485782134169620548}
+  m_Enabled: 1
 --- !u!1 &7485782134212733668
 GameObject:
   m_ObjectHideFlags: 0
@@ -4341,7 +4350,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7485782135406676242}
-  m_LocalRotation: {x: 0.31728983, y: 0.23481831, z: 0.067263976, w: 0.9163313}
+  m_LocalRotation: {x: 0.29785824, y: 0.39789826, z: 0.113978416, w: 0.86021304}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -4932,7 +4941,6 @@ GameObject:
   - component: {fileID: 7720224061892369066}
   - component: {fileID: 7720224061892369045}
   - component: {fileID: 7720224061892369046}
-  - component: {fileID: 7720224061892369040}
   - component: {fileID: 7720224061892369043}
   - component: {fileID: 7731285835712140115}
   - component: {fileID: 731978921291736891}
@@ -5184,14 +5192,6 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 55
   Target: {fileID: 7485782134144354248}
---- !u!81 &7720224061892369040
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7720224061892369070}
-  m_Enabled: 1
 --- !u!114 &7720224061892369043
 MonoBehaviour:
   m_ObjectHideFlags: 0
