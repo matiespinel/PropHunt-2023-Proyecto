@@ -1,12 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Photon.Pun;
-using Photon.Realtime;
 
 public class GunShotScript : Weapon
 {
-
     private Entity youEntity;
     void Start()
     {
@@ -39,7 +36,7 @@ public class GunShotScript : Weapon
                 bulletLine.SetPosition(1, hit.point);
                 if(hit.collider.tag == "Transformable")
                 {
-                    hit.collider.gameObject.GetComponent<PhotonView>().RPC("TakeDamage", RpcTarget.All, bulletDamage);
+                    hit.collider.GetComponent<Entity>().TakeDamage(20);
                 }
             }
             else
@@ -50,7 +47,7 @@ public class GunShotScript : Weapon
             }
         }
     }
-
+/* [PunRCP] */
     private IEnumerator ShotEffect()
     {
         //bang sonido faltar

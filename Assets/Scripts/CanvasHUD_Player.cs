@@ -11,7 +11,7 @@ public class CanvasHUD_Player : MonoBehaviour
 
      public TMP_Text playerName;
     PhotonView PV;
-    public GameObject canvasHUD;
+    public Canvas canvasHUD;
 
      public void SetPlayerInfo(Player _player)
      {
@@ -27,7 +27,7 @@ public class CanvasHUD_Player : MonoBehaviour
     {
         if (PV.IsMine)
         {
-            canvasHUD.SetActive(true);
+            canvasHUD.gameObject.SetActive(true);
             playerName.text = PhotonNetwork.NickName;
         }
     }
