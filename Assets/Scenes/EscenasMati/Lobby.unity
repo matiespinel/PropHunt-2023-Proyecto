@@ -2714,7 +2714,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 452a1386a67cb464eb722d43aa6391e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RoleButton: {fileID: 0}
+  RoleButton: {fileID: 136998526}
   createInput: {fileID: 421167244}
   lobbyPanel: {fileID: 1760360770}
   roomPanel: {fileID: 683927275}
