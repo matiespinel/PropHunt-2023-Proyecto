@@ -1823,14 +1823,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa2f3f4131485ac458a39f9df43a9235, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minX: -4
+  minX: -3
   maxX: 0
-  minZ: -4
+  minZ: -3
   maxZ: 4
   min2X: 3
   max2X: 7
-  min2Z: -4
-  max2Z: 4
+  min2Z: -3
+  max2Z: 3
   playerPrefab: {fileID: 2221220642742270198, guid: 8fa1a19e03aa42f47813ca6d692121ad,
     type: 3}
 --- !u!1001 &1479021850
