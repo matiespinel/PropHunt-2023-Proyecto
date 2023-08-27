@@ -27,6 +27,7 @@ public class RoleAssigner : MonoBehaviourPunCallbacks
     public float min2Z;
     public float max2Z;
     public GameObject playerPrefab;
+    public GameObject playerPrefab2;
     void Awake()
     {
       
@@ -45,7 +46,7 @@ public class RoleAssigner : MonoBehaviourPunCallbacks
 
 
             Vector3 randomPosition = new Vector3(Random.Range(minX, maxX), 1, Random.Range(minZ, maxZ));
-            PhotonNetwork.Instantiate(playerPrefab.name, randomPosition, Quaternion.identity);
+            PhotonNetwork.Instantiate(playerPrefab2.name, randomPosition, Quaternion.identity);
             Debug.Log("Prop");
 
         }

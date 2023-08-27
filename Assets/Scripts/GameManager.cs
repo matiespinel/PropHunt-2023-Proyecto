@@ -8,7 +8,7 @@ using Photon.Realtime;
 public class GameManager : MonoBehaviourPunCallbacks
 {
 
-
+    public RoleAssigner roleAssigner;
     [SerializeField] GameObject Pared1;
     [SerializeField] GameObject Pared2;
     [SerializeField] GameObject Pared3;
@@ -28,9 +28,24 @@ public class GameManager : MonoBehaviourPunCallbacks
     {
         
     }
-    
-    
-     IEnumerator destruirParedes()
+
+    void respawn()
+    {
+        if (PhotonNetwork.LocalPlayer.CustomProperties["Role"]?.ToString() == "Prop")
+        {
+            Vector3 randomPosition2 = new Vector3(Random.Range(0, 10), 1, Random.Range(0, 10));
+            PhotonNetwork.Instantiate(roleAssigner.playerPrefab.name, randomPosition2, Quaternion.identity);
+            
+        }
+        else if (PhotonNetwork.LocalPlayer.CustomProperties["Role"]?.ToString() == "Hunter")  // hacer que el hunter se quede en espectador
+        {
+            
+      
+        }
+
+
+}
+  IEnumerator destruirParedes()
     {
         yield return new WaitForSeconds(15);
         audioSource.Play();
