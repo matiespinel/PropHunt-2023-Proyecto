@@ -5,9 +5,11 @@ using Photon.Pun;
 using Cinemachine;
 public class AudioListenerMine : MonoBehaviour
 {
+    #region vars
     private AudioListener audioListener;
-    PhotonView view;
-    [SerializeField] CinemachineFreeLook cam3d;
+    private PhotonView view;
+    [SerializeField] private CinemachineFreeLook cam3d;
+    #endregion
     void Start()
     {
         view = GetComponent<PhotonView>();
@@ -19,11 +21,5 @@ public class AudioListenerMine : MonoBehaviour
             cam3d.gameObject.SetActive(false);
 
         }
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }

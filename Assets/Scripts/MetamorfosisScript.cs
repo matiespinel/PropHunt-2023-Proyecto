@@ -6,16 +6,15 @@ using Photon.Pun;
 using Photon.Realtime;
 
 public class MetamorfosisScript : MonoBehaviour
-{   
-    // Start is called before the first frame update
+{
+    #region vars
     [SerializeField] private LayerMask PlayerLayer;// en el inspector pone EVERYTHING excepto la layer de la que forma parte tu gameobj(la asignas vos)
     private Animator animator;
     [SerializeField] private GameObject Target;
-    bool CM = true;
-    CinemachineFreeLook FreeLook;
+    private bool CM = true;
+    private PhotonView view;
+    #endregion
 
-    PhotonView view; 
-    
     void Start() 
     {
         animator = GetComponent<Animator>();
@@ -43,10 +42,6 @@ Ray ray =  new Ray(animator.GetBoneTransform(HumanBodyBones.Head).position, Targ
                    hit.transform.gameObject.GetComponent<PhotonView>().RPC("Metamorph", RpcTarget.All);
                    StartCoroutine(MetaCooldown());
                 }
-                //borrar control humanoide e insertar control objeto
-                //Destroy(GetComponent<CapsuleCollider>()); 
-                //decidir despues si es mejor activar y desactivar componentes o añadir y borrar
-
             }
         }
         }

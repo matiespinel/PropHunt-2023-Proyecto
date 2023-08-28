@@ -5,24 +5,24 @@ using Photon.Pun;
 public class AnimationStateController : MonoBehaviour
 {
     
-    int isWalkingHash;
-    int isBackingHash;
-    int isStrafingLeftHash;
-    int isStrafingRightHash;
-    int isTurningRightHash;
-    int isTurningLeftHash;
+    private int isWalkingHash;
+    private int isBackingHash;
+    private int isStrafingLeftHash;
+    private int isStrafingRightHash;
+    private int isTurningRightHash;
+    private int isTurningLeftHash;
     //animator puede usar valores hash por sustitucion de int
-    bool isBacking;
-    bool isWalking;
-    bool isStrafingLeft;
-    bool isStrafingRight;
-    bool isTurningRight;
-    bool isTurningLeft;
+    private bool isBacking;
+    private bool isWalking;
+    private bool isStrafingLeft;
+    private bool isStrafingRight;
+    private bool isTurningRight;
+    private bool isTurningLeft;
     //condiciones
-    [SerializeField] GameObject Player;
-    [SerializeField] GameObject LookingDirection;
-    Animator playerAnimator;
-    [SerializeField] Camera MainCamera;
+    [SerializeField] private GameObject Player;
+    [SerializeField] private GameObject LookingDirection;
+    private Animator playerAnimator;
+    [SerializeField] private Camera MainCamera;
     
     void Start()
     {

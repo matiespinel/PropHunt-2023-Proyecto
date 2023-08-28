@@ -8,12 +8,12 @@ using Photon.Realtime;
 
 public class CanvasHUD_Player : MonoBehaviour
 {
-
-     public TMP_Text playerName;
-    PhotonView PV;
+    #region vars
+    public TMP_Text playerName;
+    private PhotonView PV;
     public Canvas canvasHUD;
-
-     public void SetPlayerInfo(Player _player)
+    #endregion
+    public void SetPlayerInfo(Player _player)
      {
          playerName.text = _player.NickName;
      }

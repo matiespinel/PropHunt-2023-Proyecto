@@ -5,8 +5,10 @@ using Photon.Pun;
 
 public class PlayerCheck : MonoBehaviour
 {
+    #region vars
     public AnimationStateController animationStateController;
-    PhotonView view;
+    private PhotonView view;
+    #endregion
     void Start()
     {
         view = GetComponent<PhotonView>();
@@ -19,11 +21,5 @@ public class PlayerCheck : MonoBehaviour
         {
             animationStateController.enabled = false;
         }
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }
