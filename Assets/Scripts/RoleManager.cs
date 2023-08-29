@@ -29,13 +29,13 @@ public class RoleManager : MonoBehaviour
         {
             if (PhotonNetwork.CurrentRoom.PlayerCount == 2)
             {
-                if (IsMasterClient)
+                if (PhotonNetwork.IsMasterClient)
                 {
-                    SetCustomProperties(new ExitGames.Client.Photon.Hashtable() { { "Role", "Hunter" } });
+                       PhotonNetwork.LocalPlayer.SetCustomProperties(new ExitGames.Client.Photon.Hashtable() { { "Role", "Hunter" } });
                 }
                 else   
                 {
-                    SetCustomProperties(new ExitGames.Client.Photon.Hashtable() { { "Role", "Prop" } });
+                       PhotonNetwork.LocalPlayer.SetCustomProperties(new ExitGames.Client.Photon.Hashtable() { { "Role", "Prop" } });
                 }
 
             }
