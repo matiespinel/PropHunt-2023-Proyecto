@@ -19,7 +19,7 @@ public class MetamorfosisScript : MonoBehaviour
     {
         animator = GetComponent<Animator>();
         view = GetComponent<PhotonView>();
-        //PhotonNetwork.OfflineMode = true;
+        PhotonNetwork.OfflineMode = true;
     }
     void FixedUpdate()
     {
