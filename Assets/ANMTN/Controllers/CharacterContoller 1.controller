@@ -49,7 +49,7 @@ AnimatorStateMachine:
     m_Position: {x: 440, y: -60, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 6237915308794061125}
-    m_Position: {x: 50, y: 50, z: 0}
+    m_Position: {x: 30, y: 90, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -1198561594897972779}
     m_Position: {x: 30, y: 130, z: 0}
@@ -333,7 +333,7 @@ AnimatorController:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: CharacterContoller
+  m_Name: CharacterContoller 1
   serializedVersion: 5
   m_AnimatorParameters:
   - m_Name: isWalking
