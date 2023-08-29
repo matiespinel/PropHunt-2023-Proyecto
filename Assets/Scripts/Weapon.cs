@@ -14,10 +14,11 @@ public abstract class Weapon : MonoBehaviour
     public Vector3 bulletOrigin;
     public LineRenderer bulletLine;
     public WaitForSeconds bulletTime;
+    public WaitForSeconds reloadTime;
 
     public int ammo {get; set;}
     public float nextShotInterval {get; set;}
-    public int maxAmmo {get; set;}
+    public int mag {get; set;}
     public float bulletVelocity {get; set;}
     public float bulletDamage {get; set;}
     public float bulletRange {get; set;}
@@ -37,5 +38,28 @@ public abstract class Weapon : MonoBehaviour
     /// Sonido al disparar arma
     /// </summary>
     public void PlayGunShotAudio() => _audioSource.Play();
-
+    /// <summary>
+    /// Efecto de disparo. Registro y Deresgistro de audioclip, resta de balas y tiempo entre disparos.
+    /// </summary>
+    public IEnumerator ShotEffect()
+    {
+        ammo--;
+        Debug.Log(ammo);
+        RegisterShotAudio();
+        bulletLine.enabled = true;
+        yield return bulletTime;
+        bulletLine.enabled = false;
+        DeregisterShotAudio();
+    }
+    /// <summary>
+    /// Tiempo de recarga. 
+    /// </summary>
+    public IEnumerator ReloadWait()
+    {
+        Debug.Log("recargando...");
+        yield return reloadTime;
+        ammo = mag;
+    }
+    //¡Si alguien se muere por disparos sin esto el audio queda registrado!
+    private void OnDestroy() =>DeregisterShotAudio();
 }

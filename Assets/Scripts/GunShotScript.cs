@@ -16,6 +16,9 @@ public class GunShotScript : Weapon
         bulletLine = GetComponent<LineRenderer>();
         fireButton = KeyCode.K;
         bulletTime = new WaitForSeconds(.07f);
+        mag = 20;
+        ammo = mag;
+        reloadTime = new WaitForSeconds(5);
         youEntity = this.gameObject.GetComponentInParent<Entity>();
         #endregion
 
@@ -23,7 +26,7 @@ public class GunShotScript : Weapon
 
     void Update()
     {
-        if(Input.GetKey(fireButton) && Time.time > nextShotInterval)
+        if(Input.GetKey(fireButton) && Time.time > nextShotInterval && ammo != 0)
         {
             nextShotInterval = Time.time + fireRate;
             StartCoroutine(ShotEffect());
@@ -43,22 +46,12 @@ public class GunShotScript : Weapon
             {
                 bulletLine.SetPosition(1,bulletOrigin + (transform.up * bulletRange));
                 youEntity.TakeDamage(20);
-                Debug.Log("pipi");
+                
             }
         }
-    }
-/* [PunRCP] */
-    private IEnumerator ShotEffect()
-    {
-        //bang sonido faltar
-        RegisterShotAudio();
-        bulletLine.enabled = true;
-        yield return bulletTime;
-        bulletLine.enabled = false;
-        DeregisterShotAudio();
-    }
-
-    private void OnDestroy() {
-        DeregisterShotAudio();
+        if (ammo == 0)
+        {
+            StartCoroutine(ReloadWait());
+        }
     }
 }
