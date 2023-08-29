@@ -37,7 +37,7 @@ public class RoleAssigner : MonoBehaviourPunCallbacks
         
         if ("Hunter" == PhotonNetwork.LocalPlayer.CustomProperties["Role"]?.ToString())
         {
-            Vector3 randomPosition2 = new Vector3(Random.Range(min2X, max2X), 1, Random.Range(min2Z, max2Z));
+            Vector3 randomPosition2 = new Vector3(Random.Range(min2X, max2X), 2, Random.Range(min2Z, max2Z));
             PhotonNetwork.Instantiate(playerPrefab.name, randomPosition2, Quaternion.identity);
             Debug.Log("Hunter");
         }
@@ -45,7 +45,7 @@ public class RoleAssigner : MonoBehaviourPunCallbacks
         {
 
 
-            Vector3 randomPosition = new Vector3(Random.Range(minX, maxX), 1, Random.Range(minZ, maxZ));
+            Vector3 randomPosition = new Vector3(Random.Range(minX, maxX), 2, Random.Range(minZ, maxZ));
             PhotonNetwork.Instantiate(playerPrefab2.name, randomPosition, Quaternion.identity);
             Debug.Log("Prop");
 
@@ -53,7 +53,7 @@ public class RoleAssigner : MonoBehaviourPunCallbacks
 
         else 
         {
-             Vector3 randomPosition3 = new Vector3(Random.Range(minX, maxX), 1, Random.Range(minZ, maxZ));
+             Vector3 randomPosition3 = new Vector3(Random.Range(minX, maxX), 2, Random.Range(minZ, maxZ));
             PhotonNetwork.Instantiate(playerPrefab.name, randomPosition3, Quaternion.identity);
             Debug.Log("No anda");
         }
