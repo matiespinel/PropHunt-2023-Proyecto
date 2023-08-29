@@ -13,6 +13,7 @@ public class MetamorfosisScript : MonoBehaviour
     [SerializeField] private GameObject Target;
     private bool CM = true;
     private PhotonView view;
+    [SerializeField]private CinemachineFreeLook cam3d;
     #endregion
 
     void Start() 
@@ -39,6 +40,7 @@ Ray ray =  new Ray(animator.GetBoneTransform(HumanBodyBones.Head).position, Targ
                 if(Input.GetKey(KeyCode.Tab) && CM == true)
                 {
                    CM = false;
+                   Metamorph(hit.transform.gameObject);
                    hit.transform.gameObject.GetComponent<PhotonView>().RPC("Metamorph", RpcTarget.All);
                    StartCoroutine(MetaCooldown());
                 }
@@ -53,14 +55,16 @@ Ray ray =  new Ray(animator.GetBoneTransform(HumanBodyBones.Head).position, Targ
     [PunRPC]
     private void Metamorph(GameObject clone)
     {
-        GameObject Cam3d = MetamorfosisManagerScript.Instance.RequestProp();
+        
         GameObject Prop = Instantiate(clone);
         Prop.transform.position = transform.position;
         Prop.AddComponent<MyCharacterController>();
         Prop.AddComponent<Rigidbody>();
         Prop.GetComponent<Rigidbody>().freezeRotation = true;
-        Cam3d.GetComponent<CinemachineFreeLook>().LookAt = Prop.transform;
-        Cam3d.GetComponent<CinemachineFreeLook>().Follow = Prop.transform;
+        Prop.transform.parent = cam3d.transform.parent;
+        cam3d.LookAt = Prop.transform;
+        cam3d.Follow = Prop.transform;
+        
         Destroy(this.gameObject);
     }
     IEnumerator MetaCooldown()
