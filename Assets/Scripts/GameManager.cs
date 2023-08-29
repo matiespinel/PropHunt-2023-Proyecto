@@ -7,7 +7,7 @@ using Photon.Realtime;
 
 public class GameManager : MonoBehaviourPunCallbacks
 {
-
+    public int propCount = 0;
     public RoleAssigner roleAssigner;
     [SerializeField] GameObject Pared1;
     [SerializeField] GameObject Pared2;
@@ -26,7 +26,10 @@ public class GameManager : MonoBehaviourPunCallbacks
     // Update is called once per frame
     void Update()
     {
-        
+        if (propCount == 0)
+        {
+           
+        }
     }
 
    

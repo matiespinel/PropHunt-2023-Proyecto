@@ -11,6 +11,7 @@ public class RoleManager : MonoBehaviour
     public static RoleManager rol;
     Player[] allPlayer;
     int hunter; 
+    public GameManager gm;
     void Start()
     {
         // if there is no instance of this class
@@ -36,6 +37,7 @@ public class RoleManager : MonoBehaviour
                 else   
                 {
                        PhotonNetwork.LocalPlayer.SetCustomProperties(new ExitGames.Client.Photon.Hashtable() { { "Role", "Prop" } });
+                       gm.propCount++;
                 }
 
             }
@@ -51,6 +53,7 @@ public class RoleManager : MonoBehaviour
             else
             {
                 p.SetCustomProperties(new ExitGames.Client.Photon.Hashtable() { { "Role", "Prop" } });
+                gm.propCount++;
             }
         }
             }
