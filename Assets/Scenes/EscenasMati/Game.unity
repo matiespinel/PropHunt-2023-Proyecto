@@ -2252,9 +2252,9 @@ MonoBehaviour:
   max2X: 7
   min2Z: -3
   max2Z: 3
-  playerPrefab: {fileID: 7485782134798849001, guid: 3b40c2cba2c7b624594346761a55054c,
+  playerPrefab: {fileID: 4046897933613464856, guid: 3b40c2cba2c7b624594346761a55054c,
     type: 3}
-  playerPrefab2: {fileID: 7485782134798849001, guid: 3b40c2cba2c7b624594346761a55054c,
+  playerPrefab2: {fileID: 5556407490027017164, guid: ef205c28f05568e4e9dd828dbc17e99d,
     type: 3}
 --- !u!1001 &1479021850
 PrefabInstance:
