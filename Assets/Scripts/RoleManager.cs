@@ -27,7 +27,20 @@ public class RoleManager : MonoBehaviour
    
     public void RoleAssigner()
         {
-            allPlayer = PhotonNetwork.PlayerList;
+            if (PhotonNetwork.CurrentRoom.PlayerCount == 2)
+            {
+                if (IsMasterClient)
+                {
+                    SetCustomProperties(new ExitGames.Client.Photon.Hashtable() { { "Role", "Hunter" } });
+                }
+                else   
+                {
+                    SetCustomProperties(new ExitGames.Client.Photon.Hashtable() { { "Role", "Prop" } });
+                }
+
+            }
+            else{
+                 allPlayer = PhotonNetwork.PlayerList;
         hunter = Random.Range(0, allPlayer.Length - 1);
         foreach (Player p in allPlayer)
         {
@@ -40,6 +53,8 @@ public class RoleManager : MonoBehaviour
                 p.SetCustomProperties(new ExitGames.Client.Photon.Hashtable() { { "Role", "Prop" } });
             }
         }
+            }
+           
 
         }
     
