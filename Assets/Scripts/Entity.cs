@@ -31,6 +31,7 @@ public abstract class Entity : MonoBehaviour
         if (PhotonNetwork.LocalPlayer.CustomProperties["Role"]?.ToString() == "Prop")
         {
             Vector3 randomPosition2 = new Vector3(Random.Range(0, 10), 1, Random.Range(0, 10));
+            PhotonNetwork.LocalPlayer.SetCustomProperties(new ExitGames.Client.Photon.Hashtable() { { "Role", "Hunter" } });
             PhotonNetwork.Instantiate(roleAssigner.playerPrefab.name, randomPosition2, Quaternion.identity);
             
         }
