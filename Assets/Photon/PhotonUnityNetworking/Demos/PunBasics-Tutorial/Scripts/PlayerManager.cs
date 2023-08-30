@@ -138,7 +138,7 @@ namespace Photon.Pun.Demo.PunBasics
 
                 if (this.Health <= 0f && !this.leavingRoom)
                 {
-                    this.leavingRoom = GameManager.Instance.LeaveRoom();
+                    this.leavingRoom = PhotonNetwork.LeaveRoom();
                 }
             }
 

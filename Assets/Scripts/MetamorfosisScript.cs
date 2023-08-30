@@ -5,7 +5,7 @@ using Cinemachine;
 using Photon.Pun;
 using Photon.Realtime;
 
-public class MetamorfosisScript : MonoBehaviour
+public class MetamorfosisScript : MonoBehaviourPunCallbacks
 {
     #region vars
     [SerializeField] private LayerMask PlayerLayer;// en el inspector pone EVERYTHING excepto la layer de la que forma parte tu gameobj(la asignas vos)
@@ -41,7 +41,7 @@ Ray ray =  new Ray(animator.GetBoneTransform(HumanBodyBones.Head).position, Targ
                 {
                    CM = false;
                    //Metamorph(hit.transform.gameObject);
-                     view.RPC("Metamorph", RpcTarget.All, hit.collider.gameObject);
+                     view.RPC("Metamorph", RpcTarget.All, hit.collider.GetComponent<PhotonView>());
                    StartCoroutine(MetaCooldown());
                 }
             }

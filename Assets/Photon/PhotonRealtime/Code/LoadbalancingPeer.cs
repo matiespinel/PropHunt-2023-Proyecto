@@ -1200,8 +1200,11 @@ namespace Photon.Realtime
         public const int AuthenticationTicketExpired = 0x7FF1;
 
         /// <summary>
-        /// (32752) A server-side plugin (or webhook) failed to execute and reported an error. Check the OperationResponse.DebugMessage.
+        /// (32752) A server-side plugin or WebHook failed and reported an error. Check the OperationResponse.DebugMessage.
         /// </summary>
+        /// <remarks>A typical case is when a plugin prevents a user from creating or joining a room.
+        /// If this is prohibited, that reports to the client as a plugin error.<br/>
+        /// Same for WebHooks.</remarks>
         public const int PluginReportedError = 0x7FFF - 15;
 
         /// <summary>

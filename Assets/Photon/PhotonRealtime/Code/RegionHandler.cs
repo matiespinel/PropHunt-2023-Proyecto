@@ -115,7 +115,7 @@ namespace Photon.Realtime
         {
             get
             {
-                if (this.BestRegion != null)
+                if (this.BestRegion != null && this.BestRegion.Ping < RegionPinger.MaxMillisecondsPerPing)
                 {
                     return this.BestRegion.Code + ";" + this.BestRegion.Ping + ";" + this.availableRegionCodes;
                 }
@@ -202,6 +202,14 @@ namespace Photon.Realtime
         /// <summary>True if the pinging of regions is being aborted.</summary>
         /// <see cref="Abort"/>
         public bool Aborted { get; private set; }
+
+        /// <summary>If the region from a previous BestRegionSummary now has a ping higher than this limit, all regions get pinged again to find a better. Default: 90ms.</summary>
+        /// <remarks>
+        /// Pinging all regions takes time, which is why a BestRegionSummary gets stored.
+        /// If that is available, the Best Region becomes sticky and is used again.
+        /// This limit introduces an exception: Should the pre-defined best region have a ping worse than this, all regions are considered.
+        /// </remarks>
+        public int BestRegionSummaryPingLimit = 90;
 
         #if SUPPORTED_UNITY
         private MonoBehaviourEmpty emptyMonoBehavior;
@@ -334,7 +342,7 @@ namespace Photon.Realtime
 
         private void OnPreferredRegionPinged(Region preferredRegion)
         {
-            if (preferredRegion.Ping > this.previousPing * 1.50f)
+            if (preferredRegion.Ping > this.BestRegionSummaryPingLimit || preferredRegion.Ping > this.previousPing * 1.50f)
             {
                 this.PingEnabledRegions();
             }
@@ -404,9 +412,9 @@ namespace Photon.Realtime
         /// <summary>How often to ping a region.</summary>
         public static int Attempts = 5;
         /// <summary>How long to wait maximum for a response.</summary>
-        public static int MaxMilliseconsPerPing = 800; // enter a value you're sure some server can beat (have a lower rtt)
+        public static int MaxMillisecondsPerPing = 800; // enter a value you're sure some server can beat (have a lower rtt)
         /// <summary>Ping result when pinging failed.</summary>
-        public static int PingWhenFailed = Attempts * MaxMilliseconsPerPing;
+        public static int PingWhenFailed = Attempts * MaxMillisecondsPerPing;
 
         /// <summary>Current ping attempt count.</summary>
         public int CurrentAttempt = 0;
@@ -574,9 +582,9 @@ namespace Photon.Realtime
 
                 while (!this.ping.Done())
                 {
-                    if (sw.ElapsedMilliseconds >= MaxMilliseconsPerPing)
+                    if (sw.ElapsedMilliseconds >= MaxMillisecondsPerPing)
                     {
-                        // if ping.Done() did not become true in MaxMilliseconsPerPing, ping.Successful is false and we apply MaxMilliseconsPerPing as rtt below
+                        // if ping.Done() did not become true in MaxMillisecondsPerPing, ping.Successful is false and we apply MaxMillisecondsPerPing as rtt below
                         break;
                     }
                     #if !NETFX_CORE
@@ -586,7 +594,7 @@ namespace Photon.Realtime
 
 
                 sw.Stop();
-                int rtt = this.ping.Successful ? (int)sw.ElapsedMilliseconds : MaxMilliseconsPerPing;   // if the reply didn't match the sent ping
+                int rtt = this.ping.Successful ? (int)sw.ElapsedMilliseconds : MaxMillisecondsPerPing;   // if the reply didn't match the sent ping
                 this.rttResults.Add(rtt);
 
                 rttSum += rtt;
@@ -656,7 +664,7 @@ namespace Photon.Realtime
 
                 while (!this.ping.Done())
                 {
-                    if (sw.ElapsedMilliseconds >= MaxMilliseconsPerPing)
+                    if (sw.ElapsedMilliseconds >= MaxMillisecondsPerPing)
                     {
                         // if ping.Done() did not become true in MaxMilliseconsPerPing, ping.Successful is false and we apply MaxMilliseconsPerPing as rtt below
                         break;
@@ -667,7 +675,7 @@ namespace Photon.Realtime
 
 
                 sw.Stop();
-                int rtt = this.ping.Successful ? (int)sw.ElapsedMilliseconds : MaxMilliseconsPerPing; // if the reply didn't match the sent ping
+                int rtt = this.ping.Successful ? (int)sw.ElapsedMilliseconds : MaxMillisecondsPerPing; // if the reply didn't match the sent ping
                 this.rttResults.Add(rtt);
 
 

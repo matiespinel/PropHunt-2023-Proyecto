@@ -450,8 +450,17 @@
              </remarks>
              <param name="eventData">The event currently being dispatched.</param>
         </member>
+        <member name="F:ExitGames.Client.Photon.PhotonSocketError.Busy">
+            <summary>Data wasn't sent yet.</summary>
+        </member>
+        <member name="F:ExitGames.Client.Photon.PhotonSocketError.PendingSend">
+            <summary>Data is being sent async (still in use).</summary>
+        </member>
         <member name="F:ExitGames.Client.Photon.IPhotonSocket.Protocol">
             <summary>The protocol for this socket, defined in constructor.</summary>
+        </member>
+        <member name="P:ExitGames.Client.Photon.IPhotonSocket.SocketErrorCode">
+            <summary>Socket implementations should store the SocketErrorCode here, if anything happens.</summary>
         </member>
         <member name="F:ExitGames.Client.Photon.IPhotonSocket.ConnectAddress">
             <summary>Address, as defined via a Connect() call. Including protocol, port and or path.</summary>
@@ -1184,6 +1193,10 @@
             <remarks>
             Use the SocketImplementationConfig to define which IPhotonSocket is used per ConnectionProtocol.
             </remarks>
+        </member>
+        <member name="P:ExitGames.Client.Photon.PhotonPeer.SocketErrorCode">
+            <summary>Provides access to a SocketError code (if available) after a call to OnStatusChanged with a Socket-level exception.</summary>
+            <remarks>Useful for debugging send / receive error cases.</remarks>
         </member>
         <member name="F:ExitGames.Client.Photon.PhotonPeer.DebugOut">
             <summary>

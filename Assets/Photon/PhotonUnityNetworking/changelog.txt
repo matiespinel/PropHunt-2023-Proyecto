@@ -3,8 +3,14 @@ PUN 2 - Changelog
 Exit Games GmbH - www.photonengine.com - forum.photonengine.com
 
 
-v2.42 (22. May 2023)
-Removed: Surplus files from package (ToolsAndTests folder and other root folder files).
+v2.43 (21. August 2023)
+Updated: Library, Realtime and Chat API to 4.1.7.0. This includes many improvements for WebSockets and connection-loss debugging (specifically for UDP, SocketUdp class). More in the related change logs.
+Updated: To Unity 2019.4.
+Fixed: PUN Basics GameManager to not accidentally send the network Instantiate request before joining the room (which could happen if the scene was loading too fast). See comments in OnJoinedRoom().
+Fixed: PUN Basics GUI Button call of LeaveRoom by removing the return value from the called method. It failed with the error "Method arguments are incompatible". Adjusted related code (minimally).
+Changed: Procedural Demo now randomizes the initial "seed" value. "Nice to have" addition.
+Changed: Demo Hub to include Procedural Demo.
+
 v2.42 (15. May 2023)
 Updated: Library, Realtime and Chat API to 4.1.6.24. More details in the change logs.
 
@@ -468,7 +474,7 @@ Changed: The property "timestamp" is obsolete (as name) in PhotonMessageInfo. Th
 Added: Callback OnDisconnected() to connection-exception handling for "Exception in Receive". Also for: "Max CCU Reached" (probably not used).
 Added: Note in reference doc, that "Exception" for receive is typical if you connect a local Photon on Windows but the server isn't running/available.
 Fixed: SetInterestGroup() for Offline mode. If offline, it can simply skip the call to OpChangeGroups and avoid some log spamming.
-Added: ServerSettings now let you open the dashboard directly for each types of ids, and let you open the whiteList region editor as well.
+Added: ServerSettings now let you open the dashboard directly for each types of ids, and let you open the region-allowlist editor as well.
 Fixed: PhotonEditorUtils.IsPrefab() is fixed for 2018.3 onwards, it now takes in consideration both assets and prefab editing stage when checking.
 Changed: Setting PhotonNetwork.PrefabPool to null now logs a warning and default to the DefaultPool class.
 Fixed: Problems with "Best Region" selection on Nintendo Switch. Best Region now works, even if all available Photon Cloud regions need to be pinged.
