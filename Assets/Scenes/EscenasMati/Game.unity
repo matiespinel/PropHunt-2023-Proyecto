@@ -576,7 +576,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e7d1e8a5f33b314c860ded7eabbb274, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  roleAssigner: {fileID: 0}
+  propCount: 0
+  roleAssigner: {fileID: 1458412086}
   Pared1: {fileID: 1600948435}
   Pared2: {fileID: 615703270}
   Pared3: {fileID: 1872011004}
