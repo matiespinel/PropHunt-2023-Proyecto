@@ -41,7 +41,7 @@ Ray ray =  new Ray(animator.GetBoneTransform(HumanBodyBones.Head).position, Targ
                 {
                    CM = false;
                    //Metamorph(hit.transform.gameObject);
-                     view.RPC("Metamorph", RpcTarget.All, hit.transform.gameObject);
+                     view.RPC("Metamorph", RpcTarget.All, hit.collider.gameObject);
                    StartCoroutine(MetaCooldown());
                 }
             }
