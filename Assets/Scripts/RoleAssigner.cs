@@ -53,8 +53,7 @@ public class RoleAssigner : MonoBehaviourPunCallbacks
 
         else 
         {
-             Vector3 randomPosition3 = new Vector3(Random.Range(minX, maxX), 2, Random.Range(minZ, maxZ));
-            PhotonNetwork.Instantiate(playerPrefab.name, randomPosition3, Quaternion.identity);
+            PhotonNetwork.Instantiate(playerPrefab2.name, randomPosition2, Quaternion.identity);
             Debug.Log("No anda");
         }
     }
