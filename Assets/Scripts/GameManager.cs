@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using Photon.Pun;
 using Photon.Realtime;
 
@@ -41,4 +42,13 @@ public class GameManager : MonoBehaviourPunCallbacks
         Pared2.gameObject.SetActive(false);
         Pared3.gameObject.SetActive(false);
     }
-}
+
+    public override void OnDisconnected(DisconnectCause cause)
+    {
+        UnityEngine.SceneManagement.SceneManager.LoadScene("Menu");
+    }
+    public override void OnLeftRoom()
+    {
+        PhotonNetwork.Disconnect();
+    }
+    }
