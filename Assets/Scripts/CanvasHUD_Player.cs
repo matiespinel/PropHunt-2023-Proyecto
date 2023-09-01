@@ -12,14 +12,20 @@ public class CanvasHUD_Player : MonoBehaviour
     public TMP_Text playerName;
     private PhotonView PV;
     public Canvas canvasHUD;
+    public GameObject QuitPanel;
     #endregion
     public void SetPlayerInfo(Player _player)
      {
          playerName.text = _player.NickName;
      }
+     public void LeaveRoom()
+     {
+         PhotonNetwork.LeaveRoom();
+     }
     void Start()
     {
        PV = GetComponent<PhotonView>();
+       
     }
 
     // Update is called once per frame
@@ -28,6 +34,10 @@ public class CanvasHUD_Player : MonoBehaviour
         if (PV.IsMine)
         {
             canvasHUD.gameObject.SetActive(true);
+            if (Input.GetKeyDown(KeyCode.Escape))
+            {
+                QuitPanel.SetActive(true);
+            }
             playerName.text = PhotonNetwork.NickName;
         }
     }
