@@ -15,7 +15,7 @@ public class MetamorfosisScript : MonoBehaviourPunCallbacks
     private PhotonView view;
     [SerializeField]private CinemachineFreeLook cam3d;
     #endregion
-
+    [SerializeField] private MetamorfosisManagerScript propManager;
     void Start() 
     {
         animator = GetComponent<Animator>();
@@ -40,7 +40,7 @@ Ray ray =  new Ray(animator.GetBoneTransform(HumanBodyBones.Head).position, Targ
                 if(Input.GetKey(KeyCode.Tab) && CM == true)
                 {
                    CM = false;
-                   //Metamorph(hit.transform.gameObject);
+                   Metamorph(hit.transform.gameObject);
                      view.RPC("Metamorph", RpcTarget.All, hit.collider.GetComponent<PhotonView>());
                    StartCoroutine(MetaCooldown());
                 }
@@ -55,12 +55,11 @@ Ray ray =  new Ray(animator.GetBoneTransform(HumanBodyBones.Head).position, Targ
     [PunRPC]
     private void Metamorph(GameObject clone)
     {
-        
-        GameObject Prop = Instantiate(clone);
+
+        GameObject Prop = MetamorfosisManagerScript.Instance.RequestProp();
+        Prop.GetComponent<MeshFilter>().mesh = clone.GetComponent<MeshFilter>().mesh;
+        Prop.GetComponent<Renderer>().material = clone.GetComponent<Renderer>().material;
         Prop.transform.position = transform.position;
-        Prop.AddComponent<MyCharacterController>();
-        Prop.AddComponent<Rigidbody>();
-        Prop.GetComponent<Rigidbody>().freezeRotation = true;
         Prop.transform.parent = cam3d.transform.parent;
         cam3d.LookAt = Prop.transform;
         cam3d.Follow = Prop.transform;
