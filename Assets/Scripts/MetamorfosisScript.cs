@@ -15,12 +15,12 @@ public class MetamorfosisScript : MonoBehaviourPunCallbacks
     private PhotonView view;
     [SerializeField]private CinemachineFreeLook cam3d;
     #endregion
-    [SerializeField] private MetamorfosisManagerScript propManager;
+    [SerializeField] private bool mode;// offline o online
     void Start() 
     {
         animator = GetComponent<Animator>();
         view = GetComponent<PhotonView>();
-        PhotonNetwork.OfflineMode = true;
+        PhotonNetwork.OfflineMode = mode;
     }
     void FixedUpdate()
     {
