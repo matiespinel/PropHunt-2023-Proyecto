@@ -1601,6 +1601,8 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 311
   Target: {fileID: 5556407490715060205}
+  cam3d: {fileID: 5556407490099967696}
+  mode: 0
 --- !u!114 &4746014442888846006
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2033,7 +2035,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5556407489419184439}
-  m_LocalRotation: {x: 0.4281798, y: 0.31391042, z: 0.045480378, w: 0.8461997}
+  m_LocalRotation: {x: 0.4110617, y: 0.4093486, z: 0.059307776, w: 0.8123698}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -2111,7 +2113,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5556407489444139977}
-  m_LocalRotation: {x: 0.42762595, y: 0.3175939, z: 0.046009522, w: 0.84507585}
+  m_LocalRotation: {x: 0.41012955, y: 0.41387135, z: 0.05995716, w: 0.81049955}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -3030,7 +3032,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5556407490602366427}
-  m_LocalRotation: {x: 0.42762595, y: 0.3175939, z: 0.046009522, w: 0.84507585}
+  m_LocalRotation: {x: 0.41012955, y: 0.41387135, z: 0.05995716, w: 0.81049955}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -3114,7 +3116,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5556407490622689377}
-  m_LocalRotation: {x: 0.15796363, y: 0.20725927, z: -0.033932064, w: 0.96485215}
+  m_LocalRotation: {x: 0.15360425, y: 0.30599043, z: -0.050096117, w: 0.9382249}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -3282,7 +3284,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerName: {fileID: 3739136468300929444}
+  PropCountText: {fileID: 0}
+  gameManager: {fileID: 0}
   canvasHUD: {fileID: 1426765573318077065}
+  QuitPanel: {fileID: 0}
 --- !u!81 &2745912977850408644
 AudioListener:
   m_ObjectHideFlags: 0
