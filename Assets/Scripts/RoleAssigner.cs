@@ -12,6 +12,7 @@ public class RoleAssigner : MonoBehaviourPunCallbacks
   
     Player[] allPlayer;
     int hunter;
+    public GameManager gm;
  public enum PlayerRole
     {
        Cazador,
@@ -56,6 +57,7 @@ public class RoleAssigner : MonoBehaviourPunCallbacks
             Vector3 randomPosition = new Vector3(Random.Range(minX, maxX), 2, Random.Range(minZ, maxZ));
             PhotonNetwork.Instantiate(playerPrefab2.name, randomPosition, Quaternion.identity);
             Debug.Log("No anda");
+            gm.propCount++;
         }
     }
 }

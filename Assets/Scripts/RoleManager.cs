@@ -30,7 +30,7 @@ public class RoleManager : MonoBehaviour
         {
             if (PhotonNetwork.CurrentRoom.PlayerCount == 2)
             {
-                if (PhotonNetwork.IsMasterClient)
+                if (PhotonNetwork.LocalPlayer.IsMasterClient)
                 {
                        PhotonNetwork.LocalPlayer.SetCustomProperties(new ExitGames.Client.Photon.Hashtable() { { "Role", "Hunter" } });
                 }
