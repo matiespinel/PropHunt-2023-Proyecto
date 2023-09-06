@@ -24,6 +24,7 @@ public class CanvasHUD_Player : MonoBehaviour
      {
          PhotonNetwork.LeaveRoom();
      }
+     
     void Start()
     {
         gameManager = GameObject.Find("[GAMEMANAGER]").GetComponent<GameManager>();

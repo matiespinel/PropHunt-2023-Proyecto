@@ -7,6 +7,7 @@ using Photon.Realtime;
 
 public class CreateAndJoinRooms : MonoBehaviourPunCallbacks
 {
+    #region Objetos
     public GameObject RoleButton;
     public TMP_InputField createInput;
     public GameObject lobbyPanel;
@@ -24,6 +25,7 @@ public class CreateAndJoinRooms : MonoBehaviourPunCallbacks
     public Transform playerItemsParents;
 
     public GameObject playButton;
+    #endregion
     private void Start()
     {
         PhotonNetwork.JoinLobby();
