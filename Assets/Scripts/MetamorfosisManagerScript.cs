@@ -1,7 +1,8 @@
 using System.Collections.Generic;
 using UnityEngine;
+using Photon.Pun;
 
-public class MetamorfosisManagerScript : MonoBehaviour
+public class MetamorfosisManagerScript : MonoBehaviour, IPunPrefabPool
 {
 
    [SerializeField] private GameObject VersatilePropUnit;
@@ -10,8 +11,15 @@ public class MetamorfosisManagerScript : MonoBehaviour
    private static MetamorfosisManagerScript instance;
    public static MetamorfosisManagerScript Instance { get { return instance;}}
 
-   private void Awake()
+    public void Destroy(GameObject gameObject)
+    {
+
+    }
+
+
+    private void Awake()
    {
+       PhotonNetwork.PrefabPool = this;
        if(instance == null)
        {
         instance = this;
@@ -36,13 +44,15 @@ public class MetamorfosisManagerScript : MonoBehaviour
         }
     }
 
-    public GameObject RequestProp()
+    public GameObject Instantiate(string preFabID, Vector3 pos, Quaternion rot)
     {
         for(int i = 0; i < PropPool.Count; i++)
         {
             if(!PropPool[i].activeSelf)
             {
                 PropPool[i].SetActive(true);
+                PropPool[i].transform.rotation = rot;
+                PropPool[i].transform.position = pos;
                 return PropPool[i];
             }
         }

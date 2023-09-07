@@ -15,12 +15,12 @@ public class MetamorfosisScript : MonoBehaviourPunCallbacks
     private PhotonView view;
     [SerializeField]private CinemachineFreeLook cam3d;
     #endregion
-    [SerializeField] private bool mode;// offline o online
+    [SerializeField] private bool offlinemode;// offline o online
     void Start() 
     {
         animator = GetComponent<Animator>();
         view = GetComponent<PhotonView>();
-        PhotonNetwork.OfflineMode = mode;
+        PhotonNetwork.OfflineMode = offlinemode;
     }
     void FixedUpdate()
     {
@@ -55,10 +55,9 @@ Ray ray =  new Ray(animator.GetBoneTransform(HumanBodyBones.Head).position, Targ
     private void Metamorph(GameObject clone)
     {
 
-        GameObject Prop = MetamorfosisManagerScript.Instance.RequestProp();
+        GameObject Prop = MetamorfosisManagerScript.Instance.Instantiate("0", transform.position, transform.rotation);
         Prop.GetComponent<MeshFilter>().mesh = clone.GetComponent<MeshFilter>().mesh;
         Prop.GetComponent<Renderer>().material = clone.GetComponent<Renderer>().material;
-        Prop.transform.position = transform.position;
         Prop.transform.parent = cam3d.transform.parent;
         cam3d.LookAt = Prop.transform;
         cam3d.Follow = Prop.transform;
