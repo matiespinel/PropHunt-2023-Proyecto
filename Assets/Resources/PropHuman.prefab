@@ -1602,7 +1602,7 @@ MonoBehaviour:
     m_Bits: 311
   Target: {fileID: 5556407490715060205}
   cam3d: {fileID: 5556407490099967696}
-  offlinemode: 0
+  offlinemode: 1
 --- !u!114 &4746014442888846006
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2035,7 +2035,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5556407489419184439}
-  m_LocalRotation: {x: 0.4110617, y: 0.4093486, z: 0.059307776, w: 0.8123698}
+  m_LocalRotation: {x: 0.42616135, y: 0.32684097, z: 0.0473538, w: 0.8422108}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -2113,7 +2113,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5556407489444139977}
-  m_LocalRotation: {x: 0.41012955, y: 0.41387135, z: 0.05995716, w: 0.81049955}
+  m_LocalRotation: {x: 0.42555562, y: 0.33068502, z: 0.04790602, w: 0.8409845}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -3032,7 +3032,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5556407490602366427}
-  m_LocalRotation: {x: 0.41012955, y: 0.41387135, z: 0.05995716, w: 0.81049955}
+  m_LocalRotation: {x: 0.42555562, y: 0.33068502, z: 0.04790602, w: 0.8409845}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -3116,7 +3116,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5556407490622689377}
-  m_LocalRotation: {x: 0.15360425, y: 0.30599043, z: -0.050096117, w: 0.9382249}
+  m_LocalRotation: {x: 0.15747999, y: 0.22056301, z: -0.03611012, w: 0.9618982}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -3278,7 +3278,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5556407490622689377}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f746dd5bd7453894c89c8478e59b14f2, type: 3}
   m_Name: 
