@@ -47,7 +47,7 @@ public class RoleAssigner : MonoBehaviourPunCallbacks
         {
 
 
-            Vector3 randomPosition = new Vector3(Random.Range(minX, maxX), 2,-40);
+            Vector3 randomPosition = new Vector3(-4, 2,-4);
             PhotonNetwork.Instantiate(playerPrefab2.name, randomPosition, Quaternion.identity);
             Debug.Log("Prop");
             gm.propCount++;
