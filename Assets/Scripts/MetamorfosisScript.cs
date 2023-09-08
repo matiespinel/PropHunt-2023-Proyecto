@@ -40,7 +40,7 @@ Ray ray =  new Ray(animator.GetBoneTransform(HumanBodyBones.Head).position, Targ
                 if(Input.GetKey(KeyCode.Tab) && CM == true)
                 {
                    CM = false;
-                   view.RPC("Metamorph", RpcTarget.All, hit.collider.gameObject);
+                   view.RPC("Metamorph", RpcTarget.All, hit.collider.GetComponent<PhotonView>());
                    StartCoroutine(MetaCooldown());
                 }
             }
@@ -56,8 +56,8 @@ Ray ray =  new Ray(animator.GetBoneTransform(HumanBodyBones.Head).position, Targ
     {
 
         GameObject Prop = MetamorfosisManagerScript.Instance.Instantiate("0", transform.position, transform.rotation);
-        Prop.GetComponent<MeshFilter>().mesh = clone.GetComponent<MeshFilter>().mesh;
-        Prop.GetComponent<Renderer>().material = clone.GetComponent<Renderer>().material;
+        Prop.GetComponent<MeshFilter>().mesh = clone.gameObject.GetComponent<MeshFilter>().mesh;
+        Prop.GetComponent<Renderer>().material = clone.gameObject.GetComponent<Renderer>().material;
         Prop.transform.parent = cam3d.transform.parent;
         cam3d.LookAt = Prop.transform;
         cam3d.Follow = Prop.transform;
