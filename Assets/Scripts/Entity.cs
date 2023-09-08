@@ -21,7 +21,7 @@ public abstract class Entity : MonoBehaviour
         Debug.Log(HP);
         if(HP <= 0)
         {
-            respawn();
+            // respawn();
            
         }
     }
