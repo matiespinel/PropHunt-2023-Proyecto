@@ -49,6 +49,7 @@ public class RoleManager : MonoBehaviour
             if (p.ActorNumber == hunter)
             {
                 p.SetCustomProperties(new ExitGames.Client.Photon.Hashtable() { { "Role", "Hunter" } });
+                gm.hunterCount++;
             }
             else
             {
