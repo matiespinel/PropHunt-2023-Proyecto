@@ -9902,13 +9902,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gm: {fileID: 392898618}
-  minX: -3
+  minX: 0
   maxX: 0
-  minZ: -3
-  maxZ: 4
-  huntX: -3
+  minZ: 0
+  maxZ: 0
+  huntX: 0
   huntXmax: 0
-  huntZ: -3
+  huntZ: 0
   huntZmax: 0
   playerPrefab: {fileID: 4046897933613464856, guid: 3b40c2cba2c7b624594346761a55054c,
     type: 3}

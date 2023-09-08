@@ -1602,7 +1602,7 @@ MonoBehaviour:
     m_Bits: 311
   Target: {fileID: 5556407490715060205}
   cam3d: {fileID: 5556407490099967696}
-  mode: 0
+  offlinemode: 0
 --- !u!114 &4746014442888846006
 MonoBehaviour:
   m_ObjectHideFlags: 0
