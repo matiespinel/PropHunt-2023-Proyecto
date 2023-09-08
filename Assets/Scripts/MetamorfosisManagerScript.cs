@@ -19,7 +19,6 @@ public class MetamorfosisManagerScript : MonoBehaviour, IPunPrefabPool
 
     private void Awake()
    {
-       PhotonNetwork.PrefabPool = this;
        if(instance == null)
        {
         instance = this;
