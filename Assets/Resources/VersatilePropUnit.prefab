@@ -14,7 +14,6 @@ GameObject:
   - component: {fileID: 2161681111472957541}
   - component: {fileID: 7997529992840934168}
   - component: {fileID: 6506451786321085426}
-  - component: {fileID: 5217773357436920748}
   - component: {fileID: 1080116728478226849}
   - component: {fileID: 4760478148349389459}
   - component: {fileID: 8403108279973819003}
@@ -133,22 +132,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &5217773357436920748
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8650180860436871810}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9b8c4a61274f60b4ea5fb4299cfdbf14, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ShowLayerWeightsInspector: 1
-  ShowParameterInspector: 1
-  m_SynchronizeParameters: []
-  m_SynchronizeLayers: []
 --- !u!114 &1080116728478226849
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -168,7 +151,7 @@ MonoBehaviour:
   OwnershipTransfer: 0
   observableSearch: 2
   ObservedComponents:
-  - {fileID: 5217773357436920748}
+  - {fileID: 0}
   - {fileID: 4760478148349389459}
   - {fileID: 8403108279973819003}
   sceneViewId: 0
