@@ -23,10 +23,10 @@ public class RoleAssigner : MonoBehaviourPunCallbacks
     public float maxX;
     public float minZ;
     public float maxZ;
-    public float min2X;
-    public float max2X;
-    public float min2Z;
-    public float max2Z;
+    public float huntX;
+    public float huntXmax;
+    public float huntZ;
+    public float huntZmax;
     public GameObject playerPrefab;
     public GameObject playerPrefab2;
     void Awake()
@@ -38,7 +38,7 @@ public class RoleAssigner : MonoBehaviourPunCallbacks
         
         if ("Hunter" == PhotonNetwork.LocalPlayer.CustomProperties["Role"]?.ToString())
         {
-            Vector3 randomPosition2 = new Vector3(Random.Range(min2X, max2X), 2, Random.Range(min2Z, max2Z));
+            Vector3 randomPosition2 = new Vector3(Random.Range(huntX, huntXmax), 2, Random.Range(huntZ, huntZmax));
             PhotonNetwork.Instantiate(playerPrefab.name, randomPosition2, Quaternion.identity);
             Debug.Log("Hunter");
         }
