@@ -43,20 +43,20 @@ public class RoleManager : MonoBehaviour
             }
             else{
                  allPlayer = PhotonNetwork.PlayerList;
-        hunter = Random.Range(0, allPlayer.Length - 1);
-        foreach (Player p in allPlayer)
-        {
-            if (p.ActorNumber == hunter)
-            {
-                p.SetCustomProperties(new ExitGames.Client.Photon.Hashtable() { { "Role", "Hunter" } });
-                gm.hunterCount++;
-            }
-            else
-            {
-                p.SetCustomProperties(new ExitGames.Client.Photon.Hashtable() { { "Role", "Prop" } });
-                gm.propCount++;
-            }
-        }
+                 hunter = Random.Range(0, allPlayer.Length - 1);
+                    foreach (Player p in allPlayer)
+                    {
+                        if (p.ActorNumber == hunter)
+                        {
+                            p.SetCustomProperties(new ExitGames.Client.Photon.Hashtable() { { "Role", "Hunter" } });
+                            gm.hunterCount++;
+                        }
+                        else
+                        {
+                        p.SetCustomProperties(new ExitGames.Client.Photon.Hashtable() { { "Role", "Prop" } });
+                        gm.propCount++;
+                        }
+                    }
             }
            
 
