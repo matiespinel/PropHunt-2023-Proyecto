@@ -9949,7 +9949,7 @@ MonoBehaviour:
   huntXmax: 0
   huntZ: 0
   huntZmax: 0
-  playerPrefab: {fileID: 4046897933613464856, guid: 3b40c2cba2c7b624594346761a55054c,
+  playerPrefab: {fileID: 4690359504414829491, guid: ca6cbd354bc690b41adf7aeacdbe766e,
     type: 3}
   playerPrefab2: {fileID: 5556407490027017164, guid: ef205c28f05568e4e9dd828dbc17e99d,
     type: 3}
