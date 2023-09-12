@@ -1738,7 +1738,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6618955429978560402}
-  m_LocalRotation: {x: 0.39732882, y: 0.47115487, z: 0.068092644, w: 0.7845422}
+  m_LocalRotation: {x: 0.5755564, y: 0.40582198, z: -0.028164003, w: 0.7094013}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -2058,7 +2058,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6618955430419406692}
-  m_LocalRotation: {x: 0.4082395, y: 0.42409343, z: 0.06128516, w: 0.80605793}
+  m_LocalRotation: {x: 0.5865896, y: 0.36410797, z: -0.02527418, w: 0.72297955}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -3008,7 +3008,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6618955431183095188}
-  m_LocalRotation: {x: 0.4082395, y: 0.42409343, z: 0.06128516, w: 0.80605793}
+  m_LocalRotation: {x: 0.5865896, y: 0.36410797, z: -0.02527418, w: 0.72297955}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -4313,6 +4313,7 @@ GameObject:
   - component: {fileID: 6618955431782695350}
   - component: {fileID: 6618955431782695351}
   - component: {fileID: 6618955431782695342}
+  - component: {fileID: 9123488459206383531}
   m_Layer: 0
   m_Name: PlayerCam
   m_TagString: MainCamera
@@ -4327,8 +4328,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6618955431782695328}
-  m_LocalRotation: {x: 0.15006363, y: 0.37059304, z: -0.060807083, w: 0.91457325}
-  m_LocalPosition: {x: 0, y: 2.5, z: -3.0000002}
+  m_LocalRotation: {x: 0.34945947, y: 0.28183916, z: -0.11108564, w: 0.88662547}
+  m_LocalPosition: {x: -0.000012814999, y: 2.500153, z: -1.0720713}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -4494,6 +4495,19 @@ AudioListener:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6618955431782695328}
   m_Enabled: 1
+--- !u!114 &9123488459206383531
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6618955431782695328}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17d3ab5ea785d3740b4e2ab52f027aa1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cam3d: {fileID: 6618955431775677856}
 --- !u!1 &6715456688578919382
 GameObject:
   m_ObjectHideFlags: 0
