@@ -7,6 +7,7 @@ public class PlayerCheck : MonoBehaviour
 {
     #region vars
     public AnimationStateController animationStateController;
+    public MyCharacterController propController;
     private PhotonView view;
     #endregion
     void Start()
@@ -16,10 +17,12 @@ public class PlayerCheck : MonoBehaviour
         if (view.IsMine)
         {
             animationStateController.enabled = true;
+            propController.enabled = true;
         }
         else
         {
             animationStateController.enabled = false;
+            propController.enabled = false;
         }
     }
 }
