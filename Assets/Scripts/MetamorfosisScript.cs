@@ -40,7 +40,7 @@ Ray ray =  new Ray(animator.GetBoneTransform(HumanBodyBones.Head).position, Targ
                 if(Input.GetKey(KeyCode.Tab) && CM == true)
                 {
                    CM = false;
-                      GetComponent<PhotonView>().RPC("Metamorph", RpcTarget.All, hit.collider);
+                   view.RPC("Metamorph", RpcTarget.All, hit.collider.GetComponent<PhotonView>());
                    StartCoroutine(MetaCooldown());
                 }
             }
@@ -52,7 +52,7 @@ Ray ray =  new Ray(animator.GetBoneTransform(HumanBodyBones.Head).position, Targ
     }
 
     [PunRPC]
-    private void Metamorph(GameObject clone)
+    private void Metamorph(PhotonView clone)
     {
 
         GameObject Prop = MetamorfosisManagerScript.Instance.Instantiate("0", transform.position, transform.rotation);
