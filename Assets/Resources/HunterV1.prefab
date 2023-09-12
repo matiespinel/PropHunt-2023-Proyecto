@@ -1140,6 +1140,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animationStateController: {fileID: 1536774475759377825}
+  propController: {fileID: 0}
 --- !u!1 &4815447870807476456
 GameObject:
   m_ObjectHideFlags: 0
