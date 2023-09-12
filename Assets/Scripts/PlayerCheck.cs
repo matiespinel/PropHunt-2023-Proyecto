@@ -16,13 +16,26 @@ public class PlayerCheck : MonoBehaviour
 
         if (view.IsMine)
         {
-            animationStateController.enabled = true;
-            propController.enabled = true;
+            if (animationStateController) 
+            {
+                animationStateController.enabled = true;
+            }
+            else 
+            {
+                propController.enabled = true;
+            }
+            
         }
         else
         {
-            animationStateController.enabled = false;
-            propController.enabled = false;
+            if (animationStateController)
+            {
+                animationStateController.enabled = false;
+            }
+            else
+            {
+                propController.enabled = false;
+            }
         }
     }
 }
