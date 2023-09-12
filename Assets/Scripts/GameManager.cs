@@ -15,12 +15,16 @@ public class GameManager : MonoBehaviourPunCallbacks
     [SerializeField] GameObject Pared2;
     [SerializeField] GameObject Pared3;
     [SerializeField] AudioSource audioSource;
+    // hacer un timer de 5 minutos
+    [SerializeField] float timer = 300;
+    bool timeIsRunning = false;
     
     // Start is called before the first frame update
     void Start()
     {
         // Hacer coroutine para destruir las paredes
         StartCoroutine("destruirParedes");
+        timeIsRunning = true;
 
     }
    
@@ -38,6 +42,20 @@ public class GameManager : MonoBehaviourPunCallbacks
             // finalizar partida mediante coroutine
 
             
+        }
+
+        if (timeIsRunning)
+        {
+            if (timer > 0)
+            {
+                timer -= Time.deltaTime;
+            }
+            else
+            {
+                Debug.Log("Time has run out!");
+                timer = 0;
+                timeIsRunning = false;
+            }
         }
     }
 
