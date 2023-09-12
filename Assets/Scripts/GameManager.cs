@@ -52,7 +52,7 @@ public class GameManager : MonoBehaviourPunCallbacks
             }
             else
             {
-                Debug.Log("Time has run out!");
+                
                 timer = 0;
                 timeIsRunning = false;
             }
