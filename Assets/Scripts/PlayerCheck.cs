@@ -28,7 +28,7 @@ public class PlayerCheck : MonoBehaviour
         }
         else
         {
-            if (propController)
+            if (animationStateController)
             {
                 animationStateController.enabled = false;
             }
