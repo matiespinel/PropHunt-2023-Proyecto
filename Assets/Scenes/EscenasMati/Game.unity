@@ -3052,7 +3052,7 @@ MonoBehaviour:
   VersatilePropUnit: {fileID: 8650180860436871810, guid: 7ca291aea6734da499d462c8660bf282,
     type: 3}
   PropPool: []
-  PropPoolSize: 10
+  PropPoolSize: 1
 --- !u!1001 &396942193
 PrefabInstance:
   m_ObjectHideFlags: 0
