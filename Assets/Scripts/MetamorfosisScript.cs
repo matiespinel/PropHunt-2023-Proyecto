@@ -58,9 +58,11 @@ Ray ray =  new Ray(animator.GetBoneTransform(HumanBodyBones.Head).position, Targ
         GameObject Prop = MetamorfosisManagerScript.Instance.Instantiate("0", transform.position, transform.rotation);
         Prop.GetComponent<PhotonView>().GetComponent<MeshFilter>().mesh = clone.gameObject.GetComponent<MeshFilter>().mesh;
         Prop.GetComponent<PhotonView>().GetComponent<Renderer>().material = clone.gameObject.GetComponent<Renderer>().material;
+        Prop.GetComponent<PhotonView>().TransferOwnership(cam3d.transform.parent.GetComponent<PhotonView>().ViewID);
         Prop.transform.parent = cam3d.transform.parent;
         cam3d.LookAt = Prop.transform;
         cam3d.Follow = Prop.transform;
+
         
         Destroy(this.gameObject);
     }
