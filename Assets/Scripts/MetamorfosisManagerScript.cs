@@ -37,7 +37,7 @@ public class MetamorfosisManagerScript : MonoBehaviour, IPunPrefabPool
         for(int i = 0; i < amount; i++)
         {
             GameObject PropUnit = Instantiate(VersatilePropUnit);
-            PropUnit.SetActive(false);
+            //PropUnit.SetActive(false);
             PropPool.Add(PropUnit);
             PropUnit.transform.parent = transform;
         }
