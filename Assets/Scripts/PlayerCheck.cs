@@ -13,6 +13,7 @@ public class PlayerCheck : MonoBehaviour
     void Start()
     {
         view = GetComponent<PhotonView>();
+        view.TransferOwnership(transform.parent.GetComponent<PhotonView>().ViewID);
 
         if (view.IsMine)
         {
