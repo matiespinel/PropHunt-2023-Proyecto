@@ -10,7 +10,7 @@ public class PlayerCheck : MonoBehaviour
     public MyCharacterController propController;
     private PhotonView view;
     #endregion
-    void OnEnable()
+    void OnTransformParentChanged()
     {
         view = GetComponent<PhotonView>();
         view.TransferOwnership(transform.parent.GetComponent<PhotonView>().ViewID);
