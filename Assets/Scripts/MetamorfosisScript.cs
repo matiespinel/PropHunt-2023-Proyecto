@@ -56,6 +56,7 @@ Ray ray =  new Ray(animator.GetBoneTransform(HumanBodyBones.Head).position, Targ
     private void Metamorph(int id)
     {
         PhotonView clone = PhotonView.Find(id);
+        Prop.transform.position = transform.position;
         Prop.SetActive(true);
         Prop.GetComponent<PhotonView>().GetComponent<MeshFilter>().mesh = clone.gameObject.GetComponent<MeshFilter>().mesh;
         Prop.GetComponent<PhotonView>().GetComponent<Renderer>().material = clone.gameObject.GetComponent<Renderer>().material;
