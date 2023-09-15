@@ -27,7 +27,26 @@ public class MetamorfosisScript : MonoBehaviourPunCallbacks
     {
         if (view.IsMine)
         {
-            RayCastMetaMorph(rayOrigin, Target.transform.position, ignoreLayer);
+        Ray ray =  new Ray(rayOrigin, Target.transform.position);
+        
+
+        RaycastHit hit;
+        //RaycastHit nos permite acceder a informacion sobre el impacto del raycast, como la posicion y normal(rotacion de la superficie impactada)
+        if(Physics.Raycast(ray, out hit, ignoreLayer))// PlayerLayer es la capa de la que forma parte el gameobj. en este parametro se inserta la layer que queres ignorar(porque el raycast sale del interior del player y puede colisionar con su propio collider)
+        {
+            //esta es una representacion grafica del raycast
+            if(hit.collider.tag == "Transformable")//hit.collider nos dice con que collider colisiono y con .tag accedemos al tag que le pusimos
+            {
+
+                if(Input.GetKey(KeyCode.Tab) && oneRequestBool == true)
+                {
+                   oneRequestBool = false;
+                   
+                   view.RPC("Metamorph", RpcTarget.All, hit.collider.GetComponent<PhotonView>().ViewID);
+                   StartCoroutine(MetaCooldown());
+                }
+            }
+        }
         }
         //creamos rayo, se proyecta desde la posicion del transform del gameobj que tiene el script, y tiene como direccion hacia el frente
         
@@ -49,6 +68,7 @@ public class MetamorfosisScript : MonoBehaviourPunCallbacks
             Prop.SetActive(true);
             Destroy(this.gameObject);
         }
+
     }
 
     private void RayCastMetaMorph(Vector3 origin, Vector3 target, LayerMask layerToIgnore)
