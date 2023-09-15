@@ -1597,7 +1597,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2ca725dc486669468e9e3cd2ebc4c9c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PlayerLayer:
+  ignoreLayer:
     serializedVersion: 2
     m_Bits: 311
   Target: {fileID: 5556407490715060205}
