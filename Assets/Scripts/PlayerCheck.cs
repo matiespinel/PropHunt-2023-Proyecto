@@ -10,7 +10,7 @@ public class PlayerCheck : MonoBehaviour
     public MyCharacterController propController;
     private PhotonView view;
     #endregion
-    void OnTransformParentChanged()
+    void OnEnable()
     {
         view = GetComponent<PhotonView>();
 
