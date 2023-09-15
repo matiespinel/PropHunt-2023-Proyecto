@@ -1603,7 +1603,7 @@ MonoBehaviour:
   Target: {fileID: 5556407490715060205}
   cam3d: {fileID: 5556407490099967696}
   offlinemode: 0
-  Prop: {fileID: 0}
+  Prop: {fileID: 2020249693958239828}
 --- !u!114 &4746014442888846006
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2037,7 +2037,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5556407489419184439}
-  m_LocalRotation: {x: 0.41219014, y: 0.43903902, z: 0.059443545, w: 0.7961222}
+  m_LocalRotation: {x: 0.4110617, y: 0.4093486, z: 0.059307776, w: 0.8123698}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -2115,7 +2115,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5556407489444139977}
-  m_LocalRotation: {x: 0.41113737, y: 0.4436491, z: 0.060061418, w: 0.7940617}
+  m_LocalRotation: {x: 0.41012955, y: 0.41387135, z: 0.05995716, w: 0.81049955}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -3035,7 +3035,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5556407490602366427}
-  m_LocalRotation: {x: 0.41113737, y: 0.4436491, z: 0.060061425, w: 0.7940617}
+  m_LocalRotation: {x: 0.4101295, y: 0.41387132, z: 0.059957147, w: 0.8104994}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -3119,8 +3119,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5556407490622689377}
-  m_LocalRotation: {x: 0.16051875, y: 0.33584705, z: -0.058198273, w: 0.9263118}
-  m_LocalPosition: {x: -0.000000024192559, y: 0.0000009536743, z: 0.1870079}
+  m_LocalRotation: {x: 0.15360425, y: 0.30599043, z: -0.050096117, w: 0.9382249}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -4623,6 +4623,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7ca291aea6734da499d462c8660bf282, type: 3}
+--- !u!1 &2020249693958239828 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8650180860436871810, guid: 7ca291aea6734da499d462c8660bf282,
+    type: 3}
+  m_PrefabInstance: {fileID: 7206537642752609494}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &4455904295993794007 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6472884964870902017, guid: 7ca291aea6734da499d462c8660bf282,
