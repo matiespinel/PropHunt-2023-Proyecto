@@ -61,7 +61,6 @@ Ray ray =  new Ray(animator.GetBoneTransform(HumanBodyBones.Head).position, Targ
         Prop.transform.parent = cam3d.transform.parent;
         cam3d.LookAt = Prop.transform;
         cam3d.Follow = Prop.transform;
-        Prop.GetComponent<PhotonView>().TransferOwnership(cam3d.transform.parent.GetComponent<PhotonView>().ViewID);
 
 
         Destroy(this.gameObject);
