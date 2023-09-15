@@ -70,7 +70,7 @@ public class MetamorfosisScript : MonoBehaviourPunCallbacks
     private void Metamorph(int id)
     {
         PhotonView clone = PhotonView.Find(id);
-        
+        Debug.Log("Metamorfosis ejecutada");
         Prop.GetComponent<PhotonView>().GetComponent<MeshFilter>().mesh = clone.gameObject.GetComponent<MeshFilter>().mesh;
         Prop.GetComponent<PhotonView>().GetComponent<Renderer>().material = clone.gameObject.GetComponent<Renderer>().material;
         if (Prop != this.gameObject)
@@ -79,11 +79,12 @@ public class MetamorfosisScript : MonoBehaviourPunCallbacks
             Prop.SetActive(true);
             cam3d.LookAt = Prop.transform;
             cam3d.Follow = Prop.transform;
+            Destroy(this.gameObject);
         }
        
 
 
-        Destroy(this.gameObject);
+ 
     }
 
 
