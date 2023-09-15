@@ -26,7 +26,7 @@ public class PlayerCheck : MonoBehaviour
             }
             
         }
-        else
+        else if(view.IsMine == false)
         {
             if (animationStateController)
             {
