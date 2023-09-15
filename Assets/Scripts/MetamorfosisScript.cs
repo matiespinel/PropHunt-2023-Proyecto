@@ -9,9 +9,7 @@ public class MetamorfosisScript : MonoBehaviourPunCallbacks
 {
     #region vars
     [SerializeField] private LayerMask ignoreLayer;// en el inspector pone EVERYTHING excepto la layer de la que forma parte tu gameobj(la asignas vos)
-    private Animator animator;
-    private Vector3 rayOrigin;
-    [SerializeField] private GameObject Target;
+    [SerializeField] private Camera cam;
     private bool oneRequestBool = true;
     private PhotonView view;
     [SerializeField] private CinemachineFreeLook cam3d;
@@ -20,10 +18,7 @@ public class MetamorfosisScript : MonoBehaviourPunCallbacks
     #endregion
     void Start() 
     {
-        if(Prop != this.gameObject) 
-        {
-            animator = GetComponent<Animator>();
-        }
+
         view = GetComponent<PhotonView>();
         PhotonNetwork.OfflineMode = offlinemode;
     }
@@ -32,15 +27,8 @@ public class MetamorfosisScript : MonoBehaviourPunCallbacks
 
         if (view.IsMine)
         {
-            if (animator) 
-            {
-                rayOrigin = animator.GetBoneTransform(HumanBodyBones.Head).position;
-            }
-            else 
-            {
-                rayOrigin = transform.position;
-            }
-        Ray ray =  new Ray(rayOrigin, Target.transform.position);
+            
+        Ray ray =  cam.ScreenPointToRay(new Vector3(0.5f,0.5f,0));
         
 
         RaycastHit hit;
