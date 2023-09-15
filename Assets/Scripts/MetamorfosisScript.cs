@@ -28,7 +28,7 @@ public class MetamorfosisScript : MonoBehaviourPunCallbacks
         if (view.IsMine)
         {
             
-        Ray ray =  cam.ScreenPointToRay(new Vector3(0.5f,0.5f,0));
+        Ray ray =  cam.ViewportPointToRay(new Vector3(0.5f,0.5f,0));
         
 
         RaycastHit hit;
