@@ -11,7 +11,7 @@ public class MetamorfosisScript : MonoBehaviourPunCallbacks
     [SerializeField] private LayerMask PlayerLayer;// en el inspector pone EVERYTHING excepto la layer de la que forma parte tu gameobj(la asignas vos)
     private Animator animator;
     [SerializeField] private GameObject Target;
-    private bool CM = true;
+    private bool oneRequestBool = true;
     private PhotonView view;
     [SerializeField]private CinemachineFreeLook cam3d;
     #endregion
@@ -38,9 +38,10 @@ Ray ray =  new Ray(animator.GetBoneTransform(HumanBodyBones.Head).position, Targ
             if(hit.collider.tag == "Transformable")//hit.collider nos dice con que collider colisiono y con .tag accedemos al tag que le pusimos
             {
 
-                if(Input.GetKey(KeyCode.Tab) && CM == true)
+                if(Input.GetKey(KeyCode.Tab) && oneRequestBool == true)
                 {
-                   CM = false;
+                   oneRequestBool = false;
+                   
                    view.RPC("Metamorph", RpcTarget.All, hit.collider.GetComponent<PhotonView>().ViewID);
                    StartCoroutine(MetaCooldown());
                 }
@@ -53,7 +54,7 @@ Ray ray =  new Ray(animator.GetBoneTransform(HumanBodyBones.Head).position, Targ
     }
 
     [PunRPC]
-    private void Metamorph(int id)
+    private void InitialMetamorph(int id)
     {
         PhotonView clone = PhotonView.Find(id);
         Prop.transform.position = transform.position;
@@ -67,10 +68,20 @@ Ray ray =  new Ray(animator.GetBoneTransform(HumanBodyBones.Head).position, Targ
         Destroy(this.gameObject);
     }
 
+    private void Metamorph(int id)
+    {
+        PhotonView clone = PhotonView.Find(id);
+        Prop.GetComponent<PhotonView>().GetComponent<MeshFilter>().mesh = clone.gameObject.GetComponent<MeshFilter>().mesh;
+        Prop.GetComponent<PhotonView>().GetComponent<Renderer>().material = clone.gameObject.GetComponent<Renderer>().material;
+
+
+        Destroy(this.gameObject);
+    }
+
     IEnumerator MetaCooldown()
     {
         yield return new WaitForSeconds(8);
-        CM = true;
+        oneRequestBool = true;
     }
 
 }
