@@ -55,6 +55,7 @@ public class GameManager : MonoBehaviourPunCallbacks
                 
                 timer = 0;
                 timeIsRunning = false;
+                StartCoroutine("finalizarPartida");
             }
         }
     }
