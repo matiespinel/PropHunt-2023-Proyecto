@@ -67,6 +67,7 @@ public class MetamorfosisScript : MonoBehaviourPunCallbacks
             Prop.SetActive(true);
             cam3d.LookAt = Prop.transform;
             cam3d.Follow = Prop.transform;
+            cam3d.GetRig(1).GetCinemachineComponent<CinemachineComposer>().m_ScreenX = 0.35f;
             Destroy(this.gameObject);
         }
        
