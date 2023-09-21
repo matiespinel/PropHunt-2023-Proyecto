@@ -3,7 +3,32 @@ guid: 96aba60af79db4748aae7d3ad06b5c1b
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: ChristmasTreeOrnament012_1K-JPG_Color
+    second: {fileID: 2800000, guid: 428da6ed5087e874d84b831c85cfa99b, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: ChristmasTreeOrnament012_1K-JPG_Metalness
+    second: {fileID: 2800000, guid: 6c660ed6173302b49a13d7731675610e, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Metal032_2K-JPG_Color
+    second: {fileID: 2800000, guid: c57b8bd0148735c488a5aed503a34a67, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Metal032_2K-JPG_Metalness
+    second: {fileID: 2800000, guid: 9601c58a92a49ef4881f57594658c39e, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Metal032_2K-JPG_NormalDX
+    second: {fileID: 2800000, guid: 89c8f4aeef4702049844b1ede8594b55, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0

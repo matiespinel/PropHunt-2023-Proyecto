@@ -38,7 +38,7 @@ public class MetamorfosisScript : MonoBehaviourPunCallbacks
             //esta es una representacion grafica del raycast
             if(hit.collider.tag == "Transformable")//hit.collider nos dice con que collider colisiono y con .tag accedemos al tag que le pusimos
             {
-
+                hit.collider.GetComponent<AvailableForMetamorfosis>().seen = true;
                 if(Input.GetKey(KeyCode.Tab) && oneRequestBool == true)
                 {
                    oneRequestBool = false;
@@ -46,6 +46,10 @@ public class MetamorfosisScript : MonoBehaviourPunCallbacks
                    view.RPC("Metamorph", RpcTarget.All, hit.collider.GetComponent<PhotonView>().ViewID);
                    StartCoroutine(MetaCooldown());
                 }
+            }
+            else
+            {
+                hit.collider.GetComponent<AvailableForMetamorfosis>().seen = false;
             }
         }
         }
