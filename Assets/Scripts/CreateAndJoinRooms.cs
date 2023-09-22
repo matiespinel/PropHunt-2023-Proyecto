@@ -33,8 +33,11 @@ public class CreateAndJoinRooms : MonoBehaviourPunCallbacks
 
     public void OnClickCreate()
     {
-        if (createInput.text.Length >= 1)
-            PhotonNetwork.CreateRoom(createInput.text, new Photon.Realtime.RoomOptions() { MaxPlayers = 15 });
+        if (createInput.text.Length >= 1) 
+        {
+             PhotonNetwork.CreateRoom(createInput.text, new Photon.Realtime.RoomOptions() { MaxPlayers = 15 });
+        }
+           
     }
     public override void OnJoinedRoom()
     {
