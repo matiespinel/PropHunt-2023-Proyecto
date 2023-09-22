@@ -39,7 +39,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1005,7 +1005,7 @@ GameObject:
   - component: {fileID: 1786703861}
   - component: {fileID: 1786703862}
   - component: {fileID: 1786703863}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube
   m_TagString: Transformable
   m_Icon: {fileID: 0}
@@ -1138,7 +1138,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b6fec78b8c0217488d13762067eea65, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  seen: 0
 --- !u!1 &1992478777
 GameObject:
   m_ObjectHideFlags: 0
@@ -2223,7 +2222,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2742774181210659484}
-  m_LocalRotation: {x: 0.4329221, y: 0.28092465, z: 0.040701296, w: 0.85557187}
+  m_LocalRotation: {x: 0.40481967, y: 0.4382192, z: 0.06349065, w: 0.80003375}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -2301,7 +2300,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2742774181235605602}
-  m_LocalRotation: {x: 0.43249708, y: 0.28414088, z: 0.041163217, w: 0.85470223}
+  m_LocalRotation: {x: 0.40378672, y: 0.44282407, z: 0.0641515, w: 0.7979648}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -2973,7 +2972,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2742774182661482096}
-  m_LocalRotation: {x: 0.43249708, y: 0.28414088, z: 0.041163217, w: 0.85470223}
+  m_LocalRotation: {x: 0.40378672, y: 0.442824, z: 0.064151496, w: 0.7979648}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -3134,7 +3133,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2742774182682592202}
-  m_LocalRotation: {x: 0.15905274, y: 0.17342001, z: -0.028391961, w: 0.9715048}
+  m_LocalRotation: {x: 0.15190718, y: 0.33611512, z: -0.05502806, w: 0.9278593}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -3767,7 +3766,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ignoreLayer:
     serializedVersion: 2
-    m_Bits: 311
+    m_Bits: 64
   cam: {fileID: 2742774182682592200}
   cam3d: {fileID: 2742774183232562555}
   offlinemode: 1
