@@ -23,10 +23,12 @@ public class AnimationStateController : MonoBehaviour
     [SerializeField] private GameObject LookingDirection;
     private Animator playerAnimator;
     [SerializeField] private Camera MainCamera;
+    private PhotonView view;
     
     void Start()
     {
         playerAnimator = GetComponent<Animator>();
+        view = GetComponent<PhotonView>();
         #region Hashes
         isWalkingHash = Animator.StringToHash("isWalking");
         isBackingHash = Animator.StringToHash("isBacking");
@@ -48,68 +50,77 @@ public class AnimationStateController : MonoBehaviour
 
     void FixedUpdate()
     {
-        //listeners
-        bool sPressed = Input.GetKey(KeyCode.S);
-        bool wPressed = Input.GetKey(KeyCode.W);
-        bool aPressed = Input.GetKey(KeyCode.A);
-        bool dPressed = Input.GetKey(KeyCode.D);
-        //WASD
-        //AVANZAR
-        if((!isBacking || !isStrafingLeft || !isStrafingRight) && wPressed)
+        if (view.IsMine) 
         {
-            playerAnimator.SetBool(isWalkingHash, true);
-            if(MainCamera.transform.rotation.y !=  Player.transform.rotation.y)
+
+            //listeners
+            bool sPressed = Input.GetKey(KeyCode.S);
+            bool wPressed = Input.GetKey(KeyCode.W);
+            bool aPressed = Input.GetKey(KeyCode.A);
+            bool dPressed = Input.GetKey(KeyCode.D);
+            //WASD
+            //AVANZAR
+            if((!isBacking || !isStrafingLeft || !isStrafingRight) && wPressed)
             {
-            var directionVector = (new Vector3(LookingDirection.transform.position.x - transform.position.x,0,LookingDirection.transform.position.z - transform.position.z)).normalized;
-            Player.transform.rotation = Quaternion.LookRotation(directionVector, Vector3.up);
+                playerAnimator.SetBool(isWalkingHash, true);
+                if(MainCamera.transform.rotation.y !=  Player.transform.rotation.y)
+                {
+                var directionVector = (new Vector3(LookingDirection.transform.position.x - transform.position.x,0,LookingDirection.transform.position.z - transform.position.z)).normalized;
+                Player.transform.rotation = Quaternion.LookRotation(directionVector, Vector3.up);
+                }
             }
+            else
+            {
+                playerAnimator.SetBool(isWalkingHash, false);
+            }
+            //RETROCEDER
+            if((!isWalking || !isStrafingLeft || !isStrafingRight) && sPressed)
+            {
+                 playerAnimator.SetBool(isBackingHash, true);
+            }
+            else
+            {
+                 playerAnimator.SetBool(isBackingHash, false);
+            }
+            //LADO IZQUIERDO
+            if((!isBacking || !isWalking || !isStrafingRight) && aPressed)
+            {
+                 playerAnimator.SetBool(isStrafingLeftHash, true);    
+            }
+            else
+            {
+                 playerAnimator.SetBool(isStrafingLeftHash, false);
+            }
+            //LADO DERECHO
+            if((!isBacking || !isWalking || !isStrafingLeft) && dPressed)
+            {
+                 playerAnimator.SetBool(isStrafingRightHash, true);
+            }
+            else
+            {
+                 playerAnimator.SetBool(isStrafingRightHash, false);
+            }
+            if(playerAnimator.GetBoneTransform(HumanBodyBones.Head).localRotation.y > 0.23f)
+            {
+              playerAnimator.SetBool(isTurningRightHash, true);      
+            }
+            else
+            {
+              playerAnimator.SetBool(isTurningRightHash, false);  
+            }
+            if(playerAnimator.GetBoneTransform(HumanBodyBones.Head).localRotation.y < -0.23f)
+            {
+              playerAnimator.SetBool(isTurningLeftHash, true);      
+            }
+            else
+            {
+              playerAnimator.SetBool(isTurningLeftHash, false);  
+            }
+
         }
-        else
+        else 
         {
-            playerAnimator.SetBool(isWalkingHash, false);
-        }
-        //RETROCEDER
-        if((!isWalking || !isStrafingLeft || !isStrafingRight) && sPressed)
-        {
-             playerAnimator.SetBool(isBackingHash, true);
-        }
-        else
-        {
-             playerAnimator.SetBool(isBackingHash, false);
-        }
-        //LADO IZQUIERDO
-        if((!isBacking || !isWalking || !isStrafingRight) && aPressed)
-        {
-             playerAnimator.SetBool(isStrafingLeftHash, true);    
-        }
-        else
-        {
-             playerAnimator.SetBool(isStrafingLeftHash, false);
-        }
-        //LADO DERECHO
-        if((!isBacking || !isWalking || !isStrafingLeft) && dPressed)
-        {
-             playerAnimator.SetBool(isStrafingRightHash, true);
-        }
-        else
-        {
-             playerAnimator.SetBool(isStrafingRightHash, false);
-        }
-        if(playerAnimator.GetBoneTransform(HumanBodyBones.Head).localRotation.y > 0.23f)
-        {
-          playerAnimator.SetBool(isTurningRightHash, true);      
-        }
-        else
-        {
-          playerAnimator.SetBool(isTurningRightHash, false);  
-        }
-        if(playerAnimator.GetBoneTransform(HumanBodyBones.Head).localRotation.y < -0.23f)
-        {
-          playerAnimator.SetBool(isTurningLeftHash, true);      
-        }
-        else
-        {
-          playerAnimator.SetBool(isTurningLeftHash, false);  
+            this.enabled = false;
         }
     }
      

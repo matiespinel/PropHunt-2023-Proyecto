@@ -19,7 +19,6 @@ public class AudioListenerMine : MonoBehaviour
         {
             audioListener.gameObject.SetActive(false);
             cam3d.gameObject.SetActive(false);
-            cam3d.transform.GetChild(0).gameObject.SetActive(true);
         }
     }
 }
