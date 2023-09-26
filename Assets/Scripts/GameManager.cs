@@ -8,8 +8,8 @@ using Photon.Realtime;
 
 public class GameManager : MonoBehaviourPunCallbacks
 {
-    public static int propCount = 0;
-    public static int hunterCount = 0;
+    public  int propCount = 0;
+    public int hunterCount = 0;
     public RoleAssigner roleAssigner;
     [SerializeField] GameObject Pared1;
     [SerializeField] GameObject Pared2;
