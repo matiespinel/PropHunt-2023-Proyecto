@@ -64,11 +64,7 @@ public class AnimationStateController : MonoBehaviour
             if((!isBacking || !isStrafingLeft || !isStrafingRight) && wPressed)
             {
                 playerAnimator.SetBool(isWalkingHash, true);
-                if(MainCamera.transform.rotation.y !=  Player.transform.rotation.y)
-                {
-                var directionVector = (new Vector3(LookingDirection.transform.position.x - transform.position.x,0,LookingDirection.transform.position.z - transform.position.z)).normalized;
-                Player.transform.rotation = Quaternion.LookRotation(directionVector, Vector3.up);
-                }
+                Steer();
             }
             else
             {
@@ -78,6 +74,7 @@ public class AnimationStateController : MonoBehaviour
             if((!isWalking || !isStrafingLeft || !isStrafingRight) && sPressed)
             {
                  playerAnimator.SetBool(isBackingHash, true);
+                Steer();
             }
             else
             {
@@ -86,7 +83,8 @@ public class AnimationStateController : MonoBehaviour
             //LADO IZQUIERDO
             if((!isBacking || !isWalking || !isStrafingRight) && aPressed)
             {
-                 playerAnimator.SetBool(isStrafingLeftHash, true);    
+                 playerAnimator.SetBool(isStrafingLeftHash, true);
+                Steer();
             }
             else
             {
@@ -95,7 +93,8 @@ public class AnimationStateController : MonoBehaviour
             //LADO DERECHO
             if((!isBacking || !isWalking || !isStrafingLeft) && dPressed)
             {
-                 playerAnimator.SetBool(isStrafingRightHash, true);
+                playerAnimator.SetBool(isStrafingRightHash, true);
+                Steer();
             }
             else
             {
@@ -103,7 +102,8 @@ public class AnimationStateController : MonoBehaviour
             }
             if(playerAnimator.GetBoneTransform(HumanBodyBones.Head).localRotation.y > 0.23f)
             {
-              playerAnimator.SetBool(isTurningRightHash, true);      
+              playerAnimator.SetBool(isTurningRightHash, true);
+              Steer();
             }
             else
             {
@@ -111,7 +111,8 @@ public class AnimationStateController : MonoBehaviour
             }
             if(playerAnimator.GetBoneTransform(HumanBodyBones.Head).localRotation.y < -0.23f)
             {
-              playerAnimator.SetBool(isTurningLeftHash, true);      
+              playerAnimator.SetBool(isTurningLeftHash, true);
+              Steer();
             }
             else
             {
@@ -124,6 +125,15 @@ public class AnimationStateController : MonoBehaviour
             this.gameObject.GetComponent<RigBuilder>().enabled = false;
             this.enabled = false;
         }
+
+        
     }
-     
+    private void Steer() 
+    {
+        if(MainCamera.transform.rotation.y !=  Player.transform.rotation.y)
+        {
+            var directionVector = (new Vector3(LookingDirection.transform.position.x - transform.position.x,0,LookingDirection.transform.position.z - transform.position.z)).normalized;
+            Player.transform.rotation = Quaternion.LookRotation(directionVector, Vector3.up);
+        }
+    }
 }
