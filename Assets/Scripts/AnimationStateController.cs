@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Photon.Pun;
+using UnityEngine.Animations.Rigging;
 public class AnimationStateController : MonoBehaviour
 {
     
@@ -120,8 +121,8 @@ public class AnimationStateController : MonoBehaviour
         }
         else 
         {
+            this.gameObject.GetComponent<RigBuilder>().enabled = false;
             this.enabled = false;
-            //this.gameObject.GetComponent<>()
         }
     }
      

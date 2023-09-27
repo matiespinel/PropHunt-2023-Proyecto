@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Photon.Pun;
+using UnityEngine.Animations.Rigging;
 
 public class MyCharacterController : MonoBehaviour
 {
@@ -53,6 +54,7 @@ public class MyCharacterController : MonoBehaviour
         }
         else 
         {
+            this.gameObject.GetComponent<RigBuilder>().enabled = false;
             this.enabled = false;
         }
 
