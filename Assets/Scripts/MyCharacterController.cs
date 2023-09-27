@@ -6,11 +6,16 @@ using UnityEngine.Animations.Rigging;
 
 public class MyCharacterController : MonoBehaviour
 {
-    [SerializeField]float speed = 10;
-    [SerializeField]float rSpeed = 10;
+    [SerializeField]
+    float speed = 10;
+
+    [SerializeField]
+    float rSpeed = 10;
+
+    [SerializeField]
+    private AudioSource silvido;
+
     private PhotonView view;
-    [SerializeField] AudioSource silvido;
-    
     void Update()
     {
 

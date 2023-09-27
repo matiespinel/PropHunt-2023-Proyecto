@@ -5,25 +5,36 @@ using Photon.Pun;
 using UnityEngine.Animations.Rigging;
 public class AnimationStateController : MonoBehaviour
 {
-    
+    #region hashes
     private int isWalkingHash;
     private int isBackingHash;
     private int isStrafingLeftHash;
     private int isStrafingRightHash;
     private int isTurningRightHash;
     private int isTurningLeftHash;
+    #endregion
     //animator puede usar valores hash por sustitucion de int
+    # region conditional bools
     private bool isBacking;
     private bool isWalking;
     private bool isStrafingLeft;
     private bool isStrafingRight;
     private bool isTurningRight;
     private bool isTurningLeft;
+    #endregion
     //condiciones
-    [SerializeField] private GameObject Player;
-    [SerializeField] private GameObject LookingDirection;
+
+    [SerializeField] 
+    private GameObject Player;
+
+    [SerializeField]
+    private GameObject LookingDirection;
+
+
+    [SerializeField]
+    private Camera MainCamera;
+
     private Animator playerAnimator;
-    [SerializeField] private Camera MainCamera;
     private PhotonView view;
     
     void Start()
@@ -38,7 +49,6 @@ public class AnimationStateController : MonoBehaviour
         isTurningRightHash = Animator.StringToHash("isTurningRight");
         isTurningLeftHash = Animator.StringToHash("isTurningLeft");
         #endregion
-
         #region Bools
         isBacking = playerAnimator.GetBool(isBackingHash);
         isWalking = playerAnimator.GetBool(isWalkingHash);
