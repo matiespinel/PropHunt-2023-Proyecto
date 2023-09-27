@@ -121,6 +121,7 @@ public class AnimationStateController : MonoBehaviour
         else 
         {
             this.enabled = false;
+            //this.gameObject.GetComponent<>()
         }
     }
      
