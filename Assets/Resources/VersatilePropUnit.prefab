@@ -17,7 +17,6 @@ GameObject:
   - component: {fileID: 1080116728478226849}
   - component: {fileID: 4760478148349389459}
   - component: {fileID: 7704307992634423729}
-  - component: {fileID: 7003752154896720080}
   - component: {fileID: 8102082877128502782}
   - component: {fileID: 6006881693325514234}
   m_Layer: 3
@@ -209,20 +208,6 @@ MonoBehaviour:
     InterpolateOption: 0
     InterpolateMoveTowardsSpeed: 1
     InterpolateLerpSpeed: 0
---- !u!114 &7003752154896720080
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8650180860436871810}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4454024321745514c8c9977cb38a59be, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animationStateController: {fileID: 0}
-  propController: {fileID: 2161681111472957541}
 --- !u!114 &8102082877128502782
 MonoBehaviour:
   m_ObjectHideFlags: 0
