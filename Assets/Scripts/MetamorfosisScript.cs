@@ -15,6 +15,8 @@ public class MetamorfosisScript : MonoBehaviourPunCallbacks
     [SerializeField] private CinemachineFreeLook cam3d;
     [SerializeField] private bool offlinemode;// offline o online
     [SerializeField] private GameObject Prop;
+
+    public static bool isTransformed = false;
     #endregion
     private RaycastHit hit;
     void Start() 
@@ -43,6 +45,7 @@ public class MetamorfosisScript : MonoBehaviourPunCallbacks
                 {
                     oneRequestBool = false;
                     view.RPC("Metamorph", RpcTarget.All, hit.collider.GetComponent<PhotonView>().ViewID);
+                    isTransformed = true;
                     StartCoroutine(MetaCooldown());
                 }
             }

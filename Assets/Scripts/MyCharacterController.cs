@@ -8,9 +8,15 @@ public class MyCharacterController : MonoBehaviour
     [SerializeField]float speed = 10;
     [SerializeField]float rSpeed = 10;
     private PhotonView view;
+    [SerializeField] AudioSource silvido;
     
     void Update()
     {
+
+        if (MetamorfosisScript.isTransformed)
+        {
+            silvido.Play();
+        }
         if (view.IsMine) 
         {
 
