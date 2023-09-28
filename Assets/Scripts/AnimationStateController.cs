@@ -132,7 +132,7 @@ public class AnimationStateController : MonoBehaviour
         }
         else 
         {
-            this.gameObject.GetComponent<RigBuilder>().enabled = false;
+            //this.gameObject.GetComponent<RigBuilder>().enabled = false;
             this.enabled = false;
         }
 
