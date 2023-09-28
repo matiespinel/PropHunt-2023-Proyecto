@@ -6,6 +6,7 @@ using UnityEngine;
 public class GunShotScript : Weapon
 {
     private Entity youEntity;
+
     void Start()
     {
         #region bullet Attributes
