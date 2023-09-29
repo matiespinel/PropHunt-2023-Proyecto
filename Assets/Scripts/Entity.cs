@@ -14,17 +14,19 @@ public abstract class Entity : MonoBehaviour
     #endregion
     public GameManager gm;
     public RoleAssigner roleAssigner;
+    private PhotonView view;
     ///<summary>
     ///Funcion que inserta el valor y le resta a la HP el parametro dmg
     ///</summary>
     
     public static event Action OnEntityDeath;
+    [PunRPC]
     public void TakeDamage(int dmg) {
         HP -= dmg;
         Debug.Log(HP);
         if(HP <= 0)
         {
-            respawn();
+            view.RPC("respawn", RpcTarget.All);
             OnEntityDeath?.Invoke();//Este evento permitira conectar scripts que se "activaran" al momento de la muerte. Usar esto para respawn
         }
     }
