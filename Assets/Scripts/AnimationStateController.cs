@@ -133,7 +133,7 @@ public class AnimationStateController : MonoBehaviour
         else 
         {
             //this.gameObject.GetComponent<RigBuilder>().enabled = false;
-            LookingDirection.transform.parent = this.gameObject.transform.parent;
+            //LookingDirection.transform.parent = this.gameObject.transform.parent;
             this.enabled = false;
         }
 
