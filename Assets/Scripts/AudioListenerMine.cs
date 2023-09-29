@@ -19,6 +19,8 @@ public class AudioListenerMine : MonoBehaviour
         {
             audioListener.gameObject.SetActive(false);
             cam3d.gameObject.SetActive(false);
+            GetComponent<Camera>().enabled = false;
+            GetComponent<CinemachineBrain>().enabled = false;
         }
     }
 }

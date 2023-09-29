@@ -30,10 +30,10 @@ public class LookingTargetRecenter : MonoBehaviour
             Ray ray = cam.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0));
             if (Physics.Raycast(ray, out hit, 100, ignoreLayer))
             {
-                if(lookingTarget.transform.position != hit.point) 
+                if (lookingTarget.transform.position != hit.point)
                 {
                     Debug.Log("vvv");
-                    lookingTarget.transform.localPosition = new Vector3(lookingTarget.transform.localPosition.x, lookingTarget.transform.localPosition.y, hit.point.z);
+                    lookingTarget.transform.position = hit.collider.transform.position;
                 }
                
             }
