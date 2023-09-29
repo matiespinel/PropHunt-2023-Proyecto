@@ -1005,7 +1005,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2088114031850558130}
-  - component: {fileID: 1874719442244654022}
   - component: {fileID: 4998075907641725887}
   m_Layer: 3
   m_Name: mixamorig:Head
@@ -1030,39 +1029,6 @@ Transform:
   m_Father: {fileID: 1688892309686893512}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -6.225, y: -9.079, z: -1.111}
---- !u!114 &1874719442244654022
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3052044924661867710}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8efc6b1d64977384eb3405357896c656, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_PositionModel:
-    SynchronizeEnabled: 0
-    TeleportEnabled: 1
-    TeleportIfDistanceGreaterThan: 3
-    InterpolateOption: 2
-    InterpolateMoveTowardsSpeed: 1
-    InterpolateLerpSpeed: 1
-    ExtrapolateOption: 0
-    ExtrapolateSpeed: 1
-    ExtrapolateIncludingRoundTripTime: 1
-    ExtrapolateNumberOfStoredPositions: 1
-  m_RotationModel:
-    SynchronizeEnabled: 1
-    InterpolateOption: 1
-    InterpolateRotateTowardsSpeed: 180
-    InterpolateLerpSpeed: 5
-  m_ScaleModel:
-    SynchronizeEnabled: 0
-    InterpolateOption: 0
-    InterpolateMoveTowardsSpeed: 1
-    InterpolateLerpSpeed: 0
 --- !u!114 &4998075907641725887
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1081,8 +1047,7 @@ MonoBehaviour:
   Synchronization: 3
   OwnershipTransfer: 0
   observableSearch: 2
-  ObservedComponents:
-  - {fileID: 1874719442244654022}
+  ObservedComponents: []
   sceneViewId: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0
@@ -1159,7 +1124,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6752018687834359774}
-  - component: {fileID: 7901965142119653428}
   - component: {fileID: 6834246643285501267}
   m_Layer: 3
   m_Name: mixamorig:Spine1
@@ -1184,39 +1148,6 @@ Transform:
   m_Father: {fileID: 193163623323341622}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &7901965142119653428
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3474406470088952797}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8efc6b1d64977384eb3405357896c656, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_PositionModel:
-    SynchronizeEnabled: 0
-    TeleportEnabled: 1
-    TeleportIfDistanceGreaterThan: 3
-    InterpolateOption: 2
-    InterpolateMoveTowardsSpeed: 1
-    InterpolateLerpSpeed: 1
-    ExtrapolateOption: 0
-    ExtrapolateSpeed: 1
-    ExtrapolateIncludingRoundTripTime: 1
-    ExtrapolateNumberOfStoredPositions: 1
-  m_RotationModel:
-    SynchronizeEnabled: 1
-    InterpolateOption: 1
-    InterpolateRotateTowardsSpeed: 180
-    InterpolateLerpSpeed: 5
-  m_ScaleModel:
-    SynchronizeEnabled: 0
-    InterpolateOption: 0
-    InterpolateMoveTowardsSpeed: 1
-    InterpolateLerpSpeed: 0
 --- !u!114 &6834246643285501267
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2137,7 +2068,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5556407489419184439}
-  m_LocalRotation: {x: 0.41626373, y: 0.38325915, z: 0.055527855, w: 0.8226504}
+  m_LocalRotation: {x: 0.4106496, y: 0.4113313, z: 0.059595045, w: 0.8115553}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -2215,7 +2146,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5556407489444139977}
-  m_LocalRotation: {x: 0.41543102, y: 0.38763583, z: 0.056156434, w: 0.82097626}
+  m_LocalRotation: {x: 0.40971017, y: 0.41586232, z: 0.060245574, w: 0.8096706}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -3135,7 +3066,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5556407490602366427}
-  m_LocalRotation: {x: 0.41543108, y: 0.3876359, z: 0.056156434, w: 0.82097626}
+  m_LocalRotation: {x: 0.40971017, y: 0.41586232, z: 0.060245574, w: 0.8096706}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -3219,7 +3150,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5556407490622689377}
-  m_LocalRotation: {x: 0.15498179, y: 0.27887404, z: -0.04565668, w: 0.946639}
+  m_LocalRotation: {x: 0.15349358, y: 0.3080552, z: -0.05043416, w: 0.937549}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
