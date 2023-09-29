@@ -41,7 +41,7 @@ public abstract class Entity : MonoBehaviour
         }
         else if (PhotonNetwork.LocalPlayer.CustomProperties["Role"]?.ToString() == "Hunter")  // hacer que el hunter se quede en espectador
         {
-            Destroy(this.gameObject);
+            PhotonNetwork.Destroy(this.gameObject);
       
         }
 
