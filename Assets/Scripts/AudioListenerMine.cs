@@ -17,7 +17,7 @@ public class AudioListenerMine : MonoBehaviour
 
         if (!view.IsMine)
         {
-            audioListener.gameObject.SetActive(false);
+            audioListener.enabled= false;
             cam3d.gameObject.SetActive(false);
             GetComponent<Camera>().enabled = false;
             GetComponent<CinemachineBrain>().enabled = false;
