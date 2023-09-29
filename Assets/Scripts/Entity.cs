@@ -37,7 +37,8 @@ public abstract class Entity : MonoBehaviour
             PhotonNetwork.LocalPlayer.SetCustomProperties(new ExitGames.Client.Photon.Hashtable() { { "Role", "Hunter" } });
             PhotonNetwork.Instantiate(roleAssigner.playerPrefab.name, randomPosition2, Quaternion.identity);
             gm.propCount--;
-            
+            PhotonNetwork.Destroy(this.gameObject);
+
         }
         else if (PhotonNetwork.LocalPlayer.CustomProperties["Role"]?.ToString() == "Hunter")  // hacer que el hunter se quede en espectador
         {
