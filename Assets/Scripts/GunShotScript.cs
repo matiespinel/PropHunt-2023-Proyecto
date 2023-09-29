@@ -41,13 +41,13 @@ public class GunShotScript : Weapon
                 bulletLine.SetPosition(1, hit.point);
                 if(hit.collider.tag == "Transformable")
                 {
-                    hit.collider.GetComponent<Entity>().TakeDamage(20);
+                    hit.collider.GetComponent<Entity>()?.TakeDamage(20);
                 }
             }
             else
             {
                 bulletLine.SetPosition(1,bulletOrigin + (transform.up * bulletRange));
-                youEntity.TakeDamage(20);
+                youEntity?.TakeDamage(20);
                 
             }
         }
