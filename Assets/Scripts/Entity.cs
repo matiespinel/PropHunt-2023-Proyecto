@@ -20,7 +20,7 @@ public abstract class Entity : MonoBehaviour
     ///</summary>
     
     public static event Action OnEntityDeath;
-    [PunRPC]
+    
     public void TakeDamage(int dmg) {
         HP -= dmg;
         Debug.Log(HP);
@@ -30,7 +30,7 @@ public abstract class Entity : MonoBehaviour
             OnEntityDeath?.Invoke();//Este evento permitira conectar scripts que se "activaran" al momento de la muerte. Usar esto para respawn
         }
     }
-
+    [PunRPC]
      void respawn()
     {
         if (PhotonNetwork.LocalPlayer.CustomProperties["Role"]?.ToString() == "Prop")
