@@ -43,6 +43,7 @@ MonoBehaviour:
   - Metamorph
   - TakeDamage
   - InitialMetamorph
+  - respawn
   DisableAutoOpenWizard: 1
   ShowSettings: 1
   DevRegionSetOnce: 1

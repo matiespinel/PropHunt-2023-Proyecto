@@ -5,7 +5,7 @@ using Photon.Pun;
 using Photon.Realtime;
 using System;
 
-public abstract class Entity : MonoBehaviour
+public abstract class Entity : MonoBehaviourPunCallbacks
 {
     #region attributes
     public int HP{get; set;}
