@@ -27,7 +27,7 @@ public abstract class Entity : MonoBehaviourPunCallbacks
         if(HP <= 0)
         {
             OnEntityDeath?.Invoke();//Este evento permitira conectar scripts que se "activaran" al momento de la muerte. Usar esto para respawn
-            view.RPC("respawn", RpcTarget.All);
+            PhotonNetwork.Destroy(this.gameObject);
         }
     }
     [PunRPC]
