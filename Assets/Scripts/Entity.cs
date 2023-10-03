@@ -14,7 +14,7 @@ public abstract class Entity : MonoBehaviourPunCallbacks, IPunObservable
     #endregion
     public GameManager gm;
     public RoleAssigner roleAssigner;
-    private PhotonView view;
+    public PhotonView view;
     ///<summary>
     ///Funcion que inserta el valor y le resta a la HP el parametro dmg
     ///</summary>

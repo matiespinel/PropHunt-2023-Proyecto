@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Photon.Pun;
 
 public class HunterAttributesScript : Entity
 {
@@ -8,5 +9,6 @@ public class HunterAttributesScript : Entity
         HP = 100;
         walkSpeed = 15;
         runSpeed = 30;
+        view = GetComponent<PhotonView>();
     }
 }
