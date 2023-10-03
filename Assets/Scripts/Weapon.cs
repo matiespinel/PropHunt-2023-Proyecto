@@ -1,9 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Photon.Pun;
 
 
-public abstract class Weapon : MonoBehaviour
+public abstract class Weapon : MonoBehaviourPunCallbacks
 {
     
     public enum type

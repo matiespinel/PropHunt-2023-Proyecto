@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Photon.Pun;
 
 [RequireComponent(typeof(Entity))]
 public class GunShotScript : Weapon
@@ -41,7 +42,7 @@ public class GunShotScript : Weapon
                 bulletLine.SetPosition(1, hit.point);
                 if(hit.collider.tag == "Transformable")
                 {
-                    hit.collider.GetComponent<Entity>()?.TakeDamage(20);
+                    hit.collider.GetComponent<PhotonView>()?.RPC("TakeDamage", RpcTarget.All);
                 }
             }
             else
