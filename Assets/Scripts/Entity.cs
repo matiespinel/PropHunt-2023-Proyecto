@@ -5,7 +5,7 @@ using Photon.Pun;
 using Photon.Realtime;
 using System;
 
-public abstract class Entity : MonoBehaviourPunCallbacks
+public abstract class Entity : MonoBehaviourPunCallbacks, IPunObservable
 {
     #region attributes
     public int HP{get; set;}
@@ -20,16 +20,31 @@ public abstract class Entity : MonoBehaviourPunCallbacks
     ///</summary>
     
     public static event Action OnEntityDeath;
-    
+
+    public void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
+    {
+        if (stream.IsWriting)
+        {
+            // We own this player: send the others our data
+            stream.SendNext(HP);
+        }
+        else
+        {
+            // Network player, receive data
+            HP = (int)stream.ReceiveNext();
+        }
+    }
+
     public void TakeDamage(int dmg) {
         HP -= dmg;
         Debug.Log(HP);
         if(HP <= 0)
         {
-            OnEntityDeath?.Invoke();//Este evento permitira conectar scripts que se "activaran" al momento de la muerte. Usar esto para respawn
+            
             if (view.IsMine) 
             {
                 PhotonNetwork.Destroy(this.gameObject);
+                OnEntityDeath?.Invoke();//Este evento permitira conectar scripts que se "activaran" al momento de la muerte. Usar esto para respawn
             }
 
         }
