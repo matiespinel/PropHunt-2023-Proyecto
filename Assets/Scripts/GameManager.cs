@@ -25,6 +25,7 @@ public class GameManager : MonoBehaviourPunCallbacks
         // Hacer coroutine para destruir las paredes
         StartCoroutine("destruirParedes");
         timeIsRunning = true;
+        UpdatePropC();
 
     }
    
@@ -60,7 +61,7 @@ public class GameManager : MonoBehaviourPunCallbacks
         }
     }
 
-    
+
    
   IEnumerator destruirParedes()
     {
@@ -84,4 +85,6 @@ public class GameManager : MonoBehaviourPunCallbacks
     {
         PhotonNetwork.Disconnect();
     }
+    private void UpdatePropC() => Entity.OnEntityDeath += PropC;
+    public void PropC() => propCount -= 1;
     }
