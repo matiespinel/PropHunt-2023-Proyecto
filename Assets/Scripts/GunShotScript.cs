@@ -42,7 +42,7 @@ public class GunShotScript : Weapon
                 bulletLine.SetPosition(1, hit.point);
                 if(hit.collider.tag == "Transformable")
                 {
-                    hit.collider.GetComponent<PhotonView>()?.RPC("TakeDamage", RpcTarget.All);
+                    hit.collider.GetComponent<PhotonView>()?.RPC("TakeDamage", RpcTarget.All, 20);
                 }
             }
             else
