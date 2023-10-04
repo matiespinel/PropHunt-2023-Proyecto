@@ -12,6 +12,9 @@ public class RoleManager : MonoBehaviour
     Player[] allPlayer;
     int hunter; 
     public GameManager gm;
+
+    public static int propCount { get;  set; } = 0;
+    public static int hunterCount  { get; set; } = 0;
     void Start()
     {
         // if there is no instance of this class
@@ -32,12 +35,13 @@ public class RoleManager : MonoBehaviour
             {
                 if (PhotonNetwork.LocalPlayer.IsMasterClient)
                 {
-                       PhotonNetwork.LocalPlayer.SetCustomProperties(new ExitGames.Client.Photon.Hashtable() { { "Role", "Hunter" } });
+                    PhotonNetwork.LocalPlayer.SetCustomProperties(new ExitGames.Client.Photon.Hashtable() { { "Role", "Hunter" } });
+                    hunterCount++;
                 }
                 else if (!PhotonNetwork.LocalPlayer.IsMasterClient)
                 {
                        PhotonNetwork.LocalPlayer.SetCustomProperties(new ExitGames.Client.Photon.Hashtable() { { "Role", "Prop" } });
-                       gm.propCount++;
+                       propCount++;
                 }
 
             }
@@ -49,12 +53,12 @@ public class RoleManager : MonoBehaviour
                         if (p.ActorNumber == hunter)
                         {
                             p.SetCustomProperties(new ExitGames.Client.Photon.Hashtable() { { "Role", "Hunter" } });
-                            gm.hunterCount++;
+                            hunterCount++;
                         }
                         else
                         {
                         p.SetCustomProperties(new ExitGames.Client.Photon.Hashtable() { { "Role", "Prop" } });
-                        gm.propCount++;
+                        propCount++;
                         }
                     }
             }

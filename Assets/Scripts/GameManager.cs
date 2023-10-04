@@ -8,9 +8,8 @@ using Photon.Realtime;
 
 public class GameManager : MonoBehaviourPunCallbacks
 {
-    public  int propCount = 0;
-    public int hunterCount = 0;
-    public RoleAssigner roleAssigner;
+    
+    public RoleManager roleManager;
     [SerializeField] GameObject Pared1;
     [SerializeField] GameObject Pared2;
     [SerializeField] GameObject Pared3;
@@ -33,12 +32,12 @@ public class GameManager : MonoBehaviourPunCallbacks
     // Update is called once per frame
     void Update()
     {
-        if (propCount == 0)
+        if (RoleManager.propCount == 0)
         {
            
         }
 
-        if (hunterCount == 0)
+        if (RoleManager.hunterCount == 0)
         {
             // finalizar partida mediante coroutine
 
@@ -86,5 +85,5 @@ public class GameManager : MonoBehaviourPunCallbacks
         PhotonNetwork.Disconnect();
     }
     private void UpdatePropC() => Entity.OnEntityDeath += PropC;
-    public void PropC() => propCount -= 1;
+    public void PropC() => RoleManager.propCount -= 1;
     }

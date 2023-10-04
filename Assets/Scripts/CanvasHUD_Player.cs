@@ -12,6 +12,7 @@ public class CanvasHUD_Player : MonoBehaviour
     public TMP_Text playerName;
     public TMP_Text PropCountText;
     public GameManager gameManager;
+    public RoleManager roleManager;
     private PhotonView PV;
     public Canvas canvasHUD;
     public GameObject QuitPanel;
@@ -28,8 +29,9 @@ public class CanvasHUD_Player : MonoBehaviour
     void Start()
     {
         gameManager = GameObject.Find("[GAMEMANAGER]").GetComponent<GameManager>();
+        roleManager = GameObject.Find("[ROLEMANAGER]").GetComponent<RoleManager>();
        PV = GetComponent<PhotonView>();
-       PropCountText.text = "Props: " + gameManager.propCount;
+       PropCountText.text = "Props: " + RoleManager.propCount;
     }
 
     // Update is called once per frame

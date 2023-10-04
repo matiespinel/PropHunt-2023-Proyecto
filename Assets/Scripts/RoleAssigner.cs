@@ -41,7 +41,7 @@ public class RoleAssigner : MonoBehaviourPunCallbacks
             Vector3 randomPosition2 = new Vector3(Random.Range(huntX, huntXmax), 2, -40);
             PhotonNetwork.Instantiate(playerPrefab.name, randomPosition2, Quaternion.identity);
             Debug.Log("Hunter");
-            gm.hunterCount++;
+            RoleManager.hunterCount++;
         }
         else if ("Prop" == PhotonNetwork.LocalPlayer.CustomProperties["Role"]?.ToString())
         {
@@ -50,7 +50,7 @@ public class RoleAssigner : MonoBehaviourPunCallbacks
             Vector3 randomPosition = transform.position;
             PhotonNetwork.Instantiate(playerPrefab2.name, randomPosition, Quaternion.identity);
             Debug.Log("Prop");
-            gm.propCount++;
+            RoleManager.propCount++;
 
         }
 
@@ -59,7 +59,7 @@ public class RoleAssigner : MonoBehaviourPunCallbacks
             Vector3 randomPosition = new Vector3(Random.Range(minX, maxX), 2, -40);
             PhotonNetwork.Instantiate(playerPrefab2.name, randomPosition, Quaternion.identity);
             Debug.Log("No anda");
-            gm.propCount++;
+            RoleManager.propCount++;
         }
     }
 }

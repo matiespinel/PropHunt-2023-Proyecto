@@ -57,7 +57,7 @@ public abstract class Entity : MonoBehaviourPunCallbacks, IPunObservable
             Vector3 randomPosition2 = new Vector3(UnityEngine.Random.Range(0, 10), 1, UnityEngine.Random.Range(0, 10));
             PhotonNetwork.LocalPlayer.SetCustomProperties(new ExitGames.Client.Photon.Hashtable() { { "Role", "Hunter" } });
             PhotonNetwork.Instantiate(roleAssigner.playerPrefab.name, randomPosition2, Quaternion.identity);
-            gm.propCount--;
+            RoleManager.propCount--;
             PhotonNetwork.Destroy(this.gameObject);
 
         }
