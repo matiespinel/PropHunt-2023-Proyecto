@@ -11,6 +11,7 @@ public class DeathCamScript : MonoBehaviour
     private CinemachineFreeLook deathCam;
     [SerializeField]
     private int camIndex = 0;
+    [SerializeField]
     private bool cooldownBool = true;
     void Start()
     {
@@ -37,7 +38,11 @@ public class DeathCamScript : MonoBehaviour
                 {
                     StartCoroutine(SwitchSpectatorCam(1));
                 }
-                else { camIndex = 0;}
+                else 
+                { 
+                    camIndex = 0;
+                    StartCoroutine(SwitchSpectatorCam(1));
+                }
             
             }
             if (Input.GetKey(KeyCode.A) && cooldownBool == true)
@@ -47,7 +52,11 @@ public class DeathCamScript : MonoBehaviour
                 {
                     StartCoroutine(SwitchSpectatorCam(-1));
                 }
-                else { camIndex = players.Length - 1;}
+                else 
+                { 
+                    camIndex = players.Length - 1;
+                    StartCoroutine(SwitchSpectatorCam(-1));
+                }
 
             }
         }
