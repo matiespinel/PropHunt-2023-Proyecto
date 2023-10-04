@@ -1141,6 +1141,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gm: {fileID: 0}
   roleAssigner: {fileID: 0}
+  view: {fileID: 0}
 --- !u!1 &4815447870807476456
 GameObject:
   m_ObjectHideFlags: 0

@@ -1663,6 +1663,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gm: {fileID: 0}
   roleAssigner: {fileID: 0}
+  view: {fileID: 0}
 --- !u!114 &4734848490312979318
 MonoBehaviour:
   m_ObjectHideFlags: 0
