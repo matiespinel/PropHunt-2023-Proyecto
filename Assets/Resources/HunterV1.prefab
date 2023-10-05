@@ -782,7 +782,7 @@ GameObject:
   - component: {fileID: 563748895180879295}
   m_Layer: 3
   m_Name: Cazador
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1031,6 +1031,7 @@ MonoBehaviour:
   - {fileID: 1536774475759377832}
   - {fileID: 1536774475759377833}
   - {fileID: 1536774475759377834}
+  - {fileID: 563748895180879295}
   sceneViewId: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0
@@ -1816,7 +1817,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6618955429978560402}
-  m_LocalRotation: {x: 0.40420467, y: 0.44219974, z: 0.06390797, w: 0.7981188}
+  m_LocalRotation: {x: 0.39993888, y: 0.46043605, z: 0.06654354, w: 0.7896958}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -2093,6 +2094,7 @@ MonoBehaviour:
   playerName: {fileID: 6618955429772220618}
   PropCountText: {fileID: 6618955431593879725}
   gameManager: {fileID: 0}
+  roleManager: {fileID: 0}
   canvasHUD: {fileID: 6618955430092581800}
   QuitPanel: {fileID: 6618955430867714004}
 --- !u!1 &6618955430175348230
@@ -2156,7 +2158,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6618955430419406692}
-  m_LocalRotation: {x: 0.41408223, y: 0.3959816, z: 0.05722276, w: 0.8175941}
+  m_LocalRotation: {x: 0.41047966, y: 0.4135881, z: 0.05976704, w: 0.81048095}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -3106,7 +3108,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6618955431183095188}
-  m_LocalRotation: {x: 0.41408223, y: 0.3959816, z: 0.05722276, w: 0.8175941}
+  m_LocalRotation: {x: 0.41047966, y: 0.4135881, z: 0.05976704, w: 0.81048095}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -4426,7 +4428,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6618955431782695328}
-  m_LocalRotation: {x: 0.15198699, y: 0.34023532, z: -0.05582597, w: 0.9262955}
+  m_LocalRotation: {x: 0.1507987, y: 0.35933936, z: -0.058960576, w: 0.91905314}
   m_LocalPosition: {x: 0, y: 2.5, z: -3.0000002}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -4583,6 +4585,7 @@ MonoBehaviour:
   playerName: {fileID: 6618955429772220618}
   PropCountText: {fileID: 6618955431593879725}
   gameManager: {fileID: 0}
+  roleManager: {fileID: 0}
   canvasHUD: {fileID: 6618955430092581800}
   QuitPanel: {fileID: 6618955430867714004}
 --- !u!81 &6618955431782695342
