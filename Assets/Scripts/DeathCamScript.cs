@@ -41,7 +41,7 @@ public class DeathCamScript : MonoBehaviour
                 else 
                 { 
                     camIndex = 0;
-                    StartCoroutine(SwitchSpectatorCam(1));
+                    StartCoroutine(SwitchSpectatorCam(0));
                 }
             
             }
@@ -55,7 +55,7 @@ public class DeathCamScript : MonoBehaviour
                 else 
                 { 
                     camIndex = players.Length - 1;
-                    StartCoroutine(SwitchSpectatorCam(-1));
+                    StartCoroutine(SwitchSpectatorCam(0));
                 }
 
             }
