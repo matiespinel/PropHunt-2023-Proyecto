@@ -15,10 +15,14 @@ public class DeathCamScript : MonoBehaviour
     private bool cooldownBool = true;
     void Start()
     {
-        players = GameObject.FindGameObjectsWithTag("Player");
+        
         deathCam = GetComponent<CinemachineFreeLook>();
         ActivateDeathCam();
         DisableDeathCam();
+    }
+    private void OnEnable()
+    {
+        players = GameObject.FindGameObjectsWithTag("Player");
     }
     private void DeactivateDeathCam() => Entity.OnEntityDeath += DisableDeathCam;
     private void DisableDeathCam() => deathCam.enabled = false;
