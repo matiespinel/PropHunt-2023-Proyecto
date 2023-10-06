@@ -31,7 +31,8 @@ public abstract class Entity : MonoBehaviourPunCallbacks, IPunObservable
         else
         {
             // Network player, receive data
-            HP = (int)stream.ReceiveNext();Debug.Log(HP);
+            HP = (int)stream.ReceiveNext();
+            Debug.Log(HP);
         }
     }
     [PunRPC]
@@ -43,7 +44,7 @@ public abstract class Entity : MonoBehaviourPunCallbacks, IPunObservable
             
             if (view.IsMine) 
             {
-                PhotonNetwork.Destroy(this.gameObject);
+                PhotonNetwork.Destroy(transform.parent.gameObject);
                 OnEntityDeath?.Invoke();//Este evento permitira conectar scripts que se "activaran" al momento de la muerte. Usar esto para respawn
             }
 

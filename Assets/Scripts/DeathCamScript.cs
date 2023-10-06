@@ -13,19 +13,25 @@ public class DeathCamScript : MonoBehaviour
     private int camIndex = 0;
     [SerializeField]
     private bool cooldownBool = true;
+    private Camera normalCam;
     void Start()
     {
-        
+        normalCam = GetComponent<Camera>();
         deathCam = GetComponent<CinemachineFreeLook>();
         ActivateDeathCam();
         DisableDeathCam();
     }
     private void DeactivateDeathCam() => Entity.OnEntityDeath += DisableDeathCam;
-    private void DisableDeathCam() => deathCam.enabled = false;
+    private void DisableDeathCam()
+    {
+        deathCam.enabled = false;
+        normalCam.enabled = false;
+    }
     private void ActivateDeathCam() => Entity.OnEntityDeath += EnableDeathCam;
     private void EnableDeathCam()
     {
         deathCam.enabled = true;
+        normalCam.enabled = true;
         players = GameObject.FindGameObjectsWithTag("Player");
     }
 
