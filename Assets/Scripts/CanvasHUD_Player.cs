@@ -29,7 +29,6 @@ public class CanvasHUD_Player : MonoBehaviour
     {
         gameManager = GameObject.Find("[GAMEMANAGER]").GetComponent<GameManager>();
        PV = GetComponent<PhotonView>();
-       PropCountText.text = "Props: " + RoleManager.propCount;
        if (PV.IsMine)
         playerName.text = PhotonNetwork.NickName;
 
@@ -39,7 +38,8 @@ public class CanvasHUD_Player : MonoBehaviour
     void Update()
     {
         
-        
+               PropCountText.text = "Props: " + RoleManager.propCount;
+
             canvasHUD.gameObject.SetActive(true);
             if (Input.GetKeyDown(KeyCode.Escape))
             {
