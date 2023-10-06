@@ -3322,7 +3322,6 @@ MonoBehaviour:
   playerName: {fileID: 3739136468300929444}
   PropCountText: {fileID: 0}
   gameManager: {fileID: 0}
-  roleManager: {fileID: 0}
   canvasHUD: {fileID: 1426765573318077065}
   QuitPanel: {fileID: 0}
 --- !u!81 &2745912977850408644
