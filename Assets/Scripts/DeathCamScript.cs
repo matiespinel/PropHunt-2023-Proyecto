@@ -20,14 +20,15 @@ public class DeathCamScript : MonoBehaviour
         ActivateDeathCam();
         DisableDeathCam();
     }
-    private void OnEnable()
-    {
-        players = GameObject.FindGameObjectsWithTag("Player");
-    }
     private void DeactivateDeathCam() => Entity.OnEntityDeath += DisableDeathCam;
     private void DisableDeathCam() => deathCam.enabled = false;
     private void ActivateDeathCam() => Entity.OnEntityDeath += EnableDeathCam;
-    private void EnableDeathCam() => deathCam.enabled = true;
+    private void EnableDeathCam()
+    {
+        deathCam.enabled = true;
+        players = GameObject.FindGameObjectsWithTag("Player");
+    }
+
 
     private void Update()
     {
