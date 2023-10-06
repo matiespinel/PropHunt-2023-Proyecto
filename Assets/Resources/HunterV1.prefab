@@ -360,7 +360,7 @@ GameObject:
   - component: {fileID: 2031338136959755146}
   m_Layer: 3
   m_Name: mixamorig:Head
-  m_TagString: Untagged
+  m_TagString: DCamAttach
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -782,7 +782,7 @@ GameObject:
   - component: {fileID: 563748895180879295}
   m_Layer: 3
   m_Name: Cazador
-  m_TagString: Player
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

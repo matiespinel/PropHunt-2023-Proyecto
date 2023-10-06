@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Transformable
   - fis
+  - DCamAttach
   layers:
   - Default
   - TransparentFX
