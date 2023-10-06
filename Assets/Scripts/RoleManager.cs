@@ -11,7 +11,7 @@ public class RoleManager : MonoBehaviour
     public static RoleManager rol;
     Player[] allPlayer;
     int hunter; 
-    public GameManager gm;
+    
 
     public static int propCount { get;  set; } = 0;
     public static int hunterCount  { get; set; } = 0;
