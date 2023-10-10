@@ -14,7 +14,7 @@ public class DeathCamScript : MonoBehaviour
     [SerializeField]
     private bool cooldownBool = true;
     private Camera normalCam;
-    void Awake()
+    void Start()
     {
         normalCam = GetComponent<Camera>();
         deathCam = GetComponent<CinemachineFreeLook>();
