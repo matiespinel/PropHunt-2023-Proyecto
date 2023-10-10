@@ -21,7 +21,7 @@ public class DeathCamScript : MonoBehaviour
         ActivateDeathCam();
         DisableDeathCam();
     }
-    private void DeactivateDeathCam() => Entity.OnEntityDeath += DisableDeathCam;
+    private void DeactivateDeathCam() => Entity.OnEntityDeath -= EnableDeathCam;
     private void DisableDeathCam()
     {
         deathCam.enabled = false;
