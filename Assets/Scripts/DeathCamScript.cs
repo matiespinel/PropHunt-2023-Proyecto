@@ -6,6 +6,7 @@ using System;
 
 public class DeathCamScript : MonoBehaviour
 {
+    #region vars
     [SerializeField]
     private GameObject[] players;
     private CinemachineFreeLook deathCam;
@@ -14,6 +15,7 @@ public class DeathCamScript : MonoBehaviour
     [SerializeField]
     private bool cooldownBool = true;
     private Camera normalCam;
+    #endregion
     void Start()
     {
         normalCam = GetComponent<Camera>();

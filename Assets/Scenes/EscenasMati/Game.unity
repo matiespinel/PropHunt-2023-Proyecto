@@ -16350,6 +16350,27 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1901324931422051812, guid: b81de00ade1723c429567d07ca89e89f,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1901324931422051812, guid: b81de00ade1723c429567d07ca89e89f,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 11500000, guid: f746dd5bd7453894c89c8478e59b14f2,
+        type: 3}
+    - target: {fileID: 1901324931422051812, guid: b81de00ade1723c429567d07ca89e89f,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1901324931422051812, guid: b81de00ade1723c429567d07ca89e89f,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 1901324931747739095, guid: b81de00ade1723c429567d07ca89e89f,
         type: 3}
       propertyPath: m_Name
