@@ -14,7 +14,7 @@ public class DeathCamScript : MonoBehaviour
     [SerializeField]
     private bool cooldownBool = true;
     private Camera normalCam;
-    void Start()
+    void Awake()
     {
         normalCam = GetComponent<Camera>();
         deathCam = GetComponent<CinemachineFreeLook>();
@@ -33,47 +33,49 @@ public class DeathCamScript : MonoBehaviour
         deathCam.enabled = true;
         normalCam.enabled = true;
         players = GameObject.FindGameObjectsWithTag("Player");
+        SwitchNext();
     }
 
 
-    private void Update()
+    public void SwitchPrevious() 
     {
-        if (deathCam) 
-        {
-            deathCam.LookAt = players[camIndex].transform;
-            deathCam.Follow = players[camIndex].transform;
-            if (Input.GetKey(KeyCode.D) && cooldownBool == true) 
-            {
-                cooldownBool = false;
-                if(camIndex < players.Length - 1) 
-                {
-                    StartCoroutine(SwitchSpectatorCam(1));
-                }
-                else 
-                { 
-                    camIndex = 0;
-                    StartCoroutine(SwitchSpectatorCam(0));
-                }
-            
-            }
-            if (Input.GetKey(KeyCode.A) && cooldownBool == true)
-            {
-                cooldownBool = false;
-                if (camIndex > 0)
-                {
-                    StartCoroutine(SwitchSpectatorCam(-1));
-                }
-                else 
-                { 
-                    camIndex = players.Length - 1;
-                    StartCoroutine(SwitchSpectatorCam(0));
-                }
+        if (cooldownBool)
+                    {
+                        cooldownBool = false;
+                        if (camIndex > 0)
+                        {
+                            StartCoroutine(SwitchSpectatorCam(-1));
+                        }
+                        else 
+                        { 
+                            camIndex = players.Length - 1;
+                            StartCoroutine(SwitchSpectatorCam(0));
+                        }
 
-            }
-        }
-
+                    }
+        deathCam.LookAt = players[camIndex].transform;
+        deathCam.Follow = players[camIndex].transform;
     }
 
+    public void SwitchNext() 
+    {
+        if (cooldownBool) 
+                    {
+                        cooldownBool = false;
+                        if(camIndex < players.Length - 1) 
+                        {
+                            StartCoroutine(SwitchSpectatorCam(1));
+                        }
+                        else 
+                        { 
+                            camIndex = 0;
+                            StartCoroutine(SwitchSpectatorCam(0));
+                        }
+            
+                    }
+        deathCam.LookAt = players[camIndex].transform;
+        deathCam.Follow = players[camIndex].transform;
+    }
     private IEnumerator SwitchSpectatorCam(int direction) 
     {
         camIndex += direction;

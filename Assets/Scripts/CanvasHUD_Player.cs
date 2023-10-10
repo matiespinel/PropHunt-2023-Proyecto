@@ -31,16 +31,16 @@ public class CanvasHUD_Player : MonoBehaviour
        PV = GetComponent<PhotonView>();
        if (PV.IsMine)
         playerName.text = PhotonNetwork.NickName;
-
+        canvasHUD.gameObject.SetActive(true);
     }
-
+    
     // Update is called once per frame
     void Update()
     {
         
-               PropCountText.text = "Props: " + RoleManager.propCount;
+            PropCountText.text = "Props: " + RoleManager.propCount;
 
-            canvasHUD.gameObject.SetActive(true);
+            
             if (Input.GetKeyDown(KeyCode.Escape))
             {
                 QuitPanel.SetActive(true);
