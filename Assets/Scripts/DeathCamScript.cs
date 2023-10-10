@@ -32,7 +32,7 @@ public class DeathCamScript : MonoBehaviour
     {
         deathCam.enabled = true;
         normalCam.enabled = true;
-        players = GameObject.FindGameObjectsWithTag("Player");
+        players = GameObject.FindGameObjectsWithTag("DCamAttach");
         SwitchNext();
     }
 
