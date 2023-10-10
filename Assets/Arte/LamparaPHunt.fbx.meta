@@ -1,24 +1,9 @@
 fileFormatVersion: 2
-guid: e5fcfc9f5801812419412f91acb77eb6
+guid: ed630e23f5a964840a98496353de6eca
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Material.002
-    second: {fileID: 2100000, guid: 5ad21bdaa78e3ea42ac19bceffd20f0a, type: 2}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: Concrete025_1K-JPG_Color
-    second: {fileID: 2800000, guid: 7fe7f8ce0ddebcc4f9be87fbb59604d6, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: Concrete025_1K-JPG_Displacement
-    second: {fileID: 2800000, guid: 05cad2053b97a574496466670ed386a0, type: 3}
+  externalObjects: {}
   materials:
     materialImportMode: 2
     materialName: 0
