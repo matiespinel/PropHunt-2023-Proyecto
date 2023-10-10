@@ -2283,7 +2283,6 @@ MonoBehaviour:
   PropCountText: {fileID: 6618955431593879725}
   gameManager: {fileID: 0}
   canvasHUD: {fileID: 6618955430092581800}
-  deathHUD: {fileID: 0}
   QuitPanel: {fileID: 6618955430867714004}
 --- !u!1 &6618955430175348230
 GameObject:
@@ -4655,7 +4654,6 @@ MonoBehaviour:
   PropCountText: {fileID: 6618955431593879725}
   gameManager: {fileID: 0}
   canvasHUD: {fileID: 6618955430092581800}
-  deathHUD: {fileID: 0}
   QuitPanel: {fileID: 6618955430867714004}
 --- !u!81 &6618955431782695342
 AudioListener:

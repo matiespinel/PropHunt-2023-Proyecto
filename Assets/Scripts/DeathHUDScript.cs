@@ -22,7 +22,7 @@ public class DeathHUDScript : MonoBehaviour
     {
         this.gameObject.SetActive(false);
     }
-    void Awake()
+    void Start()
     {
         ActivateDeathHUD();
         DisableDeathHUD();
