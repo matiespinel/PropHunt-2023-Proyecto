@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class JumpScript : MonoBehaviour
 {
-    private float jumpForce;
+    private float jumpSpeed;
     [SerializeField]
     private float groundCheckDistance;
 
@@ -21,14 +21,18 @@ public class JumpScript : MonoBehaviour
 
     private Rigidbody rigidBody;
 
-    private Vector3 rayOrigin; 
+    private Vector3 rayOrigin;
+    private bool tryingToJump;
+    private float lastJumpPressTime;
+    private float jumpPressBufferTime = 0.5f;
+
     void Start()
     {
         rigidBody = GetComponent<Rigidbody>();
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         rayOrigin = new Vector3(transform.position.x, transform.position.y + YTransformOffset, transform.position.z);
         Ray ray = new Ray(rayOrigin, Vector3.down);
@@ -43,5 +47,30 @@ public class JumpScript : MonoBehaviour
             Debug.Log("SALTO");
         }
 
+    }
+
+    void OnJump()
+    {
+        tryingToJump = true;
+        lastJumpPressTime = Time.time;
+    }
+
+    private void OnBeforeMove()
+    {
+        bool wasTryingToJump = Time.time - lastJumpPressTime < jumpPressBufferTime;
+
+        bool isOrWasTryingToJump = tryingToJump || (wasTryingToJump && isGrounded);
+
+        bool isOrWasGrounded = isGrounded; //|| wasgrounded blbla compleTAR;
+        if(isOrWasTryingToJump && isGrounded) 
+        {
+            rigidBody.AddForce(0f,jumpSpeed,0f);
+        }
+        tryingToJump = false;
+    }
+
+    void OnGroundStateChange(bool isgrounded) 
+    {
+        //no terminado
     }
 }
