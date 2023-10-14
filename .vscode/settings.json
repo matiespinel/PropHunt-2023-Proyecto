@@ -1,3 +1,4 @@
 {
-    "dotnet.defaultSolution": "PropHunt-2023-Proyecto.sln"
+    "dotnet.defaultSolution": "PropHunt-2023-Proyecto.sln",
+    "dotnet.preferCSharpExtension": true
 }
