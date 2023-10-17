@@ -105,7 +105,7 @@ MonoBehaviour:
   movementSpeed: 10
   rSpeed: 10
   silvido: {fileID: 6006881693325514234}
-  mass: 0
+  mass: 1
   velocity: {x: 0, y: 0, z: 0}
   wasGrounded: 0
 --- !u!114 &1080116728478226849
@@ -292,7 +292,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab3b71f30b29d7247930e2ca4cb57b08, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jumpSpeed: 5
+  jumpSpeed: 1
   jumpPressBufferTime: 0.05
   jumpGroundGraceTime: 0.2
 --- !u!143 &1314890812359464648

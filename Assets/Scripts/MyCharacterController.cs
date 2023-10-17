@@ -36,7 +36,7 @@ public class MyCharacterController : MonoBehaviour
         view = GetComponent<PhotonView>();
         controller = GetComponent<CharacterController>();
     }
-    void Update()
+    void FixedUpdate()
     {
 
         if (MetamorfosisScript.isTransformed)

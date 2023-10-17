@@ -269,6 +269,11 @@ PrefabInstance:
       propertyPath: sceneViewId
       value: 18
       objectReference: {fileID: 0}
+    - target: {fileID: 3169150853609228505, guid: ef205c28f05568e4e9dd828dbc17e99d,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3399517504266078825, guid: ef205c28f05568e4e9dd828dbc17e99d,
         type: 3}
       propertyPath: m_Mesh
@@ -347,7 +352,7 @@ PrefabInstance:
     - target: {fileID: 5556407489444139979, guid: ef205c28f05568e4e9dd828dbc17e99d,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.7498356
+      value: 0.74983555
       objectReference: {fileID: 0}
     - target: {fileID: 5556407489444139979, guid: ef205c28f05568e4e9dd828dbc17e99d,
         type: 3}
@@ -357,12 +362,12 @@ PrefabInstance:
     - target: {fileID: 5556407489444139979, guid: ef205c28f05568e4e9dd828dbc17e99d,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.31323862
+      value: 0.3132386
       objectReference: {fileID: 0}
     - target: {fileID: 5556407489444139979, guid: ef205c28f05568e4e9dd828dbc17e99d,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.0151107125
+      value: -0.015110726
       objectReference: {fileID: 0}
     - target: {fileID: 5556407489766807670, guid: ef205c28f05568e4e9dd828dbc17e99d,
         type: 3}
@@ -519,16 +524,6 @@ PrefabInstance:
       propertyPath: m_LocalRotation.z
       value: 0.0000000029276699
       objectReference: {fileID: 0}
-    - target: {fileID: 6407739482403524254, guid: ef205c28f05568e4e9dd828dbc17e99d,
-        type: 3}
-      propertyPath: jumpSpeed
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 6407739482403524254, guid: ef205c28f05568e4e9dd828dbc17e99d,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 6834246643285501267, guid: ef205c28f05568e4e9dd828dbc17e99d,
         type: 3}
       propertyPath: sceneViewId
@@ -553,16 +548,6 @@ PrefabInstance:
         type: 3}
       propertyPath: sceneViewId
       value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 8790206552360641715, guid: ef205c28f05568e4e9dd828dbc17e99d,
-        type: 3}
-      propertyPath: mass
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8790206552360641715, guid: ef205c28f05568e4e9dd828dbc17e99d,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ef205c28f05568e4e9dd828dbc17e99d, type: 3}
@@ -613,7 +598,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!65 &235818011
 BoxCollider:
@@ -918,7 +903,7 @@ GameObject:
   m_TagString: DCamAttach
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!135 &383989652
 SphereCollider:
@@ -1167,7 +1152,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!65 &564011498
 BoxCollider:
@@ -1645,7 +1630,7 @@ GameObject:
   m_TagString: DCamAttach
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!135 &928184263
 SphereCollider:
