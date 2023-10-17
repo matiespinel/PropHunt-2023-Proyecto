@@ -18,9 +18,10 @@ GameObject:
   - component: {fileID: 6006881693325514234}
   - component: {fileID: 4390480573708649032}
   - component: {fileID: 1314890812359464648}
+  - component: {fileID: 3507597432166944161}
   m_Layer: 3
   m_Name: VersatilePropUnit
-  m_TagString: Untagged
+  m_TagString: Transformable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -103,11 +104,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementSpeed: 10
-  rSpeed: 10
   silvido: {fileID: 6006881693325514234}
   mass: 1
   velocity: {x: 0, y: 0, z: 0}
   wasGrounded: 0
+  lookAt: {fileID: 0}
 --- !u!114 &1080116728478226849
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -127,8 +128,8 @@ MonoBehaviour:
   OwnershipTransfer: 1
   observableSearch: 2
   ObservedComponents:
-  - {fileID: 0}
   - {fileID: 7704307992634423729}
+  - {fileID: 3507597432166944161}
   sceneViewId: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0
@@ -313,3 +314,18 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &3507597432166944161
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8650180860436871810}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86497ac0ac38f0f418ee9a59f5cdd861, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gm: {fileID: 0}
+  roleAssigner: {fileID: 0}
+  view: {fileID: 1080116728478226849}
