@@ -1365,11 +1365,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementSpeed: 10
-  rSpeed: 10
   silvido: {fileID: 0}
   mass: 0
   velocity: {x: 0, y: 0, z: 0}
   wasGrounded: 0
+  lookAt: {fileID: 0}
 --- !u!1 &4815447870807476456
 GameObject:
   m_ObjectHideFlags: 0
