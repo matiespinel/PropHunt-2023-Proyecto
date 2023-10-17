@@ -973,6 +973,7 @@ GameObject:
   - component: {fileID: 1536774475759377834}
   - component: {fileID: 563748895180879295}
   - component: {fileID: 8454628576118047087}
+  - component: {fileID: 1596001935580680652}
   m_Layer: 3
   m_Name: Cazador
   m_TagString: Untagged
@@ -1348,12 +1349,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab3b71f30b29d7247930e2ca4cb57b08, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  groundCheckDistance: 2
-  ignoreLayer:
-    serializedVersion: 2
-    m_Bits: 2147483647
-  YTransformOffset: 1
-  jumpKey: 32
+  jumpSpeed: 0
+  jumpPressBufferTime: 0.05
+  jumpGroundGraceTime: 0.2
+--- !u!114 &1596001935580680652
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4809841098820699013}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 777459db587f6cd41b6963d2a37bb946, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movementSpeed: 10
+  rSpeed: 10
+  silvido: {fileID: 0}
+  mass: 0
+  velocity: {x: 0, y: 0, z: 0}
+  wasGrounded: 0
 --- !u!1 &4815447870807476456
 GameObject:
   m_ObjectHideFlags: 0
