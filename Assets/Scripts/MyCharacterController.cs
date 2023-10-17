@@ -11,8 +11,6 @@ public class MyCharacterController : MonoBehaviour
     [SerializeField]
     float movementSpeed = 10;
 
-    [SerializeField]
-    float rSpeed = 10;
 
     [SerializeField]
     private AudioSource silvido;
