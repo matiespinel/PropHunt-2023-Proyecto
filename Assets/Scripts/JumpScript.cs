@@ -2,75 +2,72 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(MyCharacterController))]
 public class JumpScript : MonoBehaviour
 {
+    MyCharacterController controller;
+    [SerializeField]
     private float jumpSpeed;
-    [SerializeField]
-    private float groundCheckDistance;
-
-    [SerializeField]
-    private LayerMask ignoreLayer;
-
-    private bool isGrounded;
-
-    [SerializeField]
-    private int YTransformOffset;
-
-    [SerializeField]
-    private KeyCode jumpKey;
-
-    private Rigidbody rigidBody;
-
-    private Vector3 rayOrigin;
     private bool tryingToJump;
-    private float lastJumpPressTime;
-    private float jumpPressBufferTime = 0.5f;
 
-    void Start()
+    private float lastJumpPressTime;
+    private float lastGroundedTime;
+
+    [SerializeField]
+    private float jumpPressBufferTime = .05f;
+    [SerializeField]
+    private float jumpGroundGraceTime = .2f;
+
+    
+
+    void Awake()
     {
-        rigidBody = GetComponent<Rigidbody>();
+        controller = GetComponent<MyCharacterController>();
     }
 
     // Update is called once per frame
-    void FixedUpdate()
+
+    private void FixedUpdate()
     {
-        rayOrigin = new Vector3(transform.position.x, transform.position.y + YTransformOffset, transform.position.z);
-        Ray ray = new Ray(rayOrigin, Vector3.down);
-        isGrounded = Physics.Raycast(ray, groundCheckDistance, ignoreLayer);
-        bool canJump = Input.GetKey(jumpKey) && isGrounded;
-        Debug.Log(isGrounded);
-        Debug.Log(canJump);
-        Debug.DrawRay(rayOrigin, Vector3.down, Color.red);
-        if (canJump) 
+        if(Input.GetKey(KeyCode.Space))
         {
-            rigidBody.AddForce(new Vector3(0,100,0));
-            Debug.Log("SALTO");
+            tryingToJump = true;
+            lastJumpPressTime = Time.time;
         }
-
-    }
-
-    void OnJump()
-    {
-        tryingToJump = true;
-        lastJumpPressTime = Time.time;
+        
     }
 
     private void OnBeforeMove()
     {
         bool wasTryingToJump = Time.time - lastJumpPressTime < jumpPressBufferTime;
+        bool wasGrounded = Time.time - lastGroundedTime < jumpGroundGraceTime;
 
-        bool isOrWasTryingToJump = tryingToJump || (wasTryingToJump && isGrounded);
+        bool isOrWasTryingToJump = tryingToJump || (wasTryingToJump && controller.IsGrounded);
+        bool isOrWasGrounded = controller.IsGrounded || wasGrounded; 
 
-        bool isOrWasGrounded = isGrounded; //|| wasgrounded blbla compleTAR;
-        if(isOrWasTryingToJump && isGrounded) 
+        if(isOrWasTryingToJump && isOrWasGrounded) 
         {
-            rigidBody.AddForce(0f,jumpSpeed,0f);
+            Debug.Log(isOrWasGrounded);
+            Debug.Log(isOrWasTryingToJump);
+            controller.velocity.y += jumpSpeed;
         }
+
         tryingToJump = false;
     }
 
     void OnGroundStateChange(bool isgrounded) 
     {
-        //no terminado
+        if(!isgrounded) lastGroundedTime = Time.time;
+    }
+
+    void OnEnable()
+    {
+        controller.OnBeforeMove += OnBeforeMove;
+        controller.OnGroundStateChange += OnGroundStateChange;
+    }
+    void OnDisable()
+    {
+        controller.OnBeforeMove -= OnBeforeMove;
+        controller.OnGroundStateChange -= OnGroundStateChange;
     }
 }

@@ -3,11 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using Photon.Pun;
 using UnityEngine.Animations.Rigging;
+using System;
 
 public class MyCharacterController : MonoBehaviour
 {
+
     [SerializeField]
-    float speed = 10;
+    float movementSpeed = 10;
 
     [SerializeField]
     float rSpeed = 10;
@@ -16,6 +18,24 @@ public class MyCharacterController : MonoBehaviour
     private AudioSource silvido;
 
     private PhotonView view;
+    private CharacterController controller;
+
+    [SerializeField]
+    private float mass;
+
+    public Vector3 velocity;
+
+    public bool IsGrounded => controller.isGrounded;
+
+    public bool wasGrounded;
+    public event Action OnBeforeMove;
+    public event Action<bool> OnGroundStateChange;
+
+    void Awake()
+    {
+        view = GetComponent<PhotonView>();
+        controller = GetComponent<CharacterController>();
+    }
     void Update()
     {
 
@@ -25,37 +45,9 @@ public class MyCharacterController : MonoBehaviour
         }
         if (view.IsMine) 
         {
-
-            if(Input.GetKey(KeyCode.W))
-            {
-                transform.Translate(0,0,speed * Time.fixedDeltaTime);
-            }
-
-            if(Input.GetKey(KeyCode.A))
-            {
-                transform.Translate(-speed * Time.fixedDeltaTime,0,0);
-            }
-
-            if(Input.GetKey(KeyCode.S))
-            {
-                transform.Translate(0,0,-speed * Time.fixedDeltaTime);
-            }
-
-            if(Input.GetKey(KeyCode.D))
-            {
-                transform.Translate(speed * Time.fixedDeltaTime,0,0);
-            }
-
-            if(Input.GetKey(KeyCode.Q))
-            {
-                transform.Rotate(0,rSpeed,0);
-            }
-
-            if(Input.GetKey(KeyCode.E))
-            {
-                transform.Rotate(0,-rSpeed,0);
-            }
-
+            UpdateMovement();
+            UpdateGravity();
+            UpdateGround();
         }
         else 
         {
@@ -63,5 +55,38 @@ public class MyCharacterController : MonoBehaviour
             this.enabled = false;
         }
 
+    }
+
+    private void UpdateGround()
+    {
+        if(wasGrounded != IsGrounded)
+        {
+            OnGroundStateChange?.Invoke(IsGrounded);
+            wasGrounded = IsGrounded;
+        }
+    }
+
+    private void UpdateGravity()
+    {
+        var gravity = Physics.gravity * mass * Time.fixedDeltaTime;
+        velocity.y = controller.isGrounded ? -1f : velocity.y + gravity.y;
+    }
+
+    private void UpdateMovement()
+    {
+        var x = Input.GetAxis("Horizontal");
+        var y = Input.GetAxis("Vertical");
+
+        var input = new Vector3();
+        input += transform.forward * y;
+        input += transform.right * x;
+        input = Vector3.ClampMagnitude(input, 1f);
+
+        controller.Move((input * movementSpeed + velocity) * Time.fixedDeltaTime);
+        if(Input.GetKey(KeyCode.Space))
+        {
+            OnBeforeMove?.Invoke();
+        }
+        
     }
 }

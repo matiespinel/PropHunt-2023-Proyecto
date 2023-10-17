@@ -3,9 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using Photon.Pun;
 using UnityEngine.Animations.Rigging;
+using System;
 public class AnimationStateController : MonoBehaviour
 {
     #region hashes
+
     private int isWalkingHash;
     private int isBackingHash;
     private int isStrafingLeftHash;
@@ -15,6 +17,7 @@ public class AnimationStateController : MonoBehaviour
     #endregion
     //animator puede usar valores hash por sustitucion de int
     # region conditional bools
+
     private bool isBacking;
     private bool isWalking;
     private bool isStrafingLeft;
@@ -36,12 +39,15 @@ public class AnimationStateController : MonoBehaviour
 
     private Animator playerAnimator;
     private PhotonView view;
+
+    public static event Action OnBeforeMove;
     
     void Start()
     {
         playerAnimator = GetComponent<Animator>();
         view = GetComponent<PhotonView>();
         #region Hashes
+        
         isWalkingHash = Animator.StringToHash("isWalking");
         isBackingHash = Animator.StringToHash("isBacking");
         isStrafingLeftHash = Animator.StringToHash("isStrafingLeft");
@@ -65,12 +71,14 @@ public class AnimationStateController : MonoBehaviour
         {
 
             //listeners
+            bool spacePressed = Input.GetKey(KeyCode.Space);
             bool sPressed = Input.GetKey(KeyCode.S);
             bool wPressed = Input.GetKey(KeyCode.W);
             bool aPressed = Input.GetKey(KeyCode.A);
             bool dPressed = Input.GetKey(KeyCode.D);
             //WASD
             //AVANZAR
+            OnBeforeMove?.Invoke();
             if((!isBacking || !isStrafingLeft || !isStrafingRight) && wPressed)
             {
                 playerAnimator.SetBool(isWalkingHash, true);
