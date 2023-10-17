@@ -23,7 +23,7 @@ ModelImporter:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: Wood066_1K-JPG_Color
-    second: {fileID: 2800000, guid: f4b9d65cae701844384e6f433c4d218e, type: 3}
+    second: {fileID: 2800000, guid: 08e775e3ac217df4d8363ff7fed2140c, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0
