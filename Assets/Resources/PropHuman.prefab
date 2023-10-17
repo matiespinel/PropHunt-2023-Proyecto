@@ -1813,11 +1813,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementSpeed: 10
-  rSpeed: 10
   silvido: {fileID: 0}
   mass: 0
   velocity: {x: 0, y: 0, z: 0}
   wasGrounded: 0
+  lookAt: {fileID: 0}
 --- !u!1 &4762930099976845776
 GameObject:
   m_ObjectHideFlags: 0
@@ -2105,7 +2105,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5556407489419184439}
-  m_LocalRotation: {x: 0.43728203, y: 0.24635202, z: 0.0356923, w: 0.8641882}
+  m_LocalRotation: {x: 0.4161017, y: 0.3841038, z: 0.05565022, w: 0.8223301}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -2183,7 +2183,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5556407489444139977}
-  m_LocalRotation: {x: 0.43698186, y: 0.24899977, z: 0.036072366, w: 0.86356515}
+  m_LocalRotation: {x: 0.41526565, y: 0.38848633, z: 0.05627964, w: 0.82064945}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -3103,7 +3103,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5556407490602366427}
-  m_LocalRotation: {x: 0.43698186, y: 0.2489998, z: 0.036072366, w: 0.86356515}
+  m_LocalRotation: {x: 0.41526568, y: 0.38848627, z: 0.056279637, w: 0.82064945}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -3188,7 +3188,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5556407490622689377}
-  m_LocalRotation: {x: 0.15997714, y: 0.13810098, z: -0.022609603, w: 0.9771511}
+  m_LocalRotation: {x: 0.15493943, y: 0.2797504, z: -0.045800157, w: 0.9463804}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -4725,6 +4725,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5556407490027017165}
     m_Modifications:
+    - target: {fileID: 2161681111472957541, guid: 7ca291aea6734da499d462c8660bf282,
+        type: 3}
+      propertyPath: lookAt
+      value: 
+      objectReference: {fileID: 5556407490715060205}
     - target: {fileID: 6472884964870902017, guid: 7ca291aea6734da499d462c8660bf282,
         type: 3}
       propertyPath: m_RootOrder
