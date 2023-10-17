@@ -5,10 +5,9 @@ using Photon.Pun;
 
 public class HunterAttributesScript : Entity
 {
-    void Start() {
+    void Awake() {
         HP = 100;
-        walkSpeed = 15;
-        runSpeed = 30;
+        HPText.text = HP.ToString();
         view = GetComponent<PhotonView>();
     }
 }
