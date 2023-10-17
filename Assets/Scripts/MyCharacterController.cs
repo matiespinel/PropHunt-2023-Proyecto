@@ -31,6 +31,10 @@ public class MyCharacterController : MonoBehaviour
     public event Action OnBeforeMove;
     public event Action<bool> OnGroundStateChange;
 
+    [SerializeField]
+    private GameObject lookAt;
+    private bool toggleRot = true;
+
     void Awake()
     {
         view = GetComponent<PhotonView>();
@@ -48,6 +52,10 @@ public class MyCharacterController : MonoBehaviour
             UpdateMovement();
             UpdateGravity();
             UpdateGround();
+            if (Input.GetKey(KeyCode.R)) 
+            {
+                toggleRot = !toggleRot;
+            }
         }
         else 
         {
@@ -86,7 +94,12 @@ public class MyCharacterController : MonoBehaviour
                     OnBeforeMove?.Invoke();
                 }
         controller.Move((input * movementSpeed + velocity) * Time.fixedDeltaTime);
+        if (toggleRot && Input.anyKey)
+        {
+            var directionVector = (new Vector3(lookAt.transform.position.x - transform.position.x, 0, lookAt.transform.position.z - transform.position.z)).normalized;
+            this.transform.rotation = Quaternion.LookRotation(directionVector, Vector3.up);
+        }
         
-        
+
     }
 }
