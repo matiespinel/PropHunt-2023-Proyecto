@@ -81,12 +81,12 @@ public class MyCharacterController : MonoBehaviour
         input += transform.forward * y;
         input += transform.right * x;
         input = Vector3.ClampMagnitude(input, 1f);
-
-        controller.Move((input * movementSpeed + velocity) * Time.fixedDeltaTime);
         if(Input.GetKey(KeyCode.Space))
-        {
-            OnBeforeMove?.Invoke();
-        }
+                {
+                    OnBeforeMove?.Invoke();
+                }
+        controller.Move((input * movementSpeed + velocity) * Time.fixedDeltaTime);
+        
         
     }
 }

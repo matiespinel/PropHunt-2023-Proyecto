@@ -19,7 +19,7 @@ public class MetamorfosisScript : MonoBehaviourPunCallbacks
     public static bool isTransformed = false;
     #endregion
     private RaycastHit hit;
-    void Start() 
+    void Awake() 
     {
 
         view = GetComponent<PhotonView>();
