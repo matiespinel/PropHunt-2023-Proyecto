@@ -78,7 +78,9 @@ public class GameManager : MonoBehaviourPunCallbacks
 
     public override void OnDisconnected(DisconnectCause cause)
     {
-        UnityEngine.SceneManagement.SceneManager.LoadScene("Menu");
+       //load level
+        PhotonNetwork.LoadLevel("Lobby");
+        Debug.Log("Disconnected");
     }
     public override void OnLeftRoom()
     {
