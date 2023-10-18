@@ -35,11 +35,10 @@ public class CanvasHUD_Player : MonoBehaviour
     }
     
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         
             PropCountText.text = "Props: " + RoleManager.propCount;
-
             
             if (Input.GetKeyDown(KeyCode.Escape))
             {
