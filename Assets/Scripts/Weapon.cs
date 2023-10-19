@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Photon.Pun;
+using TMPro;
 
 
 public abstract class Weapon : MonoBehaviourPunCallbacks
@@ -22,11 +23,14 @@ public abstract class Weapon : MonoBehaviourPunCallbacks
     public int ammo {get; set;}
     public float nextShotInterval {get; set;}
     public int mag {get; set;}
+    public int initialMag { get; set;}
     public float bulletVelocity {get; set;}
     public float bulletDamage {get; set;}
     public float bulletRange {get; set;}
     public float fireRate {get; set;}
     public KeyCode fireButton  {get; set;}
+
+    public TMP_Text ammoCounter;
     #endregion WeaponData    
     private void Awake() => _audioSource = GetComponent<AudioSource>();
     /// <summary>
@@ -44,13 +48,19 @@ public abstract class Weapon : MonoBehaviourPunCallbacks
     /// <summary>
     /// Efecto de disparo. Registro y Deresgistro de audioclip, resta de balas y tiempo entre disparos.
     /// </summary>
+    
+    public void UpdateAmmoCounter() 
+    {
+        ammoCounter.text = mag+"/"+ammo;
+    }
     public IEnumerator ShotEffect()
     {
-        ammo--;
-        Debug.Log(ammo);
+        mag--;
+        Debug.Log(mag);
         RegisterShotAudio();
         bulletLine.enabled = true;
         yield return bulletTime;
+        UpdateAmmoCounter();
         bulletLine.enabled = false;
         DeregisterShotAudio();
     }
@@ -60,8 +70,11 @@ public abstract class Weapon : MonoBehaviourPunCallbacks
     public IEnumerator ReloadWait()
     {
         Debug.Log("recargando...");
+        Debug.Log(initialMag);
         yield return reloadTime;
-        ammo = mag;
+        mag += initialMag;
+        ammo -= initialMag;
+        UpdateAmmoCounter();
     }
     //¡Si alguien se muere por disparos sin esto el audio queda registrado!
     private void OnDestroy() =>DeregisterShotAudio();

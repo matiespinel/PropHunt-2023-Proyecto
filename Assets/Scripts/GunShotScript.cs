@@ -8,7 +8,7 @@ public class GunShotScript : Weapon
 {
     private Entity youEntity;
 
-    void Start()
+    void Awake()
     {
         #region bullet Attributes
         bulletVelocity = 1;
@@ -20,14 +20,15 @@ public class GunShotScript : Weapon
         fireButton = KeyCode.K;
         bulletTime = new WaitForSeconds(.07f);
         mag = 20;
-        ammo = mag;
+        initialMag = mag;
+        ammo = 100;
         reloadTime = new WaitForSeconds(5);
         youEntity = this.gameObject.GetComponentInParent<Entity>();
         #endregion
 
     }
 
-    void Update()
+    void FixedUpdate()
     {
         if(Input.GetKey(fireButton) && Time.time > nextShotInterval && ammo != 0)
         {
@@ -52,7 +53,7 @@ public class GunShotScript : Weapon
                 
             }
         }
-        if (ammo == 0)
+        if (mag == 0)
         {
             StartCoroutine(ReloadWait());
         }

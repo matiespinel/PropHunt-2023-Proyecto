@@ -37,7 +37,6 @@ public class AnimationStateController : MonoBehaviour
     private Animator playerAnimator;
     private PhotonView view;
 
-    public static event Action OnBeforeMove;
     
     void Awake()
     {
@@ -75,7 +74,6 @@ public class AnimationStateController : MonoBehaviour
             bool dPressed = Input.GetKey(KeyCode.D);
             //WASD
             //AVANZAR
-            OnBeforeMove?.Invoke();
             if((!isBacking || !isStrafingLeft || !isStrafingRight) && wPressed)
             {
                 playerAnimator.SetBool(isWalkingHash, true);
