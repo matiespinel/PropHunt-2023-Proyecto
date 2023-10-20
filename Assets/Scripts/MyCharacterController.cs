@@ -11,6 +11,8 @@ public class MyCharacterController : MonoBehaviour
     [SerializeField]
     float movementSpeed = 10;
 
+    [SerializeField]
+    bool prop;
 
     [SerializeField]
     private AudioSource silvido;
@@ -32,11 +34,12 @@ public class MyCharacterController : MonoBehaviour
     [SerializeField]
     private GameObject lookAt;
 
-    public bool toggleRot = true;
+    bool toggleRot = true;
     void Awake()
     {
         view = GetComponent<PhotonView>();
         controller = GetComponent<CharacterController>();
+        silvido = GetComponent<AudioSource>();
     }
     void FixedUpdate()
     {
@@ -50,7 +53,10 @@ public class MyCharacterController : MonoBehaviour
             UpdateMovement();
             UpdateGravity();
             UpdateGround();
-            toggleRotation(toggleRot);
+            if (Input.GetKeyDown(KeyCode.R))
+            {
+                toggleRot = !toggleRot;
+            }
         }
         else 
         {
@@ -89,24 +95,11 @@ public class MyCharacterController : MonoBehaviour
                     OnBeforeMove?.Invoke();
                 }
         controller.Move((input * movementSpeed + velocity) * Time.fixedDeltaTime);
-
-    }
-
-    public void PropRotationToggle() 
-    {
-        if (toggleRot && Input.anyKey)
+        if (toggleRot && Input.anyKey && prop)
         {
             var directionVector = (new Vector3(lookAt.transform.position.x - transform.position.x, 0, lookAt.transform.position.z - transform.position.z)).normalized;
             this.transform.rotation = Quaternion.LookRotation(directionVector, Vector3.up);
         }
     }
 
-    public bool toggleRotation(bool rotConditional) 
-    {
-        if (Input.GetKey(KeyCode.R))
-        {
-            rotConditional = !rotConditional;
-        }
-        return rotConditional;
-    }
 }

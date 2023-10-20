@@ -25,14 +25,7 @@ public class AnimationStateController : MonoBehaviour
     private bool isTurningRight;
     private bool isTurningLeft;
     #endregion
-    //condiciones
-
-    [SerializeField]
-    private GameObject LookingDirection;
-
-
-    [SerializeField]
-    private Camera MainCamera;
+    //condiciones  
 
     private Animator playerAnimator;
     private PhotonView view;
