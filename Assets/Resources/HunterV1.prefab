@@ -3136,6 +3136,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletOrigin: {x: 0, y: 0, z: 0}
   bulletLine: {fileID: 0}
+  ammoCounter: {fileID: 0}
 --- !u!120 &6618955430922166846
 LineRenderer:
   m_ObjectHideFlags: 0

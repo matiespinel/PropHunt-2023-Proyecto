@@ -15,6 +15,8 @@ public class CanvasHUD_Player : MonoBehaviour
     private PhotonView PV;
     public Canvas canvasHUD;
     public GameObject QuitPanel;
+    public RoleManager roleManager;
+
     #endregion
     public void SetPlayerInfo(Player _player)
      {
