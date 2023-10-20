@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using Photon.Pun;
 using Photon.Realtime;
+using System.Linq;
 
 
 public class GameManager : MonoBehaviourPunCallbacks
@@ -25,6 +26,7 @@ public class GameManager : MonoBehaviourPunCallbacks
         StartCoroutine("destruirParedes");
         timeIsRunning = true;
         UpdatePropC();
+        Debug.Log(roleManager.propCount, roleManager.hunterCount);
 
     }
    
@@ -34,13 +36,13 @@ public class GameManager : MonoBehaviourPunCallbacks
     {
         if (RoleManager.propCount == 0)
         {
-           StartCoroutine("finalizarPartida");
+        //    StartCoroutine("finalizarPartida");
         }
 
         if (RoleManager.hunterCount == 0)
         {
             // finalizar partida mediante coroutine
-           StartCoroutine("finalizarPartida");
+        //    StartCoroutine("finalizarPartida");
             
         }
 
@@ -75,16 +77,10 @@ public class GameManager : MonoBehaviourPunCallbacks
         yield return new WaitForSeconds(5);
         PhotonNetwork.LeaveRoom();
     }
-
-    public override void OnDisconnected(DisconnectCause cause)
-    {
-       //load level
-        PhotonNetwork.LoadLevel("Lobby");
-        Debug.Log("Disconnected");
-    }
     public override void OnLeftRoom()
     {
-        PhotonNetwork.Disconnect();
+          PhotonNetwork.LoadLevel("Lobby");
+            Debug.Log("Disconnected");
     }
     private void UpdatePropC() => Entity.OnEntityDeath += PropC;
     public void PropC() => RoleManager.propCount -= 1;
