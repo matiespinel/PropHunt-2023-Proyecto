@@ -26,7 +26,7 @@ public class GameManager : MonoBehaviourPunCallbacks
         StartCoroutine("destruirParedes");
         timeIsRunning = true;
         UpdatePropC();
-        Debug.Log(roleManager.propCount, roleManager.hunterCount);
+        //Debug.Log(roleManager.propCount, roleManager.hunterCount);
 
     }
    
