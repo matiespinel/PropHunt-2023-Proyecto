@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using Photon.Pun;
 
-[RequireComponent(typeof(Entity))]
 public class GunShotScript : Weapon
 {
     private Entity youEntity;
