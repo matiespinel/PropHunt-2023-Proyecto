@@ -36,13 +36,13 @@ public class GameManager : MonoBehaviourPunCallbacks
     {
         if (RoleManager.propCount == 0)
         {
-        //    StartCoroutine("finalizarPartida");
+        StartCoroutine("finalizarPartida");
         }
 
         if (RoleManager.hunterCount == 0)
         {
             // finalizar partida mediante coroutine
-        //    StartCoroutine("finalizarPartida");
+             StartCoroutine("finalizarPartida");
             
         }
 

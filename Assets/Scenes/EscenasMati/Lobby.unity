@@ -2729,6 +2729,7 @@ MonoBehaviour:
     type: 3}
   playerItemsParents: {fileID: 370267870}
   playButton: {fileID: 845667670}
+  minimoPlayers: 1
 --- !u!4 &1783457106
 Transform:
   m_ObjectHideFlags: 0

@@ -37,12 +37,14 @@ public class RoleManager : MonoBehaviour
                 if (PhotonNetwork.LocalPlayer.IsMasterClient)
                 {
                     PhotonNetwork.LocalPlayer.SetCustomProperties(new ExitGames.Client.Photon.Hashtable() { { "Role", "Hunter" } });
-                            RoleManager.hunterCount++;
+                            hunterCount++;
+                            Debug.Log(hunterCount);
                 }
                 else
                 {
                        PhotonNetwork.LocalPlayer.SetCustomProperties(new ExitGames.Client.Photon.Hashtable() { { "Role", "Prop" } });
-                              RoleManager.propCount++;
+                            propCount++;
+                            Debug.Log(propCount);
                 }
 
             }
@@ -54,12 +56,12 @@ public class RoleManager : MonoBehaviour
                         if (p.ActorNumber == hunter)
                         {
                             p.SetCustomProperties(new ExitGames.Client.Photon.Hashtable() { { "Role", "Hunter" } });
-                            RoleManager.hunterCount++;
+                            hunterCount++;
                         }
                         else
                         {
                              p.SetCustomProperties(new ExitGames.Client.Photon.Hashtable() { { "Role", "Prop" } });
-                              RoleManager.propCount++;
+                              propCount++;
                         }
                     }
             }

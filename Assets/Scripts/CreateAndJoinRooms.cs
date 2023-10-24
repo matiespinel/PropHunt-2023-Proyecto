@@ -25,6 +25,8 @@ public class CreateAndJoinRooms : MonoBehaviourPunCallbacks
     public Transform playerItemsParents;
 
     public GameObject playButton;
+
+    public int minimoPlayers;
     #endregion
     private void Start()
     {
@@ -122,7 +124,7 @@ public class CreateAndJoinRooms : MonoBehaviourPunCallbacks
 
     public void Update()
     {
-        if (PhotonNetwork.IsMasterClient && PhotonNetwork.CurrentRoom.PlayerCount >= 2)
+        if (PhotonNetwork.IsMasterClient && PhotonNetwork.CurrentRoom.PlayerCount >= minimoPlayers)
         {
             playButton.SetActive(true);
             RoleButton.SetActive(true);
