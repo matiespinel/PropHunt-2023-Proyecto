@@ -11,6 +11,7 @@ public class RoleManager : MonoBehaviour
     public static RoleManager rol;
     Player[] allPlayer;
     int hunter; 
+    [SerializeField] int minPlayers;
     
 
     public static int propCount { get;  set; } = 0;
@@ -31,7 +32,7 @@ public class RoleManager : MonoBehaviour
    
     public void RoleAssigner()
         {
-            if (PhotonNetwork.CurrentRoom.PlayerCount == 2)
+            if (PhotonNetwork.CurrentRoom.PlayerCount == minPlayers)
             {
                 if (PhotonNetwork.LocalPlayer.IsMasterClient)
                 {

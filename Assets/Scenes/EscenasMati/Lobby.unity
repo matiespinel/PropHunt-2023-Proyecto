@@ -2590,6 +2590,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8f2f7c8b0162f348b424e9bac68b27d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  minPlayers: 1
 --- !u!4 &1714576893
 Transform:
   m_ObjectHideFlags: 0
