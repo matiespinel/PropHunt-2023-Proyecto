@@ -4,6 +4,7 @@ using UnityEngine;
 using Photon.Pun;
 using UnityEngine.Animations.Rigging;
 using System;
+using Cinemachine;
 public class AnimationStateController : MonoBehaviour
 {
     #region hashes
@@ -29,6 +30,9 @@ public class AnimationStateController : MonoBehaviour
 
     private Animator playerAnimator;
     private PhotonView view;
+
+    [SerializeField]
+    CinemachineFreeLook cam3d;
 
     
     void Awake()
@@ -58,7 +62,7 @@ public class AnimationStateController : MonoBehaviour
     {
         if (view.IsMine) 
         {
-
+            Debug.Log(Input.mousePosition.x);
             //listeners
             bool spacePressed = Input.GetKey(KeyCode.Space);
             bool sPressed = Input.GetKey(KeyCode.S);
@@ -102,9 +106,10 @@ public class AnimationStateController : MonoBehaviour
             {
                  playerAnimator.SetBool(isStrafingRightHash, false);
             }
-            if(playerAnimator.GetBoneTransform(HumanBodyBones.Head).localRotation.y > 0.23f)
+            if(Input.GetAxis("Mouse X") >= 90)
             {
               playerAnimator.SetBool(isTurningRightHash, true);
+              Debug.Log("DERECHA");
             }
             else
             {
@@ -127,6 +132,5 @@ public class AnimationStateController : MonoBehaviour
             this.enabled = false;
         }
 
-        
     }
 }
