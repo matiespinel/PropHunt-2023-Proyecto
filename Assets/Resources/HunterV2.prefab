@@ -1929,8 +1929,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6141548956262056924}
-  m_LocalRotation: {x: 0.3843028, y: 0.27910644, z: 0.05652521, w: 0.878189}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: 0.35637435, y: 0.44883502, z: 0.09090986, w: 0.81442}
+  m_LocalPosition: {x: 0, y: -0.00000039020364, z: -0.0000002740708}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2595,8 +2595,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6141548957238725418}
-  m_LocalRotation: {x: 0.38783467, y: 0.24831232, z: 0.050285116, w: 0.8862262}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: 0.3655237, y: 0.40252337, z: 0.08152375, w: 0.83529717}
+  m_LocalPosition: {x: 0, y: -0.00000039020364, z: -0.0000002740708}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2673,8 +2673,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6141548957448765914}
-  m_LocalRotation: {x: 0.38783467, y: 0.24831232, z: 0.050285116, w: 0.8862262}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: 0.3655237, y: 0.40252337, z: 0.08152375, w: 0.83529717}
+  m_LocalPosition: {x: 0, y: -0.00000039020364, z: -0.0000002740708}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3231,8 +3231,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6141548958048376302}
-  m_LocalRotation: {x: 0.104471095, y: 0.1756702, z: -0.018751673, w: 0.9787105}
-  m_LocalPosition: {x: 3.1530704, y: 2.0118437, z: -2.086575}
+  m_LocalRotation: {x: 0.09914512, y: 0.35448605, z: -0.03783078, w: 0.9290203}
+  m_LocalPosition: {x: 3.103195, y: 2.0118437, z: -2.086575}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -4401,7 +4401,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 777459db587f6cd41b6963d2a37bb946, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementSpeed: 2
+  movementSpeed: 4
   prop: 0
   silvido: {fileID: 0}
   mass: 2
@@ -4421,7 +4421,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab3b71f30b29d7247930e2ca4cb57b08, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jumpSpeed: 1
+  jumpSpeed: 1.5
   jumpPressBufferTime: 0.05
   jumpGroundGraceTime: 0.2
 --- !u!114 &2451444769510441862
