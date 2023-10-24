@@ -35,11 +35,16 @@ public class MyCharacterController : MonoBehaviour
     private GameObject lookAt;
 
     bool toggleRot = true;
+
+    [SerializeField]
+    Animator animator;
+
     void Awake()
     {
         view = GetComponent<PhotonView>();
         controller = GetComponent<CharacterController>();
         silvido = GetComponent<AudioSource>();
+        animator = GetComponent<Animator>();
     }
     void FixedUpdate()
     {
@@ -95,11 +100,14 @@ public class MyCharacterController : MonoBehaviour
                     OnBeforeMove?.Invoke();
                 }
         controller.Move((input * movementSpeed + velocity) * Time.fixedDeltaTime);
-        if (toggleRot && Input.anyKey && prop)
+        Debug.Log(animator.GetBoneTransform(HumanBodyBones.Head).localRotation.y);
+        if (toggleRot && Input.anyKey && prop || animator.GetBoneTransform(HumanBodyBones.Head).localRotation.y > -0.21f || !prop && Input.GetAxis("Horizontal") != 0 || !prop && Input.GetAxis("Vertical") != 0)
         {
             var directionVector = (new Vector3(lookAt.transform.position.x - transform.position.x, 0, lookAt.transform.position.z - transform.position.z)).normalized;
             this.transform.rotation = Quaternion.LookRotation(directionVector, Vector3.up);
         }
+
+        
     }
 
 }

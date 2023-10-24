@@ -32,7 +32,7 @@ public class AnimationStateController : MonoBehaviour
     private PhotonView view;
 
     [SerializeField]
-    CinemachineFreeLook cam3d;
+    Camera cam;
 
     
     void Awake()
@@ -62,7 +62,7 @@ public class AnimationStateController : MonoBehaviour
     {
         if (view.IsMine) 
         {
-            Debug.Log(Input.mousePosition.x);
+            
             //listeners
             bool spacePressed = Input.GetKey(KeyCode.Space);
             bool sPressed = Input.GetKey(KeyCode.S);
@@ -106,10 +106,10 @@ public class AnimationStateController : MonoBehaviour
             {
                  playerAnimator.SetBool(isStrafingRightHash, false);
             }
-            if(Input.GetAxis("Mouse X") >= 90)
+            
+            if(cam.transform.localRotation.y >= 0.6f)
             {
               playerAnimator.SetBool(isTurningRightHash, true);
-              Debug.Log("DERECHA");
             }
             else
             {
