@@ -28,9 +28,12 @@ public abstract class Weapon : MonoBehaviourPunCallbacks
     public float bulletDamage {get; set;}
     public float bulletRange {get; set;}
     public float fireRate {get; set;}
+
+    public bool cooldownReloadBool { get; set; }
     public KeyCode fireButton  {get; set;}
 
     public TMP_Text ammoCounter;
+    public Animator animator;
     #endregion WeaponData    
     private void Awake() => _audioSource = GetComponent<AudioSource>();
     /// <summary>
@@ -69,12 +72,16 @@ public abstract class Weapon : MonoBehaviourPunCallbacks
     /// </summary>
     public IEnumerator ReloadWait()
     {
+        cooldownReloadBool = false;
         Debug.Log("recargando...");
         Debug.Log(initialMag);
+        animator.SetBool("isReloading", true);
         yield return reloadTime;
+        animator.SetBool("isReloading", false);
         mag += initialMag;
         ammo -= initialMag;
         UpdateAmmoCounter();
+        cooldownReloadBool = true;
     }
     //¡Si alguien se muere por disparos sin esto el audio queda registrado!
     private void OnDestroy() =>DeregisterShotAudio();

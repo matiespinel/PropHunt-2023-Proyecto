@@ -10,6 +10,7 @@ public class GunShotScript : Weapon
     void Awake()
     {
         #region bullet Attributes
+        cooldownReloadBool = true;
         bulletVelocity = 1;
         bulletDamage = 1;
         bulletRange = 100;
@@ -22,14 +23,15 @@ public class GunShotScript : Weapon
         initialMag = mag;
         ammo = 100;
         reloadTime = new WaitForSeconds(5);
-        youEntity = this.gameObject.GetComponentInParent<Entity>();
+        youEntity = gameObject.GetComponentInParent<Entity>();
+        animator = gameObject.GetComponentInParent<Animator>();
         #endregion
 
     }
 
     void FixedUpdate()
     {
-        if(Input.GetKey(fireButton) && Time.time > nextShotInterval && ammo != 0)
+        if(Input.GetKey(fireButton) && Time.time > nextShotInterval && mag != 0)
         {
             nextShotInterval = Time.time + fireRate;
             StartCoroutine(ShotEffect());
@@ -52,7 +54,7 @@ public class GunShotScript : Weapon
                 
             }
         }
-        if (mag == 0)
+        if (mag == 0 && cooldownReloadBool)
         {
             StartCoroutine(ReloadWait());
         }
