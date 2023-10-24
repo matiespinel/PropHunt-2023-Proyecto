@@ -2094,7 +2094,7 @@ MonoBehaviour:
   movementSpeed: 2
   prop: 0
   silvido: {fileID: 0}
-  mass: 3
+  mass: 2
   velocity: {x: 0, y: 0, z: 0}
   wasGrounded: 0
   lookAt: {fileID: 8592413144714866941}
@@ -2660,7 +2660,7 @@ LineRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 0}
+  - {fileID: 2100000, guid: 09adc4af150569a4cb996354c367b8c8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

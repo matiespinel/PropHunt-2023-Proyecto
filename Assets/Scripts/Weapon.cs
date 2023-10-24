@@ -60,11 +60,14 @@ public abstract class Weapon : MonoBehaviourPunCallbacks
     {
         mag--;
         Debug.Log(mag);
+        animator.SetBool("isFiring", true);
         RegisterShotAudio();
         bulletLine.enabled = true;
         yield return bulletTime;
         UpdateAmmoCounter();
         bulletLine.enabled = false;
+        animator.SetBool("isFiring", false);
+
         DeregisterShotAudio();
     }
     /// <summary>
