@@ -100,7 +100,7 @@ public class MyCharacterController : MonoBehaviour
                     OnBeforeMove?.Invoke();
                 }
         controller.Move((input * movementSpeed + velocity) * Time.fixedDeltaTime);
-        Debug.Log(animator.GetBoneTransform(HumanBodyBones.Head).localRotation.y);
+
         if (toggleRot && Input.anyKey && prop || animator.GetBoneTransform(HumanBodyBones.Head).localRotation.y > -0.21f || animator.GetBoneTransform(HumanBodyBones.Head).localRotation.y < -0.33f || !prop && Input.GetAxis("Horizontal") != 0 || !prop && Input.GetAxis("Vertical") != 0)
         {
             var directionVector = (new Vector3(lookAt.transform.position.x - transform.position.x, 0, lookAt.transform.position.z - transform.position.z)).normalized;
