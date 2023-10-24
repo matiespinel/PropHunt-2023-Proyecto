@@ -101,13 +101,23 @@ public class MyCharacterController : MonoBehaviour
                 }
         controller.Move((input * movementSpeed + velocity) * Time.fixedDeltaTime);
         Debug.Log(animator.GetBoneTransform(HumanBodyBones.Head).localRotation.y);
-        if (toggleRot && Input.anyKey && prop || animator.GetBoneTransform(HumanBodyBones.Head).localRotation.y > -0.21f || !prop && Input.GetAxis("Horizontal") != 0 || !prop && Input.GetAxis("Vertical") != 0)
+        if (toggleRot && Input.anyKey && prop || animator.GetBoneTransform(HumanBodyBones.Head).localRotation.y > -0.21f || animator.GetBoneTransform(HumanBodyBones.Head).localRotation.y < -0.33f || !prop && Input.GetAxis("Horizontal") != 0 || !prop && Input.GetAxis("Vertical") != 0)
         {
             var directionVector = (new Vector3(lookAt.transform.position.x - transform.position.x, 0, lookAt.transform.position.z - transform.position.z)).normalized;
-            this.transform.rotation = Quaternion.LookRotation(directionVector, Vector3.up);
+            var lookatquat = Quaternion.LookRotation(directionVector, Vector3.up);
+            SmoothRotate(transform.rotation, lookatquat, 10f);
         }
 
         
+    }
+
+    void SmoothRotate(Quaternion currentrot, Quaternion targetrot, float speed) 
+    {
+        float rspeed = speed * (1f - Mathf.Exp(-Time.deltaTime));
+        for (int i = 0 ; i < speed; i++) 
+        {
+            transform.rotation = Quaternion.Slerp(currentrot, targetrot, rspeed);
+        }
     }
 
 }
