@@ -26,7 +26,7 @@ public class GameManager : MonoBehaviourPunCallbacks
         StartCoroutine("destruirParedes");
         timeIsRunning = true;
         UpdatePropC();
-        //Debug.Log(roleManager.propCount, roleManager.hunterCount);
+        
 
     }
    
@@ -43,7 +43,7 @@ public class GameManager : MonoBehaviourPunCallbacks
         {
             // finalizar partida mediante coroutine
              StartCoroutine("finalizarPartida");
-            
+            //a
         }
 
         if (timeIsRunning)
