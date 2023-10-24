@@ -15,6 +15,7 @@ public class MetamorfosisScript : MonoBehaviourPunCallbacks
     [SerializeField] private CinemachineFreeLook cam3d;
     [SerializeField] private bool offlinemode;// offline o online
     [SerializeField] private GameObject Prop;
+    private float time;
 
     public static bool isTransformed = false;
     #endregion
@@ -25,6 +26,21 @@ public class MetamorfosisScript : MonoBehaviourPunCallbacks
         view = GetComponent<PhotonView>();
         PhotonNetwork.OfflineMode = offlinemode;
     }
+void Update()
+{
+   time += Time.deltaTime;
+    if (isTransformed)
+    {
+       
+
+        //hacer contador de cada 15 segundos
+        if (time%15 == 0)
+        {
+        
+        }
+    }
+}
+
     void FixedUpdate()
     {
 
@@ -45,7 +61,7 @@ public class MetamorfosisScript : MonoBehaviourPunCallbacks
                 {
                     oneRequestBool = false;
                     view.RPC("Metamorph", RpcTarget.All, hit.collider.GetComponent<PhotonView>().ViewID);
-                    isTransformed = true;
+                    
                     StartCoroutine(MetaCooldown());
                 }
             }
@@ -72,6 +88,7 @@ public class MetamorfosisScript : MonoBehaviourPunCallbacks
             cam3d.GetRig(1).GetCinemachineComponent<CinemachineComposer>().m_ScreenX = 0.35f;
             Destroy(this.gameObject);
         }
+        isTransformed = true;
        
 
 
