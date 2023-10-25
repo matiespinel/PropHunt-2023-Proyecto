@@ -31,9 +31,6 @@ public class AnimationStateController : MonoBehaviour
     private Animator playerAnimator;
     private PhotonView view;
 
-    [SerializeField]
-    Camera cam;
-
     
     void Awake()
     {
