@@ -50,7 +50,7 @@ public class RoleManager : MonoBehaviour
             }
             else{
                  allPlayer = PhotonNetwork.PlayerList;
-                 hunter = Random.Range(0, allPlayer.Length - 1);
+                 hunter = Random.Range(0, allPlayer.Length);
                     foreach (Player p in allPlayer)
                     {
                         if (p.ActorNumber == hunter)
