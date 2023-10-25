@@ -1308,8 +1308,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f4edaae8eb507c4d9cfb58a3bbadc93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LookingDirection: {fileID: 6618955430467979582}
-  MainCamera: {fileID: 6618955431782695343}
 --- !u!114 &1536774475759377837
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2511,6 +2509,7 @@ MonoBehaviour:
   gameManager: {fileID: 0}
   canvasHUD: {fileID: 6618955430092581800}
   QuitPanel: {fileID: 6618955430867714004}
+  roleManager: {fileID: 0}
 --- !u!1 &6618955430175348230
 GameObject:
   m_ObjectHideFlags: 0
@@ -3137,6 +3136,7 @@ MonoBehaviour:
   bulletOrigin: {x: 0, y: 0, z: 0}
   bulletLine: {fileID: 0}
   ammoCounter: {fileID: 0}
+  animator: {fileID: 0}
 --- !u!120 &6618955430922166846
 LineRenderer:
   m_ObjectHideFlags: 0
@@ -4883,6 +4883,7 @@ MonoBehaviour:
   gameManager: {fileID: 0}
   canvasHUD: {fileID: 6618955430092581800}
   QuitPanel: {fileID: 6618955430867714004}
+  roleManager: {fileID: 0}
 --- !u!81 &6618955431782695342
 AudioListener:
   m_ObjectHideFlags: 0

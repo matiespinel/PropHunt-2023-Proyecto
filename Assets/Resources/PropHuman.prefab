@@ -1614,8 +1614,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f4edaae8eb507c4d9cfb58a3bbadc93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LookingDirection: {fileID: 5556407490715060205}
-  MainCamera: {fileID: 5556407490622689379}
 --- !u!114 &4746014442888846000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1814,12 +1812,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementSpeed: 10
+  prop: 0
   silvido: {fileID: 0}
   mass: 0
   velocity: {x: 0, y: 0, z: 0}
   wasGrounded: 0
   lookAt: {fileID: 0}
-  toggleRot: 1
+  animator: {fileID: 0}
 --- !u!1 &4762930099976845776
 GameObject:
   m_ObjectHideFlags: 0
@@ -3497,6 +3496,7 @@ MonoBehaviour:
   gameManager: {fileID: 0}
   canvasHUD: {fileID: 1426765573318077065}
   QuitPanel: {fileID: 0}
+  roleManager: {fileID: 0}
 --- !u!81 &2745912977850408644
 AudioListener:
   m_ObjectHideFlags: 0
