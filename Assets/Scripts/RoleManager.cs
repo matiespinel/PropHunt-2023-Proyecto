@@ -38,12 +38,14 @@ public class RoleManager : MonoBehaviour
                 {
                     PhotonNetwork.LocalPlayer.SetCustomProperties(new ExitGames.Client.Photon.Hashtable() { { "Role", "Hunter" } });
                             hunterCount++;
+                            RoleManager.hunterCount = hunterCount;
                             Debug.Log(hunterCount);
                 }
                 else
                 {
                        PhotonNetwork.LocalPlayer.SetCustomProperties(new ExitGames.Client.Photon.Hashtable() { { "Role", "Prop" } });
                             propCount++;
+                            RoleManager.propCount = propCount;
                             Debug.Log(propCount);
                 }
 

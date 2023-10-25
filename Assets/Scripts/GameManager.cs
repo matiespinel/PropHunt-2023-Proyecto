@@ -36,13 +36,14 @@ public class GameManager : MonoBehaviourPunCallbacks
     {
         if (RoleManager.propCount == 0)
         {
-        StartCoroutine("finalizarPartida");
+            Debug.Log("Hunter wins");
+        // StartCoroutine("finalizarPartida");
         }
 
         if (RoleManager.hunterCount == 0)
         {
-            // finalizar partida mediante coroutine
-             StartCoroutine("finalizarPartida");
+            Debug.Log("Props win");
+            //  StartCoroutine("finalizarPartida");
             //a
         }
 
@@ -57,7 +58,7 @@ public class GameManager : MonoBehaviourPunCallbacks
                 
                 timer = 0;
                 timeIsRunning = false;
-                StartCoroutine("finalizarPartida");
+                //StartCoroutine("finalizarPartida");
             }
         }
     }
