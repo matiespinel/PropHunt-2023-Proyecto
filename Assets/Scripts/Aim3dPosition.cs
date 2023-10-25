@@ -20,8 +20,12 @@ public class Aim3dPosition : MonoBehaviour
         RaycastHit hit;
         if(Physics.Raycast(ray, out hit,20f, layerMask)) 
         {
-            Debug.Log("hit");
-            transform.position = hit.point;
+            if (hit.distance > 4) 
+            {
+                Debug.Log("hit");
+                transform.position = hit.point;
+            }
+           
         }
     }
 }

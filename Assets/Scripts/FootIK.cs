@@ -40,13 +40,10 @@ public class FootIK : MonoBehaviour
             
             if(Physics.Raycast(LFray, out hit, DistanceToGround + 1f, playermask))
             {
-                if(hit.transform.tag == "fis")
-                {
-                    Vector3 LFootPos = hit.point;
-                    LFootPos.y += DistanceToGround;
-                    animator.SetIKPosition(AvatarIKGoal.LeftFoot, LFootPos);
-                    animator.SetIKRotation(AvatarIKGoal.LeftFoot, Quaternion.LookRotation(transform.forward, hit.normal));
-                }
+                Vector3 LFootPos = hit.point;
+                LFootPos.y += DistanceToGround;
+                animator.SetIKPosition(AvatarIKGoal.LeftFoot, LFootPos);
+                animator.SetIKRotation(AvatarIKGoal.LeftFoot, Quaternion.LookRotation(transform.forward, hit.normal));
             }
         }
         
