@@ -32,7 +32,7 @@ public class RoleManager : MonoBehaviour
    
     public void RoleAssigner()
         {
-            if (PhotonNetwork.CurrentRoom.PlayerCount == minPlayers)
+            if (PhotonNetwork.CurrentRoom.PlayerCount == 2)
             {
                 if (PhotonNetwork.LocalPlayer.IsMasterClient)
                 {
