@@ -50,8 +50,8 @@ public class GunShotScript : Weapon
             else
             {
                 bulletLine.SetPosition(1,bulletOrigin + (transform.up * bulletRange));
-                youEntity?.TakeDamage(20);
-                
+                animator.GetComponent<PhotonView>()?.RPC("TakeDamage", RpcTarget.All, 20);
+
             }
         }
         if (mag == 0 && cooldownReloadBool)
