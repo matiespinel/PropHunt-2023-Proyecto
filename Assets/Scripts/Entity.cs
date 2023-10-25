@@ -36,7 +36,7 @@ public abstract class Entity : MonoBehaviourPunCallbacks, IPunObservable
         {
             // Network player, receive data
             HP = (int)stream.ReceiveNext();
-            Debug.Log(HP);
+            Debug.Log("vida:"+HP);
         }
     }
     [PunRPC]
