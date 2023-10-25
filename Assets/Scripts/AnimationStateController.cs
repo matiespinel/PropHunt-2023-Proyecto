@@ -104,22 +104,6 @@ public class AnimationStateController : MonoBehaviour
                  playerAnimator.SetBool(isStrafingRightHash, false);
             }
             
-            if(cam.transform.localRotation.y >= 0.6f)
-            {
-              playerAnimator.SetBool(isTurningRightHash, true);
-            }
-            else
-            {
-              playerAnimator.SetBool(isTurningRightHash, false);  
-            }
-            if(playerAnimator.GetBoneTransform(HumanBodyBones.Head).localRotation.y < -0.23f)
-            {
-              playerAnimator.SetBool(isTurningLeftHash, true);
-            }
-            else
-            {
-              playerAnimator.SetBool(isTurningLeftHash, false);  
-            }
 
         }
         else 
