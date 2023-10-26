@@ -15,6 +15,7 @@ public class AnimationStateController : MonoBehaviour
     private int isStrafingRightHash;
     private int isTurningRightHash;
     private int isTurningLeftHash;
+    private int isRunningHash;
     #endregion
     //animator puede usar valores hash por sustitucion de int
     # region conditional bools
@@ -25,13 +26,14 @@ public class AnimationStateController : MonoBehaviour
     private bool isStrafingRight;
     private bool isTurningRight;
     private bool isTurningLeft;
+    private bool isRunning;
     #endregion
     //condiciones  
 
     private Animator playerAnimator;
     private PhotonView view;
 
-    
+
     void Awake()
     {
         playerAnimator = GetComponent<Animator>();
@@ -44,6 +46,7 @@ public class AnimationStateController : MonoBehaviour
         isStrafingRightHash = Animator.StringToHash("isStrafingRight");
         isTurningRightHash = Animator.StringToHash("isTurningRight");
         isTurningLeftHash = Animator.StringToHash("isTurningLeft");
+        isRunningHash = Animator.StringToHash("isRunning");
         #endregion
         #region Bools
         isBacking = playerAnimator.GetBool(isBackingHash);
@@ -52,6 +55,7 @@ public class AnimationStateController : MonoBehaviour
         isStrafingRight = playerAnimator.GetBool(isStrafingRightHash);
         isTurningRight = playerAnimator.GetBool(isTurningRightHash);
         isTurningLeft = playerAnimator.GetBool(isTurningLeftHash);
+        isRunning = playerAnimator.GetBool(isRunningHash);
         #endregion
     }
 
@@ -66,6 +70,7 @@ public class AnimationStateController : MonoBehaviour
             bool wPressed = Input.GetKey(KeyCode.W);
             bool aPressed = Input.GetKey(KeyCode.A);
             bool dPressed = Input.GetKey(KeyCode.D);
+            bool lShiftPressed = Input.GetKey(KeyCode.LeftShift);
             //WASD
             //AVANZAR
             if((!isBacking || !isStrafingLeft || !isStrafingRight) && wPressed)
@@ -102,6 +107,15 @@ public class AnimationStateController : MonoBehaviour
             else
             {
                  playerAnimator.SetBool(isStrafingRightHash, false);
+            }
+
+            if(lShiftPressed) 
+            {
+                playerAnimator.SetBool(isRunningHash, true);
+            }
+            else 
+            {
+                playerAnimator.SetBool(isRunningHash, false);
             }
             
 

@@ -36,6 +36,8 @@ public class MyCharacterController : MonoBehaviour
 
     bool toggleRot = true;
 
+    internal float movementSpeedMultiplier;
+
     [SerializeField]
     Animator animator;
 
@@ -88,6 +90,8 @@ public class MyCharacterController : MonoBehaviour
 
     public void UpdateMovement()
     {
+        movementSpeedMultiplier = 1f;
+        OnBeforeMove?.Invoke();
         var x = Input.GetAxis("Horizontal");
         var y = Input.GetAxis("Vertical");
 
@@ -95,10 +99,8 @@ public class MyCharacterController : MonoBehaviour
         input += transform.forward * y;
         input += transform.right * x;
         input = Vector3.ClampMagnitude(input, 1f);
-        if(Input.GetKey(KeyCode.Space))
-                {
-                    OnBeforeMove?.Invoke();
-                }
+        input *= movementSpeed * movementSpeedMultiplier;
+
         controller.Move((input * movementSpeed + velocity) * Time.fixedDeltaTime);
 
         if (toggleRot && Input.anyKey && prop || animator.GetBoneTransform(HumanBodyBones.Head).localRotation.y > -0.21f || animator.GetBoneTransform(HumanBodyBones.Head).localRotation.y < -0.33f || !prop && Input.GetAxis("Horizontal") != 0 || !prop && Input.GetAxis("Vertical") != 0)
