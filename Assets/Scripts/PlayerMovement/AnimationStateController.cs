@@ -7,6 +7,8 @@ using System;
 using Cinemachine;
 public class AnimationStateController : MonoBehaviour
 {
+    MyCharacterController myCharacterController;
+
     #region hashes
 
     private int isWalkingHash;
@@ -16,6 +18,7 @@ public class AnimationStateController : MonoBehaviour
     private int isTurningRightHash;
     private int isTurningLeftHash;
     private int isRunningHash;
+    private int isJumpingHash;
     #endregion
     //animator puede usar valores hash por sustitucion de int
     # region conditional bools
@@ -27,6 +30,7 @@ public class AnimationStateController : MonoBehaviour
     private bool isTurningRight;
     private bool isTurningLeft;
     private bool isRunning;
+    private bool isJumping;
     #endregion
     //condiciones  
 
@@ -36,6 +40,7 @@ public class AnimationStateController : MonoBehaviour
 
     void Awake()
     {
+        myCharacterController = GetComponent<MyCharacterController>();
         playerAnimator = GetComponent<Animator>();
         view = GetComponent<PhotonView>();
         #region Hashes
@@ -47,6 +52,7 @@ public class AnimationStateController : MonoBehaviour
         isTurningRightHash = Animator.StringToHash("isTurningRight");
         isTurningLeftHash = Animator.StringToHash("isTurningLeft");
         isRunningHash = Animator.StringToHash("isRunning");
+        isJumpingHash = Animator.StringToHash("isJumping");
         #endregion
         #region Bools
         isBacking = playerAnimator.GetBool(isBackingHash);
@@ -56,6 +62,7 @@ public class AnimationStateController : MonoBehaviour
         isTurningRight = playerAnimator.GetBool(isTurningRightHash);
         isTurningLeft = playerAnimator.GetBool(isTurningLeftHash);
         isRunning = playerAnimator.GetBool(isRunningHash);
+        isJumping = playerAnimator.GetBool(isJumpingHash);
         #endregion
     }
 
@@ -71,6 +78,7 @@ public class AnimationStateController : MonoBehaviour
             bool aPressed = Input.GetKey(KeyCode.A);
             bool dPressed = Input.GetKey(KeyCode.D);
             bool lShiftPressed = Input.GetKey(KeyCode.LeftShift);
+            playerAnimator.SetBool("isGrounded", myCharacterController.IsGrounded);
             //WASD
             //AVANZAR
             if((!isBacking || !isStrafingLeft || !isStrafingRight) && wPressed)
@@ -116,6 +124,15 @@ public class AnimationStateController : MonoBehaviour
             else 
             {
                 playerAnimator.SetBool(isRunningHash, false);
+            }
+
+            if(spacePressed)
+            {
+                playerAnimator.SetBool(isJumpingHash, true);
+            }
+            else
+            {
+                playerAnimator.SetBool(isJumpingHash, false);
             }
             
 
