@@ -48,7 +48,7 @@ public class MyCharacterController : MonoBehaviour
         silvido = GetComponent<AudioSource>();
         animator = GetComponent<Animator>();
     }
-    void FixedUpdate()
+    void Update()
     {
 
         if (MetamorfosisScript.isTransformed)
@@ -103,11 +103,16 @@ public class MyCharacterController : MonoBehaviour
 
         controller.Move((input * movementSpeed + velocity) * Time.fixedDeltaTime);
 
-        if (toggleRot && Input.anyKey && prop || animator.GetBoneTransform(HumanBodyBones.Head).localRotation.y > -0.21f || animator.GetBoneTransform(HumanBodyBones.Head).localRotation.y < -0.33f || !prop && Input.GetAxis("Horizontal") != 0 || !prop && Input.GetAxis("Vertical") != 0)
+        if(toggleRot && Input.anyKey && prop)
         {
-            var directionVector = (new Vector3(lookAt.transform.position.x - transform.position.x, 0, lookAt.transform.position.z - transform.position.z)).normalized;
-            var lookatquat = Quaternion.LookRotation(directionVector, Vector3.up);
-            SmoothRotate(transform.rotation, lookatquat, 10f);
+            RecenterForward();
+        }
+        else if(animator)
+        {
+            if(animator?.GetBoneTransform(HumanBodyBones.Head).localRotation.y > -0.19f || animator?.GetBoneTransform(HumanBodyBones.Head).localRotation.y < -0.33f || !prop && Input.GetAxis("Horizontal") != 0 || !prop && Input.GetAxis("Vertical") != 0)
+            {
+                RecenterForward();
+            }
         }
 
         
@@ -120,6 +125,13 @@ public class MyCharacterController : MonoBehaviour
         {
             transform.rotation = Quaternion.Slerp(currentrot, targetrot, rspeed);
         }
+    }
+
+    void RecenterForward()
+    {
+        var directionVector = (new Vector3(lookAt.transform.position.x - transform.position.x, 0, lookAt.transform.position.z - transform.position.z)).normalized;
+        var lookatquat = Quaternion.LookRotation(directionVector, Vector3.up);
+        SmoothRotate(transform.rotation, lookatquat, 10f);
     }
 
 }
