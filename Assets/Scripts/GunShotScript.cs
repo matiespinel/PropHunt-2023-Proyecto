@@ -31,7 +31,7 @@ public class GunShotScript : Weapon
 
     void FixedUpdate()
     {
-        if(Input.GetKey(fireButton) && Time.time > nextShotInterval && mag != 0)
+        if(Input.GetKey(fireButton) && Time.time > nextShotInterval && cooldownReloadBool)
         {
             nextShotInterval = Time.time + fireRate;
             StartCoroutine(ShotEffect());
