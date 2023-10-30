@@ -16,13 +16,13 @@ public class MetamorfosisScript : MonoBehaviourPunCallbacks
     [SerializeField] private bool offlinemode;// offline o online
     [SerializeField] private GameObject Prop;
     private float time;
-
+    private ParticleSystem metamorphSmoke;
     public static bool isTransformed = false;
     #endregion
     private RaycastHit hit;
     void Awake() 
     {
-
+        metamorphSmoke = GetComponent<ParticleSystem>();
         view = GetComponent<PhotonView>();
         PhotonNetwork.OfflineMode = offlinemode;
     }
@@ -77,6 +77,7 @@ void Update()
     {
         PhotonView clone = PhotonView.Find(id);
         Debug.Log("Metamorfosis ejecutada");
+        metamorphSmoke.Play();
         Prop.GetComponent<PhotonView>().GetComponent<MeshFilter>().mesh = clone.gameObject.GetComponent<MeshFilter>().mesh;
         Prop.GetComponent<PhotonView>().GetComponent<Renderer>().material = clone.gameObject.GetComponent<Renderer>().material;
         if (Prop != this.gameObject)

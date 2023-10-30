@@ -66,7 +66,7 @@ public class AnimationStateController : MonoBehaviour
         #endregion
     }
 
-    void FixedUpdate()
+    void Update()
     {
         if (view.IsMine) 
         {
@@ -129,6 +129,7 @@ public class AnimationStateController : MonoBehaviour
             if(spacePressed)
             {
                 playerAnimator.SetBool(isJumpingHash, true);
+                Debug.Log("jump");
             }
             else
             {
