@@ -5950,6 +5950,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6361450532272609879}
+  - component: {fileID: 3947918595077572799}
   m_Layer: 3
   m_Name: CM_LookAt
   m_TagString: Untagged
@@ -5973,6 +5974,25 @@ Transform:
   m_Father: {fileID: 6537586922204009792}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1818360609 &3947918595077572799
+RotationConstraint:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6361450532272609880}
+  m_Enabled: 1
+  m_Weight: 1
+  m_RotationAtRest: {x: 0, y: 0, z: 0}
+  m_RotationOffset: {x: 0, y: 0, z: 0}
+  m_AffectRotationX: 1
+  m_AffectRotationY: 0
+  m_AffectRotationZ: 1
+  m_IsContraintActive: 1
+  m_IsLocked: 1
+  m_Sources:
+  - sourceTransform: {fileID: 6537586922204009792}
+    weight: 1
 --- !u!1 &6361450533335676633
 GameObject:
   m_ObjectHideFlags: 0
