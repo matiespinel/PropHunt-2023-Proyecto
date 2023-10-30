@@ -13,7 +13,7 @@ public abstract class Weapon : MonoBehaviourPunCallbacks
         GunShotScript,
         gun2,
     }
-    private AudioSource _audioSource;
+    public AudioSource _audioSource;
     #region WeaponData
     public Vector3 bulletOrigin;
     public LineRenderer bulletLine;
@@ -34,6 +34,7 @@ public abstract class Weapon : MonoBehaviourPunCallbacks
 
     public TMP_Text ammoCounter;
     public Animator animator;
+    public ParticleSystem MuzzleFlash;
     #endregion WeaponData    
     private void Awake() => _audioSource = GetComponent<AudioSource>();
     /// <summary>
@@ -59,9 +60,9 @@ public abstract class Weapon : MonoBehaviourPunCallbacks
     public IEnumerator ShotEffect()
     {
         mag--;
-        Debug.Log(mag);
         animator.SetBool("isFiring", true);
         RegisterShotAudio();
+        MuzzleFlash.Play();
         bulletLine.enabled = true;
         yield return bulletTime;
         UpdateAmmoCounter();
@@ -81,11 +82,12 @@ public abstract class Weapon : MonoBehaviourPunCallbacks
         animator.SetBool("isReloading", true);
         yield return reloadTime;
         animator.SetBool("isReloading", false);
-        mag += initialMag;
-        ammo -= initialMag;
+        var dif = initialMag - mag;
+        mag += dif;
+        ammo -= dif;
         UpdateAmmoCounter();
         cooldownReloadBool = true;
     }
-    //¡Si alguien se muere por disparos sin esto el audio queda registrado!
+    //ï¿½Si alguien se muere por disparos sin esto el audio queda registrado!
     private void OnDestroy() =>DeregisterShotAudio();
 }

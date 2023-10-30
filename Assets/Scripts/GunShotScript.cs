@@ -54,7 +54,7 @@ public class GunShotScript : Weapon
 
             }
         }
-        if (mag == 0 && cooldownReloadBool)
+        if (mag == 0 && cooldownReloadBool || Input.GetKey(KeyCode.R) && cooldownReloadBool && mag != initialMag)
         {
             StartCoroutine(ReloadWait());
         }

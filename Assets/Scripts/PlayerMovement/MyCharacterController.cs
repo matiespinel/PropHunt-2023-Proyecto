@@ -23,6 +23,11 @@ public class MyCharacterController : MonoBehaviour
     [SerializeField]
     private float mass;
 
+    [SerializeField]
+    float maxRot = -0.19f;
+    [SerializeField]
+    float minRot = -0.33f;
+
     public Vector3 velocity;
 
     public bool IsGrounded => controller.isGrounded;
@@ -48,7 +53,7 @@ public class MyCharacterController : MonoBehaviour
         silvido = GetComponent<AudioSource>();
         animator = GetComponent<Animator>();
     }
-    void Update()
+    void FixedUpdate()
     {
 
         if (MetamorfosisScript.isTransformed)
@@ -109,7 +114,7 @@ public class MyCharacterController : MonoBehaviour
         }
         else if(animator)
         {
-            if(animator?.GetBoneTransform(HumanBodyBones.Head).localRotation.y > -0.19f || animator?.GetBoneTransform(HumanBodyBones.Head).localRotation.y < -0.33f || !prop && Input.GetAxis("Horizontal") != 0 || !prop && Input.GetAxis("Vertical") != 0)
+            if(animator?.GetBoneTransform(HumanBodyBones.Head).localRotation.y > maxRot || animator?.GetBoneTransform(HumanBodyBones.Head).localRotation.y < minRot || !prop && Input.GetAxis("Horizontal") != 0 || !prop && Input.GetAxis("Vertical") != 0)
             {
                 RecenterForward();
             }
@@ -118,20 +123,11 @@ public class MyCharacterController : MonoBehaviour
         
     }
 
-    void SmoothRotate(Quaternion currentrot, Quaternion targetrot, float speed) 
-    {
-        float rspeed = speed * (1f - Mathf.Exp(-Time.deltaTime));
-        for (int i = 0 ; i < speed; i++) 
-        {
-            transform.rotation = Quaternion.Slerp(currentrot, targetrot, rspeed);
-        }
-    }
-
     void RecenterForward()
     {
-        var directionVector = (new Vector3(lookAt.transform.position.x - transform.position.x, 0, lookAt.transform.position.z - transform.position.z)).normalized;
-        var lookatquat = Quaternion.LookRotation(directionVector, Vector3.up);
-        SmoothRotate(transform.rotation, lookatquat, 10f);
+        var directionVector = (lookAt.transform.position - transform.position).normalized;
+        var rotGoal = Quaternion.LookRotation(new Vector3(directionVector.x,0f ,directionVector.z));
+        transform.rotation = Quaternion.Slerp(transform.rotation,rotGoal,.05f);
     }
 
 }
