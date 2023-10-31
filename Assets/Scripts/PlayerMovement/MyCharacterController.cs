@@ -28,7 +28,7 @@ public class MyCharacterController : MonoBehaviour
     [SerializeField]
     float minRot = -0.33f;
 
-    public Vector3 velocity;
+    internal Vector3 velocity;
 
     public bool IsGrounded => controller.isGrounded;
 
