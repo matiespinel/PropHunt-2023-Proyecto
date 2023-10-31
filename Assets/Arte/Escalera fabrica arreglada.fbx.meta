@@ -3,7 +3,22 @@ guid: 54baa7e5aed6e3a418ba190e17c4bef5
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material
+    second: {fileID: 2100000, guid: 57b9ba9a7df7fa34fb7720245686244e, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: DiamondPlate005D_1K-JPG_Color
+    second: {fileID: 2800000, guid: 2d42ebd5182d0654ab1a55cc4eaafd0b, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: DiamondPlate005D_1K-JPG_NormalGL
+    second: {fileID: 2800000, guid: aeaf19b0ab42708479c8c9837dba88c8, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0
