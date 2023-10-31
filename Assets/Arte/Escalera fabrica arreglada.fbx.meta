@@ -10,15 +10,25 @@ ModelImporter:
       name: Material
     second: {fileID: 2100000, guid: 57b9ba9a7df7fa34fb7720245686244e, type: 2}
   - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.004
+    second: {fileID: 2100000, guid: bca6e653e5e49a34592afd949aa4e5ce, type: 2}
+  - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: DiamondPlate005D_1K-JPG_Color
-    second: {fileID: 2800000, guid: 2d42ebd5182d0654ab1a55cc4eaafd0b, type: 3}
+    second: {fileID: 2800000, guid: 79e7c52b3b457164e82951027f2c5d72, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: DiamondPlate005D_1K-JPG_NormalGL
-    second: {fileID: 2800000, guid: aeaf19b0ab42708479c8c9837dba88c8, type: 3}
+    second: {fileID: 2800000, guid: eaa42edfee52555448bd8dcabdb0b70e, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Metal046A_1K-JPG_Color
+    second: {fileID: 2800000, guid: f94d42e5a9142814993c89264a20bd81, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0
