@@ -66,6 +66,22 @@ public class RoleManager : MonoBehaviour
                               propCount++;
                         }
                     }
+                    bool isHunterAssigned = false;
+
+foreach (Player pp in allPlayer)
+{
+    if (pp.CustomProperties["Role"].ToString() == "Hunter")
+    {
+        Debug.Log("Hunter: " + pp.NickName);
+        isHunterAssigned = true;
+    }
+}
+
+if (!isHunterAssigned && PhotonNetwork.IsMasterClient)
+{
+    PhotonNetwork.LocalPlayer.SetCustomProperties(new ExitGames.Client.Photon.Hashtable() { { "Role", "Hunter" } });
+    Debug.Log("Hunter: " + PhotonNetwork.LocalPlayer.NickName);
+}
             }
            
 
