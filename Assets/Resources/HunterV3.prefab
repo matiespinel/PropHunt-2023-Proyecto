@@ -2325,7 +2325,6 @@ MonoBehaviour:
   mass: 1.5
   maxRot: -0.14
   minRot: -0.3
-  velocity: {x: 0, y: 0, z: 0}
   wasGrounded: 0
   lookAt: {fileID: 6141548956746243440}
   animator: {fileID: 0}
