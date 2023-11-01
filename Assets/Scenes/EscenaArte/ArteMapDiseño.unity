@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -22119,22 +22119,22 @@ PrefabInstance:
     - target: {fileID: 6141548957238725421, guid: a6b1ad0bd6c969e41a4a7aea934c131b,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.83796084
+      value: 0.8612016
       objectReference: {fileID: 0}
     - target: {fileID: 6141548957238725421, guid: a6b1ad0bd6c969e41a4a7aea934c131b,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.33175683
+      value: 0.340958
       objectReference: {fileID: 0}
     - target: {fileID: 6141548957238725421, guid: a6b1ad0bd6c969e41a4a7aea934c131b,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.42136684
+      value: 0.36654362
       objectReference: {fileID: 0}
     - target: {fileID: 6141548957238725421, guid: a6b1ad0bd6c969e41a4a7aea934c131b,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.10103917
+      value: 0.08789315
       objectReference: {fileID: 0}
     - target: {fileID: 6141548957448765917, guid: a6b1ad0bd6c969e41a4a7aea934c131b,
         type: 3}
@@ -22519,17 +22519,17 @@ Light:
   m_GameObject: {fileID: 871204903}
   m_Enabled: 1
   serializedVersion: 10
-  m_Type: 1
+  m_Type: 0
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 1
-  m_Range: 10
-  m_SpotAngle: 30
+  m_Range: 12.88
+  m_SpotAngle: 80.7
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 0
-    m_Resolution: -1
+    m_Type: 1
+    m_Resolution: 2
     m_CustomResolution: -1
     m_Strength: 1
     m_Bias: 0.05
@@ -22554,9 +22554,9 @@ Light:
       e33: 1
     m_UseCullingMatrixOverride: 0
   m_Cookie: {fileID: 0}
-  m_DrawHalo: 0
+  m_DrawHalo: 1
   m_Flare: {fileID: 0}
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -22580,7 +22580,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 871204903}
   m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 6.002, y: 3.54, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -46282,10 +46282,10 @@ Transform:
   - {fileID: 1622161649}
   - {fileID: 470213682}
   - {fileID: 251457976}
-  - {fileID: 804108142}
   - {fileID: 1916231106}
   - {fileID: 651391581}
   - {fileID: 1240536144}
+  - {fileID: 804108142}
   - {fileID: 464938715}
   - {fileID: 186574082}
   - {fileID: 2123828366}
