@@ -45,6 +45,7 @@ public class MyCharacterController : MonoBehaviour
 
     [SerializeField]
     Animator animator;
+    [SerializeField] float acceleration = 20f;
 
     void Awake()
     {
@@ -93,11 +94,9 @@ public class MyCharacterController : MonoBehaviour
         velocity.y = controller.isGrounded ? -1f : velocity.y + gravity.y;
     }
 
-    public void UpdateMovement()
+    Vector3 GetMovementInput() 
     {
-        movementSpeedMultiplier = 1f;
-        OnBeforeMove?.Invoke();
-        var x = Input.GetAxis("Horizontal");
+         var x = Input.GetAxis("Horizontal");
         var y = Input.GetAxis("Vertical");
 
         var input = new Vector3();
@@ -106,7 +105,21 @@ public class MyCharacterController : MonoBehaviour
         input = Vector3.ClampMagnitude(input, 1f);
         input *= movementSpeed * movementSpeedMultiplier;
 
-        controller.Move((input * movementSpeed + velocity) * Time.fixedDeltaTime);
+        
+        return input;
+    }
+    public void UpdateMovement()
+    {
+        
+        movementSpeedMultiplier = 1f;
+        OnBeforeMove?.Invoke();
+        var input = GetMovementInput();
+
+        var factor = acceleration * Time.fixedDeltaTime;
+        velocity.x = Mathf.Lerp(velocity.x, input.x, factor);
+        velocity.z = Mathf.Lerp(velocity.z, input.z, factor);
+
+        controller.Move(velocity * Time.fixedDeltaTime);
 
         if(toggleRot && Input.anyKey && prop)
         {

@@ -22,10 +22,9 @@ public class Sprint : MonoBehaviour
     {
         var sprintInput = Input.GetAxis("Fire3");
         if (sprintInput == 0) return;
-        Debug.Log("funciono?");
         var forwardMovementFactor = Mathf.Clamp01(Vector3.Dot(transform.forward, mController.velocity.normalized));
-        var multiplier = Mathf.Lerp(forwardMovementFactor, speedMultiplier, 1f);
-        mController.movementSpeedMultiplier *= sprintInput > 0 ? multiplier : 1f;
+        var multiplier = Mathf.Lerp(1f, speedMultiplier, forwardMovementFactor);
+        mController.movementSpeedMultiplier *= multiplier;
         Debug.Log(multiplier);
 
     }
