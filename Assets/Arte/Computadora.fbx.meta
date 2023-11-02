@@ -3,7 +3,67 @@ guid: 7bb1b1ae43c1cc4479bbd8c2ba8b7587
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material
+    second: {fileID: 2100000, guid: 9e478514a8ffb8443b7881855f441821, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.001
+    second: {fileID: 2100000, guid: 86748fdd7b8721d46acbf7e39ec01ef9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.002
+    second: {fileID: 2100000, guid: b324be8cdd7bd4a41adcd4504298b4a8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.003
+    second: {fileID: 2100000, guid: 42f95b14c3d326f499c4ec229f920ce3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.004
+    second: {fileID: 2100000, guid: 076461c28162bad42a33bf4a38ab14bd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.005
+    second: {fileID: 2100000, guid: 53fa9782106690d43b2e6b8711b28a25, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.006
+    second: {fileID: 2100000, guid: 7bff17554f0ed8944937c09916020662, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PaletaDeColores
+    second: {fileID: 2100000, guid: 5bec5393f54b84643ab6acab56eb8a07, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PaletaDeColores.001
+    second: {fileID: 2100000, guid: 5880669355c67cf4ab39b12d29c2521e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: compu
+    second: {fileID: 2100000, guid: c32f08c29acedab4891d7a10e711a96e, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: CompuText
+    second: {fileID: 2800000, guid: 3d064778cd81c3e4aa21ef6a5ce1b855, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: lH8yTHvm
+    second: {fileID: 2800000, guid: c8782f4445c9d0344a4b1a0833358550, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0
