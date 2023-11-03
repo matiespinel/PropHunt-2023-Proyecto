@@ -15,6 +15,7 @@ public class MetamorfosisScript : MonoBehaviourPunCallbacks
     [SerializeField] private CinemachineFreeLook cam3d;
     [SerializeField] private bool offlinemode;// offline o online
     [SerializeField] private GameObject Prop;
+    [SerializeField] private LineRenderer propGun;
     private float time;
     private ParticleSystem metamorphSmoke;
     public static bool isTransformed = false;
@@ -56,10 +57,13 @@ void Update()
         if(Physics.Raycast(ray, out hit, ignoreLayer))// ignoreLayer es la capa de la que forma parte el gameobj. en este parametro se inserta la layer que queres ignorar(porque el raycast sale del interior del player y puede colisionar con su propio collider)
         {
                 hit.collider.GetComponent<Outline>()?.ToggleHighlight(true);
-
+                propGun.SetPosition(0, transform.position);
                 if (Input.GetKey(KeyCode.Tab) && oneRequestBool && hit.collider.tag == "Transformable")
                 {
+                    propGun.enabled = true;
+                    propGun.SetPosition(1, hit.transform.position);
                     oneRequestBool = false;
+                    
                     view.RPC("Metamorph", RpcTarget.All, hit.collider.GetComponent<PhotonView>().ViewID);
                     
                     StartCoroutine(MetaCooldown());
@@ -99,6 +103,7 @@ void Update()
 
     IEnumerator MetaCooldown()
     {
+        propGun.enabled = false;
         yield return new WaitForSeconds(8);
         oneRequestBool = true;
     }
