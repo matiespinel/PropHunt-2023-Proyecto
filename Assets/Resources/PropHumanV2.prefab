@@ -683,6 +683,7 @@ MonoBehaviour:
   canvasHUD: {fileID: 4394659966329681093}
   QuitPanel: {fileID: 4394659967147794617}
   roleManager: {fileID: 0}
+  tiempoo: {fileID: 0}
 --- !u!1 &4394659966656495625
 GameObject:
   m_ObjectHideFlags: 3
@@ -1721,6 +1722,7 @@ MonoBehaviour:
   canvasHUD: {fileID: 4394659966329681093}
   QuitPanel: {fileID: 4394659967147794617}
   roleManager: {fileID: 0}
+  tiempoo: {fileID: 0}
 --- !u!81 &4394659967994863299
 AudioListener:
   m_ObjectHideFlags: 0
