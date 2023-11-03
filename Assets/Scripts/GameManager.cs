@@ -16,7 +16,7 @@ public class GameManager : MonoBehaviourPunCallbacks
     [SerializeField] GameObject Pared3;
     [SerializeField] AudioSource audioSource;
     // hacer un timer de 5 minutos
-    [SerializeField] float timer = 300;
+    public float timer = 300;
     bool timeIsRunning = false;
     
     // Start is called before the first frame update
@@ -37,13 +37,13 @@ public class GameManager : MonoBehaviourPunCallbacks
         if (RoleManager.propCount == 0)
         {
             Debug.Log("Hunter wins");
-        // StartCoroutine("finalizarPartida");
+        StartCoroutine("finalizarPartida");
         }
 
         if (RoleManager.hunterCount == 0)
         {
             Debug.Log("Props win");
-            //  StartCoroutine("finalizarPartida");
+            StartCoroutine("finalizarPartida");
             //a
         }
 
@@ -58,7 +58,7 @@ public class GameManager : MonoBehaviourPunCallbacks
                 
                 timer = 0;
                 timeIsRunning = false;
-                //StartCoroutine("finalizarPartida");
+                StartCoroutine("finalizarPartida");
             }
         }
     }

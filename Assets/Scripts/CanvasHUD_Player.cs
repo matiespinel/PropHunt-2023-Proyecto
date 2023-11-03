@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -17,35 +18,48 @@ public class CanvasHUD_Player : MonoBehaviour
     public GameObject QuitPanel;
     public RoleManager roleManager;
 
+    public TMP_Text tiempoo;
     #endregion
+
     public void SetPlayerInfo(Player _player)
-     {
-         playerName.text = _player.NickName;
-     }
-     public void LeaveRoom()
-     {
-         PhotonNetwork.LeaveRoom();
-     }
+    {
+        playerName.text = _player.NickName;
+    }
+
+    public void LeaveRoom()
+    {
+        PhotonNetwork.LeaveRoom();
+    }
      
     void Start()
     {
         gameManager = GameObject.Find("[GAMEMANAGER]").GetComponent<GameManager>();
-       PV = GetComponent<PhotonView>();
-       if (PV.IsMine)
-        playerName.text = PhotonNetwork.NickName;
+        PV = GetComponent<PhotonView>();
+        if (PV.IsMine)
+            playerName.text = PhotonNetwork.NickName;
         canvasHUD.gameObject.SetActive(true);
     }
     
     // Update is called once per frame
     void FixedUpdate()
     {
+        PropCountText.text = "Props: " + RoleManager.propCount;
         
-            PropCountText.text = "Props: " + RoleManager.propCount;
-            
-            if (Input.GetKeyDown(KeyCode.Escape))
-            {
-                QuitPanel.SetActive(true);
-            }
-    
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            QuitPanel.SetActive(true);
+        }
+        if (Input.GetKeyDown(KeyCode.Escape) && QuitPanel.activeSelf == true)
+        {
+            QuitPanel.SetActive(false);
+        }
+
+        double time = gameManager.timer;
+        TimeSpan timeSpan = TimeSpan.FromSeconds(time);
+        string timerText = string.Format("{0:D2}:{1:D2}:{2:D3}", 
+            timeSpan.Minutes, 
+            timeSpan.Seconds, 
+            timeSpan.Milliseconds);
+        tiempoo.text = timerText;
     }
 }
