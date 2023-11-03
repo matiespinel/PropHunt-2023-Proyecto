@@ -22763,7 +22763,7 @@ MonoBehaviour:
   huntZmax: 0
   playerPrefab: {fileID: 5762333492221181949, guid: a6b1ad0bd6c969e41a4a7aea934c131b,
     type: 3}
-  playerPrefab2: {fileID: 5556407490027017164, guid: ef205c28f05568e4e9dd828dbc17e99d,
+  playerPrefab2: {fileID: 2751758814184191198, guid: 23774f15a89b44c4884eae2013a92302,
     type: 3}
 --- !u!1001 &1462645241
 PrefabInstance:
