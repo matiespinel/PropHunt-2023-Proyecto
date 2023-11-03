@@ -68,11 +68,11 @@ public class RoleManager : MonoBehaviour
                     }
                     bool isHunterAssigned = false;
 
-foreach (Player pp in allPlayer)
+foreach (Player p in allPlayer)
 {
-    if (pp.CustomProperties["Role"].ToString() == "Hunter")
+    if (p.CustomProperties.ContainsKey("Role") && p.CustomProperties["Role"].ToString() == "Hunter")
     {
-        Debug.Log("Hunter: " + pp.NickName);
+        Debug.Log("Hunter: " + p.NickName);
         isHunterAssigned = true;
     }
 }

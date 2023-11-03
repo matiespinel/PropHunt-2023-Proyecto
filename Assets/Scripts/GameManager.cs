@@ -34,18 +34,18 @@ public class GameManager : MonoBehaviourPunCallbacks
     // Update is called once per frame
     void Update()
     {
-        if (RoleManager.propCount == 0)
+         if (RoleManager.hunterCount == 0)
+        {
+            Debug.Log("Props win");
+            StartCoroutine("finalizarPartida");
+            //a
+        }if (RoleManager.propCount == 0)
         {
             Debug.Log("Hunter wins");
         StartCoroutine("finalizarPartida");
         }
 
-        if (RoleManager.hunterCount == 0)
-        {
-            Debug.Log("Props win");
-            StartCoroutine("finalizarPartida");
-            //a
-        }
+       
 
         if (timeIsRunning)
         {
@@ -76,7 +76,8 @@ public class GameManager : MonoBehaviourPunCallbacks
     IEnumerator finalizarPartida()
     {
         yield return new WaitForSeconds(5);
-        PhotonNetwork.LeaveRoom();
+        //PhotonNetwork.LeaveRoom();
+        Debug.Log("Saliendo de la partida");
     }
     public override void OnLeftRoom()
     {
