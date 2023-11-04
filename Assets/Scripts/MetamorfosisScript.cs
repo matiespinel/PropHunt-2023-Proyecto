@@ -57,7 +57,7 @@ void Update()
         if(Physics.Raycast(ray, out hit, ignoreLayer))// ignoreLayer es la capa de la que forma parte el gameobj. en este parametro se inserta la layer que queres ignorar(porque el raycast sale del interior del player y puede colisionar con su propio collider)
         {
                 hit.collider.GetComponent<Outline>()?.ToggleHighlight(true);
-                propGun.SetPosition(0, transform.position);
+                propGun.SetPosition(0, propGun.transform.position);
                 if (Input.GetKey(KeyCode.Tab) && oneRequestBool && hit.collider.tag == "Transformable")
                 {
                     propGun.enabled = true;
@@ -84,14 +84,14 @@ void Update()
         metamorphSmoke.Play();
         Prop.GetComponent<PhotonView>().GetComponent<MeshFilter>().mesh = clone.gameObject.GetComponent<MeshFilter>().mesh;
         Prop.GetComponent<PhotonView>().GetComponent<Renderer>().material = clone.gameObject.GetComponent<Renderer>().material;
-        if (Prop != this.gameObject)
+        if (Prop != gameObject)
         {
             Prop.transform.position = transform.position;
             Prop.SetActive(true);
             cam3d.LookAt = Prop.transform;
             cam3d.Follow = Prop.transform;
             cam3d.GetRig(1).GetCinemachineComponent<CinemachineComposer>().m_ScreenX = 0.35f;
-            Destroy(this.gameObject);
+            Destroy(gameObject);
         }
         isTransformed = true;
        
@@ -103,6 +103,7 @@ void Update()
 
     IEnumerator MetaCooldown()
     {
+        yield return new WaitForSeconds(1);
         propGun.enabled = false;
         yield return new WaitForSeconds(8);
         oneRequestBool = true;

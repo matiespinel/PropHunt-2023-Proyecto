@@ -4454,8 +4454,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_RigLayers:
-  - m_Rig: {fileID: 9019459534006637159}
-    m_Active: 1
   - m_Rig: {fileID: 9019459533158429466}
     m_Active: 1
   - m_Rig: {fileID: 9019459533231500490}
@@ -4465,6 +4463,8 @@ MonoBehaviour:
   - m_Rig: {fileID: 9019459533469033173}
     m_Active: 1
   - m_Rig: {fileID: 0}
+    m_Active: 1
+  - m_Rig: {fileID: 9019459534006637159}
     m_Active: 1
   m_Effectors:
   - m_Transform: {fileID: 0}
