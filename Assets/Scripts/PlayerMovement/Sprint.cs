@@ -25,7 +25,5 @@ public class Sprint : MonoBehaviour
         var forwardMovementFactor = Mathf.Clamp01(Vector3.Dot(transform.forward, mController.velocity.normalized));
         var multiplier = Mathf.Lerp(1f, speedMultiplier, forwardMovementFactor);
         mController.movementSpeedMultiplier *= multiplier;
-        Debug.Log(multiplier);
-
     }
 }

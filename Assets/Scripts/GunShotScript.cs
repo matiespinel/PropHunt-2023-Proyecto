@@ -31,10 +31,12 @@ public class GunShotScript : Weapon
 
     void FixedUpdate()
     {
+        if(!photonView.IsMine) return;
+
         if(Input.GetKey(fireButton) && Time.time > nextShotInterval && cooldownReloadBool)
         {
             nextShotInterval = Time.time + fireRate;
-            StartCoroutine(ShotEffect());
+            photonView.RPC("Shoot", RpcTarget.All);
             RaycastHit hit;
             bulletOrigin = transform.position;
             bulletLine.SetPosition(0,bulletOrigin);
@@ -42,7 +44,7 @@ public class GunShotScript : Weapon
             if(Physics.Raycast(bulletOrigin, transform.up,out hit, bulletRange))
             {
                 bulletLine.SetPosition(1, hit.point);
-                if(hit.collider.tag == "Transformable")
+                if(hit.collider.gameObject.layer == 6)//6 => layer llamada "Prop"
                 {
                     hit.collider.GetComponent<PhotonView>()?.RPC("TakeDamage", RpcTarget.All, 20);
                 }
@@ -56,7 +58,7 @@ public class GunShotScript : Weapon
         }
         if (mag == 0 && cooldownReloadBool || Input.GetKey(KeyCode.R) && cooldownReloadBool && mag != initialMag)
         {
-            StartCoroutine(ReloadWait());
+            photonView.RPC("Reload", RpcTarget.All);
         }
     }
 }

@@ -68,7 +68,6 @@ public abstract class Weapon : MonoBehaviourPunCallbacks
         UpdateAmmoCounter();
         bulletLine.enabled = false;
         animator.SetBool("isFiring", false);
-
         DeregisterShotAudio();
     }
     /// <summary>
@@ -77,8 +76,6 @@ public abstract class Weapon : MonoBehaviourPunCallbacks
     public IEnumerator ReloadWait()
     {
         cooldownReloadBool = false;
-        Debug.Log("recargando...");
-        Debug.Log(initialMag);
         animator.SetBool("isReloading", true);
         yield return reloadTime;
         animator.SetBool("isReloading", false);
@@ -90,4 +87,9 @@ public abstract class Weapon : MonoBehaviourPunCallbacks
     }
     //�Si alguien se muere por disparos sin esto el audio queda registrado!
     private void OnDestroy() =>DeregisterShotAudio();
+
+    [PunRPC]
+    void Reload() => StartCoroutine(ReloadWait());
+    [PunRPC]
+    void Shoot() => StartCoroutine(ShotEffect());
 }

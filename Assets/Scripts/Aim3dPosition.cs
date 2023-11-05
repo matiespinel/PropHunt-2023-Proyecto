@@ -22,7 +22,6 @@ public class Aim3dPosition : MonoBehaviour
         {
             if (hit.distance > 4) 
             {
-                Debug.Log("hit");
                 transform.position = hit.point;
             }
            
