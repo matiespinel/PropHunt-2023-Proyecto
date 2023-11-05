@@ -1092,7 +1092,7 @@ GameObject:
   - component: {fileID: 2943016431353570433}
   - component: {fileID: 6438209494838145997}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: InicioCanvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2172,6 +2172,7 @@ MonoBehaviour:
   canvasHUD: {fileID: 4394659966329681093}
   QuitPanel: {fileID: 4394659967147794617}
   roleManager: {fileID: 0}
+  InicioCanvas: {fileID: 969768828989528985}
   tiempoo: {fileID: 0}
 --- !u!1 &4394659966656495625
 GameObject:
@@ -3084,6 +3085,7 @@ MonoBehaviour:
   canvasHUD: {fileID: 4394659966329681093}
   QuitPanel: {fileID: 4394659967147794617}
   roleManager: {fileID: 0}
+  InicioCanvas: {fileID: 0}
   tiempoo: {fileID: 0}
 --- !u!81 &4394659967994863299
 AudioListener:
