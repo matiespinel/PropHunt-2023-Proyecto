@@ -367,7 +367,7 @@ AnimatorState:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: DiagonalRightWalk
-  m_Speed: 2
+  m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: 30663478006059479}
@@ -449,7 +449,7 @@ BlendTree:
   m_Name: Blend Tree
   m_Childs:
   - serializedVersion: 2
-    m_Motion: {fileID: -203655887218126122, guid: edf674d4032746a49b3d0ea56c478e89,
+    m_Motion: {fileID: -203655887218126122, guid: 69c0c4e362a78c544ad9c806ea55fb16,
       type: 3}
     m_Threshold: 0
     m_Position: {x: 0, y: 0}
@@ -458,7 +458,7 @@ BlendTree:
     m_DirectBlendParameter: IKRFWeight
     m_Mirror: 0
   - serializedVersion: 2
-    m_Motion: {fileID: -203655887218126122, guid: ea0fb3a90a68e664d9e07f1de3d03989,
+    m_Motion: {fileID: -203655887218126122, guid: 00dfc78df40137c4ab382421b24fc17a,
       type: 3}
     m_Threshold: 1
     m_Position: {x: 0, y: 0}
@@ -532,7 +532,7 @@ BlendTree:
   m_Name: Blend Tree
   m_Childs:
   - serializedVersion: 2
-    m_Motion: {fileID: -203655887218126122, guid: 5f2a37a74a138e64095ab227c6299ef5,
+    m_Motion: {fileID: -203655887218126122, guid: a9265930eedc28b42a99be0f3dfd97ba,
       type: 3}
     m_Threshold: 0
     m_Position: {x: 0, y: 0}
@@ -541,7 +541,7 @@ BlendTree:
     m_DirectBlendParameter: IKRFWeight
     m_Mirror: 0
   - serializedVersion: 2
-    m_Motion: {fileID: -203655887218126122, guid: 4acf7e85b42a49f43876201d81901b76,
+    m_Motion: {fileID: -203655887218126122, guid: 1e3453de15562914c88b8fc2aed718d9,
       type: 3}
     m_Threshold: 1
     m_Position: {x: 0, y: 0}
@@ -754,85 +754,85 @@ AnimatorController:
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 9100000}
+    m_Controller: {fileID: 0}
   - m_Name: isBacking
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 9100000}
+    m_Controller: {fileID: 0}
   - m_Name: isStrafingLeft
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 9100000}
+    m_Controller: {fileID: 0}
   - m_Name: isStrafingRight
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 9100000}
+    m_Controller: {fileID: 0}
   - m_Name: SFront
     m_Type: 1
     m_DefaultFloat: 0.4
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 9100000}
+    m_Controller: {fileID: 0}
   - m_Name: SBack
     m_Type: 1
     m_DefaultFloat: 0.5
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 9100000}
+    m_Controller: {fileID: 0}
   - m_Name: isTurningRight
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 9100000}
+    m_Controller: {fileID: 0}
   - m_Name: isTurningLeft
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 9100000}
+    m_Controller: {fileID: 0}
   - m_Name: isJumping
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 1
-    m_Controller: {fileID: 9100000}
+    m_Controller: {fileID: 0}
   - m_Name: isReloading
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 9100000}
+    m_Controller: {fileID: 0}
   - m_Name: isFiring
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 9100000}
+    m_Controller: {fileID: 0}
   - m_Name: isRunning
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 9100000}
+    m_Controller: {fileID: 0}
   - m_Name: WalkToRun
     m_Type: 1
     m_DefaultFloat: 0.6
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 9100000}
+    m_Controller: {fileID: 0}
   - m_Name: isGrounded
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 9100000}
+    m_Controller: {fileID: 0}
   m_AnimatorLayers:
   - serializedVersion: 5
     m_Name: Base Layer
@@ -945,23 +945,23 @@ BlendTree:
   m_Name: Blend Tree
   m_Childs:
   - serializedVersion: 2
-    m_Motion: {fileID: -203655887218126122, guid: 5f2a37a74a138e64095ab227c6299ef5,
+    m_Motion: {fileID: -203655887218126122, guid: a9265930eedc28b42a99be0f3dfd97ba,
       type: 3}
     m_Threshold: 0
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
-    m_CycleOffset: 0
+    m_CycleOffset: 0.5
     m_DirectBlendParameter: IKRFWeight
-    m_Mirror: 0
+    m_Mirror: 1
   - serializedVersion: 2
-    m_Motion: {fileID: -203655887218126122, guid: 4acf7e85b42a49f43876201d81901b76,
+    m_Motion: {fileID: -203655887218126122, guid: 1e3453de15562914c88b8fc2aed718d9,
       type: 3}
     m_Threshold: 1
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
-    m_CycleOffset: 0
+    m_CycleOffset: 0.5
     m_DirectBlendParameter: IKRFWeight
-    m_Mirror: 0
+    m_Mirror: 1
   m_BlendParameter: SFront
   m_BlendParameterY: IKRFWeight
   m_MinThreshold: 0
@@ -1084,7 +1084,7 @@ BlendTree:
   m_Name: Blend Tree
   m_Childs:
   - serializedVersion: 2
-    m_Motion: {fileID: -203655887218126122, guid: edf674d4032746a49b3d0ea56c478e89,
+    m_Motion: {fileID: -203655887218126122, guid: 69c0c4e362a78c544ad9c806ea55fb16,
       type: 3}
     m_Threshold: 0
     m_Position: {x: 0, y: 0}
@@ -1093,7 +1093,7 @@ BlendTree:
     m_DirectBlendParameter: IKRFWeight
     m_Mirror: 0
   - serializedVersion: 2
-    m_Motion: {fileID: -203655887218126122, guid: ea0fb3a90a68e664d9e07f1de3d03989,
+    m_Motion: {fileID: -203655887218126122, guid: 00dfc78df40137c4ab382421b24fc17a,
       type: 3}
     m_Threshold: 1
     m_Position: {x: 0, y: 0}
@@ -1141,7 +1141,7 @@ AnimatorState:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: DiagonalLeftWalk
-  m_Speed: 2
+  m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: -3600663472090651324}
@@ -1150,7 +1150,7 @@ AnimatorState:
   m_Position: {x: 50, y: 50, z: 0}
   m_IKOnFeet: 0
   m_WriteDefaultValues: 1
-  m_Mirror: 1
+  m_Mirror: 0
   m_SpeedParameterActive: 0
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
