@@ -66,7 +66,7 @@ public class AnimationStateController : MonoBehaviour
         #endregion
     }
 
-    void Update()
+    void FixedUpdate()
     {
         if (view.IsMine) 
         {
