@@ -17,6 +17,7 @@ public class CanvasHUD_Player : MonoBehaviour
     public Canvas canvasHUD;
     public GameObject QuitPanel;
     public RoleManager roleManager;
+    public Canvas  InicioCanvas;
 
     public TMP_Text tiempoo;
     #endregion
@@ -38,6 +39,7 @@ public class CanvasHUD_Player : MonoBehaviour
         if (PV.IsMine)
             playerName.text = PhotonNetwork.NickName;
         canvasHUD.gameObject.SetActive(true);
+        StartCoroutine(StartGame());
     }
     
     // Update is called once per frame
@@ -61,5 +63,12 @@ public class CanvasHUD_Player : MonoBehaviour
             timeSpan.Seconds, 
             timeSpan.Milliseconds);
         tiempoo.text = timerText;
+    }
+
+    IEnumerator StartGame()
+    {
+        yield return new WaitForSeconds(15f);
+        InicioCanvas.gameObject.SetActive(false);
+
     }
 }

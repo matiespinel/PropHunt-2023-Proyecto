@@ -15,6 +15,6 @@ EditorBuildSettings:
     path: Assets/Scenes/EscenasMati/Lobby.unity
     guid: f1c4028d57a01db4a82201f3dbf7d573
   - enabled: 1
-    path: "Assets/Scenes/EscenaArte/ArteMapDise\xF1o.unity"
+    path: "Assets/Scenes/EscenasMati/ArteMapDise\xF1o.unity"
     guid: e4d4b5d19e1daab4098084a110912415
   m_configObjects: {}
