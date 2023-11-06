@@ -2198,7 +2198,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4394659966656495625}
-  m_LocalRotation: {x: 0.3612876, y: 0.36851797, z: 0.07917397, w: 0.85287595}
+  m_LocalRotation: {x: 0.36133063, y: 0.3682525, z: 0.07911692, w: 0.8529776}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -5041,9 +5041,10 @@ MonoBehaviour:
     m_Bits: 319
   cam: {fileID: 4394659967994863298}
   cam3d: {fileID: 4394659967984726733}
-  offlinemode: 1
-  Prop: {fileID: 0}
+  offlinemode: 0
+  Prop: {fileID: 8429061571109017113}
   propGun: {fileID: 7044426446630952857}
+  metamorphSmoke: {fileID: 0}
 --- !u!114 &9019459533517802788
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5101,13 +5102,55 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b8c4a61274f60b4ea5fb4299cfdbf14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ShowLayerWeightsInspector: 0
-  ShowParameterInspector: 0
-  m_SynchronizeParameters: []
+  ShowLayerWeightsInspector: 1
+  ShowParameterInspector: 1
+  m_SynchronizeParameters:
+  - Type: 4
+    SynchronizeType: 2
+    Name: isWalking
+  - Type: 4
+    SynchronizeType: 2
+    Name: isBacking
+  - Type: 4
+    SynchronizeType: 2
+    Name: isStrafingLeft
+  - Type: 4
+    SynchronizeType: 2
+    Name: isStrafingRight
+  - Type: 1
+    SynchronizeType: 2
+    Name: SFront
+  - Type: 1
+    SynchronizeType: 2
+    Name: SBack
+  - Type: 4
+    SynchronizeType: 2
+    Name: isTurningRight
+  - Type: 4
+    SynchronizeType: 2
+    Name: isTurningLeft
+  - Type: 4
+    SynchronizeType: 2
+    Name: isJumping
+  - Type: 4
+    SynchronizeType: 2
+    Name: isReloading
+  - Type: 4
+    SynchronizeType: 2
+    Name: isFiring
+  - Type: 4
+    SynchronizeType: 2
+    Name: isRunning
+  - Type: 1
+    SynchronizeType: 2
+    Name: WalkToRun
+  - Type: 4
+    SynchronizeType: 2
+    Name: isGrounded
   m_SynchronizeLayers:
-  - SynchronizeType: 0
+  - SynchronizeType: 2
     LayerIndex: 0
-  - SynchronizeType: 0
+  - SynchronizeType: 2
     LayerIndex: 1
 --- !u!114 &9019459533517802793
 MonoBehaviour:
@@ -5682,6 +5725,7 @@ MonoBehaviour:
   offlinemode: 0
   Prop: {fileID: 8429061571109017113}
   propGun: {fileID: 0}
+  metamorphSmoke: {fileID: 0}
 --- !u!82 &6894215449233815905
 AudioSource:
   m_ObjectHideFlags: 0

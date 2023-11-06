@@ -23,7 +23,7 @@ public class MetamorfosisScript : MonoBehaviourPunCallbacks
     private RaycastHit hit;
     void Awake() 
     {
-        metamorphSmoke = GetComponent<ParticleSystem>();
+        metamorphSmoke = Prop.GetComponent<ParticleSystem>();
         view = GetComponent<PhotonView>();
         PhotonNetwork.OfflineMode = offlinemode;
     }

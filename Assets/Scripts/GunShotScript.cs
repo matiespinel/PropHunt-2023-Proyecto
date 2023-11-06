@@ -16,15 +16,15 @@ public class GunShotScript : Weapon
         bulletRange = 100;
         fireRate = 0.25f;
         nextShotInterval = 0;
-        bulletLine = GetComponent<LineRenderer>();
+        bulletLine = GetComponentInChildren<LineRenderer>();
         fireButton = KeyCode.K;
         bulletTime = new WaitForSeconds(.07f);
         mag = 20;
         initialMag = mag;
         ammo = 100;
         reloadTime = new WaitForSeconds(5);
-        youEntity = gameObject.GetComponentInParent<Entity>();
-        animator = gameObject.GetComponentInParent<Animator>();
+        youEntity = GetComponent<Entity>();
+        animator = GetComponent<Animator>();
         #endregion
 
     }
@@ -38,10 +38,10 @@ public class GunShotScript : Weapon
             nextShotInterval = Time.time + fireRate;
             photonView.RPC("Shoot", RpcTarget.All);
             RaycastHit hit;
-            bulletOrigin = transform.position;
+            bulletOrigin = bulletLine.transform.position;
             bulletLine.SetPosition(0,bulletOrigin);
 
-            if(Physics.Raycast(bulletOrigin, transform.up,out hit, bulletRange))
+            if(Physics.Raycast(bulletOrigin, bulletLine.transform.up,out hit, bulletRange))
             {
                 bulletLine.SetPosition(1, hit.point);
                 if(hit.collider.gameObject.layer == 6)//6 => layer llamada "Prop"

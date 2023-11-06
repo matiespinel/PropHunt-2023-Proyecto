@@ -14,6 +14,7 @@ public abstract class Weapon : MonoBehaviourPunCallbacks
         gun2,
     }
     public AudioSource _audioSource;
+
     #region WeaponData
     public Vector3 bulletOrigin;
     public LineRenderer bulletLine;
