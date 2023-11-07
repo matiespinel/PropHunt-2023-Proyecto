@@ -46,6 +46,9 @@ MonoBehaviour:
   - respawn
   - Reload
   - Shoot
+  - SetReloadEffectBool
+  - ShootEffectEnd
+  - ShootEffectStart
   DisableAutoOpenWizard: 1
   ShowSettings: 1
   DevRegionSetOnce: 1

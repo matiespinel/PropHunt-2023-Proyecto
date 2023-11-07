@@ -21,6 +21,7 @@ public abstract class Weapon : MonoBehaviourPunCallbacks
     public WaitForSeconds bulletTime;
     public WaitForSeconds reloadTime;
 
+
     public int ammo {get; set;}
     public float nextShotInterval {get; set;}
     public int mag {get; set;}
@@ -61,15 +62,10 @@ public abstract class Weapon : MonoBehaviourPunCallbacks
     public IEnumerator ShotEffect()
     {
         mag--;
-        animator.SetBool("isFiring", true);
-        RegisterShotAudio();
-        MuzzleFlash.Play();
-        bulletLine.enabled = true;
+        photonView.RPC("ShootEffectStart", RpcTarget.All);
         yield return bulletTime;
         UpdateAmmoCounter();
-        bulletLine.enabled = false;
-        animator.SetBool("isFiring", false);
-        DeregisterShotAudio();
+        photonView.RPC("ShootEffectEnd", RpcTarget.All);
     }
     /// <summary>
     /// Tiempo de recarga. 
@@ -77,9 +73,9 @@ public abstract class Weapon : MonoBehaviourPunCallbacks
     public IEnumerator ReloadWait()
     {
         cooldownReloadBool = false;
-        animator.SetBool("isReloading", true);
+        photonView.RPC("SetReloadEffectBool", RpcTarget.All, true);
         yield return reloadTime;
-        animator.SetBool("isReloading", false);
+        photonView.RPC("SetReloadEffectBool", RpcTarget.All, false);
         var dif = initialMag - mag;
         mag += dif;
         ammo -= dif;
@@ -90,7 +86,20 @@ public abstract class Weapon : MonoBehaviourPunCallbacks
     private void OnDestroy() =>DeregisterShotAudio();
 
     [PunRPC]
-    void Reload() => StartCoroutine(ReloadWait());
+    public void SetReloadEffectBool(bool boolean) => animator.SetBool("isReloading", boolean);
     [PunRPC]
-    void Shoot() => StartCoroutine(ShotEffect());
+    public void ShootEffectStart()
+    {
+        animator.SetBool("isFiring", true);
+        RegisterShotAudio();
+        MuzzleFlash.Play();
+        bulletLine.enabled = true;
+    }
+    [PunRPC]
+    public void ShootEffectEnd()
+    {
+        bulletLine.enabled = false;
+        animator.SetBool("isFiring", false);
+        DeregisterShotAudio();
+    }
 }

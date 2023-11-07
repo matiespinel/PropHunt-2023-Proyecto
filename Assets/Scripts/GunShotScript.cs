@@ -16,15 +16,17 @@ public class GunShotScript : Weapon
         bulletRange = 100;
         fireRate = 0.25f;
         nextShotInterval = 0;
-        bulletLine = GetComponentInChildren<LineRenderer>();
+        bulletLine = GetComponent<LineRenderer>();
         fireButton = KeyCode.K;
         bulletTime = new WaitForSeconds(.07f);
         mag = 20;
         initialMag = mag;
         ammo = 100;
         reloadTime = new WaitForSeconds(5);
-        youEntity = GetComponent<Entity>();
-        animator = GetComponent<Animator>();
+        youEntity = GetComponentInParent<Entity>();
+        animator = GetComponentInParent<Animator>();
+        _audioSource = GetComponent<AudioSource>();
+        MuzzleFlash = GetComponent<ParticleSystem>();
         #endregion
 
     }
@@ -36,9 +38,9 @@ public class GunShotScript : Weapon
         if(Input.GetKey(fireButton) && Time.time > nextShotInterval && cooldownReloadBool)
         {
             nextShotInterval = Time.time + fireRate;
-            photonView.RPC("Shoot", RpcTarget.All);
+            StartCoroutine(ShotEffect());
             RaycastHit hit;
-            bulletOrigin = bulletLine.transform.position;
+            bulletOrigin = transform.position;
             bulletLine.SetPosition(0,bulletOrigin);
 
             if(Physics.Raycast(bulletOrigin, bulletLine.transform.up,out hit, bulletRange))
@@ -58,7 +60,7 @@ public class GunShotScript : Weapon
         }
         if (mag == 0 && cooldownReloadBool || Input.GetKey(KeyCode.R) && cooldownReloadBool && mag != initialMag)
         {
-            photonView.RPC("Reload", RpcTarget.All);
+            StartCoroutine(ReloadWait());
         }
     }
 }
