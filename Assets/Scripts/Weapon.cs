@@ -17,6 +17,7 @@ public abstract class Weapon : MonoBehaviourPunCallbacks
 
     #region WeaponData
     public Vector3 bulletOrigin;
+    public Vector3 bulletEnd;
     public LineRenderer bulletLine;
     public WaitForSeconds bulletTime;
     public WaitForSeconds reloadTime;
@@ -94,6 +95,8 @@ public abstract class Weapon : MonoBehaviourPunCallbacks
         RegisterShotAudio();
         MuzzleFlash.Play();
         bulletLine.enabled = true;
+        bulletLine.SetPosition(0, bulletOrigin);
+        bulletLine.SetPosition(1, bulletEnd);
     }
     [PunRPC]
     public void ShootEffectEnd()

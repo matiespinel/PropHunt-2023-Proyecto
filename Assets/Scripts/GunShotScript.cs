@@ -36,15 +36,14 @@ public class GunShotScript : Weapon
 
         if(Input.GetKey(fireButton) && Time.time > nextShotInterval && cooldownReloadBool)
         {
-            nextShotInterval = Time.time + fireRate;
-            StartCoroutine(ShotEffect());
-            RaycastHit hit;
             bulletOrigin = bulletLine.transform.position;
-            bulletLine.SetPosition(0,bulletOrigin);
+            nextShotInterval = Time.time + fireRate;
+
+            RaycastHit hit;
 
             if(Physics.Raycast(bulletOrigin, bulletLine.transform.up,out hit, bulletRange))
             {
-                bulletLine.SetPosition(1, hit.point);
+                bulletEnd = hit.point;
                 if(hit.collider.gameObject.layer == 6)//6 => layer llamada "Prop"
                 {
                     hit.collider.GetComponent<PhotonView>()?.RPC("TakeDamage", RpcTarget.All, 20);
@@ -53,10 +52,11 @@ public class GunShotScript : Weapon
             }
             else
             {
-                bulletLine.SetPosition(1,bulletOrigin + (transform.up * bulletRange));
+                bulletEnd = bulletOrigin + (transform.up * bulletRange);
                 photonView?.RPC("TakeDamage", RpcTarget.All, 20);
 
             }
+            StartCoroutine(ShotEffect());
         }
         if (mag == 0 && cooldownReloadBool || Input.GetKey(KeyCode.R) && cooldownReloadBool && mag != initialMag)
         {
