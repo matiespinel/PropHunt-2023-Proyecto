@@ -15,6 +15,7 @@ public class MetamorfosisScript : MonoBehaviourPunCallbacks
     [SerializeField] private CinemachineFreeLook cam3d;
     [SerializeField] private bool offlinemode;// offline o online
     [SerializeField] private GameObject Prop;
+    PhotonView propPhotonView;
     [SerializeField] private LineRenderer propGun;
     private float time;
     private ParticleSystem metamorphSmoke;
@@ -23,6 +24,7 @@ public class MetamorfosisScript : MonoBehaviourPunCallbacks
     private RaycastHit hit;
     void Awake() 
     {
+        propPhotonView = Prop.GetPhotonView();
         metamorphSmoke = Prop.GetComponent<ParticleSystem>();
         view = GetComponent<PhotonView>();
         PhotonNetwork.OfflineMode = offlinemode;
@@ -73,23 +75,23 @@ void Update()
     {
         PhotonView clone = PhotonView.Find(id);
         Debug.Log("Metamorfosis ejecutada");
+        Renderer cloneRenderer = clone.gameObject.GetComponent<Renderer>();
+    
         metamorphSmoke.Play();
-        Prop.GetComponent<PhotonView>().GetComponent<MeshFilter>().mesh = clone.gameObject.GetComponent<MeshFilter>().mesh;
-        Prop.GetComponent<PhotonView>().GetComponent<Renderer>().materials = clone.gameObject.GetComponent<Renderer>().materials;
+        propPhotonView.GetComponent<MeshFilter>().mesh = clone.gameObject.GetComponent<MeshFilter>().mesh;
+        propPhotonView.GetComponent<Renderer>().materials = cloneRenderer.materials;
+
         if (Prop != gameObject)
         {
             Prop.transform.position = transform.position;
             Prop.SetActive(true);
             cam3d.LookAt = Prop.transform;
             cam3d.Follow = Prop.transform;
-            cam3d.GetRig(1).GetCinemachineComponent<CinemachineComposer>().m_ScreenX = 0.35f;
             Destroy(gameObject);
         }
         isTransformed = true;
-       
-
-
- 
+        Prop.GetComponent<Renderer>().materials[0].color = cloneRenderer.materials[0].color;
+        cloneRenderer.materials[0].shader = Shader.Find("Standard");
     }
 
 
