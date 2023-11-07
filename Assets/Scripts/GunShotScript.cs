@@ -49,12 +49,12 @@ public class GunShotScript : Weapon
                 {
                     hit.collider.GetComponent<PhotonView>()?.RPC("TakeDamage", RpcTarget.All, 20);
                 }
-                else photonView?.RPC("TakeDamage", RpcTarget.All, 20);
+                else photonView?.RPC("TakeDamage", RpcTarget.All, 10);
             }
             else
             {
                 bulletEnd = bulletOrigin + (transform.up * bulletRange);
-                photonView?.RPC("TakeDamage", RpcTarget.All, 20);
+                photonView?.RPC("TakeDamage", RpcTarget.All, 10);
                 StartCoroutine(ShotEffect());
 
             }

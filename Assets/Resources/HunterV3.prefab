@@ -7722,6 +7722,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _audioSource: {fileID: 5200933630333423914}
   bulletOrigin: {x: 0, y: 0, z: 0}
+  bulletEnd: {x: 0, y: 0, z: 0}
   bulletLine: {fileID: 3583301234771992579}
   ammoCounter: {fileID: 2451444770441275864}
   animator: {fileID: 8318110776885139799}

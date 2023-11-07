@@ -63,7 +63,7 @@ public abstract class Weapon : MonoBehaviourPunCallbacks
     public IEnumerator ShotEffect()
     {
         mag--;
-        photonView.RPC("ShootEffectStart", RpcTarget.All);
+        photonView.RPC("ShootEffectStart", RpcTarget.All, bulletEnd);
         yield return bulletTime;
         UpdateAmmoCounter();
         photonView.RPC("ShootEffectEnd", RpcTarget.All);
@@ -89,14 +89,14 @@ public abstract class Weapon : MonoBehaviourPunCallbacks
     [PunRPC]
     public void SetReloadEffectBool(bool boolean) => animator.SetBool("isReloading", boolean);
     [PunRPC]
-    public void ShootEffectStart()
+    public void ShootEffectStart(Vector3 linend)
     {
         animator.SetBool("isFiring", true);
         RegisterShotAudio();
         MuzzleFlash.Play();
         bulletLine.enabled = true;
         bulletLine.SetPosition(0, bulletOrigin);
-        bulletLine.SetPosition(1, bulletEnd);
+        bulletLine.SetPosition(1, linend);
     }
     [PunRPC]
     public void ShootEffectEnd()
