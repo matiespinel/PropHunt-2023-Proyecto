@@ -44,7 +44,8 @@ public class GunShotScript : Weapon
             if(Physics.Raycast(bulletOrigin, bulletLine.transform.up,out hit, bulletRange))
             {
                 bulletEnd = hit.point;
-                if(hit.collider.gameObject.layer == 6)//6 => layer llamada "Prop"
+                StartCoroutine(ShotEffect());
+                if (hit.collider.gameObject.layer == 6)//6 => layer llamada "Prop"
                 {
                     hit.collider.GetComponent<PhotonView>()?.RPC("TakeDamage", RpcTarget.All, 20);
                 }
@@ -54,9 +55,10 @@ public class GunShotScript : Weapon
             {
                 bulletEnd = bulletOrigin + (transform.up * bulletRange);
                 photonView?.RPC("TakeDamage", RpcTarget.All, 20);
+                StartCoroutine(ShotEffect());
 
             }
-            StartCoroutine(ShotEffect());
+            
         }
         if (mag == 0 && cooldownReloadBool || Input.GetKey(KeyCode.R) && cooldownReloadBool && mag != initialMag)
         {
