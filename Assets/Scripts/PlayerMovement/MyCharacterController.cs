@@ -73,8 +73,8 @@ public class MyCharacterController : MonoBehaviour
         }
         else 
         {
-            this.gameObject.GetComponent<RigBuilder>().enabled = false;
-            this.enabled = false;
+            GetComponent<RigBuilder>().enabled = false;
+            enabled = false;
         }
 
     }
