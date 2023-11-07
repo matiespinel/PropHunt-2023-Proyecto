@@ -49,11 +49,12 @@ public class GunShotScript : Weapon
                 {
                     hit.collider.GetComponent<PhotonView>()?.RPC("TakeDamage", RpcTarget.All, 20);
                 }
+                else photonView?.RPC("TakeDamage", RpcTarget.All, 20);
             }
             else
             {
                 bulletLine.SetPosition(1,bulletOrigin + (transform.up * bulletRange));
-                animator.GetComponent<PhotonView>()?.RPC("TakeDamage", RpcTarget.All, 20);
+                photonView?.RPC("TakeDamage", RpcTarget.All, 20);
 
             }
         }
