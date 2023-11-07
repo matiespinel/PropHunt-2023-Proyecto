@@ -75,7 +75,7 @@ void Update()
         Debug.Log("Metamorfosis ejecutada");
         metamorphSmoke.Play();
         Prop.GetComponent<PhotonView>().GetComponent<MeshFilter>().mesh = clone.gameObject.GetComponent<MeshFilter>().mesh;
-        Prop.GetComponent<PhotonView>().GetComponent<Renderer>().material = clone.gameObject.GetComponent<Renderer>().material;
+        Prop.GetComponent<PhotonView>().GetComponent<Renderer>().materials = clone.gameObject.GetComponent<Renderer>().materials;
         if (Prop != gameObject)
         {
             Prop.transform.position = transform.position;
