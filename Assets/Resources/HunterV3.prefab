@@ -5527,7 +5527,6 @@ GameObject:
   - component: {fileID: 4396714783001705225}
   - component: {fileID: 3583301234771992579}
   - component: {fileID: 5200933630333423914}
-  - component: {fileID: 4875092045687388473}
   m_Layer: 0
   m_Name: BulletOrigin
   m_TagString: Untagged
@@ -5745,24 +5744,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &4875092045687388473
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1903070999574910012}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8247f3f9713f8e445a1bb657cd43c803, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _audioSource: {fileID: 5200933630333423914}
-  bulletOrigin: {x: 0, y: 0, z: 0}
-  bulletLine: {fileID: 3583301234771992579}
-  ammoCounter: {fileID: 2451444770441275864}
-  animator: {fileID: 8318110776885139799}
-  MuzzleFlash: {fileID: 1671261806774634651}
 --- !u!1 &2064566184762549978
 GameObject:
   m_ObjectHideFlags: 0
@@ -7360,6 +7341,7 @@ GameObject:
   - component: {fileID: 2557932946771186133}
   - component: {fileID: 5786719595480750084}
   - component: {fileID: 7606336548632542842}
+  - component: {fileID: 5544600753114625300}
   m_Layer: 3
   m_Name: CazadorV3
   m_TagString: Untagged
@@ -7724,6 +7706,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speedMultiplier: 2
+--- !u!114 &5544600753114625300
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3369855625081903511}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8247f3f9713f8e445a1bb657cd43c803, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _audioSource: {fileID: 5200933630333423914}
+  bulletOrigin: {x: 0, y: 0, z: 0}
+  bulletLine: {fileID: 3583301234771992579}
+  ammoCounter: {fileID: 2451444770441275864}
+  animator: {fileID: 8318110776885139799}
+  MuzzleFlash: {fileID: 1671261806774634651}
 --- !u!1 &3419933839853892511
 GameObject:
   m_ObjectHideFlags: 0
@@ -9661,7 +9661,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6141548957238725418}
-  m_LocalRotation: {x: 0.34095693, y: 0.3665509, z: 0.08789488, w: 0.86119884}
+  m_LocalRotation: {x: 0.34100285, y: 0.36625242, z: 0.08782331, w: 0.86131495}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -10170,7 +10170,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6141548958048376302}
-  m_LocalRotation: {x: 0.08790183, y: 0.18891877, z: -0.016981544, w: 0.9779032}
+  m_LocalRotation: {x: 0.05849742, y: 0.18354917, z: -0.010942796, w: 0.98120743}
   m_LocalPosition: {x: 0, y: 1.9590001, z: -2.25}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0

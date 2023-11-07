@@ -10,23 +10,22 @@ public class GunShotScript : Weapon
     void Awake()
     {
         #region bullet Attributes
+        
         cooldownReloadBool = true;
         bulletVelocity = 1;
         bulletDamage = 1;
         bulletRange = 100;
         fireRate = 0.25f;
         nextShotInterval = 0;
-        bulletLine = GetComponent<LineRenderer>();
+        bulletLine = GetComponentInChildren<LineRenderer>();
         fireButton = KeyCode.K;
         bulletTime = new WaitForSeconds(.07f);
         mag = 20;
         initialMag = mag;
         ammo = 100;
         reloadTime = new WaitForSeconds(5);
-        youEntity = GetComponentInParent<Entity>();
-        animator = GetComponentInParent<Animator>();
-        _audioSource = GetComponent<AudioSource>();
-        MuzzleFlash = GetComponent<ParticleSystem>();
+        youEntity = GetComponent<Entity>();
+        animator = GetComponent<Animator>();
         #endregion
 
     }
@@ -40,7 +39,7 @@ public class GunShotScript : Weapon
             nextShotInterval = Time.time + fireRate;
             StartCoroutine(ShotEffect());
             RaycastHit hit;
-            bulletOrigin = transform.position;
+            bulletOrigin = bulletLine.transform.position;
             bulletLine.SetPosition(0,bulletOrigin);
 
             if(Physics.Raycast(bulletOrigin, bulletLine.transform.up,out hit, bulletRange))
