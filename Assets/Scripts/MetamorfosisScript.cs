@@ -56,11 +56,10 @@ void Update()
         if(Physics.Raycast(ray, out hit, 10, ignoreLayer))
         {
             hit.collider.GetComponent<Outline>()?.ToggleHighlight(true);
-            propGun.SetPosition(0, propGun.transform.position);
+
             if (Input.GetKey(KeyCode.Tab) && oneRequestBool)
             {
-                propGun.enabled = true;
-                propGun.SetPosition(1, hit.transform.position);
+
                 oneRequestBool = false;
                 view.RPC("Metamorph", RpcTarget.All, hit.collider.GetComponent<PhotonView>().ViewID);
                 StartCoroutine(MetaCooldown());
@@ -78,9 +77,10 @@ void Update()
         Renderer cloneRenderer = clone.gameObject.GetComponent<Renderer>();
     
         metamorphSmoke.Play();
+
         propPhotonView.GetComponent<MeshFilter>().mesh = clone.gameObject.GetComponent<MeshFilter>().mesh;
         propPhotonView.GetComponent<Renderer>().materials = cloneRenderer.materials;
-
+        propPhotonView.GetComponent<Renderer>().materials[0].color = cloneRenderer.materials[0].color;
         if (Prop != gameObject)
         {
             Prop.transform.position = transform.position;
@@ -90,17 +90,27 @@ void Update()
             Destroy(gameObject);
         }
         isTransformed = true;
-        Prop.GetComponent<Renderer>().materials[0].color = cloneRenderer.materials[0].color;
-        cloneRenderer.materials[0].shader = Shader.Find("Standard");
+        
     }
 
 
     IEnumerator MetaCooldown()
     {
+        GetComponent<Renderer>().materials[0].shader = Shader.Find("Standard");
         yield return new WaitForSeconds(1);
-        propGun.enabled = false;
+
         yield return new WaitForSeconds(8);
         oneRequestBool = true;
+        Debug.Log("Cooldown ended");
     }
 
+    private void OnEnable()
+    {
+        if (gameObject == Prop) 
+        {
+            StartCoroutine(MetaCooldown());
+
+        }
+        
+    }
 }
