@@ -95,7 +95,7 @@ public abstract class Weapon : MonoBehaviourPunCallbacks
         RegisterShotAudio();
         MuzzleFlash.Play();
         bulletLine.enabled = true;
-        bulletLine.SetPosition(0, bulletOrigin);
+        bulletLine.SetPosition(0, bulletLine.transform.position);
         bulletLine.SetPosition(1, linend);
     }
     [PunRPC]
