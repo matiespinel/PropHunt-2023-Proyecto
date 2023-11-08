@@ -196,6 +196,11 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Transformable
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8219139bc0b30114eaf48b5f14e22659,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 23
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8219139bc0b30114eaf48b5f14e22659, type: 3}
 --- !u!1 &1540057 stripped
@@ -317,6 +322,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Estanteria de almacenamineto (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 4635b6719b86c564688de0840c1e456a,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 23
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4635b6719b86c564688de0840c1e456a, type: 3}
@@ -540,6 +550,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Caja de almacenamiento  (19)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8219139bc0b30114eaf48b5f14e22659,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 23
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8219139bc0b30114eaf48b5f14e22659, type: 3}
 --- !u!1 &29754743 stripped
@@ -662,6 +677,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: ParedLateral
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e5fcfc9f5801812419412f91acb77eb6,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 23
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5fcfc9f5801812419412f91acb77eb6, type: 3}
 --- !u!1 &30390120 stripped
@@ -749,6 +769,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: pisoFabrica (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ad6b478b42f5b9342a5f8d90aa6377f6,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 23
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad6b478b42f5b9342a5f8d90aa6377f6, type: 3}
@@ -838,6 +863,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: ParedLateral (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e5fcfc9f5801812419412f91acb77eb6,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 23
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5fcfc9f5801812419412f91acb77eb6, type: 3}
 --- !u!1 &48983597 stripped
@@ -926,6 +956,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: ParedLateral (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e5fcfc9f5801812419412f91acb77eb6,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 23
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5fcfc9f5801812419412f91acb77eb6, type: 3}
 --- !u!1001 &76667808
@@ -994,6 +1029,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: pisoFabrica (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ad6b478b42f5b9342a5f8d90aa6377f6,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 23
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad6b478b42f5b9342a5f8d90aa6377f6, type: 3}
@@ -1151,6 +1191,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: TechoFabrica (39)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e282c0a6fd7136e478c11a294943a000,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 23
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e282c0a6fd7136e478c11a294943a000, type: 3}
 --- !u!1 &80665248 stripped
@@ -1238,6 +1283,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: ParedLateral (33)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e5fcfc9f5801812419412f91acb77eb6,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 23
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5fcfc9f5801812419412f91acb77eb6, type: 3}
@@ -1327,6 +1377,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: TechoFabrica (31)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e282c0a6fd7136e478c11a294943a000,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 23
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e282c0a6fd7136e478c11a294943a000, type: 3}
 --- !u!1 &97976093 stripped
@@ -1415,6 +1470,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: TechoFabrica (33)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e282c0a6fd7136e478c11a294943a000,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 23
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e282c0a6fd7136e478c11a294943a000, type: 3}
 --- !u!1 &100305081 stripped
@@ -1502,6 +1562,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: ParedLateral (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e5fcfc9f5801812419412f91acb77eb6,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 23
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5fcfc9f5801812419412f91acb77eb6, type: 3}
@@ -1727,6 +1792,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Caja de almacenamiento  (25)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8219139bc0b30114eaf48b5f14e22659,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 23
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8219139bc0b30114eaf48b5f14e22659, type: 3}
 --- !u!1 &169961494 stripped
@@ -1943,6 +2013,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Caja de almacenamiento  (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8219139bc0b30114eaf48b5f14e22659,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 23
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8219139bc0b30114eaf48b5f14e22659, type: 3}
 --- !u!1 &236252768 stripped
@@ -2065,6 +2140,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Caja de almacenamiento  (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8219139bc0b30114eaf48b5f14e22659,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 23
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8219139bc0b30114eaf48b5f14e22659, type: 3}
 --- !u!1 &253268487 stripped
@@ -2186,6 +2266,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Caja de almacenamiento  (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8219139bc0b30114eaf48b5f14e22659,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 23
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8219139bc0b30114eaf48b5f14e22659, type: 3}
@@ -2447,6 +2532,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Estanteria de almacenamineto (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 4635b6719b86c564688de0840c1e456a,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 23
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4635b6719b86c564688de0840c1e456a, type: 3}
 --- !u!1 &297799862 stripped
@@ -2599,6 +2689,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Estanteria de almacenamineto (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 4635b6719b86c564688de0840c1e456a,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 23
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4635b6719b86c564688de0840c1e456a, type: 3}
@@ -2822,6 +2917,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: ParedLateral (30)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e5fcfc9f5801812419412f91acb77eb6,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 23
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5fcfc9f5801812419412f91acb77eb6, type: 3}
 --- !u!1 &368898382 stripped
@@ -2909,6 +3009,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: ParedLateral (31)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e5fcfc9f5801812419412f91acb77eb6,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 23
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5fcfc9f5801812419412f91acb77eb6, type: 3}
@@ -3086,6 +3191,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: ParedLateral (19)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e5fcfc9f5801812419412f91acb77eb6,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 23
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5fcfc9f5801812419412f91acb77eb6, type: 3}
@@ -3313,6 +3423,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: ParedLateral (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e5fcfc9f5801812419412f91acb77eb6,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 23
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5fcfc9f5801812419412f91acb77eb6, type: 3}
 --- !u!1 &457754551 stripped
@@ -3401,6 +3516,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: TechoFabrica (36)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e282c0a6fd7136e478c11a294943a000,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 23
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e282c0a6fd7136e478c11a294943a000, type: 3}
 --- !u!1 &480553544 stripped
@@ -3488,6 +3608,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Caja de almacenamiento  (26)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8219139bc0b30114eaf48b5f14e22659,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 23
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8219139bc0b30114eaf48b5f14e22659, type: 3}
@@ -3610,6 +3735,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: ParedLateral (29)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e5fcfc9f5801812419412f91acb77eb6,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 23
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5fcfc9f5801812419412f91acb77eb6, type: 3}
@@ -3991,6 +4121,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Caja de almacenamiento  (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8219139bc0b30114eaf48b5f14e22659,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 23
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8219139bc0b30114eaf48b5f14e22659, type: 3}
 --- !u!1 &536739253 stripped
@@ -4113,6 +4248,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: ParedLateral (25)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e5fcfc9f5801812419412f91acb77eb6,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 23
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5fcfc9f5801812419412f91acb77eb6, type: 3}
 --- !u!1 &554938040 stripped
@@ -4201,6 +4341,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: ParedLateral (26)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e5fcfc9f5801812419412f91acb77eb6,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 23
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5fcfc9f5801812419412f91acb77eb6, type: 3}
 --- !u!1 &575252934 stripped
@@ -4288,6 +4433,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TechoFabrica (40)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e282c0a6fd7136e478c11a294943a000,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 23
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e282c0a6fd7136e478c11a294943a000, type: 3}
@@ -4445,6 +4595,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Caja de almacenamiento  (30)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8219139bc0b30114eaf48b5f14e22659,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 23
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8219139bc0b30114eaf48b5f14e22659, type: 3}
@@ -4642,6 +4797,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Estanteria de almacenamineto (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 4635b6719b86c564688de0840c1e456a,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 23
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4635b6719b86c564688de0840c1e456a, type: 3}
 --- !u!1 &616201730 stripped
@@ -4794,6 +4954,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Caja de almacenamiento  (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8219139bc0b30114eaf48b5f14e22659,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 23
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8219139bc0b30114eaf48b5f14e22659, type: 3}
@@ -5053,6 +5218,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: ParedLateral (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e5fcfc9f5801812419412f91acb77eb6,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 23
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5fcfc9f5801812419412f91acb77eb6, type: 3}
 --- !u!1 &637970352 stripped
@@ -5140,6 +5310,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TechoFabrica (35)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e282c0a6fd7136e478c11a294943a000,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 23
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e282c0a6fd7136e478c11a294943a000, type: 3}
@@ -5229,6 +5404,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: pisoFabrica (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ad6b478b42f5b9342a5f8d90aa6377f6,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 23
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad6b478b42f5b9342a5f8d90aa6377f6, type: 3}
 --- !u!1 &644090542 stripped
@@ -5316,6 +5496,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: 'Caja de almacenamiento '
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8219139bc0b30114eaf48b5f14e22659,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 23
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8219139bc0b30114eaf48b5f14e22659, type: 3}
@@ -5439,6 +5624,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: pisoFabrica (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ad6b478b42f5b9342a5f8d90aa6377f6,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 23
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad6b478b42f5b9342a5f8d90aa6377f6, type: 3}
 --- !u!1 &679359729 stripped
@@ -5527,6 +5717,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: ParedLateral (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e5fcfc9f5801812419412f91acb77eb6,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 23
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5fcfc9f5801812419412f91acb77eb6, type: 3}
 --- !u!1 &687230778 stripped
@@ -5614,6 +5809,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Caja de almacenamiento  (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8219139bc0b30114eaf48b5f14e22659,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 23
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8219139bc0b30114eaf48b5f14e22659, type: 3}
@@ -5920,6 +6120,11 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Transformable
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8219139bc0b30114eaf48b5f14e22659,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 23
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8219139bc0b30114eaf48b5f14e22659, type: 3}
 --- !u!1 &804617890 stripped
@@ -6042,6 +6247,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: TechoFabrica (45)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e282c0a6fd7136e478c11a294943a000,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 23
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e282c0a6fd7136e478c11a294943a000, type: 3}
 --- !u!1 &815907579 stripped
@@ -6129,6 +6339,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: pisoFabrica (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ad6b478b42f5b9342a5f8d90aa6377f6,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 23
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad6b478b42f5b9342a5f8d90aa6377f6, type: 3}
@@ -6286,6 +6501,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Estanteria de almacenamineto (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 4635b6719b86c564688de0840c1e456a,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 23
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4635b6719b86c564688de0840c1e456a, type: 3}
@@ -6578,6 +6798,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: TechoFabrica (38)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e282c0a6fd7136e478c11a294943a000,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 23
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e282c0a6fd7136e478c11a294943a000, type: 3}
 --- !u!1 &877305001 stripped
@@ -6665,6 +6890,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: ParedLateral (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e5fcfc9f5801812419412f91acb77eb6,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 23
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5fcfc9f5801812419412f91acb77eb6, type: 3}
@@ -6891,6 +7121,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Caja de almacenamiento  (21)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8219139bc0b30114eaf48b5f14e22659,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 23
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8219139bc0b30114eaf48b5f14e22659, type: 3}
@@ -7186,6 +7421,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: pisoFabrica (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ad6b478b42f5b9342a5f8d90aa6377f6,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 23
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad6b478b42f5b9342a5f8d90aa6377f6, type: 3}
 --- !u!1 &979114775 stripped
@@ -7342,6 +7582,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Estanteria de almacenamineto (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 4635b6719b86c564688de0840c1e456a,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 23
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4635b6719b86c564688de0840c1e456a, type: 3}
@@ -7634,6 +7879,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: ParedLateral (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e5fcfc9f5801812419412f91acb77eb6,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 23
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5fcfc9f5801812419412f91acb77eb6, type: 3}
 --- !u!1 &1060840449 stripped
@@ -7791,6 +8041,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: pisoFabrica (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ad6b478b42f5b9342a5f8d90aa6377f6,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 23
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad6b478b42f5b9342a5f8d90aa6377f6, type: 3}
 --- !u!1 &1064076637 stripped
@@ -7879,6 +8134,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: TechoFabrica (32)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e282c0a6fd7136e478c11a294943a000,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 23
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e282c0a6fd7136e478c11a294943a000, type: 3}
 --- !u!1 &1078996429 stripped
@@ -7966,6 +8226,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: pisoFabrica (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ad6b478b42f5b9342a5f8d90aa6377f6,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 23
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad6b478b42f5b9342a5f8d90aa6377f6, type: 3}
@@ -8191,6 +8456,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: TechoFabrica (43)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e282c0a6fd7136e478c11a294943a000,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 23
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e282c0a6fd7136e478c11a294943a000, type: 3}
 --- !u!1 &1105498275 stripped
@@ -8278,6 +8548,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: ParedLateral (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e5fcfc9f5801812419412f91acb77eb6,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 23
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5fcfc9f5801812419412f91acb77eb6, type: 3}
@@ -8504,6 +8779,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: ParedLateral (27)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e5fcfc9f5801812419412f91acb77eb6,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 23
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5fcfc9f5801812419412f91acb77eb6, type: 3}
 --- !u!1 &1159565025 stripped
@@ -8591,6 +8871,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: ParedLateral (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e5fcfc9f5801812419412f91acb77eb6,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 23
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5fcfc9f5801812419412f91acb77eb6, type: 3}
@@ -8680,6 +8965,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: ParedLateral (32)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e5fcfc9f5801812419412f91acb77eb6,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 23
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5fcfc9f5801812419412f91acb77eb6, type: 3}
 --- !u!1 &1231058674 stripped
@@ -8768,6 +9058,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: pisoFabrica (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ad6b478b42f5b9342a5f8d90aa6377f6,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 23
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad6b478b42f5b9342a5f8d90aa6377f6, type: 3}
 --- !u!1 &1238429729 stripped
@@ -8855,6 +9150,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Caja de almacenamiento  (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8219139bc0b30114eaf48b5f14e22659,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 23
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8219139bc0b30114eaf48b5f14e22659, type: 3}
@@ -8977,6 +9277,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: ParedLateral (21)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e5fcfc9f5801812419412f91acb77eb6,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 23
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5fcfc9f5801812419412f91acb77eb6, type: 3}
@@ -9135,6 +9440,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: ParedLateral (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e5fcfc9f5801812419412f91acb77eb6,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 23
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5fcfc9f5801812419412f91acb77eb6, type: 3}
 --- !u!1 &1283410760 stripped
@@ -9222,6 +9532,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TechoFabrica (42)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e282c0a6fd7136e478c11a294943a000,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 23
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e282c0a6fd7136e478c11a294943a000, type: 3}
@@ -9311,6 +9626,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: ParedLateral (09)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e5fcfc9f5801812419412f91acb77eb6,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 23
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5fcfc9f5801812419412f91acb77eb6, type: 3}
 --- !u!1 &1292205987 stripped
@@ -9399,6 +9719,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: ParedLateral (23)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e5fcfc9f5801812419412f91acb77eb6,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 23
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5fcfc9f5801812419412f91acb77eb6, type: 3}
 --- !u!1 &1327007572 stripped
@@ -9486,6 +9811,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Caja de almacenamiento  (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8219139bc0b30114eaf48b5f14e22659,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 23
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8219139bc0b30114eaf48b5f14e22659, type: 3}
@@ -9608,6 +9938,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Caja de almacenamiento  (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8219139bc0b30114eaf48b5f14e22659,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 23
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8219139bc0b30114eaf48b5f14e22659, type: 3}
@@ -9777,6 +10112,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Caja de almacenamiento  (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8219139bc0b30114eaf48b5f14e22659,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 23
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8219139bc0b30114eaf48b5f14e22659, type: 3}
 --- !u!1 &1401762960 stripped
@@ -9899,6 +10239,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: pisoFabrica (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ad6b478b42f5b9342a5f8d90aa6377f6,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 23
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad6b478b42f5b9342a5f8d90aa6377f6, type: 3}
 --- !u!1 &1407367065 stripped
@@ -9986,6 +10331,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: pisoFabrica (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ad6b478b42f5b9342a5f8d90aa6377f6,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 23
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad6b478b42f5b9342a5f8d90aa6377f6, type: 3}
@@ -10084,6 +10434,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_TagString
       value: Transformable
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8219139bc0b30114eaf48b5f14e22659,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 23
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8219139bc0b30114eaf48b5f14e22659, type: 3}
@@ -10207,6 +10562,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Caja de almacenamiento  (31)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8219139bc0b30114eaf48b5f14e22659,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 23
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8219139bc0b30114eaf48b5f14e22659, type: 3}
 --- !u!1 &1459582340 stripped
@@ -10328,6 +10688,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: ParedLateral (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e5fcfc9f5801812419412f91acb77eb6,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 23
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5fcfc9f5801812419412f91acb77eb6, type: 3}
@@ -10486,6 +10851,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: TechoFabrica (37)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e282c0a6fd7136e478c11a294943a000,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 23
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e282c0a6fd7136e478c11a294943a000, type: 3}
 --- !u!1 &1514754152 stripped
@@ -10574,6 +10944,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: ParedLateral (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e5fcfc9f5801812419412f91acb77eb6,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 23
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5fcfc9f5801812419412f91acb77eb6, type: 3}
 --- !u!1 &1523940523 stripped
@@ -10661,6 +11036,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TechoFabrica (30)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e282c0a6fd7136e478c11a294943a000,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 23
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e282c0a6fd7136e478c11a294943a000, type: 3}
@@ -10819,6 +11199,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: ParedLateral (24)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e5fcfc9f5801812419412f91acb77eb6,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 23
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5fcfc9f5801812419412f91acb77eb6, type: 3}
 --- !u!1 &1576114892 stripped
@@ -10906,6 +11291,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Caja de almacenamiento  (28)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8219139bc0b30114eaf48b5f14e22659,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 23
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8219139bc0b30114eaf48b5f14e22659, type: 3}
@@ -11098,6 +11488,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Caja de almacenamiento  (27)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8219139bc0b30114eaf48b5f14e22659,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 23
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8219139bc0b30114eaf48b5f14e22659, type: 3}
 --- !u!1 &1606002635 stripped
@@ -11220,6 +11615,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: pisoFabrica (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ad6b478b42f5b9342a5f8d90aa6377f6,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 23
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad6b478b42f5b9342a5f8d90aa6377f6, type: 3}
 --- !u!1 &1615048471 stripped
@@ -11308,6 +11708,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: pisoFabrica
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ad6b478b42f5b9342a5f8d90aa6377f6,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 23
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad6b478b42f5b9342a5f8d90aa6377f6, type: 3}
 --- !u!1 &1620249973 stripped
@@ -11395,6 +11800,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: ParedLateral (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e5fcfc9f5801812419412f91acb77eb6,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 23
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5fcfc9f5801812419412f91acb77eb6, type: 3}
@@ -11533,6 +11943,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: ParedLateral (28)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e5fcfc9f5801812419412f91acb77eb6,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 23
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5fcfc9f5801812419412f91acb77eb6, type: 3}
@@ -11691,6 +12106,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: ParedLateral (22)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e5fcfc9f5801812419412f91acb77eb6,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 23
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5fcfc9f5801812419412f91acb77eb6, type: 3}
 --- !u!1 &1714093984 stripped
@@ -11778,6 +12198,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Caja de almacenamiento  (23)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8219139bc0b30114eaf48b5f14e22659,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 23
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8219139bc0b30114eaf48b5f14e22659, type: 3}
@@ -11900,6 +12325,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: ParedLateral (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e5fcfc9f5801812419412f91acb77eb6,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 23
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5fcfc9f5801812419412f91acb77eb6, type: 3}
@@ -12165,6 +12595,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Caja de almacenamiento  (29)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8219139bc0b30114eaf48b5f14e22659,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 23
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8219139bc0b30114eaf48b5f14e22659, type: 3}
 --- !u!1 &1790866448 stripped
@@ -12287,6 +12722,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: ParedLateral (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e5fcfc9f5801812419412f91acb77eb6,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 23
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5fcfc9f5801812419412f91acb77eb6, type: 3}
 --- !u!1 &1817789676 stripped
@@ -12374,6 +12814,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Caja de almacenamiento  (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8219139bc0b30114eaf48b5f14e22659,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 23
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8219139bc0b30114eaf48b5f14e22659, type: 3}
@@ -12497,6 +12942,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Caja de almacenamiento  (32)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8219139bc0b30114eaf48b5f14e22659,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 23
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8219139bc0b30114eaf48b5f14e22659, type: 3}
 --- !u!1 &1875986647 stripped
@@ -12619,6 +13069,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: pisoFabrica (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ad6b478b42f5b9342a5f8d90aa6377f6,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 23
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad6b478b42f5b9342a5f8d90aa6377f6, type: 3}
 --- !u!1 &1891002280 stripped
@@ -12706,6 +13161,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Estanteria de almacenamineto (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 4635b6719b86c564688de0840c1e456a,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 23
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4635b6719b86c564688de0840c1e456a, type: 3}
@@ -12860,6 +13320,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: TechoFabrica (34)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e282c0a6fd7136e478c11a294943a000,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 23
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e282c0a6fd7136e478c11a294943a000, type: 3}
 --- !u!1 &1934810005 stripped
@@ -12997,6 +13462,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Caja de almacenamiento  (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8219139bc0b30114eaf48b5f14e22659,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 23
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8219139bc0b30114eaf48b5f14e22659, type: 3}
 --- !u!1 &1939473041 stripped
@@ -13119,6 +13589,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Caja de almacenamiento  (09)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8219139bc0b30114eaf48b5f14e22659,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 23
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8219139bc0b30114eaf48b5f14e22659, type: 3}
 --- !u!1 &1954773534 stripped
@@ -13240,6 +13715,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Caja de almacenamiento  (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8219139bc0b30114eaf48b5f14e22659,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 23
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8219139bc0b30114eaf48b5f14e22659, type: 3}
@@ -13432,6 +13912,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Caja de almacenamiento  (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8219139bc0b30114eaf48b5f14e22659,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 23
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8219139bc0b30114eaf48b5f14e22659, type: 3}
 --- !u!1 &1994538449 stripped
@@ -13553,6 +14038,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Caja de almacenamiento  (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8219139bc0b30114eaf48b5f14e22659,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 23
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8219139bc0b30114eaf48b5f14e22659, type: 3}
@@ -13676,6 +14166,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: ParedLateral (18)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e5fcfc9f5801812419412f91acb77eb6,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 23
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5fcfc9f5801812419412f91acb77eb6, type: 3}
 --- !u!1 &2011772711 stripped
@@ -13763,6 +14258,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Caja de almacenamiento  (08)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8219139bc0b30114eaf48b5f14e22659,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 23
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8219139bc0b30114eaf48b5f14e22659, type: 3}
@@ -13885,6 +14385,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TechoFabrica (44)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e282c0a6fd7136e478c11a294943a000,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 23
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e282c0a6fd7136e478c11a294943a000, type: 3}
@@ -14043,6 +14548,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Caja de almacenamiento  (24)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8219139bc0b30114eaf48b5f14e22659,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 23
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8219139bc0b30114eaf48b5f14e22659, type: 3}
 --- !u!1 &2070243815 stripped
@@ -14164,6 +14674,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: pisoFabrica (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ad6b478b42f5b9342a5f8d90aa6377f6,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 23
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad6b478b42f5b9342a5f8d90aa6377f6, type: 3}
@@ -14548,6 +15063,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: pisoFabrica (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ad6b478b42f5b9342a5f8d90aa6377f6,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 23
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad6b478b42f5b9342a5f8d90aa6377f6, type: 3}
 --- !u!1 &2109505505 stripped
@@ -14636,6 +15156,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: ParedLateral (20)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e5fcfc9f5801812419412f91acb77eb6,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 23
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5fcfc9f5801812419412f91acb77eb6, type: 3}
 --- !u!1 &2114859165 stripped
@@ -14723,6 +15248,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TechoFabrica (41)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e282c0a6fd7136e478c11a294943a000,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 23
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e282c0a6fd7136e478c11a294943a000, type: 3}
@@ -14880,6 +15410,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: pisoFabrica (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ad6b478b42f5b9342a5f8d90aa6377f6,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 23
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad6b478b42f5b9342a5f8d90aa6377f6, type: 3}
