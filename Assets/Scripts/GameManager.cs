@@ -68,10 +68,11 @@ public class GameManager : MonoBehaviourPunCallbacks
   IEnumerator destruirParedes()
     {
         yield return new WaitForSeconds(15);
-        audioSource.Play();
         Pared1.gameObject.SetActive(false);
         Pared2.gameObject.SetActive(false);
         Pared3.gameObject.SetActive(false);
+        audioSource.Play();
+
     }
     IEnumerator finalizarPartida()
     {
