@@ -5,9 +5,11 @@ using UnityEngine.SceneManagement;
 using Photon.Pun;
 using Photon.Realtime;
 using System.Linq;
+using ExitGames.Client.Photon;
 
 
-public class GameManager : MonoBehaviourPunCallbacks
+
+public class GameManager : MonoBehaviourPunCallbacks, IOnEventCallback
 {
     
     public RoleManager roleManager;
@@ -87,4 +89,19 @@ public class GameManager : MonoBehaviourPunCallbacks
     }
     private void UpdatePropC() => Entity.OnEntityDeath += PropC;
     public void PropC() => RoleManager.propCount -= 1;
+    public void OnEvent(EventData photonEvent)
+{
+    RoleManager.EventCodes eventCode = (RoleManager.EventCodes)photonEvent.Code;
+    object[] data = (object[])photonEvent.CustomData;
+
+    switch (eventCode)
+    {
+        case RoleManager.EventCodes.PropCountChange:
+            RoleManager.propCount = (int)data[0];
+            break;
+        case RoleManager.EventCodes.HunterCountChange:
+            RoleManager.hunterCount = (int)data[0];
+            break;
+    }
+}
     }

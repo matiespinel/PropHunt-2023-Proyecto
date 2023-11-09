@@ -3,9 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using Photon.Pun;
 using Photon.Realtime;
+using ExitGames.Client.Photon;
 
 
-public class RoleManager : MonoBehaviour
+
+public class RoleManager : MonoBehaviourPunCallbacks
 {   
     // make this GameObject a singleton
     public static RoleManager rol;
@@ -28,6 +30,19 @@ public class RoleManager : MonoBehaviour
         }
         
     }
+    public enum EventCodes
+{
+    PropCountChange,
+    HunterCountChange
+}
+
+void SendCountChange(EventCodes eventCode, int value)
+{
+    byte eventCodeByte = (byte)eventCode;
+    object[] content = new object[] { value };
+    RaiseEventOptions raiseEventOptions = new RaiseEventOptions { Receivers = ReceiverGroup.All };
+    PhotonNetwork.RaiseEvent(eventCodeByte, content, raiseEventOptions, SendOptions.SendReliable);
+}
 
    
     public void RoleAssigner()
@@ -38,14 +53,14 @@ public class RoleManager : MonoBehaviour
                 {
                     PhotonNetwork.LocalPlayer.SetCustomProperties(new ExitGames.Client.Photon.Hashtable() { { "Role", "Hunter" } });
                             hunterCount++;
-                            RoleManager.hunterCount = hunterCount;
+                            SendCountChange(EventCodes.HunterCountChange, hunterCount);
                             Debug.Log(hunterCount);
                 }
                 else
                 {
                        PhotonNetwork.LocalPlayer.SetCustomProperties(new ExitGames.Client.Photon.Hashtable() { { "Role", "Prop" } });
                             propCount++;
-                            RoleManager.propCount = propCount;
+                            SendCountChange(EventCodes.PropCountChange, propCount);
                             Debug.Log(propCount);
                 }
 
@@ -59,11 +74,13 @@ public class RoleManager : MonoBehaviour
                         {
                             p.SetCustomProperties(new ExitGames.Client.Photon.Hashtable() { { "Role", "Hunter" } });
                             hunterCount++;
+                            SendCountChange(EventCodes.HunterCountChange, hunterCount);
                         }
                         else
                         {
                              p.SetCustomProperties(new ExitGames.Client.Photon.Hashtable() { { "Role", "Prop" } });
-                              propCount++;
+                            propCount++;
+                            SendCountChange(EventCodes.PropCountChange, propCount);
                         }
                     }
                     bool isHunterAssigned = false;
@@ -80,6 +97,8 @@ foreach (Player p in allPlayer)
 if (!isHunterAssigned && PhotonNetwork.IsMasterClient)
 {
     PhotonNetwork.LocalPlayer.SetCustomProperties(new ExitGames.Client.Photon.Hashtable() { { "Role", "Hunter" } });
+    hunterCount++;
+    SendCountChange(EventCodes.HunterCountChange, hunterCount);
     Debug.Log("Hunter: " + PhotonNetwork.LocalPlayer.NickName);
 }
             }
