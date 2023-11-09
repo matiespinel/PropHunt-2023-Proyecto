@@ -2,17 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[RequireComponent(typeof(MyCharacterController))]
+[RequireComponent(typeof(UniversalCharacterController))]
 public class Sprint : MonoBehaviour
 {
-    MyCharacterController mController;
+    UniversalCharacterController mController;
 
     [SerializeField]
     float speedMultiplier = 2f;
 
     private void Awake()
     {
-        mController = GetComponent<MyCharacterController>();
+        mController = GetComponent<UniversalCharacterController>();
     }
 
     private void OnEnable() => mController.OnBeforeMove += OnBeforeMove;

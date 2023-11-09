@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Photon.Pun;
 
-public class GunShotScript : Weapon
+public class HunterRifleScript : Weapon
 {
     private Entity youEntity;
 
@@ -17,16 +17,20 @@ public class GunShotScript : Weapon
         bulletRange = 100;
         fireRate = 0.25f;
         nextShotInterval = 0;
-        bulletLine = GetComponentInChildren<LineRenderer>();
+        
         fireButton = KeyCode.K;
         bulletTime = new WaitForSeconds(.07f);
         mag = 20;
         initialMag = mag;
         ammo = 100;
         reloadTime = new WaitForSeconds(5);
+       
+        #endregion
         youEntity = GetComponent<Entity>();
         animator = GetComponent<Animator>();
-        #endregion
+        bulletLine = GetComponentInChildren<LineRenderer>();
+        _audioSource = GetComponentInChildren<AudioSource>();
+        MuzzleFlash = GetComponentInChildren<ParticleSystem>();
 
     }
 

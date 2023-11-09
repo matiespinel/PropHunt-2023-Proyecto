@@ -7,7 +7,7 @@ public class PlayerCheck : MonoBehaviour
 {
     #region vars
     public AnimationStateController animationStateController;
-    public MyCharacterController propController;
+    public UniversalCharacterController propController;
     private PhotonView view;
     #endregion
     void OnEnable()

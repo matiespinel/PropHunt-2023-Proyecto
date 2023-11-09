@@ -7,7 +7,7 @@ using System;
 using Cinemachine;
 public class AnimationStateController : MonoBehaviour
 {
-    MyCharacterController myCharacterController;
+    UniversalCharacterController myCharacterController;
 
     #region hashes
 
@@ -40,7 +40,7 @@ public class AnimationStateController : MonoBehaviour
 
     void Awake()
     {
-        myCharacterController = GetComponent<MyCharacterController>();
+        myCharacterController = GetComponent<UniversalCharacterController>();
         playerAnimator = GetComponent<Animator>();
         view = GetComponent<PhotonView>();
         #region Hashes
@@ -78,7 +78,7 @@ public class AnimationStateController : MonoBehaviour
             bool aPressed = Input.GetKey(KeyCode.A);
             bool dPressed = Input.GetKey(KeyCode.D);
             bool lShiftPressed = Input.GetKey(KeyCode.LeftShift);
-            playerAnimator.SetBool("isGrounded", myCharacterController.IsGrounded);
+            playerAnimator.SetBool("isGrounded",myCharacterController.IsGrounded);
             //WASD
             //AVANZAR
             if((!isBacking || !isStrafingLeft || !isStrafingRight) && wPressed)

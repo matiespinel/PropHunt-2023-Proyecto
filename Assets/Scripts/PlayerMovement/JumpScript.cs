@@ -2,10 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[RequireComponent(typeof(MyCharacterController))]
+[RequireComponent(typeof(UniversalCharacterController))]
 public class JumpScript : MonoBehaviour
 {
-    MyCharacterController controller;
+    UniversalCharacterController controller;
     [SerializeField]
     private float jumpSpeed;
     private bool tryingToJump;
@@ -22,7 +22,7 @@ public class JumpScript : MonoBehaviour
 
     void Awake()
     {
-        controller = GetComponent<MyCharacterController>();
+        controller = GetComponent<UniversalCharacterController>();
     }
 
     // Update is called once per frame

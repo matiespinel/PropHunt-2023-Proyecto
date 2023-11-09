@@ -5,7 +5,7 @@ using Photon.Pun;
 using UnityEngine.Animations.Rigging;
 using System;
 
-public class MyCharacterController : MonoBehaviour
+public class UniversalCharacterController : MonoBehaviour
 {
 
     [SerializeField]

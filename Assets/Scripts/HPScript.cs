@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Photon.Pun;
 
-public class HunterAttributesScript : Entity
+public class HPScript : Entity
 {
     void Awake() {
         HP = 100;
