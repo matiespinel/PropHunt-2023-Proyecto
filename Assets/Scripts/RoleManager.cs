@@ -30,7 +30,7 @@ public class RoleManager : MonoBehaviourPunCallbacks
         }
         
     }
-    public enum EventCodes : byte
+    public enum EventCodes : int
 {
     PropCountChange,
     HunterCountChange
