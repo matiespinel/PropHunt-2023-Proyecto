@@ -2071,7 +2071,7 @@ MonoBehaviour:
   gameManager: {fileID: 0}
   canvasHUD: {fileID: 4394659966329681093}
   QuitPanel: {fileID: 4394659967147794617}
-  InicioCanvas: {fileID: 4150728523150139323}
+  InicioText: {fileID: 4150728523150139323}
   tiempoo: {fileID: 0}
 --- !u!1 &4394659966656495625
 GameObject:
@@ -2097,7 +2097,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4394659966656495625}
-  m_LocalRotation: {x: 0.36715147, y: 0.3301044, z: 0.070921026, w: 0.8667186}
+  m_LocalRotation: {x: 0.37012434, y: 0.3085425, z: 0.06628857, w: 0.8737365}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -2672,7 +2672,6 @@ GameObject:
   - component: {fileID: 4394659967994863300}
   - component: {fileID: 4394659967994863320}
   - component: {fileID: 4394659967994863323}
-  - component: {fileID: 4394659967994863322}
   - component: {fileID: 4394659967994863299}
   - component: {fileID: 1853956356598728902}
   - component: {fileID: 322691148283613645}
@@ -2832,25 +2831,6 @@ MonoBehaviour:
     InterpolateOption: 0
     InterpolateMoveTowardsSpeed: 1
     InterpolateLerpSpeed: 0
---- !u!114 &4394659967994863322
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4394659967994863309}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f746dd5bd7453894c89c8478e59b14f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerName: {fileID: 4394659965978871719}
-  PropCountText: {fileID: 0}
-  gameManager: {fileID: 0}
-  canvasHUD: {fileID: 4394659966329681093}
-  QuitPanel: {fileID: 4394659967147794617}
-  InicioCanvas: {fileID: 0}
-  tiempoo: {fileID: 0}
 --- !u!81 &4394659967994863299
 AudioListener:
   m_ObjectHideFlags: 0

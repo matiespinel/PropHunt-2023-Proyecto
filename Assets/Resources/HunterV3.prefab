@@ -9321,7 +9321,7 @@ MonoBehaviour:
   gameManager: {fileID: 0}
   canvasHUD: {fileID: 6141548956358262758}
   QuitPanel: {fileID: 6141548957688081306}
-  InicioCanvas: {fileID: 0}
+  InicioText: {fileID: 0}
   tiempoo: {fileID: 1649410716575761504}
 --- !u!1 &6141548956547741473
 GameObject:
@@ -9666,7 +9666,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6141548957238725418}
-  m_LocalRotation: {x: 0.344574, y: 0.36689395, z: 0.086349435, w: 0.8597683}
+  m_LocalRotation: {x: 0.3530005, y: 0.30719042, z: 0.07229806, w: 0.88079387}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -9745,7 +9745,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6141548957448765914}
   m_LocalRotation: {x: 0.3486148, y: 0.31226322, z: 0.0748773, w: 0.88054127}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -0.634195, z: -0.4454452}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -10159,7 +10159,6 @@ GameObject:
   - component: {fileID: 6141548958048376295}
   - component: {fileID: 6141548958048376315}
   - component: {fileID: 6141548958048376312}
-  - component: {fileID: 6141548958048376313}
   - component: {fileID: 6141548958048376288}
   - component: {fileID: 8105721438330635237}
   m_Layer: 3
@@ -10177,7 +10176,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6141548958048376302}
   m_LocalRotation: {x: 0.061670613, y: 0.1944192, z: -0.012248376, w: 0.9789014}
-  m_LocalPosition: {x: 0.28518382, y: 1.8645955, z: -1.415339}
+  m_LocalPosition: {x: 0.28518382, y: 2.6395955, z: -1.415339}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -10318,25 +10317,6 @@ MonoBehaviour:
     InterpolateOption: 0
     InterpolateMoveTowardsSpeed: 1
     InterpolateLerpSpeed: 0
---- !u!114 &6141548958048376313
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6141548958048376302}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f746dd5bd7453894c89c8478e59b14f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerName: {fileID: 6141548956571618436}
-  PropCountText: {fileID: 6141548957876337891}
-  gameManager: {fileID: 0}
-  canvasHUD: {fileID: 6141548956358262758}
-  QuitPanel: {fileID: 6141548957688081306}
-  InicioCanvas: {fileID: 0}
-  tiempoo: {fileID: 0}
 --- !u!81 &6141548958048376288
 AudioListener:
   m_ObjectHideFlags: 0
@@ -10384,7 +10364,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6141548958054988269}
   m_LocalRotation: {x: -0.2995393, y: -0.10578119, z: -0.033437338, w: 0.94761205}
-  m_LocalPosition: {x: 0, y: 1.9590001, z: -2.25}
+  m_LocalPosition: {x: 0, y: 2.734, z: -2.25}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
