@@ -57,12 +57,13 @@ public class UniversalCharacterController : MonoBehaviour
     void FixedUpdate()
     {
 
-        if (MetamorfosisScript.isTransformed)
-        {
-            silvido.Play();
-        }
+        
         if (view.IsMine) 
         {
+            if (prop)
+            {
+                silvido.Play();
+            }
             UpdateMovement();
             UpdateGravity();
             UpdateGround();
