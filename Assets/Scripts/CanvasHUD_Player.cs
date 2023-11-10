@@ -16,7 +16,7 @@ public class CanvasHUD_Player : MonoBehaviour
     private PhotonView PV;
     public Canvas canvasHUD;
     public GameObject QuitPanel;
-    public TMP_Text  InicioCanvas;
+    public TMP_Text  InicioText;
 
     public TMP_Text tiempoo;
     #endregion
@@ -67,7 +67,7 @@ public class CanvasHUD_Player : MonoBehaviour
     IEnumerator StartGame()
     {
         yield return new WaitForSeconds(15f);
-        InicioCanvas.gameObject.SetActive(false);
+        InicioText.gameObject.SetActive(false);
 
     }
 }

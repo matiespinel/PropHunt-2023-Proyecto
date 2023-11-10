@@ -79,7 +79,7 @@ public class GameManager : MonoBehaviourPunCallbacks, IOnEventCallback
     IEnumerator finalizarPartida()
     {
         yield return new WaitForSeconds(5);
-        //PhotonNetwork.LeaveRoom();
+        PhotonNetwork.LeaveRoom();
         Debug.Log("Saliendo de la partida");
     }
     public override void OnLeftRoom()
