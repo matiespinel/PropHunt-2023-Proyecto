@@ -2071,7 +2071,6 @@ MonoBehaviour:
   gameManager: {fileID: 0}
   canvasHUD: {fileID: 4394659966329681093}
   QuitPanel: {fileID: 4394659967147794617}
-  roleManager: {fileID: 0}
   InicioCanvas: {fileID: 4150728523150139323}
   tiempoo: {fileID: 0}
 --- !u!1 &4394659966656495625
@@ -2850,7 +2849,6 @@ MonoBehaviour:
   gameManager: {fileID: 0}
   canvasHUD: {fileID: 4394659966329681093}
   QuitPanel: {fileID: 4394659967147794617}
-  roleManager: {fileID: 0}
   InicioCanvas: {fileID: 0}
   tiempoo: {fileID: 0}
 --- !u!81 &4394659967994863299
