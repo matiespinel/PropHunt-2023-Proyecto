@@ -38,7 +38,7 @@ public class HunterRifleScript : Weapon
 
     void FixedUpdate()
     {
-        if(!photonView.IsMine) return;
+        if(!photonView.IsMine) enabled = false;
 
         if(Input.GetKey(fireButton) && Time.time > nextShotInterval && cooldownReloadBool)
         {
@@ -51,7 +51,7 @@ public class HunterRifleScript : Weapon
             {
                 bulletEnd = hit.point;
                 StartCoroutine(ShotEffect());
-                if (hit.collider.gameObject.layer == 6)//6 => layer llamada "Prop"
+                if (hit.collider.gameObject.layer == 7)//6 => layer llamada "PropHuman"
                 {
                     hit.collider.GetComponent<PhotonView>()?.RPC("TakeDamage", RpcTarget.All, 20);
                 }
