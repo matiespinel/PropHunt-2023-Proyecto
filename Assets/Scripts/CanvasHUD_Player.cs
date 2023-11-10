@@ -16,8 +16,7 @@ public class CanvasHUD_Player : MonoBehaviour
     private PhotonView PV;
     public Canvas canvasHUD;
     public GameObject QuitPanel;
-    public RoleManager roleManager;
-    public Canvas  InicioCanvas;
+    public TMP_Text  InicioCanvas;
 
     public TMP_Text tiempoo;
     #endregion
@@ -39,7 +38,6 @@ public class CanvasHUD_Player : MonoBehaviour
         if (PV.IsMine)
             playerName.text = PhotonNetwork.NickName;
         canvasHUD.gameObject.SetActive(true);
-        InicioCanvas = GameObject.FindWithTag("InicioCnvas").GetComponent<Canvas>();
         StartCoroutine(StartGame());
     }
     
