@@ -39,6 +39,7 @@ public class CanvasHUD_Player : MonoBehaviour
         if (PV.IsMine)
             playerName.text = PhotonNetwork.NickName;
         canvasHUD.gameObject.SetActive(true);
+        InicioCanvas = GameObject.FindWithTag("InicioCnvas").GetComponent<Canvas>();
         StartCoroutine(StartGame());
     }
     
