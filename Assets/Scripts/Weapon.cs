@@ -74,10 +74,14 @@ public abstract class Weapon : MonoBehaviourPunCallbacks
     {
         cooldownReloadBool = false;
         photonView.RPC("SetReloadEffectBool", RpcTarget.All, true);
+        
         yield return new WaitForSeconds(0.2f);
+
         photonView.RPC("RigBuilderState", RpcTarget.All, false);
         photonView.RPC("SetReloadEffectBool", RpcTarget.All, false);
+
         yield return reloadTime;
+
         photonView.RPC("RigBuilderState", RpcTarget.All, true);
         var dif = initialMag - mag;
         mag += dif;

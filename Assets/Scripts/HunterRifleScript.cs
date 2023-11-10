@@ -22,7 +22,7 @@ public class HunterRifleScript : Weapon
         mag = 20;
         initialMag = mag;
         ammo = 100;
-        reloadTime = new WaitForSeconds(5);
+        reloadTime = new WaitForSeconds(3.5f);
        
         #endregion
         youEntity = GetComponent<Entity>();
