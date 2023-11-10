@@ -2,9 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Photon.Pun;
-using UnityEngine.Animations.Rigging;
-using System;
-using Cinemachine;
+
 public class AnimationStateController : MonoBehaviour
 {
     UniversalCharacterController myCharacterController;

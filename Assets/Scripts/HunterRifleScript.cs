@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Photon.Pun;
+using UnityEngine.Animations.Rigging;
 
 public class HunterRifleScript : Weapon
 {
@@ -31,6 +32,7 @@ public class HunterRifleScript : Weapon
         bulletLine = GetComponentInChildren<LineRenderer>();
         _audioSource = GetComponentInChildren<AudioSource>();
         MuzzleFlash = GetComponentInChildren<ParticleSystem>();
+        rigBuilder = GetComponent<RigBuilder>();
 
     }
 
@@ -67,6 +69,7 @@ public class HunterRifleScript : Weapon
         if (mag == 0 && cooldownReloadBool || Input.GetKey(KeyCode.R) && cooldownReloadBool && mag != initialMag)
         {
             StartCoroutine(ReloadWait());
+            
         }
     }
 }

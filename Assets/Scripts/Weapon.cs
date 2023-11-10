@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Photon.Pun;
 using TMPro;
-
+using UnityEngine.Animations.Rigging;
 
 public abstract class Weapon : MonoBehaviourPunCallbacks
 {
@@ -13,7 +13,7 @@ public abstract class Weapon : MonoBehaviourPunCallbacks
         GunShotScript,
         gun2,
     }
-    public AudioSource _audioSource;
+    public RigBuilder rigBuilder;
 
     #region WeaponData
     public Vector3 bulletOrigin;
@@ -21,8 +21,7 @@ public abstract class Weapon : MonoBehaviourPunCallbacks
     public LineRenderer bulletLine;
     public WaitForSeconds bulletTime;
     public WaitForSeconds reloadTime;
-
-
+    public AudioSource _audioSource;
     public int ammo {get; set;}
     public float nextShotInterval {get; set;}
     public int mag {get; set;}
@@ -52,14 +51,15 @@ public abstract class Weapon : MonoBehaviourPunCallbacks
     /// Sonido al disparar arma
     /// </summary>
     public void PlayGunShotAudio() => _audioSource.Play();
-    /// <summary>
-    /// Efecto de disparo. Registro y Deresgistro de audioclip, resta de balas y tiempo entre disparos.
-    /// </summary>
+    
     
     public void UpdateAmmoCounter() 
     {
         ammoCounter.text = mag+"/"+ammo;
     }
+    /// <summary>
+    /// Efecto de disparo. Registro y Deresgistro de audioclip, resta de balas y tiempo entre disparos.
+    /// </summary>
     public IEnumerator ShotEffect()
     {
         mag--;
@@ -75,8 +75,11 @@ public abstract class Weapon : MonoBehaviourPunCallbacks
     {
         cooldownReloadBool = false;
         photonView.RPC("SetReloadEffectBool", RpcTarget.All, true);
-        yield return reloadTime;
+        yield return new WaitForSeconds(0.2f);
+        photonView.RPC("RigBuilderState", RpcTarget.All, false);
         photonView.RPC("SetReloadEffectBool", RpcTarget.All, false);
+        yield return reloadTime;
+        photonView.RPC("RigBuilderState", RpcTarget.All, true);
         var dif = initialMag - mag;
         mag += dif;
         ammo -= dif;
@@ -87,7 +90,15 @@ public abstract class Weapon : MonoBehaviourPunCallbacks
     private void OnDestroy() =>DeregisterShotAudio();
 
     [PunRPC]
-    public void SetReloadEffectBool(bool boolean) => animator.SetBool("isReloading", boolean);
+    public void SetReloadEffectBool(bool boolean)
+    {
+        animator.SetBool("isReloading", boolean);
+    }
+    [PunRPC]
+    public void RigBuilderState(bool boolean)
+    {
+        rigBuilder.enabled = boolean;
+    }
     [PunRPC]
     public void ShootEffectStart(Vector3 linend)
     {

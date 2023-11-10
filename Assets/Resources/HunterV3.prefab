@@ -7721,10 +7721,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8247f3f9713f8e445a1bb657cd43c803, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _audioSource: {fileID: 0}
+  rigBuilder: {fileID: 0}
   bulletOrigin: {x: 0, y: 0, z: 0}
   bulletEnd: {x: 0, y: 0, z: 0}
   bulletLine: {fileID: 0}
+  _audioSource: {fileID: 0}
   ammoCounter: {fileID: 2451444770441275864}
   animator: {fileID: 0}
   MuzzleFlash: {fileID: 0}
