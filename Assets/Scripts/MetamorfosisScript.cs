@@ -1,9 +1,7 @@
-using System.Collections.Generic;
 using System.Collections;
 using UnityEngine;
 using Cinemachine;
 using Photon.Pun;
-using Photon.Realtime;
 
 public class MetamorfosisScript : MonoBehaviourPunCallbacks
 {
@@ -102,7 +100,7 @@ void Update()
         Debug.Log("Cooldown ended");
     }
 
-    private void OnEnable()
+    new private void OnEnable()
     {
         if (gameObject == Prop) 
         {
