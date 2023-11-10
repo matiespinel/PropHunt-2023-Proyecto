@@ -89,7 +89,7 @@ public class GameManager : MonoBehaviourPunCallbacks, IOnEventCallback
     }
     private void UpdatePropC() => Entity.OnEntityDeath += PropC;
     public void PropC() => RoleManager.propCount -= 1;
-    public void OnEvent(EventData photonEvent)
+   public void OnEvent(EventData photonEvent)
 {
     RoleManager.EventCodes eventCode = (RoleManager.EventCodes)photonEvent.Code;
     object[] data = (object[])photonEvent.CustomData;
