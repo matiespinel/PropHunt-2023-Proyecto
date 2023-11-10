@@ -2199,7 +2199,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4394659966656495625}
-  m_LocalRotation: {x: 0.3642729, y: 0.34956673, z: 0.0751024, w: 0.85992324}
+  m_LocalRotation: {x: 0.361289, y: 0.3685089, z: 0.07917201, w: 0.85287935}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -4728,7 +4728,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ignoreLayer:
     serializedVersion: 2
-    m_Bits: 447
+    m_Bits: 64
   cam: {fileID: 4394659967994863298}
   cam3d: {fileID: 4394659967984726733}
   offlinemode: 0
@@ -5409,7 +5409,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ignoreLayer:
     serializedVersion: 2
-    m_Bits: 439
+    m_Bits: 64
   cam: {fileID: 4394659967994863298}
   cam3d: {fileID: 4394659967984726733}
   offlinemode: 0
