@@ -73,7 +73,6 @@ public class UniversalCharacterController : MonoBehaviour
         }
         else 
         {
-            GetComponent<RigBuilder>().enabled = false;
             enabled = false;
         }
 
