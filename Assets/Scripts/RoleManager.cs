@@ -34,7 +34,7 @@ public class RoleManager : MonoBehaviourPunCallbacks
     HunterCountChange
 }
 
-void SendCountChange(EventCodes eventCode, int value)
+public void SendCountChange(EventCodes eventCode, int value)
 {
     byte eventCodeByte = (byte)eventCode;
     object[] content = new object[] { value };
