@@ -20,6 +20,8 @@ public class GameManager : MonoBehaviourPunCallbacks, IOnEventCallback
         StartCoroutine("destruirParedes");
         timeIsRunning = true;
         UpdatePropC();
+        //decir por consola cual es el rol del jugador
+        Debug.Log(PhotonNetwork.LocalPlayer.CustomProperties["Role"]?.ToString());
     }
 
     void Update()
