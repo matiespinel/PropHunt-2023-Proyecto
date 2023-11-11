@@ -64,5 +64,6 @@ public class RoleAssigner : MonoBehaviourPunCallbacks
         }
 
         Debug.Log(RoleManager.propCount);
+        Debug.Log(RoleManager.hunterCount);
     }
 }
