@@ -29,7 +29,7 @@ public class GameManager : MonoBehaviourPunCallbacks, IOnEventCallback
             Debug.Log("Props win");
             StartCoroutine("finalizarPartida");
         }
-        if (RoleManager.propCount == 0)
+        if (RoleManager.propCount == 1)
         {
             Debug.Log("Hunter wins");
             StartCoroutine("finalizarPartida");
