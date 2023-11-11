@@ -42,6 +42,8 @@ public void SendCountChange(EventCodes eventCode, int value)
     PhotonNetwork.RaiseEvent(eventCodeByte, content, raiseEventOptions, SendOptions.SendReliable);
 }
 
+
+
    
     public void RoleAssigner()
         {

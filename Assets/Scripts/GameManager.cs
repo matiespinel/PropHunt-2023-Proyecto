@@ -80,21 +80,29 @@ public class GameManager : MonoBehaviourPunCallbacks, IOnEventCallback
     RoleManager.rol.SendCountChange(RoleManager.EventCodes.PropCountChange, RoleManager.propCount);
 }
 
-    public void OnEvent(EventData photonEvent)
+     public void OnEvent(EventData photonEvent)
     {
-        RoleManager.EventCodes eventCode = (RoleManager.EventCodes)(int)photonEvent.Code;
-        object[] data = (object[])photonEvent.CustomData;
-
-        switch (eventCode)
+        if (photonEvent.Code == (byte)RoleManager.EventCodes.PropCountChange)
         {
-            case RoleManager.EventCodes.PropCountChange:
-                RoleManager.propCount = (int)data[0];
-                break;
-            case RoleManager.EventCodes.HunterCountChange:
-                RoleManager.hunterCount = (int)data[0];
-                break;
+            RoleManager.propCount = (int)photonEvent.CustomData;
+        }
+        else if (photonEvent.Code == (byte)RoleManager.EventCodes.HunterCountChange)
+        {
+            RoleManager.hunterCount = (int)photonEvent.CustomData;
         }
     }
+    void OnEnable()
+{
+    base.OnEnable(); 
+    PhotonNetwork.AddCallbackTarget(this);
+}
+
+void OnDisable()
+{
+    base.OnDisable(); 
+    PhotonNetwork.RemoveCallbackTarget(this);
+}
+
 
     void SendCountChange(RoleManager.EventCodes eventCode, int value)
 {
