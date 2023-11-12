@@ -61,24 +61,25 @@ public class RoleManager : MonoBehaviourPunCallbacks, IOnEventCallback
        
         
         
-            allPlayers = PhotonNetwork.PlayerList;
-            hunter = Random.Range(0, allPlayers.Length);
+           allPlayers = PhotonNetwork.PlayerList;
+            int hunter = Random.Range(0, allPlayers.Length);
 
-            foreach (Player player in allPlayers)
-            {
-                if (player.ActorNumber == hunter)
-                {
-                    player.SetCustomProperties(new ExitGames.Client.Photon.Hashtable() { { "Role", "Hunter" } });
-                    hunterCount++;
-                    SendCountChange(EventCodes.HunterCountChange, hunterCount);
-                }
-                else
-                {
-                    player.SetCustomProperties(new ExitGames.Client.Photon.Hashtable() { { "Role", "Prop" } });
-                    propCount++;
-                    SendCountChange(EventCodes.PropCountChange, propCount);
-                }
-            }
+                for (int i = 0; i < allPlayers.Length; i++)
+                    {
+                         Player player = allPlayers[i];
+                      if (i == hunter)
+    {
+        player.SetCustomProperties(new ExitGames.Client.Photon.Hashtable() { { "Role", "Hunter" } });
+        hunterCount++;
+        SendCountChange(EventCodes.HunterCountChange, hunterCount);
+    }
+    else
+    {
+        player.SetCustomProperties(new ExitGames.Client.Photon.Hashtable() { { "Role", "Prop" } });
+        propCount++;
+        SendCountChange(EventCodes.PropCountChange, propCount);
+    }
+}
 
             
             
