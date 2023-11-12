@@ -1292,7 +1292,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 176, y: -143.99992}
+  m_AnchoredPosition: {x: 176, y: -143.99991}
   m_SizeDelta: {x: 352, y: 362}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!223 &8113464162363737611
@@ -2097,7 +2097,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4394659966656495625}
-  m_LocalRotation: {x: 0.36132756, y: 0.36827144, z: 0.079120986, w: 0.85297036}
+  m_LocalRotation: {x: 0.36133108, y: 0.36824992, z: 0.07911637, w: 0.85297865}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -5143,6 +5143,7 @@ GameObject:
   - component: {fileID: 2314688802912738283}
   - component: {fileID: 8585802468593546206}
   - component: {fileID: 2171084967998403864}
+  - component: {fileID: 1316564351805090950}
   m_Layer: 7
   m_Name: VersatilePropUnit
   m_TagString: DCamAttach
@@ -10309,6 +10310,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speedMultiplier: 2
+--- !u!65 &1316564351805090950
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8429061571109017113}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &8474027899529039777
 GameObject:
   m_ObjectHideFlags: 0

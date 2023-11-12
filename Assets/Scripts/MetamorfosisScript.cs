@@ -20,6 +20,8 @@ public class MetamorfosisScript : MonoBehaviourPunCallbacks
     public static bool isTransformed = false;
     #endregion
     private RaycastHit hit;
+
+    CharacterController cc;
     void Awake() 
     {
         propPhotonView = Prop.GetPhotonView();
@@ -30,16 +32,6 @@ public class MetamorfosisScript : MonoBehaviourPunCallbacks
 void Update()
 {
    time += Time.deltaTime;
-    if (isTransformed)
-    {
-       
-
-        //hacer contador de cada 15 segundos
-        if (time%15 == 0)
-        {
-        
-        }
-    }
 }
 
     void FixedUpdate()
@@ -105,7 +97,7 @@ void Update()
         if (gameObject == Prop) 
         {
             StartCoroutine(MetaCooldown());
-
+            cc.height = 0;
         }
         
     }
