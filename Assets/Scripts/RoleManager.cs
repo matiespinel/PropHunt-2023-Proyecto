@@ -58,25 +58,9 @@ public class RoleManager : MonoBehaviourPunCallbacks, IOnEventCallback
 
     public void RoleAssigner()
     {
-        if (PhotonNetwork.CurrentRoom.PlayerCount == 2)
-        {
-            if (PhotonNetwork.LocalPlayer.IsMasterClient)
-            {
-                PhotonNetwork.LocalPlayer.SetCustomProperties(new ExitGames.Client.Photon.Hashtable() { { "Role", "Hunter" } });
-                hunterCount++;
-                SendCountChange(EventCodes.HunterCountChange, hunterCount);
-                Debug.Log(hunterCount);
-            }
-            else
-            {
-                PhotonNetwork.LocalPlayer.SetCustomProperties(new ExitGames.Client.Photon.Hashtable() { { "Role", "Prop" } });
-                propCount++;
-                SendCountChange(EventCodes.PropCountChange, propCount);
-                Debug.Log(propCount);
-            }
-        }
-        else
-        {
+       
+        
+        
             allPlayers = PhotonNetwork.PlayerList;
             hunter = Random.Range(0, allPlayers.Length);
 
@@ -114,7 +98,7 @@ public class RoleManager : MonoBehaviourPunCallbacks, IOnEventCallback
                 SendCountChange(EventCodes.HunterCountChange, hunterCount);
                 Debug.Log("Hunter: " + PhotonNetwork.LocalPlayer.NickName);
             }
-        }
+        
     }
 
     void OnEnable()
