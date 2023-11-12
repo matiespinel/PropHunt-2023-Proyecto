@@ -3,7 +3,37 @@ guid: d49fa482877109d4999465e5e78a0065
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cuero
+    second: {fileID: 2100000, guid: a83f8af176be7f342bebf4f208f7d55e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.001
+    second: {fileID: 2100000, guid: 99b2eed583796144583c5bc5f8c5e0db, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.003
+    second: {fileID: 2100000, guid: 254d1ce7126aa6948860e3b66cb762e1, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Leather032_1K-JPG_Color
+    second: {fileID: 2800000, guid: 0cab11115e1468f4fa058ca38f9353d4, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Leather032_1K-JPG_NormalDX
+    second: {fileID: 2800000, guid: 16ae4662dde557f458ebdc54890b258d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Leather032_1K-JPG_Roughness
+    second: {fileID: 2800000, guid: 4e6d5c9ddf71d644cbb02d1aa9901cd0, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0
