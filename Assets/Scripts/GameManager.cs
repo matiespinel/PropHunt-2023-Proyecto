@@ -6,7 +6,7 @@ using ExitGames.Client.Photon;
 
 public class GameManager : MonoBehaviourPunCallbacks, IOnEventCallback
 {
-    public RoleManager roleManager;
+    public RoleManager roleManagerInstance;
     [SerializeField] GameObject Pared1;
     [SerializeField] GameObject Pared2;
     [SerializeField] GameObject Pared3;
@@ -14,6 +14,13 @@ public class GameManager : MonoBehaviourPunCallbacks, IOnEventCallback
 
     public float timer = 300;
     bool timeIsRunning = false;
+
+     void Awake()
+    {
+        roleManagerInstance = InstantiateRoleManager();
+
+        RegisterRoleManagerForCallbacks();
+    }
 
     void Start()
     {
@@ -110,4 +117,24 @@ void OnDisable()
 {
     RoleManager.rol.SendCountChange(eventCode, value);
 }
+
+ private RoleManager InstantiateRoleManager()
+    {
+        // Lógica para instanciar tu RoleManager (puedes ajustar esto según tu estructura de proyecto)
+        GameObject roleManagerGO = new GameObject("RoleManager");
+        RoleManager roleManager = roleManagerGO.AddComponent<RoleManager>();
+        return roleManager;
+    }
+
+    private void RegisterRoleManagerForCallbacks()
+    {
+        // Registrar RoleManager para recibir eventos
+        PhotonNetwork.AddCallbackTarget(roleManagerInstance);
+    }
+
+    private void UnregisterRoleManagerFromCallbacks()
+    {
+        // Desregistrar RoleManager cuando ya no es necesario
+        PhotonNetwork.RemoveCallbackTarget(roleManagerInstance);
+    }
 }
