@@ -80,24 +80,8 @@ public class RoleManager : MonoBehaviourPunCallbacks, IOnEventCallback
                 }
             }
 
-            bool isHunterAssigned = false;
-
-            foreach (Player player in allPlayers)
-            {
-                if (player.CustomProperties.ContainsKey("Role") && player.CustomProperties["Role"].ToString() == "Hunter")
-                {
-                    Debug.Log("Hunter: " + player.NickName);
-                    isHunterAssigned = true;
-                }
-            }
-
-            if (!isHunterAssigned && PhotonNetwork.IsMasterClient)
-            {
-                PhotonNetwork.LocalPlayer.SetCustomProperties(new ExitGames.Client.Photon.Hashtable() { { "Role", "Hunter" } });
-                hunterCount++;
-                SendCountChange(EventCodes.HunterCountChange, hunterCount);
-                Debug.Log("Hunter: " + PhotonNetwork.LocalPlayer.NickName);
-            }
+            
+            
         
     }
 
