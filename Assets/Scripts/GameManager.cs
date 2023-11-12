@@ -3,6 +3,8 @@ using UnityEngine;
 using Photon.Pun;
 using Photon.Realtime;
 using ExitGames.Client.Photon;
+using UnityEngine.UI;
+using TMPro;
 
 public class GameManager : MonoBehaviourPunCallbacks, IOnEventCallback
 {
@@ -13,6 +15,9 @@ public class GameManager : MonoBehaviourPunCallbacks, IOnEventCallback
     [SerializeField] GameObject Pared4;
     [SerializeField] GameObject Pared5;
     [SerializeField] AudioSource audioSource;
+
+    [SerializeField] Canvas PropsWin;
+    [SerializeField] Canvas HunterWin;
 
     public float timer = 300;
     bool timeIsRunning = false;
@@ -38,7 +43,7 @@ public class GameManager : MonoBehaviourPunCallbacks, IOnEventCallback
         if (RoleManager.hunterCount == 0)
         {
             Debug.Log("Props win");
-            StartCoroutine("finalizarPartida");
+            StartCoroutine("finalizarPartida1");
         }
         if (RoleManager.propCount == 0)
         {
@@ -75,7 +80,18 @@ public class GameManager : MonoBehaviourPunCallbacks, IOnEventCallback
     IEnumerator finalizarPartida()
     {
         yield return new WaitForSeconds(5);
+        HunterWin.gameObject.SetActive(true);
         PhotonNetwork.LeaveRoom();
+        HunterWin.gameObject.SetActive(false);
+        Debug.Log("Saliendo de la partida");
+    }
+
+    IEnumerator finalizarPartida1()
+    {
+        yield return new WaitForSeconds(5);
+        PropsWin.gameObject.SetActive(true);
+        PhotonNetwork.LeaveRoom();
+        PropsWin.gameObject.SetActive(false);
         Debug.Log("Saliendo de la partida");
     }
 
