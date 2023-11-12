@@ -5145,7 +5145,7 @@ GameObject:
   - component: {fileID: 2171084967998403864}
   m_Layer: 7
   m_Name: VersatilePropUnit
-  m_TagString: Transformable
+  m_TagString: DCamAttach
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
