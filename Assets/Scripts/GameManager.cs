@@ -10,6 +10,8 @@ public class GameManager : MonoBehaviourPunCallbacks, IOnEventCallback
     [SerializeField] GameObject Pared1;
     [SerializeField] GameObject Pared2;
     [SerializeField] GameObject Pared3;
+    [SerializeField] GameObject Pared4;
+    [SerializeField] GameObject Pared5;
     [SerializeField] AudioSource audioSource;
 
     public float timer = 300;
@@ -65,6 +67,8 @@ public class GameManager : MonoBehaviourPunCallbacks, IOnEventCallback
         Pared1.gameObject.SetActive(false);
         Pared2.gameObject.SetActive(false);
         Pared3.gameObject.SetActive(false);
+        Pared4.gameObject.SetActive(false);
+        Pared5.gameObject.SetActive(true);
         audioSource.Play();
     }
 
