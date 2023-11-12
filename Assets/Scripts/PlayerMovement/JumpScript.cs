@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 [RequireComponent(typeof(UniversalCharacterController))]
@@ -16,11 +17,14 @@ public class JumpScript : MonoBehaviour
     [SerializeField]
     private float jumpGroundGraceTime = .2f;
 
+    Animator _anim;
+
     
 
     void Awake()
     {
         controller = GetComponent<UniversalCharacterController>();
+        _anim = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -31,6 +35,7 @@ public class JumpScript : MonoBehaviour
         {
             tryingToJump = true;
             lastJumpPressTime = Time.time;
+            StartCoroutine(JumpAnimation());
         }
         
     }
@@ -67,5 +72,12 @@ public class JumpScript : MonoBehaviour
     {
         controller.OnBeforeMove -= OnBeforeMove;
         controller.OnGroundStateChange -= OnGroundStateChange;
+    }
+
+    IEnumerator JumpAnimation()
+    {
+        _anim.SetBool("isJumping", true);
+        yield return new WaitForSeconds(0.1f);
+        _anim.SetBool("isJumping", false);
     }
 }

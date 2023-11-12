@@ -26,7 +26,6 @@ public class AnimationStateController : MonoBehaviour
     private bool isTurningRight;
     private bool isTurningLeft;
     private bool isRunning;
-    private bool isJumping;
     #endregion
     //condiciones  
 
@@ -58,7 +57,6 @@ public class AnimationStateController : MonoBehaviour
         isTurningRight = playerAnimator.GetBool(isTurningRightHash);
         isTurningLeft = playerAnimator.GetBool(isTurningLeftHash);
         isRunning = playerAnimator.GetBool(isRunningHash);
-        isJumping = playerAnimator.GetBool(isJumpingHash);
         #endregion
     }
 
@@ -122,15 +120,6 @@ public class AnimationStateController : MonoBehaviour
                 playerAnimator.SetBool(isRunningHash, false);
             }
 
-            if(spacePressed)
-            {
-                playerAnimator.SetBool(isJumpingHash, true);
-                Debug.Log("jump");
-            }
-            else
-            {
-                playerAnimator.SetBool(isJumpingHash, false);
-            }
             
 
         }
