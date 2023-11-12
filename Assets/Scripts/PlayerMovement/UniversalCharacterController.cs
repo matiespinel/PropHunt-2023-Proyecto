@@ -59,7 +59,8 @@ public class UniversalCharacterController : MonoBehaviour
         {
             if (prop)
             {
-                silvido.Play();
+                view.RPC("Silvido", RpcTarget.All);
+                
             }
             UpdateMovement();
             UpdateGravity();
@@ -132,6 +133,17 @@ public class UniversalCharacterController : MonoBehaviour
 
         
     }
+    [PunRPC]
+    public void Silvido()
+    {
+        InvokeRepeating("WhistleFunction", 0f, 15f);
+    }
+
+    private void WhistleFunction()
+    {
+        silvido.Play();
+    }
+
 
     void RecenterForward()
     {
