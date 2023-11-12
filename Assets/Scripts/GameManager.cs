@@ -61,7 +61,7 @@ public class GameManager : MonoBehaviourPunCallbacks, IOnEventCallback
             {
                 timer = 0;
                 timeIsRunning = false;
-                StartCoroutine("finalizarPartida");
+                StartCoroutine("finalizarPartida1");
             }
         }
     }
