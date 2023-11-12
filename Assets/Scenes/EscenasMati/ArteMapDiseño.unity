@@ -517,7 +517,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: f11778e6e3e1f584e9f46466e90371be,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 22
+      value: 18
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f11778e6e3e1f584e9f46466e90371be, type: 3}
@@ -648,7 +648,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 18
   m_IsActive: 1
 --- !u!108 &16301218
 Light:
@@ -2503,7 +2503,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 9b45d59f7e3a5d64a88b30995be1ad3d,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 22
+      value: 18
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9b45d59f7e3a5d64a88b30995be1ad3d, type: 3}
@@ -2934,7 +2934,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: f11778e6e3e1f584e9f46466e90371be,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 22
+      value: 18
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f11778e6e3e1f584e9f46466e90371be, type: 3}
@@ -3690,10 +3690,30 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2369901042145417721, guid: 03a116267c362134abf7d8e9579a2427,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 2369901042639003297, guid: 03a116267c362134abf7d8e9579a2427,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 2369901043009324442, guid: 03a116267c362134abf7d8e9579a2427,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     - target: {fileID: 2369901043392039810, guid: 03a116267c362134abf7d8e9579a2427,
         type: 3}
       propertyPath: m_Name
       value: DeathCam
+      objectReference: {fileID: 0}
+    - target: {fileID: 2369901043392039810, guid: 03a116267c362134abf7d8e9579a2427,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 2369901043392039820, guid: 03a116267c362134abf7d8e9579a2427,
         type: 3}
@@ -3703,37 +3723,37 @@ PrefabInstance:
     - target: {fileID: 2369901043392039820, guid: 03a116267c362134abf7d8e9579a2427,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7.6938696
+      value: -0.000000024192559
       objectReference: {fileID: 0}
     - target: {fileID: 2369901043392039820, guid: 03a116267c362134abf7d8e9579a2427,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.9590001
+      value: 2.467538
       objectReference: {fileID: 0}
     - target: {fileID: 2369901043392039820, guid: 03a116267c362134abf7d8e9579a2427,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -30.172205
+      value: -4.7300005
       objectReference: {fileID: 0}
     - target: {fileID: 2369901043392039820, guid: 03a116267c362134abf7d8e9579a2427,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.97870564
+      value: 0.94830924
       objectReference: {fileID: 0}
     - target: {fileID: 2369901043392039820, guid: 03a116267c362134abf7d8e9579a2427,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.079835206
+      value: 0.16433063
       objectReference: {fileID: 0}
     - target: {fileID: 2369901043392039820, guid: 03a116267c362134abf7d8e9579a2427,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.18848144
+      value: 0.26750022
       objectReference: {fileID: 0}
     - target: {fileID: 2369901043392039820, guid: 03a116267c362134abf7d8e9579a2427,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.015374851
+      value: -0.046354588
       objectReference: {fileID: 0}
     - target: {fileID: 2369901043392039820, guid: 03a116267c362134abf7d8e9579a2427,
         type: 3}
@@ -3749,6 +3769,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2369901043554774504, guid: 03a116267c362134abf7d8e9579a2427,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 2369901043567904849, guid: 03a116267c362134abf7d8e9579a2427,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 2369901043923033864, guid: 03a116267c362134abf7d8e9579a2427,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 03a116267c362134abf7d8e9579a2427, type: 3}
@@ -4834,7 +4869,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 9b45d59f7e3a5d64a88b30995be1ad3d,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 22
+      value: 18
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9b45d59f7e3a5d64a88b30995be1ad3d, type: 3}
@@ -5486,6 +5521,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: pisoFabrica (46)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ad6b478b42f5b9342a5f8d90aa6377f6,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad6b478b42f5b9342a5f8d90aa6377f6, type: 3}
 --- !u!4 &202113425 stripped
@@ -5890,6 +5930,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: LamparaPHunt (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ed630e23f5a964840a98496353de6eca,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 22
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ed630e23f5a964840a98496353de6eca, type: 3}
 --- !u!1001 &214114958
@@ -6184,7 +6229,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 034a242972af32c40b48c0117ae3c708,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 22
+      value: 18
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 034a242972af32c40b48c0117ae3c708, type: 3}
@@ -7515,6 +7560,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: pisoFabrica (47)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ad6b478b42f5b9342a5f8d90aa6377f6,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad6b478b42f5b9342a5f8d90aa6377f6, type: 3}
 --- !u!4 &244788440 stripped
@@ -8378,7 +8428,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: f8ba53a94f435414ca9b1128d1475870,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 22
+      value: 18
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f8ba53a94f435414ca9b1128d1475870, type: 3}
@@ -8450,7 +8500,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 18
   m_IsActive: 1
 --- !u!114 &267386989
 MonoBehaviour:
@@ -8637,6 +8687,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: pisoFabrica (49)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ad6b478b42f5b9342a5f8d90aa6377f6,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad6b478b42f5b9342a5f8d90aa6377f6, type: 3}
@@ -9088,6 +9143,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_TagString
       value: Transformable
+      objectReference: {fileID: 0}
+    - target: {fileID: 2016451885948311776, guid: 8d6b8e1c17587f84a80df051a968da27,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 2016451885948311777, guid: 8d6b8e1c17587f84a80df051a968da27,
         type: 3}
@@ -10097,6 +10157,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: pisoFabrica (35)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ad6b478b42f5b9342a5f8d90aa6377f6,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad6b478b42f5b9342a5f8d90aa6377f6, type: 3}
 --- !u!4 &310875707 stripped
@@ -10979,7 +11044,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: fde467ba3f9ce014dbdb9f00b37aad2a,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 22
+      value: 18
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fde467ba3f9ce014dbdb9f00b37aad2a, type: 3}
@@ -11379,6 +11444,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: pisoFabrica (42)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ad6b478b42f5b9342a5f8d90aa6377f6,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad6b478b42f5b9342a5f8d90aa6377f6, type: 3}
@@ -12036,7 +12106,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 18
   m_IsActive: 1
 --- !u!108 &384241680
 Light:
@@ -13738,7 +13808,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 18
   m_IsActive: 1
 --- !u!4 &458087728
 Transform:
@@ -15245,7 +15315,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 034a242972af32c40b48c0117ae3c708,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 22
+      value: 18
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 034a242972af32c40b48c0117ae3c708, type: 3}
@@ -15766,6 +15836,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: pisoFabrica (33)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ad6b478b42f5b9342a5f8d90aa6377f6,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad6b478b42f5b9342a5f8d90aa6377f6, type: 3}
 --- !u!4 &519537498 stripped
@@ -16228,7 +16303,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: f11778e6e3e1f584e9f46466e90371be,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 22
+      value: 18
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f11778e6e3e1f584e9f46466e90371be, type: 3}
@@ -17322,7 +17397,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 18
   m_IsActive: 1
 --- !u!108 &568710406
 Light:
@@ -17776,7 +17851,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 2e62618e36107f2429229a8df2771450,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 22
+      value: 18
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2e62618e36107f2429229a8df2771450, type: 3}
@@ -18387,6 +18462,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: pisoFabrica (50)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ad6b478b42f5b9342a5f8d90aa6377f6,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad6b478b42f5b9342a5f8d90aa6377f6, type: 3}
 --- !u!4 &599012769 stripped
@@ -18780,7 +18860,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: c71db95659de4b14facb44df1294570a,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 22
+      value: 18
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c71db95659de4b14facb44df1294570a, type: 3}
@@ -19302,7 +19382,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 9b45d59f7e3a5d64a88b30995be1ad3d,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 22
+      value: 18
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9b45d59f7e3a5d64a88b30995be1ad3d, type: 3}
@@ -19932,7 +20012,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: f11778e6e3e1f584e9f46466e90371be,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 22
+      value: 18
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f11778e6e3e1f584e9f46466e90371be, type: 3}
@@ -21593,7 +21673,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 18
   m_IsActive: 1
 --- !u!82 &670785301
 AudioSource:
@@ -23896,7 +23976,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 2cbb28a46978d8d409a19379a2c4c0be,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 22
+      value: 18
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2cbb28a46978d8d409a19379a2c4c0be, type: 3}
@@ -24325,7 +24405,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 9b45d59f7e3a5d64a88b30995be1ad3d,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 22
+      value: 18
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9b45d59f7e3a5d64a88b30995be1ad3d, type: 3}
@@ -24642,7 +24722,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: f11778e6e3e1f584e9f46466e90371be,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 22
+      value: 18
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f11778e6e3e1f584e9f46466e90371be, type: 3}
@@ -25132,7 +25212,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 034a242972af32c40b48c0117ae3c708,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 22
+      value: 18
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 034a242972af32c40b48c0117ae3c708, type: 3}
@@ -25616,7 +25696,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 4635b6719b86c564688de0840c1e456a,
         type: 3}
       propertyPath: m_TagString
-      value: Transformable
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 4635b6719b86c564688de0840c1e456a,
         type: 3}
@@ -26792,7 +26872,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 22
+  m_StaticEditorFlags: 18
   m_IsActive: 1
 --- !u!4 &814382178
 Transform:
@@ -29162,6 +29242,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: pisoFabrica (54)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ad6b478b42f5b9342a5f8d90aa6377f6,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad6b478b42f5b9342a5f8d90aa6377f6, type: 3}
 --- !u!4 &887024107 stripped
@@ -30082,6 +30167,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: pisoFabrica (37)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ad6b478b42f5b9342a5f8d90aa6377f6,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad6b478b42f5b9342a5f8d90aa6377f6, type: 3}
@@ -32677,7 +32767,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 18
   m_IsActive: 1
 --- !u!108 &1021337904
 Light:
@@ -33336,6 +33426,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: LamparaPHunt (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ed630e23f5a964840a98496353de6eca,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 22
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ed630e23f5a964840a98496353de6eca, type: 3}
@@ -34882,7 +34977,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: f11778e6e3e1f584e9f46466e90371be,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 22
+      value: 18
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f11778e6e3e1f584e9f46466e90371be, type: 3}
@@ -35025,7 +35120,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 9b45d59f7e3a5d64a88b30995be1ad3d,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 22
+      value: 18
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9b45d59f7e3a5d64a88b30995be1ad3d, type: 3}
@@ -35278,7 +35373,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 4635b6719b86c564688de0840c1e456a,
         type: 3}
       propertyPath: m_TagString
-      value: Transformable
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 4635b6719b86c564688de0840c1e456a,
         type: 3}
@@ -35437,6 +35532,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1901324931363611313, guid: b81de00ade1723c429567d07ca89e89f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     - target: {fileID: 1901324931422051812, guid: b81de00ade1723c429567d07ca89e89f,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
@@ -35457,6 +35557,11 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: DeathHUDScript, Assembly-CSharp
       objectReference: {fileID: 0}
+    - target: {fileID: 1901324931422051814, guid: b81de00ade1723c429567d07ca89e89f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     - target: {fileID: 1901324931747739095, guid: b81de00ade1723c429567d07ca89e89f,
         type: 3}
       propertyPath: m_Name
@@ -35466,6 +35571,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1901324931747739095, guid: b81de00ade1723c429567d07ca89e89f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 1901324931747739099, guid: b81de00ade1723c429567d07ca89e89f,
         type: 3}
@@ -35571,6 +35681,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1901324932653276188, guid: b81de00ade1723c429567d07ca89e89f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 1901324933150550000, guid: b81de00ade1723c429567d07ca89e89f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 1901324933223513007, guid: b81de00ade1723c429567d07ca89e89f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 1901324933233116564, guid: b81de00ade1723c429567d07ca89e89f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b81de00ade1723c429567d07ca89e89f, type: 3}
@@ -36176,7 +36306,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 034a242972af32c40b48c0117ae3c708,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 22
+      value: 18
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 034a242972af32c40b48c0117ae3c708, type: 3}
@@ -36798,7 +36928,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 18
   m_IsActive: 1
 --- !u!108 &1118871266
 Light:
@@ -38539,7 +38669,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: fde467ba3f9ce014dbdb9f00b37aad2a,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 22
+      value: 18
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fde467ba3f9ce014dbdb9f00b37aad2a, type: 3}
@@ -38944,7 +39074,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: fde467ba3f9ce014dbdb9f00b37aad2a,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 22
+      value: 18
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fde467ba3f9ce014dbdb9f00b37aad2a, type: 3}
@@ -39366,6 +39496,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: pisoFabrica (32)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ad6b478b42f5b9342a5f8d90aa6377f6,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad6b478b42f5b9342a5f8d90aa6377f6, type: 3}
 --- !u!4 &1177645414 stripped
@@ -39666,7 +39801,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 18
   m_IsActive: 1
 --- !u!114 &1190082257
 MonoBehaviour:
@@ -40383,7 +40518,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: f11778e6e3e1f584e9f46466e90371be,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 22
+      value: 18
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f11778e6e3e1f584e9f46466e90371be, type: 3}
@@ -40508,7 +40643,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 18
   m_IsActive: 1
 --- !u!114 &1205998772
 MonoBehaviour:
@@ -40629,7 +40764,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 18
   m_IsActive: 1
 --- !u!114 &1210350493
 MonoBehaviour:
@@ -41986,7 +42121,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 18
   m_IsActive: 1
 --- !u!108 &1262564424
 Light:
@@ -43500,7 +43635,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: b4009d4169b17d940b96f7ab5de4be6f,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 22
+      value: 18
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b4009d4169b17d940b96f7ab5de4be6f, type: 3}
@@ -43886,6 +44021,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: pisoFabrica (44)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ad6b478b42f5b9342a5f8d90aa6377f6,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad6b478b42f5b9342a5f8d90aa6377f6, type: 3}
 --- !u!4 &1312333369 stripped
@@ -43909,7 +44049,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 18
   m_IsActive: 1
 --- !u!114 &1312425375
 MonoBehaviour:
@@ -45166,6 +45306,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: pisoFabrica (53)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ad6b478b42f5b9342a5f8d90aa6377f6,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad6b478b42f5b9342a5f8d90aa6377f6, type: 3}
 --- !u!4 &1366051486 stripped
@@ -45269,7 +45414,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 548515ee8da4aea48851aa90c0721d3a,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 22
+      value: 18
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 548515ee8da4aea48851aa90c0721d3a, type: 3}
@@ -46719,7 +46864,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 4635b6719b86c564688de0840c1e456a,
         type: 3}
       propertyPath: m_TagString
-      value: Transformable
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 4635b6719b86c564688de0840c1e456a,
         type: 3}
@@ -47237,7 +47382,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 034a242972af32c40b48c0117ae3c708,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 22
+      value: 18
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 034a242972af32c40b48c0117ae3c708, type: 3}
@@ -47499,7 +47644,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: fde467ba3f9ce014dbdb9f00b37aad2a,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 22
+      value: 18
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fde467ba3f9ce014dbdb9f00b37aad2a, type: 3}
@@ -48510,7 +48655,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 548515ee8da4aea48851aa90c0721d3a,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 22
+      value: 18
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 548515ee8da4aea48851aa90c0721d3a, type: 3}
@@ -48662,7 +48807,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: f11778e6e3e1f584e9f46466e90371be,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 22
+      value: 18
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f11778e6e3e1f584e9f46466e90371be, type: 3}
@@ -50024,7 +50169,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: f11778e6e3e1f584e9f46466e90371be,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 22
+      value: 18
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f11778e6e3e1f584e9f46466e90371be, type: 3}
@@ -51548,7 +51693,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 18
   m_IsActive: 1
 --- !u!108 &1565509046
 Light:
@@ -52000,7 +52145,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 034a242972af32c40b48c0117ae3c708,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 22
+      value: 18
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 034a242972af32c40b48c0117ae3c708, type: 3}
@@ -52218,6 +52363,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: pisoFabrica (52)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ad6b478b42f5b9342a5f8d90aa6377f6,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad6b478b42f5b9342a5f8d90aa6377f6, type: 3}
 --- !u!4 &1578244524 stripped
@@ -52292,6 +52442,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: pisoFabrica (48)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ad6b478b42f5b9342a5f8d90aa6377f6,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad6b478b42f5b9342a5f8d90aa6377f6, type: 3}
@@ -53273,6 +53428,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: pisoFabrica (51)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ad6b478b42f5b9342a5f8d90aa6377f6,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad6b478b42f5b9342a5f8d90aa6377f6, type: 3}
 --- !u!4 &1617302016 stripped
@@ -54169,7 +54329,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 18
   m_IsActive: 1
 --- !u!108 &1627446285
 Light:
@@ -54414,6 +54574,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: pisoFabrica (45)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ad6b478b42f5b9342a5f8d90aa6377f6,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad6b478b42f5b9342a5f8d90aa6377f6, type: 3}
 --- !u!4 &1627493148 stripped
@@ -54522,7 +54687,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 9b45d59f7e3a5d64a88b30995be1ad3d,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 22
+      value: 18
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9b45d59f7e3a5d64a88b30995be1ad3d, type: 3}
@@ -54665,7 +54830,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 9b45d59f7e3a5d64a88b30995be1ad3d,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 22
+      value: 18
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9b45d59f7e3a5d64a88b30995be1ad3d, type: 3}
@@ -56869,7 +57034,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: fde467ba3f9ce014dbdb9f00b37aad2a,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 22
+      value: 18
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fde467ba3f9ce014dbdb9f00b37aad2a, type: 3}
@@ -57027,7 +57192,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 2e62618e36107f2429229a8df2771450,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 22
+      value: 18
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2e62618e36107f2429229a8df2771450, type: 3}
@@ -57244,7 +57409,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 18
   m_IsActive: 1
 --- !u!108 &1678280896
 Light:
@@ -58380,7 +58545,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 034a242972af32c40b48c0117ae3c708,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 22
+      value: 18
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 034a242972af32c40b48c0117ae3c708, type: 3}
@@ -58627,7 +58792,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 2e62618e36107f2429229a8df2771450,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 22
+      value: 18
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2e62618e36107f2429229a8df2771450, type: 3}
@@ -59185,7 +59350,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 7bb1b1ae43c1cc4479bbd8c2ba8b7587,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 22
+      value: 18
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7bb1b1ae43c1cc4479bbd8c2ba8b7587, type: 3}
@@ -59371,7 +59536,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 22
+  m_StaticEditorFlags: 18
   m_IsActive: 1
 --- !u!4 &1738209428
 Transform:
@@ -59581,6 +59746,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: pisoFabrica (31)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ad6b478b42f5b9342a5f8d90aa6377f6,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad6b478b42f5b9342a5f8d90aa6377f6, type: 3}
 --- !u!4 &1747524064 stripped
@@ -59605,7 +59775,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 18
   m_IsActive: 1
 --- !u!224 &1748155466
 RectTransform:
@@ -59889,7 +60059,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 7bb1b1ae43c1cc4479bbd8c2ba8b7587,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 22
+      value: 18
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7bb1b1ae43c1cc4479bbd8c2ba8b7587, type: 3}
@@ -61422,7 +61592,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 18
   m_IsActive: 1
 --- !u!4 &1786075507
 Transform:
@@ -62417,6 +62587,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: pisoFabrica (36)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ad6b478b42f5b9342a5f8d90aa6377f6,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad6b478b42f5b9342a5f8d90aa6377f6, type: 3}
 --- !u!4 &1814464270 stripped
@@ -62876,7 +63051,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: c71db95659de4b14facb44df1294570a,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 22
+      value: 18
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c71db95659de4b14facb44df1294570a, type: 3}
@@ -63049,7 +63224,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 18
   m_IsActive: 0
 --- !u!114 &1834903982
 MonoBehaviour:
@@ -63536,7 +63711,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: f11778e6e3e1f584e9f46466e90371be,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 22
+      value: 18
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f11778e6e3e1f584e9f46466e90371be, type: 3}
@@ -64055,6 +64230,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: pisoFabrica (34)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ad6b478b42f5b9342a5f8d90aa6377f6,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad6b478b42f5b9342a5f8d90aa6377f6, type: 3}
@@ -64732,7 +64912,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: f11778e6e3e1f584e9f46466e90371be,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 22
+      value: 18
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f11778e6e3e1f584e9f46466e90371be, type: 3}
@@ -65063,7 +65243,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 2e62618e36107f2429229a8df2771450,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 22
+      value: 18
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2e62618e36107f2429229a8df2771450, type: 3}
@@ -65464,6 +65644,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: pisoFabrica (40)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ad6b478b42f5b9342a5f8d90aa6377f6,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad6b478b42f5b9342a5f8d90aa6377f6, type: 3}
@@ -66795,6 +66980,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_TagString
       value: Transformable
+      objectReference: {fileID: 0}
+    - target: {fileID: 2016451885948311776, guid: 8d6b8e1c17587f84a80df051a968da27,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 2016451885948311777, guid: 8d6b8e1c17587f84a80df051a968da27,
         type: 3}
@@ -68335,7 +68525,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 034a242972af32c40b48c0117ae3c708,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 22
+      value: 18
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 034a242972af32c40b48c0117ae3c708, type: 3}
@@ -68472,7 +68662,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: b4009d4169b17d940b96f7ab5de4be6f,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 22
+      value: 18
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b4009d4169b17d940b96f7ab5de4be6f, type: 3}
@@ -68913,7 +69103,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 18
   m_IsActive: 0
 --- !u!114 &1966727069
 MonoBehaviour:
@@ -69269,7 +69459,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 18
   m_IsActive: 1
 --- !u!108 &1968174858
 Light:
@@ -69654,7 +69844,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 22
+  m_StaticEditorFlags: 18
   m_IsActive: 1
 --- !u!4 &1981364958
 Transform:
@@ -70482,7 +70672,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 4635b6719b86c564688de0840c1e456a,
         type: 3}
       propertyPath: m_TagString
-      value: Transformable
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 4635b6719b86c564688de0840c1e456a,
         type: 3}
@@ -71410,7 +71600,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: f11778e6e3e1f584e9f46466e90371be,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 22
+      value: 18
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f11778e6e3e1f584e9f46466e90371be, type: 3}
@@ -71667,7 +71857,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 22
+  m_StaticEditorFlags: 18
   m_IsActive: 1
 --- !u!4 &2022509259
 Transform:
@@ -71812,6 +72002,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: pisoFabrica (41)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ad6b478b42f5b9342a5f8d90aa6377f6,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad6b478b42f5b9342a5f8d90aa6377f6, type: 3}
@@ -72371,6 +72566,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: pisoFabrica (43)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ad6b478b42f5b9342a5f8d90aa6377f6,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad6b478b42f5b9342a5f8d90aa6377f6, type: 3}
 --- !u!4 &2038358717 stripped
@@ -72479,7 +72679,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: fde467ba3f9ce014dbdb9f00b37aad2a,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 22
+      value: 18
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fde467ba3f9ce014dbdb9f00b37aad2a, type: 3}
@@ -72787,6 +72987,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: pisoFabrica (38)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ad6b478b42f5b9342a5f8d90aa6377f6,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad6b478b42f5b9342a5f8d90aa6377f6, type: 3}
 --- !u!4 &2050016903 stripped
@@ -72890,7 +73095,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 548515ee8da4aea48851aa90c0721d3a,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 22
+      value: 18
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 548515ee8da4aea48851aa90c0721d3a, type: 3}
@@ -74631,6 +74836,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: LamparaPHunt (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ed630e23f5a964840a98496353de6eca,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 22
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ed630e23f5a964840a98496353de6eca, type: 3}
 --- !u!1001 &2090882936
@@ -74728,7 +74938,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 034a242972af32c40b48c0117ae3c708,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 22
+      value: 18
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 034a242972af32c40b48c0117ae3c708, type: 3}
@@ -74857,6 +75067,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: pisoFabrica (39)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ad6b478b42f5b9342a5f8d90aa6377f6,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad6b478b42f5b9342a5f8d90aa6377f6, type: 3}
@@ -75561,6 +75776,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: pisoFabrica (30)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ad6b478b42f5b9342a5f8d90aa6377f6,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad6b478b42f5b9342a5f8d90aa6377f6, type: 3}
 --- !u!4 &2104720759 stripped
@@ -76203,7 +76423,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 9b45d59f7e3a5d64a88b30995be1ad3d,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 22
+      value: 18
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9b45d59f7e3a5d64a88b30995be1ad3d, type: 3}
@@ -76602,7 +76822,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 18
   m_IsActive: 1
 --- !u!224 &2138842441
 RectTransform:
@@ -77164,6 +77384,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_TagString
       value: Transformable
+      objectReference: {fileID: 0}
+    - target: {fileID: 2016451885948311776, guid: 8d6b8e1c17587f84a80df051a968da27,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 2016451885948311777, guid: 8d6b8e1c17587f84a80df051a968da27,
         type: 3}
