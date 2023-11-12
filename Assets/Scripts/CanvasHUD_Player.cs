@@ -5,7 +5,7 @@ using Photon.Pun;
 using TMPro;
 using Photon.Realtime;
 
-public class CanvasHUD_Player : MonoBehaviour
+public class CanvasHUD_Player : MonoBehaviourPunCallbacks
 {
     #region vars
     public TMP_Text playerName;
@@ -28,6 +28,8 @@ public class CanvasHUD_Player : MonoBehaviour
     {
         PhotonNetwork.LeaveRoom();
     }
+
+   
      
     void Start()
     {

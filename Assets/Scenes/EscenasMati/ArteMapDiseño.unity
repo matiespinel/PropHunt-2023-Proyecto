@@ -5235,9 +5235,9 @@ Transform:
   - {fileID: 1705783923}
   - {fileID: 2130232684}
   - {fileID: 635781572}
-  - {fileID: 673459941}
   - {fileID: 1992070151}
   - {fileID: 1508923091}
+  - {fileID: 673459941}
   - {fileID: 1773968918}
   - {fileID: 1477495496}
   - {fileID: 37075665}
@@ -35292,17 +35292,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 11500000, guid: f746dd5bd7453894c89c8478e59b14f2,
-        type: 3}
+      objectReference: {fileID: 1078187777}
     - target: {fileID: 1901324931422051812, guid: b81de00ade1723c429567d07ca89e89f,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: 
+      value: QuitGame
       objectReference: {fileID: 0}
     - target: {fileID: 1901324931422051812, guid: b81de00ade1723c429567d07ca89e89f,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
+      value: DeathHUDScript, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 1901324931747739095, guid: b81de00ade1723c429567d07ca89e89f,
         type: 3}
@@ -35421,6 +35420,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b81de00ade1723c429567d07ca89e89f, type: 3}
+--- !u!114 &1078187777 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1901324931747739096, guid: b81de00ade1723c429567d07ca89e89f,
+    type: 3}
+  m_PrefabInstance: {fileID: 1078187776}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78e0611196db43c44a501904819cb56f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1080772002
 PrefabInstance:
   m_ObjectHideFlags: 0

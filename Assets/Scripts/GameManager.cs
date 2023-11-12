@@ -81,7 +81,7 @@ public class GameManager : MonoBehaviourPunCallbacks, IOnEventCallback
     {
         HunterWin.gameObject.SetActive(true);
         yield return new WaitForSeconds(7);
-        PhotonNetwork.LeaveRoom();
+        PhotonNetwork.Disconnect();
         HunterWin.gameObject.SetActive(false);
         Debug.Log("Saliendo de la partida");
     }
@@ -90,7 +90,7 @@ public class GameManager : MonoBehaviourPunCallbacks, IOnEventCallback
     {
         PropsWin.gameObject.SetActive(true);
         yield return new WaitForSeconds(7);
-        PhotonNetwork.LeaveRoom();
+        PhotonNetwork.Disconnect();
         PropsWin.gameObject.SetActive(false);
         Debug.Log("Saliendo de la partida");
     }
@@ -98,6 +98,12 @@ public class GameManager : MonoBehaviourPunCallbacks, IOnEventCallback
     public override void OnLeftRoom()
     {
         PhotonNetwork.LoadLevel("Lobby");
+        Debug.Log("Disconnected");
+    }
+
+    public override void OnDisconnected(DisconnectCause cause)
+    {
+        PhotonNetwork.LoadLevel("Menu");
         Debug.Log("Disconnected");
     }
 

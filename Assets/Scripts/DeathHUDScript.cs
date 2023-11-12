@@ -1,6 +1,11 @@
+using System;
+using System.Collections;
 using UnityEngine;
+using Photon.Pun;
+using TMPro;
+using Photon.Realtime;
 
-public class DeathHUDScript : MonoBehaviour
+public class DeathHUDScript : MonoBehaviourPunCallbacks
 {
     private void ActivateDeathHUD()
     {
@@ -19,6 +24,17 @@ public class DeathHUDScript : MonoBehaviour
     private void DisableDeathHUD()
     {
         this.gameObject.SetActive(false);
+    }
+
+     public void QuitGame()
+    {
+        PhotonNetwork.Disconnect();
+    }
+
+    public override void OnDisconnected(DisconnectCause cause)
+    {
+        PhotonNetwork.LoadLevel("Menu");
+        Debug.Log("Disconnected");
     }
     void Start()
     {
