@@ -1,6 +1,7 @@
 using UnityEngine;
 using Photon.Pun;
 using UnityEngine.Animations.Rigging;
+using UnityEngine.UIElements;
 
 public class HunterRifleScript : Weapon
 {
@@ -17,7 +18,7 @@ public class HunterRifleScript : Weapon
         fireRate = 0.25f;
         nextShotInterval = 0;
         
-        fireButton = KeyCode.K;
+        fireButton = KeyCode.Mouse0;
         bulletTime = new WaitForSeconds(.07f);
         mag = 20;
         initialMag = mag;
