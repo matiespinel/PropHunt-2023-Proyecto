@@ -200,7 +200,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 8219139bc0b30114eaf48b5f14e22659,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 23
+      value: 22
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8219139bc0b30114eaf48b5f14e22659, type: 3}
@@ -327,7 +327,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 4635b6719b86c564688de0840c1e456a,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 23
+      value: 22
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4635b6719b86c564688de0840c1e456a, type: 3}
@@ -482,6 +482,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ducto ventilacion lateral con texturas (26)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7c8547f17fa414d408f11aa33af1980d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 22
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7c8547f17fa414d408f11aa33af1980d, type: 3}
 --- !u!1001 &29754742
@@ -554,7 +559,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 8219139bc0b30114eaf48b5f14e22659,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 23
+      value: 22
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8219139bc0b30114eaf48b5f14e22659, type: 3}
@@ -681,7 +686,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e5fcfc9f5801812419412f91acb77eb6,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 23
+      value: 22
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5fcfc9f5801812419412f91acb77eb6, type: 3}
@@ -774,7 +779,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: ad6b478b42f5b9342a5f8d90aa6377f6,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 23
+      value: 22
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad6b478b42f5b9342a5f8d90aa6377f6, type: 3}
@@ -867,7 +872,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e5fcfc9f5801812419412f91acb77eb6,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 23
+      value: 22
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5fcfc9f5801812419412f91acb77eb6, type: 3}
@@ -960,7 +965,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e5fcfc9f5801812419412f91acb77eb6,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 23
+      value: 22
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5fcfc9f5801812419412f91acb77eb6, type: 3}
@@ -1034,7 +1039,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: ad6b478b42f5b9342a5f8d90aa6377f6,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 23
+      value: 22
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad6b478b42f5b9342a5f8d90aa6377f6, type: 3}
@@ -1123,7 +1128,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &80665247
 PrefabInstance:
@@ -1195,7 +1200,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e282c0a6fd7136e478c11a294943a000,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 23
+      value: 22
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e282c0a6fd7136e478c11a294943a000, type: 3}
@@ -1288,7 +1293,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e5fcfc9f5801812419412f91acb77eb6,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 23
+      value: 22
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5fcfc9f5801812419412f91acb77eb6, type: 3}
@@ -1381,7 +1386,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e282c0a6fd7136e478c11a294943a000,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 23
+      value: 22
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e282c0a6fd7136e478c11a294943a000, type: 3}
@@ -1474,7 +1479,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e282c0a6fd7136e478c11a294943a000,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 23
+      value: 22
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e282c0a6fd7136e478c11a294943a000, type: 3}
@@ -1567,7 +1572,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e5fcfc9f5801812419412f91acb77eb6,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 23
+      value: 22
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5fcfc9f5801812419412f91acb77eb6, type: 3}
@@ -1796,7 +1801,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 8219139bc0b30114eaf48b5f14e22659,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 23
+      value: 22
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8219139bc0b30114eaf48b5f14e22659, type: 3}
@@ -1927,7 +1932,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 7.44e-43, y: 27.460861, z: 7.44e-43, w: 9.330528}
+  m_BoundingSphereOverride: {x: 7.44e-43, y: 13.745033, z: 7.44e-43, w: 3.9836763e-28}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -1945,7 +1950,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1001 &236252767
 PrefabInstance:
@@ -2017,7 +2022,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 8219139bc0b30114eaf48b5f14e22659,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 23
+      value: 22
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8219139bc0b30114eaf48b5f14e22659, type: 3}
@@ -2144,7 +2149,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 8219139bc0b30114eaf48b5f14e22659,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 23
+      value: 22
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8219139bc0b30114eaf48b5f14e22659, type: 3}
@@ -2271,7 +2276,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 8219139bc0b30114eaf48b5f14e22659,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 23
+      value: 22
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8219139bc0b30114eaf48b5f14e22659, type: 3}
@@ -2395,6 +2400,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: LamparaPHunt (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ed630e23f5a964840a98496353de6eca,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 22
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ed630e23f5a964840a98496353de6eca, type: 3}
 --- !u!1001 &296892213
@@ -2463,6 +2473,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Ducto ventilacion lateral con texturas (36)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7c8547f17fa414d408f11aa33af1980d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 22
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7c8547f17fa414d408f11aa33af1980d, type: 3}
@@ -2536,7 +2551,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 4635b6719b86c564688de0840c1e456a,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 23
+      value: 22
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4635b6719b86c564688de0840c1e456a, type: 3}
@@ -2694,7 +2709,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 4635b6719b86c564688de0840c1e456a,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 23
+      value: 22
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4635b6719b86c564688de0840c1e456a, type: 3}
@@ -2921,7 +2936,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e5fcfc9f5801812419412f91acb77eb6,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 23
+      value: 22
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5fcfc9f5801812419412f91acb77eb6, type: 3}
@@ -3014,7 +3029,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e5fcfc9f5801812419412f91acb77eb6,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 23
+      value: 22
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5fcfc9f5801812419412f91acb77eb6, type: 3}
@@ -3124,6 +3139,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Puerta de la oficina
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a34ad9d1d3a51564180dfa933a2db434,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 22
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a34ad9d1d3a51564180dfa933a2db434, type: 3}
 --- !u!1001 &409778825
@@ -3196,7 +3216,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e5fcfc9f5801812419412f91acb77eb6,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 23
+      value: 22
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5fcfc9f5801812419412f91acb77eb6, type: 3}
@@ -3286,6 +3306,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ducto ventilacion curva con texturas (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 872fa9c0d5b58b048bafd54300e93056,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 22
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 872fa9c0d5b58b048bafd54300e93056, type: 3}
 --- !u!1001 &456009812
@@ -3354,6 +3379,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Ducto ventilacion lateral con texturas (37)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7c8547f17fa414d408f11aa33af1980d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 22
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7c8547f17fa414d408f11aa33af1980d, type: 3}
@@ -3427,7 +3457,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e5fcfc9f5801812419412f91acb77eb6,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 23
+      value: 22
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5fcfc9f5801812419412f91acb77eb6, type: 3}
@@ -3520,7 +3550,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e282c0a6fd7136e478c11a294943a000,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 23
+      value: 22
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e282c0a6fd7136e478c11a294943a000, type: 3}
@@ -3613,7 +3643,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 8219139bc0b30114eaf48b5f14e22659,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 23
+      value: 22
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8219139bc0b30114eaf48b5f14e22659, type: 3}
@@ -3740,7 +3770,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e5fcfc9f5801812419412f91acb77eb6,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 23
+      value: 22
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5fcfc9f5801812419412f91acb77eb6, type: 3}
@@ -4201,7 +4231,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 8219139bc0b30114eaf48b5f14e22659,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 23
+      value: 22
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8219139bc0b30114eaf48b5f14e22659, type: 3}
@@ -4328,7 +4358,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e5fcfc9f5801812419412f91acb77eb6,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 23
+      value: 22
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5fcfc9f5801812419412f91acb77eb6, type: 3}
@@ -4421,7 +4451,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e5fcfc9f5801812419412f91acb77eb6,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 23
+      value: 22
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5fcfc9f5801812419412f91acb77eb6, type: 3}
@@ -4514,7 +4544,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e282c0a6fd7136e478c11a294943a000,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 23
+      value: 22
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e282c0a6fd7136e478c11a294943a000, type: 3}
@@ -4604,6 +4634,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ducto ventilacion lateral con texturas (28)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7c8547f17fa414d408f11aa33af1980d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 22
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7c8547f17fa414d408f11aa33af1980d, type: 3}
 --- !u!1001 &599825692
@@ -4676,7 +4711,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 8219139bc0b30114eaf48b5f14e22659,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 23
+      value: 22
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8219139bc0b30114eaf48b5f14e22659, type: 3}
@@ -4874,6 +4909,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ducto ventilacion lateal con reijlla en limite con textuars
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f927bca255f27b74cb0163bfa7da3594,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 22
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f927bca255f27b74cb0163bfa7da3594, type: 3}
 --- !u!1001 &616201729
@@ -4946,7 +4986,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 4635b6719b86c564688de0840c1e456a,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 23
+      value: 22
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4635b6719b86c564688de0840c1e456a, type: 3}
@@ -5104,7 +5144,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 8219139bc0b30114eaf48b5f14e22659,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 23
+      value: 22
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8219139bc0b30114eaf48b5f14e22659, type: 3}
@@ -5367,7 +5407,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e5fcfc9f5801812419412f91acb77eb6,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 23
+      value: 22
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5fcfc9f5801812419412f91acb77eb6, type: 3}
@@ -5460,7 +5500,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e282c0a6fd7136e478c11a294943a000,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 23
+      value: 22
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e282c0a6fd7136e478c11a294943a000, type: 3}
@@ -5553,7 +5593,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: ad6b478b42f5b9342a5f8d90aa6377f6,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 23
+      value: 22
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad6b478b42f5b9342a5f8d90aa6377f6, type: 3}
@@ -5646,7 +5686,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 8219139bc0b30114eaf48b5f14e22659,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 23
+      value: 22
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8219139bc0b30114eaf48b5f14e22659, type: 3}
@@ -5773,7 +5813,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: ad6b478b42f5b9342a5f8d90aa6377f6,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 23
+      value: 22
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad6b478b42f5b9342a5f8d90aa6377f6, type: 3}
@@ -5866,7 +5906,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e5fcfc9f5801812419412f91acb77eb6,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 23
+      value: 22
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5fcfc9f5801812419412f91acb77eb6, type: 3}
@@ -5959,7 +5999,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 8219139bc0b30114eaf48b5f14e22659,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 23
+      value: 22
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8219139bc0b30114eaf48b5f14e22659, type: 3}
@@ -6088,6 +6128,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ducto ventilacion lateral con rejila con texturas (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1d48ab78b40bb42449940c90fd8c537c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 22
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1d48ab78b40bb42449940c90fd8c537c, type: 3}
 --- !u!1001 &768927239
@@ -6171,6 +6216,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Escalera fabrica arreglada (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 54baa7e5aed6e3a418ba190e17c4bef5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 22
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 54baa7e5aed6e3a418ba190e17c4bef5, type: 3}
@@ -6269,7 +6319,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 8219139bc0b30114eaf48b5f14e22659,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 23
+      value: 22
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8219139bc0b30114eaf48b5f14e22659, type: 3}
@@ -6396,7 +6446,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e282c0a6fd7136e478c11a294943a000,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 23
+      value: 22
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e282c0a6fd7136e478c11a294943a000, type: 3}
@@ -6489,7 +6539,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: ad6b478b42f5b9342a5f8d90aa6377f6,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 23
+      value: 22
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad6b478b42f5b9342a5f8d90aa6377f6, type: 3}
@@ -6579,6 +6629,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ducto ventilacion curva con texturas (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 872fa9c0d5b58b048bafd54300e93056,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 22
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 872fa9c0d5b58b048bafd54300e93056, type: 3}
 --- !u!1001 &862345140
@@ -6651,7 +6706,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 4635b6719b86c564688de0840c1e456a,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 23
+      value: 22
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4635b6719b86c564688de0840c1e456a, type: 3}
@@ -6806,6 +6861,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ducto ventilacion lateral con texturas (31)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7c8547f17fa414d408f11aa33af1980d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 22
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7c8547f17fa414d408f11aa33af1980d, type: 3}
 --- !u!1001 &870469039
@@ -6874,6 +6934,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Ducto ventilacion lateral con texturas (24)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7c8547f17fa414d408f11aa33af1980d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 22
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7c8547f17fa414d408f11aa33af1980d, type: 3}
@@ -6947,7 +7012,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e282c0a6fd7136e478c11a294943a000,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 23
+      value: 22
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e282c0a6fd7136e478c11a294943a000, type: 3}
@@ -7040,7 +7105,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e5fcfc9f5801812419412f91acb77eb6,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 23
+      value: 22
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5fcfc9f5801812419412f91acb77eb6, type: 3}
@@ -7130,6 +7195,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ducto ventilacion curva con texturas (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 872fa9c0d5b58b048bafd54300e93056,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 22
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 872fa9c0d5b58b048bafd54300e93056, type: 3}
 --- !u!1001 &937166419
@@ -7202,7 +7272,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 8219139bc0b30114eaf48b5f14e22659,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 23
+      value: 22
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8219139bc0b30114eaf48b5f14e22659, type: 3}
@@ -7325,6 +7395,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Ducto ventilacion lateral con texturas (25)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7c8547f17fa414d408f11aa33af1980d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 22
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7c8547f17fa414d408f11aa33af1980d, type: 3}
@@ -7501,7 +7576,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: ad6b478b42f5b9342a5f8d90aa6377f6,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 23
+      value: 22
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad6b478b42f5b9342a5f8d90aa6377f6, type: 3}
@@ -7591,6 +7666,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: LamparaPHunt (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ed630e23f5a964840a98496353de6eca,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 22
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ed630e23f5a964840a98496353de6eca, type: 3}
 --- !u!1001 &998403949
@@ -7663,7 +7743,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 4635b6719b86c564688de0840c1e456a,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 23
+      value: 22
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4635b6719b86c564688de0840c1e456a, type: 3}
@@ -7818,6 +7898,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ducto ventilacion lateral con texturas (30)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7c8547f17fa414d408f11aa33af1980d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 22
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7c8547f17fa414d408f11aa33af1980d, type: 3}
 --- !u!1001 &1028717056
@@ -7886,6 +7971,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Ducto ventilacion lateral con rejila con texturas (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1d48ab78b40bb42449940c90fd8c537c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 22
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1d48ab78b40bb42449940c90fd8c537c, type: 3}
@@ -8049,6 +8139,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ducto ventilacion lateal con reijlla en limite con textuars (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f927bca255f27b74cb0163bfa7da3594,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 22
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f927bca255f27b74cb0163bfa7da3594, type: 3}
 --- !u!1001 &1064076636
@@ -8121,7 +8216,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: ad6b478b42f5b9342a5f8d90aa6377f6,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 23
+      value: 22
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad6b478b42f5b9342a5f8d90aa6377f6, type: 3}
@@ -8214,7 +8309,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e282c0a6fd7136e478c11a294943a000,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 23
+      value: 22
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e282c0a6fd7136e478c11a294943a000, type: 3}
@@ -8307,7 +8402,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: ad6b478b42f5b9342a5f8d90aa6377f6,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 23
+      value: 22
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad6b478b42f5b9342a5f8d90aa6377f6, type: 3}
@@ -8536,7 +8631,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e282c0a6fd7136e478c11a294943a000,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 23
+      value: 22
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e282c0a6fd7136e478c11a294943a000, type: 3}
@@ -8629,7 +8724,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e5fcfc9f5801812419412f91acb77eb6,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 23
+      value: 22
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5fcfc9f5801812419412f91acb77eb6, type: 3}
@@ -8859,7 +8954,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e5fcfc9f5801812419412f91acb77eb6,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 23
+      value: 22
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5fcfc9f5801812419412f91acb77eb6, type: 3}
@@ -8952,7 +9047,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e5fcfc9f5801812419412f91acb77eb6,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 23
+      value: 22
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5fcfc9f5801812419412f91acb77eb6, type: 3}
@@ -9045,7 +9140,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e5fcfc9f5801812419412f91acb77eb6,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 23
+      value: 22
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5fcfc9f5801812419412f91acb77eb6, type: 3}
@@ -9138,7 +9233,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: ad6b478b42f5b9342a5f8d90aa6377f6,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 23
+      value: 22
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad6b478b42f5b9342a5f8d90aa6377f6, type: 3}
@@ -9231,7 +9326,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 8219139bc0b30114eaf48b5f14e22659,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 23
+      value: 22
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8219139bc0b30114eaf48b5f14e22659, type: 3}
@@ -9358,7 +9453,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e5fcfc9f5801812419412f91acb77eb6,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 23
+      value: 22
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5fcfc9f5801812419412f91acb77eb6, type: 3}
@@ -9448,6 +9543,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ducto ventilacion lateral con rejila con texturas (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1d48ab78b40bb42449940c90fd8c537c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 22
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1d48ab78b40bb42449940c90fd8c537c, type: 3}
 --- !u!1001 &1283410759
@@ -9520,7 +9620,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e5fcfc9f5801812419412f91acb77eb6,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 23
+      value: 22
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5fcfc9f5801812419412f91acb77eb6, type: 3}
@@ -9613,7 +9713,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e282c0a6fd7136e478c11a294943a000,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 23
+      value: 22
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e282c0a6fd7136e478c11a294943a000, type: 3}
@@ -9706,7 +9806,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e5fcfc9f5801812419412f91acb77eb6,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 23
+      value: 22
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5fcfc9f5801812419412f91acb77eb6, type: 3}
@@ -9799,7 +9899,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e5fcfc9f5801812419412f91acb77eb6,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 23
+      value: 22
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5fcfc9f5801812419412f91acb77eb6, type: 3}
@@ -9892,7 +9992,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 8219139bc0b30114eaf48b5f14e22659,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 23
+      value: 22
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8219139bc0b30114eaf48b5f14e22659, type: 3}
@@ -10019,7 +10119,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 8219139bc0b30114eaf48b5f14e22659,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 23
+      value: 22
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8219139bc0b30114eaf48b5f14e22659, type: 3}
@@ -10120,7 +10220,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1401762959
 PrefabInstance:
@@ -10192,7 +10292,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 8219139bc0b30114eaf48b5f14e22659,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 23
+      value: 22
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8219139bc0b30114eaf48b5f14e22659, type: 3}
@@ -10319,7 +10419,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: ad6b478b42f5b9342a5f8d90aa6377f6,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 23
+      value: 22
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad6b478b42f5b9342a5f8d90aa6377f6, type: 3}
@@ -10412,7 +10512,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: ad6b478b42f5b9342a5f8d90aa6377f6,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 23
+      value: 22
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad6b478b42f5b9342a5f8d90aa6377f6, type: 3}
@@ -10515,7 +10615,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 8219139bc0b30114eaf48b5f14e22659,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 23
+      value: 22
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8219139bc0b30114eaf48b5f14e22659, type: 3}
@@ -10642,7 +10742,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 8219139bc0b30114eaf48b5f14e22659,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 23
+      value: 22
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8219139bc0b30114eaf48b5f14e22659, type: 3}
@@ -10769,7 +10869,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e5fcfc9f5801812419412f91acb77eb6,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 23
+      value: 22
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5fcfc9f5801812419412f91acb77eb6, type: 3}
@@ -10859,6 +10959,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ducto ventilacion lateral con texturas (32)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7c8547f17fa414d408f11aa33af1980d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 22
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7c8547f17fa414d408f11aa33af1980d, type: 3}
 --- !u!1001 &1514754151
@@ -10931,7 +11036,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e282c0a6fd7136e478c11a294943a000,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 23
+      value: 22
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e282c0a6fd7136e478c11a294943a000, type: 3}
@@ -11024,7 +11129,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e5fcfc9f5801812419412f91acb77eb6,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 23
+      value: 22
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5fcfc9f5801812419412f91acb77eb6, type: 3}
@@ -11117,7 +11222,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e282c0a6fd7136e478c11a294943a000,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 23
+      value: 22
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e282c0a6fd7136e478c11a294943a000, type: 3}
@@ -11207,6 +11312,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ducto ventilacion lateal con reijlla en limite con textuars (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f927bca255f27b74cb0163bfa7da3594,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 22
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f927bca255f27b74cb0163bfa7da3594, type: 3}
 --- !u!1001 &1576114891
@@ -11279,7 +11389,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e5fcfc9f5801812419412f91acb77eb6,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 23
+      value: 22
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5fcfc9f5801812419412f91acb77eb6, type: 3}
@@ -11372,7 +11482,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 8219139bc0b30114eaf48b5f14e22659,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 23
+      value: 22
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8219139bc0b30114eaf48b5f14e22659, type: 3}
@@ -11496,6 +11606,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ducto ventilacion lateral con texturas (35)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7c8547f17fa414d408f11aa33af1980d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 22
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7c8547f17fa414d408f11aa33af1980d, type: 3}
 --- !u!1001 &1606002634
@@ -11568,7 +11683,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 8219139bc0b30114eaf48b5f14e22659,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 23
+      value: 22
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8219139bc0b30114eaf48b5f14e22659, type: 3}
@@ -11695,7 +11810,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: ad6b478b42f5b9342a5f8d90aa6377f6,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 23
+      value: 22
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad6b478b42f5b9342a5f8d90aa6377f6, type: 3}
@@ -11788,7 +11903,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: ad6b478b42f5b9342a5f8d90aa6377f6,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 23
+      value: 22
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad6b478b42f5b9342a5f8d90aa6377f6, type: 3}
@@ -11881,7 +11996,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e5fcfc9f5801812419412f91acb77eb6,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 23
+      value: 22
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5fcfc9f5801812419412f91acb77eb6, type: 3}
@@ -11951,6 +12066,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Ducto ventilacion curva con texturas (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 872fa9c0d5b58b048bafd54300e93056,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 22
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 872fa9c0d5b58b048bafd54300e93056, type: 3}
@@ -12024,7 +12144,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e5fcfc9f5801812419412f91acb77eb6,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 23
+      value: 22
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5fcfc9f5801812419412f91acb77eb6, type: 3}
@@ -12114,6 +12234,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ducto ventilacion lateral con texturas (34)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7c8547f17fa414d408f11aa33af1980d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 22
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7c8547f17fa414d408f11aa33af1980d, type: 3}
 --- !u!1001 &1714093983
@@ -12186,7 +12311,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e5fcfc9f5801812419412f91acb77eb6,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 23
+      value: 22
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5fcfc9f5801812419412f91acb77eb6, type: 3}
@@ -12279,7 +12404,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 8219139bc0b30114eaf48b5f14e22659,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 23
+      value: 22
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8219139bc0b30114eaf48b5f14e22659, type: 3}
@@ -12406,7 +12531,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e5fcfc9f5801812419412f91acb77eb6,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 23
+      value: 22
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5fcfc9f5801812419412f91acb77eb6, type: 3}
@@ -12675,7 +12800,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 8219139bc0b30114eaf48b5f14e22659,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 23
+      value: 22
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8219139bc0b30114eaf48b5f14e22659, type: 3}
@@ -12802,7 +12927,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e5fcfc9f5801812419412f91acb77eb6,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 23
+      value: 22
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5fcfc9f5801812419412f91acb77eb6, type: 3}
@@ -13036,7 +13161,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 8219139bc0b30114eaf48b5f14e22659,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 23
+      value: 22
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8219139bc0b30114eaf48b5f14e22659, type: 3}
@@ -13163,7 +13288,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 8219139bc0b30114eaf48b5f14e22659,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 23
+      value: 22
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8219139bc0b30114eaf48b5f14e22659, type: 3}
@@ -13290,7 +13415,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: ad6b478b42f5b9342a5f8d90aa6377f6,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 23
+      value: 22
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad6b478b42f5b9342a5f8d90aa6377f6, type: 3}
@@ -13383,7 +13508,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 4635b6719b86c564688de0840c1e456a,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 23
+      value: 22
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4635b6719b86c564688de0840c1e456a, type: 3}
@@ -13541,7 +13666,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e282c0a6fd7136e478c11a294943a000,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 23
+      value: 22
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e282c0a6fd7136e478c11a294943a000, type: 3}
@@ -13683,7 +13808,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 8219139bc0b30114eaf48b5f14e22659,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 23
+      value: 22
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8219139bc0b30114eaf48b5f14e22659, type: 3}
@@ -13810,7 +13935,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 8219139bc0b30114eaf48b5f14e22659,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 23
+      value: 22
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8219139bc0b30114eaf48b5f14e22659, type: 3}
@@ -13937,7 +14062,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 8219139bc0b30114eaf48b5f14e22659,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 23
+      value: 22
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8219139bc0b30114eaf48b5f14e22659, type: 3}
@@ -14061,6 +14186,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ducto ventilacion lateral con texturas (27)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7c8547f17fa414d408f11aa33af1980d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 22
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7c8547f17fa414d408f11aa33af1980d, type: 3}
 --- !u!1001 &1994538448
@@ -14133,7 +14263,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 8219139bc0b30114eaf48b5f14e22659,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 23
+      value: 22
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8219139bc0b30114eaf48b5f14e22659, type: 3}
@@ -14260,7 +14390,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 8219139bc0b30114eaf48b5f14e22659,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 23
+      value: 22
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8219139bc0b30114eaf48b5f14e22659, type: 3}
@@ -14387,7 +14517,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e5fcfc9f5801812419412f91acb77eb6,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 23
+      value: 22
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5fcfc9f5801812419412f91acb77eb6, type: 3}
@@ -14480,7 +14610,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 8219139bc0b30114eaf48b5f14e22659,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 23
+      value: 22
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8219139bc0b30114eaf48b5f14e22659, type: 3}
@@ -14607,7 +14737,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e282c0a6fd7136e478c11a294943a000,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 23
+      value: 22
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e282c0a6fd7136e478c11a294943a000, type: 3}
@@ -14697,6 +14827,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ducto ventilacion lateral con texturas (33)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7c8547f17fa414d408f11aa33af1980d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 22
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7c8547f17fa414d408f11aa33af1980d, type: 3}
 --- !u!1001 &2070243814
@@ -14769,7 +14904,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 8219139bc0b30114eaf48b5f14e22659,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 23
+      value: 22
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8219139bc0b30114eaf48b5f14e22659, type: 3}
@@ -14896,7 +15031,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: ad6b478b42f5b9342a5f8d90aa6377f6,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 23
+      value: 22
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad6b478b42f5b9342a5f8d90aa6377f6, type: 3}
@@ -14985,6 +15120,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Ducto ventilacion curva con texturas (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 872fa9c0d5b58b048bafd54300e93056,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 22
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 872fa9c0d5b58b048bafd54300e93056, type: 3}
@@ -15212,6 +15352,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ducto ventilacion lateral con texturas (29)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7c8547f17fa414d408f11aa33af1980d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 22
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7c8547f17fa414d408f11aa33af1980d, type: 3}
 --- !u!1001 &2109505504
@@ -15284,7 +15429,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: ad6b478b42f5b9342a5f8d90aa6377f6,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 23
+      value: 22
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad6b478b42f5b9342a5f8d90aa6377f6, type: 3}
@@ -15377,7 +15522,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e5fcfc9f5801812419412f91acb77eb6,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 23
+      value: 22
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5fcfc9f5801812419412f91acb77eb6, type: 3}
@@ -15470,7 +15615,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e282c0a6fd7136e478c11a294943a000,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 23
+      value: 22
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e282c0a6fd7136e478c11a294943a000, type: 3}
@@ -15560,6 +15705,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ducto ventilacion curva con texturas (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 872fa9c0d5b58b048bafd54300e93056,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 22
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 872fa9c0d5b58b048bafd54300e93056, type: 3}
 --- !u!1001 &2143081469
@@ -15632,7 +15782,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: ad6b478b42f5b9342a5f8d90aa6377f6,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 23
+      value: 22
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad6b478b42f5b9342a5f8d90aa6377f6, type: 3}
