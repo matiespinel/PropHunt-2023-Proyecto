@@ -79,8 +79,8 @@ public class GameManager : MonoBehaviourPunCallbacks, IOnEventCallback
 
     IEnumerator finalizarPartida()
     {
-        yield return new WaitForSeconds(5);
         HunterWin.gameObject.SetActive(true);
+        yield return new WaitForSeconds(7);
         PhotonNetwork.LeaveRoom();
         HunterWin.gameObject.SetActive(false);
         Debug.Log("Saliendo de la partida");
@@ -88,8 +88,8 @@ public class GameManager : MonoBehaviourPunCallbacks, IOnEventCallback
 
     IEnumerator finalizarPartida1()
     {
-        yield return new WaitForSeconds(5);
         PropsWin.gameObject.SetActive(true);
+        yield return new WaitForSeconds(7);
         PhotonNetwork.LeaveRoom();
         PropsWin.gameObject.SetActive(false);
         Debug.Log("Saliendo de la partida");
