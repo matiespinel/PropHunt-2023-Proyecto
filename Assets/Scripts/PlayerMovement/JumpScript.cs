@@ -35,7 +35,8 @@ public class JumpScript : MonoBehaviour
         {
             tryingToJump = true;
             lastJumpPressTime = Time.time;
-            StartCoroutine(JumpAnimation());
+            if(_anim) StartCoroutine(JumpAnimation());
+            
         }
         
     }
