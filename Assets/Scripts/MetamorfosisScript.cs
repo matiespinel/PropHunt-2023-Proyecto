@@ -66,7 +66,6 @@ void Update()
         PhotonView clone = PhotonView.Find(id);
         Debug.Log("Metamorfosis ejecutada");
         Renderer cloneRenderer = clone.gameObject.GetComponent<Renderer>();
-        Collider cloneCollider = cloneRenderer.GetComponent<Collider>();
     
         metamorphSmoke.Play();
 
@@ -82,8 +81,6 @@ void Update()
             cam3d.GetRig(1).GetCinemachineComponent<CinemachineComposer>().m_TrackedObjectOffset.x = 0;
             Destroy(gameObject);
         }
-        
-        controller.center = cloneCollider.bounds.center;
         isTransformed = true;
         
     }
