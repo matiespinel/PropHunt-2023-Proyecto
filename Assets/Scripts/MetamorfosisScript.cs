@@ -90,9 +90,8 @@ void Update()
     IEnumerator MetaCooldown()
     {
         Prop.GetComponent<Renderer>().materials[0].shader = Shader.Find("Standard");
-        yield return new WaitForSeconds(8);
+        yield return new WaitForSeconds(3);
         oneRequestBool = true;
-        Debug.Log("Cooldown ended");
     }
 
     new private void OnEnable()
