@@ -9641,7 +9641,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   layerMask:
     serializedVersion: 2
-    m_Bits: 343
+    m_Bits: 471
 --- !u!1 &6141548957238725418
 GameObject:
   m_ObjectHideFlags: 3
@@ -9666,7 +9666,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6141548957238725418}
-  m_LocalRotation: {x: 0.34461406, y: 0.36663607, z: 0.086288765, w: 0.8598683}
+  m_LocalRotation: {x: 0.34457022, y: 0.36691806, z: 0.08635513, w: 0.85975885}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
