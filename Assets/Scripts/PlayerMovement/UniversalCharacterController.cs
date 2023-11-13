@@ -61,7 +61,7 @@ public class UniversalCharacterController : MonoBehaviour
         {
             if (prop)
             {
-                Silvido();
+                //Silvido();
                 
             }
             UpdateMovement();
