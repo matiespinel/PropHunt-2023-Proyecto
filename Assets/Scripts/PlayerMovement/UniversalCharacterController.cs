@@ -44,6 +44,7 @@ public class UniversalCharacterController : MonoBehaviour
     [SerializeField]
     Animator animator;
     [SerializeField] float acceleration = 20f;
+    bool silvidorequestBool = true;
 
     void Awake()
     {
@@ -58,7 +59,7 @@ public class UniversalCharacterController : MonoBehaviour
         
         if (view.IsMine) 
         {
-            if (prop)
+            if (prop && silvidorequestBool)
             {
                 Silvido();
                 
@@ -136,14 +137,16 @@ public class UniversalCharacterController : MonoBehaviour
     }
     public void Silvido()
     {
-        InvokeRepeating("RoutineSilvido", 0f, 15f);
+        silvidorequestBool = false;
+        InvokeRepeating("pipi", 0f, 15f);
     }
-
+    void pipi() => StartCoroutine(RoutineSilvido());
     IEnumerator RoutineSilvido()
     {
         view.RPC("RegisterSilvido", RpcTarget.All);
         yield return new WaitForSeconds(0.1f);
         view.RPC("DeregisterSilvido", RpcTarget.All);
+        silvidorequestBool = true;
     }
 
     private void WhistleFunction()
