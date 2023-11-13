@@ -21,13 +21,14 @@ public class MetamorfosisScript : MonoBehaviourPunCallbacks
     #endregion
     private RaycastHit hit;
 
-    CharacterController cc;
+    CharacterController controller;
     void Awake() 
     {
         propPhotonView = Prop.GetPhotonView();
         metamorphSmoke = Prop.GetComponent<ParticleSystem>();
         view = GetComponent<PhotonView>();
         PhotonNetwork.OfflineMode = offlinemode;
+        controller = GetComponent<CharacterController>();
     }
 void Update()
 {
@@ -77,6 +78,7 @@ void Update()
             Prop.SetActive(true);
             cam3d.LookAt = Prop.transform;
             cam3d.Follow = Prop.transform;
+            cam3d.GetRig(1).GetCinemachineComponent<CinemachineComposer>().m_TrackedObjectOffset.x = 0;
             Destroy(gameObject);
         }
         isTransformed = true;
@@ -97,7 +99,7 @@ void Update()
         if (gameObject == Prop) 
         {
             StartCoroutine(MetaCooldown());
-            cc.height = 0;
+            controller.height = 0;
         }
         
     }
