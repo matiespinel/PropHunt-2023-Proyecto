@@ -1,9 +1,14 @@
+using System.Collections;
+using UnityEngine;
 using Photon.Pun;
+using Photon.Realtime;
+using ExitGames.Client.Photon;
 using UnityEngine.UI;
+using TMPro;
 
 public class RoomItem : MonoBehaviourPunCallbacks
 {
-    public Text roomName;
+    [SerializeField] TMP_Text roomName;
     CreateAndJoinRooms manager;
 
     private void Start()
