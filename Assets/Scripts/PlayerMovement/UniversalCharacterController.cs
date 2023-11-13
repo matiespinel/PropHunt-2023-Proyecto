@@ -1,6 +1,7 @@
 using UnityEngine;
 using Photon.Pun;
 using System;
+using System.Collections;
 
 public class UniversalCharacterController : MonoBehaviour
 {
@@ -136,7 +137,13 @@ public class UniversalCharacterController : MonoBehaviour
     [PunRPC]
     public void Silvido()
     {
-        InvokeRepeating("RegisterSilvido", 0f, 15f);
+        InvokeRepeating("RoutineSilvido", 0f, 15f);
+    }
+
+    IEnumerator RoutineSilvido()
+    {
+        RegisterSilvido();
+        yield return new WaitForSeconds(0.01f);
         DeregisterSilvido();
     }
 
