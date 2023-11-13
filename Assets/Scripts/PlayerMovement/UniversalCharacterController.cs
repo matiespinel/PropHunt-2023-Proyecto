@@ -162,6 +162,5 @@ public class UniversalCharacterController : MonoBehaviour
         transform.rotation = Quaternion.Slerp(transform.rotation,rotGoal,.05f);
     }
 
-    void OnEnable() => RegisterSilvido();
     void OnDisable() => RegisterSilvido();
 }
