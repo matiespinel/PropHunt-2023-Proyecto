@@ -2,7 +2,6 @@ using UnityEngine;
 using Photon.Pun;
 using System;
 using System.Collections;
-using System.Runtime.InteropServices;
 
 public class UniversalCharacterController : MonoBehaviour
 {
@@ -137,10 +136,9 @@ public class UniversalCharacterController : MonoBehaviour
     }
     public void Silvido()
     {
-        InvokeRepeating("pipi", 0f, 15f);
+        InvokeRepeating("RoutineSilvido", 0f, 15f);
     }
 
-    void pipi() => StartCoroutine(RoutineSilvido());
     IEnumerator RoutineSilvido()
     {
         view.RPC("RegisterSilvido", RpcTarget.All);
@@ -148,8 +146,10 @@ public class UniversalCharacterController : MonoBehaviour
         view.RPC("DeregisterSilvido", RpcTarget.All);
     }
 
-    private void WhistleFunction() => silvido.Play();
-        
+    private void WhistleFunction()
+    {
+        silvido.Play();
+    }
     [PunRPC]
     void RegisterSilvido() => SoundManagerScript.OnAnySound += WhistleFunction;
     [PunRPC]
