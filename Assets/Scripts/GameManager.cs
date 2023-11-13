@@ -43,12 +43,12 @@ public class GameManager : MonoBehaviourPunCallbacks, IOnEventCallback
         if (RoleManager.hunterCount == 0)
         {
             Debug.Log("Props win");
-            StartCoroutine("finalizarPartida1");
+            StartCoroutine("PropGanan");
         }
         if (RoleManager.propCount == 0)
         {
             Debug.Log("Hunter wins");
-            StartCoroutine("finalizarPartida");
+            StartCoroutine("CazadorGanan");
         }
 
         if (timeIsRunning)
@@ -61,7 +61,7 @@ public class GameManager : MonoBehaviourPunCallbacks, IOnEventCallback
             {
                 timer = 0;
                 timeIsRunning = false;
-                StartCoroutine("finalizarPartida1");
+                StartCoroutine("PropsGanan");
             }
         }
     }
@@ -77,7 +77,7 @@ public class GameManager : MonoBehaviourPunCallbacks, IOnEventCallback
         audioSource.Play();
     }
 
-    IEnumerator finalizarPartida()
+    IEnumerator CazadorGanan()
     {
         HunterWin.gameObject.SetActive(true);
         yield return new WaitForSeconds(7);
@@ -86,7 +86,7 @@ public class GameManager : MonoBehaviourPunCallbacks, IOnEventCallback
         Debug.Log("Saliendo de la partida");
     }
 
-    IEnumerator finalizarPartida1()
+    IEnumerator PropGanan()
     {
         PropsWin.gameObject.SetActive(true);
         yield return new WaitForSeconds(7);
