@@ -28,6 +28,7 @@ public class MetamorfosisScript : MonoBehaviourPunCallbacks
         metamorphSmoke = Prop.GetComponent<ParticleSystem>();
         view = GetComponent<PhotonView>();
         PhotonNetwork.OfflineMode = offlinemode;
+        controller = GetComponent<CharacterController>();
     }
 void Update()
 {
@@ -98,6 +99,7 @@ void Update()
         if (gameObject == Prop) 
         {
             StartCoroutine(MetaCooldown());
+            controller.height = GetComponent<BoxCollider>().bounds.size.y;
         }
         
     }
