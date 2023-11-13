@@ -51,6 +51,8 @@ MonoBehaviour:
   - ShootEffectStart
   - RigBuilderState
   - Silvido
+  - DeregisterSilvido
+  - RegisterSilvido
   DisableAutoOpenWizard: 1
   ShowSettings: 1
   DevRegionSetOnce: 1

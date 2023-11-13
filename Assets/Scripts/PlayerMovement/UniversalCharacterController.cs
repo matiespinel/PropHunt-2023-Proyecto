@@ -54,9 +54,7 @@ public class UniversalCharacterController : MonoBehaviour
         animator = GetComponent<Animator>();
     }
     void FixedUpdate()
-    {
-
-        
+    {   
         if (view.IsMine) 
         {
             UpdateMovement();
@@ -127,8 +125,6 @@ public class UniversalCharacterController : MonoBehaviour
                 RecenterForward();
             }
         }
-
-        
     }
 
 
