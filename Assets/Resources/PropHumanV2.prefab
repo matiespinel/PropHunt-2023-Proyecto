@@ -5143,7 +5143,7 @@ GameObject:
   - component: {fileID: 2314688802912738283}
   - component: {fileID: 8585802468593546206}
   - component: {fileID: 2171084967998403864}
-  - component: {fileID: 7021729734772942327}
+  - component: {fileID: 2557947137663941704}
   m_Layer: 7
   m_Name: VersatilePropUnit
   m_TagString: DCamAttach
@@ -5415,8 +5415,8 @@ CharacterController:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Height: 0
-  m_Radius: 0
+  m_Height: 1
+  m_Radius: 0.5
   m_SlopeLimit: 45
   m_StepOffset: 0.3
   m_SkinWidth: 0.08
@@ -10310,8 +10310,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speedMultiplier: 2
---- !u!64 &7021729734772942327
-MeshCollider:
+--- !u!65 &2557947137663941704
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -10320,10 +10320,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &8474027899529039777
 GameObject:
   m_ObjectHideFlags: 0
