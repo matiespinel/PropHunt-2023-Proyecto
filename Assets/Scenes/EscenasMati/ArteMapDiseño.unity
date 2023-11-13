@@ -5105,8 +5105,8 @@ Transform:
   - {fileID: 330346853}
   - {fileID: 1995855878}
   - {fileID: 661298192}
-  - {fileID: 372136834}
   - {fileID: 1763510657}
+  - {fileID: 372136834}
   - {fileID: 1663454587}
   - {fileID: 1402313522}
   - {fileID: 1480216952}
@@ -7539,8 +7539,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 4, y: 0, z: 4}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 16.339512, y: 1.2332182, z: 27.977646}
+  m_Center: {x: -2.0988407, y: -0.6166091, z: -11.988823}
 --- !u!1 &249335098 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 8219139bc0b30114eaf48b5f14e22659,
