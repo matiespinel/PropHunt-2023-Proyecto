@@ -144,6 +144,8 @@ public class UniversalCharacterController : MonoBehaviour
         silvido.Play();
     }
 
+    void RegisterSilvido() => SoundManagerScript.OnAnySound += Silvido;
+    void DeregisterSilvido() => SoundManagerScript.OnAnySound -= Silvido;
 
     void RecenterForward()
     {
@@ -152,4 +154,6 @@ public class UniversalCharacterController : MonoBehaviour
         transform.rotation = Quaternion.Slerp(transform.rotation,rotGoal,.05f);
     }
 
+    void OnEnable() => RegisterSilvido();
+    void OnDisable() => DeregisterSilvido();
 }
