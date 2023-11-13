@@ -81,6 +81,7 @@ void Update()
             cam3d.GetRig(1).GetCinemachineComponent<CinemachineComposer>().m_TrackedObjectOffset.x = 0;
             Destroy(gameObject);
         }
+        controller.center = cloneRenderer.bounds.center;
         isTransformed = true;
         
     }
@@ -99,7 +100,7 @@ void Update()
         if (gameObject == Prop) 
         {
             StartCoroutine(MetaCooldown());
-            controller.height = GetComponent<BoxCollider>().bounds.size.y;
+            controller.height = GetComponent<Renderer>().bounds.size.y;
         }
         
     }
