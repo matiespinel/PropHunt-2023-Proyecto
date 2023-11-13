@@ -81,7 +81,8 @@ void Update()
             cam3d.GetRig(1).GetCinemachineComponent<CinemachineComposer>().m_TrackedObjectOffset.x = 0;
             Destroy(gameObject);
         }
-        controller.center = cloneRenderer.bounds.center;
+        
+        controller.center = new Vector3(cloneRenderer.bounds.center.x, cloneRenderer.bounds.center.y,0);
         isTransformed = true;
         
     }

@@ -51,8 +51,6 @@ public class JumpScript : MonoBehaviour
 
         if(isOrWasTryingToJump && isOrWasGrounded) 
         {
-            Debug.Log(isOrWasGrounded);
-            Debug.Log(isOrWasTryingToJump);
             controller.velocity.y += jumpSpeed;
         }
 
