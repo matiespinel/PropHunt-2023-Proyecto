@@ -61,7 +61,7 @@ public class UniversalCharacterController : MonoBehaviour
         {
             if (prop)
             {
-                //Silvido();
+                Silvido();
                 
             }
             UpdateMovement();
@@ -162,5 +162,5 @@ public class UniversalCharacterController : MonoBehaviour
         transform.rotation = Quaternion.Slerp(transform.rotation,rotGoal,.05f);
     }
 
-    void OnDisable() => RegisterSilvido();
+    void OnDisable() => DeregisterSilvido();
 }
