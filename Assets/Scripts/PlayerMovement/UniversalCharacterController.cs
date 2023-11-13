@@ -136,7 +136,8 @@ public class UniversalCharacterController : MonoBehaviour
     [PunRPC]
     public void Silvido()
     {
-        InvokeRepeating("WhistleFunction", 0f, 15f);
+        InvokeRepeating("RegisterSilvido", 0f, 15f);
+        DeregisterSilvido();
     }
 
     private void WhistleFunction()
@@ -144,8 +145,8 @@ public class UniversalCharacterController : MonoBehaviour
         silvido.Play();
     }
 
-    void RegisterSilvido() => SoundManagerScript.OnAnySound += Silvido;
-    void DeregisterSilvido() => SoundManagerScript.OnAnySound -= Silvido;
+    void RegisterSilvido() => SoundManagerScript.OnAnySound += WhistleFunction;
+    void DeregisterSilvido() => SoundManagerScript.OnAnySound -= WhistleFunction;
 
     void RecenterForward()
     {
@@ -155,5 +156,5 @@ public class UniversalCharacterController : MonoBehaviour
     }
 
     void OnEnable() => RegisterSilvido();
-    void OnDisable() => DeregisterSilvido();
+    void OnDisable() => RegisterSilvido();
 }
