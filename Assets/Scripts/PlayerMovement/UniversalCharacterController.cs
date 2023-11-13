@@ -59,11 +59,6 @@ public class UniversalCharacterController : MonoBehaviour
         
         if (view.IsMine) 
         {
-            if (prop && silvidorequestBool)
-            {
-                Silvido();
-                
-            }
             UpdateMovement();
             UpdateGravity();
             UpdateGround();
@@ -135,28 +130,7 @@ public class UniversalCharacterController : MonoBehaviour
 
         
     }
-    public void Silvido()
-    {
-        silvidorequestBool = false;
-        InvokeRepeating("pipi", 0f, 15f);
-    }
-    void pipi() => StartCoroutine(RoutineSilvido());
-    IEnumerator RoutineSilvido()
-    {
-        view.RPC("RegisterSilvido", RpcTarget.All);
-        yield return new WaitForSeconds(0.1f);
-        view.RPC("DeregisterSilvido", RpcTarget.All);
-        silvidorequestBool = true;
-    }
 
-    private void WhistleFunction()
-    {
-        silvido.Play();
-    }
-    [PunRPC]
-    void RegisterSilvido() => SoundManagerScript.OnAnySound += WhistleFunction;
-    [PunRPC]
-    void DeregisterSilvido() => SoundManagerScript.OnAnySound -= WhistleFunction;
 
     void RecenterForward()
     {
@@ -165,5 +139,4 @@ public class UniversalCharacterController : MonoBehaviour
         transform.rotation = Quaternion.Slerp(transform.rotation,rotGoal,.05f);
     }
 
-    void OnDisable() => DeregisterSilvido();
 }
