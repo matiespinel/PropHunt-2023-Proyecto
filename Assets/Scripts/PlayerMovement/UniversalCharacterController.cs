@@ -60,7 +60,7 @@ public class UniversalCharacterController : MonoBehaviour
         {
             if (prop)
             {
-                view.RPC("Silvido", RpcTarget.All);
+                Silvido();
                 
             }
             UpdateMovement();
@@ -134,7 +134,6 @@ public class UniversalCharacterController : MonoBehaviour
 
         
     }
-    [PunRPC]
     public void Silvido()
     {
         InvokeRepeating("RoutineSilvido", 0f, 15f);
@@ -142,17 +141,18 @@ public class UniversalCharacterController : MonoBehaviour
 
     IEnumerator RoutineSilvido()
     {
-        RegisterSilvido();
-        yield return new WaitForSeconds(0.01f);
-        DeregisterSilvido();
+        view.RPC("RegisterSilvido", RpcTarget.All);
+        yield return new WaitForSeconds(0.1f);
+        view.RPC("DeregisterSilvido", RpcTarget.All);
     }
 
     private void WhistleFunction()
     {
         silvido.Play();
     }
-
+    [PunRPC]
     void RegisterSilvido() => SoundManagerScript.OnAnySound += WhistleFunction;
+    [PunRPC]
     void DeregisterSilvido() => SoundManagerScript.OnAnySound -= WhistleFunction;
 
     void RecenterForward()
