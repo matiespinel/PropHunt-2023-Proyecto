@@ -59097,7 +59097,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: GANAN LOS PROPS
+  m_text: HUNTER WINS
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 4069ba1521d53fe4fb0ad33d4786d0fe, type: 2}
   m_sharedMaterial: {fileID: 5604306013861566155, guid: 4069ba1521d53fe4fb0ad33d4786d0fe,
