@@ -2097,7 +2097,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4394659966656495625}
-  m_LocalRotation: {x: 0.36126915, y: 0.36863133, z: 0.07919832, w: 0.8528325}
+  m_LocalRotation: {x: 0.3613607, y: 0.36806723, z: 0.079077125, w: 0.85304856}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -5143,6 +5143,7 @@ GameObject:
   - component: {fileID: 2314688802912738283}
   - component: {fileID: 8585802468593546206}
   - component: {fileID: 2171084967998403864}
+  - component: {fileID: 4459165544057616960}
   m_Layer: 7
   m_Name: VersatilePropUnit
   m_TagString: DCamAttach
@@ -10309,6 +10310,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speedMultiplier: 2
+--- !u!114 &4459165544057616960
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8429061571109017113}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90b1405f4a5abc74ca571d7d88948cf3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8474027899529039777
 GameObject:
   m_ObjectHideFlags: 0

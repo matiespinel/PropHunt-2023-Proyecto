@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 3237800388024448880}
   - component: {fileID: 8923727237619982149}
   - component: {fileID: 1355769550324210051}
+  - component: {fileID: 1575666710240364148}
   m_Layer: 3
   m_Name: VersatilePropUnit
   m_TagString: Transformable
@@ -170,6 +171,7 @@ MonoBehaviour:
   cam3d: {fileID: 0}
   offlinemode: 0
   Prop: {fileID: 8650180860436871810}
+  propGun: {fileID: 0}
 --- !u!82 &6006881693325514234
 AudioSource:
   m_ObjectHideFlags: 0
@@ -333,10 +335,10 @@ MonoBehaviour:
   mass: 1
   maxRot: -0.19
   minRot: -0.33
-  velocity: {x: 0, y: 0, z: 0}
   wasGrounded: 0
   lookAt: {fileID: 0}
   animator: {fileID: 0}
+  acceleration: 20
 --- !u!198 &3237800388024448880
 ParticleSystem:
   m_ObjectHideFlags: 0
@@ -5187,3 +5189,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speedMultiplier: 2
+--- !u!114 &1575666710240364148
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8650180860436871810}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90b1405f4a5abc74ca571d7d88948cf3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

@@ -69,7 +69,6 @@ public class UniversalCharacterController : MonoBehaviour
         {
             enabled = false;
         }
-
     }
 
     private void UpdateGround()

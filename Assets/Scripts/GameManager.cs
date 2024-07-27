@@ -40,7 +40,7 @@ public class GameManager : MonoBehaviourPunCallbacks, IOnEventCallback
 
     void Update()
     {
-        if (RoleManager.hunterCount == 0)
+        /* if (RoleManager.hunterCount == 0)
         {
             Debug.Log("Props win");
             StartCoroutine("PropGanan");
@@ -49,7 +49,7 @@ public class GameManager : MonoBehaviourPunCallbacks, IOnEventCallback
         {
             Debug.Log("Hunter wins");
             StartCoroutine("CazadorGanan");
-        }
+        } */
 
         if (timeIsRunning)
         {
