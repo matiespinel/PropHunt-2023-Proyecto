@@ -83,7 +83,7 @@ void Update()
             cam3d.LookAt = Prop.transform;
             cam3d.Follow = Prop.transform;
             cam3d.GetRig(1).GetCinemachineComponent<CinemachineComposer>().m_TrackedObjectOffset.x = 0;
-            Destroy(gameObject);
+            PhotonNetwork.Destroy(gameObject);
         }
         isTransformed = true;
 
