@@ -20,27 +20,25 @@ public class Whistle : MonoBehaviour
     
     void FixedUpdate()
     {
-        if(!view.IsMine) enabled = false;
         if(whistlerequestBool) StartCoroutine(WhistleDelay());
     }
 
     IEnumerator WhistleDelay()
     {
         whistlerequestBool = !whistlerequestBool;
-        view.RPC("WhistleStart", RpcTarget.All);
+        WhistleStart();
         Debug.Log("WHISTLE");
         yield return new WaitForSeconds(delay);
-        view.RPC("WhistleEnd", RpcTarget.All);
+        WhistleEnd();
         whistlerequestBool = !whistlerequestBool;
     }
 
-    [PunRPC]
+    
     public void WhistleStart()
     {
         RegisterWhistleAudio();
     }
 
-    [PunRPC]
     public void WhistleEnd()
     {
         DeregisterWhistleAudio();

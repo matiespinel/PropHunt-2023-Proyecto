@@ -4841,7 +4841,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movementSpeed: 1.5
   prop: 0
-  silvido: {fileID: 0}
+  view: {fileID: 0}
   mass: 1.5
   maxRot: -0.14
   minRot: -0.3
@@ -5435,7 +5435,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movementSpeed: 2
   prop: 1
-  silvido: {fileID: 6894215449233815905}
+  view: {fileID: 0}
   mass: 1
   maxRot: -0.19
   minRot: -0.33
