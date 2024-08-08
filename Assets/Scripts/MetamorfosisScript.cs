@@ -39,7 +39,7 @@ void Update()
 
     void FixedUpdate()
     {
-        if(!photonView.IsMine) return;
+        if(!view.IsMine) return;
         Ray ray =  cam.ViewportPointToRay(new Vector3(0.5f,0.5f,0));
         if(hit.collider != null) 
         {
@@ -54,7 +54,7 @@ void Update()
             {
 
                 oneRequestBool = false;
-                view.RPC("Metamorph", RpcTarget.AllBuffered, hit.collider.GetComponent<PhotonView>().ViewID);
+                view.RPC("Metamorph", RpcTarget.All, hit.collider.GetComponent<PhotonView>().ViewID);
                 StartCoroutine(MetaCooldown());
             }
         }
