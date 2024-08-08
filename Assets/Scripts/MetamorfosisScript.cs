@@ -28,7 +28,6 @@ public class MetamorfosisScript : MonoBehaviourPunCallbacks
         propPhotonView = Prop.GetPhotonView();
         metamorphSmoke = Prop.GetComponent<ParticleSystem>();
         view = GetComponent<PhotonView>();
-        PhotonNetwork.OfflineMode = offlinemode;
         controller = GetComponent<CharacterController>();
     }
 void Update()

@@ -13,7 +13,6 @@ public class UniversalCharacterController : MonoBehaviour
     bool prop;
 
     [SerializeField]
-    private AudioSource silvido;
 
     private PhotonView view;
     private CharacterController controller;
@@ -44,13 +43,11 @@ public class UniversalCharacterController : MonoBehaviour
     [SerializeField]
     Animator animator;
     [SerializeField] float acceleration = 20f;
-    bool silvidorequestBool = true;
 
     void Awake()
     {
         view = GetComponent<PhotonView>();
         controller = GetComponent<CharacterController>();
-        silvido = GetComponent<AudioSource>();
         animator = GetComponent<Animator>();
     }
     void FixedUpdate()
@@ -68,6 +65,7 @@ public class UniversalCharacterController : MonoBehaviour
         else 
         {
             enabled = false;
+            
         }
     }
 

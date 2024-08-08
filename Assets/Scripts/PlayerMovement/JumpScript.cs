@@ -1,4 +1,5 @@
 using System.Collections;
+using Photon.Pun;
 using UnityEngine;
 
 [RequireComponent(typeof(UniversalCharacterController))]
@@ -19,18 +20,20 @@ public class JumpScript : MonoBehaviour
 
     Animator _anim;
 
-    
+    PhotonView view;
 
     void Awake()
     {
         controller = GetComponent<UniversalCharacterController>();
         _anim = GetComponent<Animator>();
+        view = GetComponent<PhotonView>();
     }
 
     // Update is called once per frame
 
     private void FixedUpdate()
     {
+        if(!view.IsMine) enabled = false;
         if(Input.GetKey(KeyCode.Space))
         {
             tryingToJump = true;

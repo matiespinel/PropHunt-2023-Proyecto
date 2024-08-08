@@ -1292,7 +1292,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 176, y: -143.99991}
+  m_AnchoredPosition: {x: 176, y: -143.9999}
   m_SizeDelta: {x: 352, y: 362}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!223 &8113464162363737611
@@ -2097,7 +2097,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4394659966656495625}
-  m_LocalRotation: {x: 0.3613607, y: 0.36806723, z: 0.079077125, w: 0.85304856}
+  m_LocalRotation: {x: 0.36133224, y: 0.36824265, z: 0.07911481, w: 0.85298145}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -4521,7 +4521,6 @@ GameObject:
   - component: {fileID: 9019459533517802792}
   - component: {fileID: 9019459533517802793}
   - component: {fileID: 9019459533517802794}
-  - component: {fileID: 9019459533517802795}
   - component: {fileID: 9019459533517802796}
   - component: {fileID: 9019459533517802797}
   - component: {fileID: 9019459533517802798}
@@ -4828,22 +4827,6 @@ MonoBehaviour:
       position: {x: 0, y: 0, z: 0}
       rotation: {x: 0, y: 0, z: 0}
     m_Visible: 1
---- !u!114 &9019459533517802795
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8208627777980565291}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0888a4465d7961240ad27a0978380c85, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  DistanceToGround: 0.9
-  playermask:
-    serializedVersion: 2
-    m_Bits: 311
 --- !u!114 &9019459533517802796
 MonoBehaviour:
   m_ObjectHideFlags: 0

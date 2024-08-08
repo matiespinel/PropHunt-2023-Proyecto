@@ -20,6 +20,7 @@ public class Whistle : MonoBehaviour
     
     void FixedUpdate()
     {
+        if(!view.IsMine) enabled = false;
         if(whistlerequestBool) StartCoroutine(WhistleDelay());
     }
 
