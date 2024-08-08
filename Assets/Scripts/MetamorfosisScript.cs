@@ -24,6 +24,7 @@ public class MetamorfosisScript : MonoBehaviourPunCallbacks
     CharacterController controller;
     void Awake() 
     {
+
         propPhotonView = Prop.GetPhotonView();
         metamorphSmoke = Prop.GetComponent<ParticleSystem>();
         view = GetComponent<PhotonView>();
@@ -39,7 +40,7 @@ void Update()
 
     void FixedUpdate()
     {
-        if(!view.IsMine) return;
+        if(!view.IsMine) enabled = false;
         Ray ray =  cam.ViewportPointToRay(new Vector3(0.5f,0.5f,0));
         if(hit.collider != null) 
         {
@@ -73,7 +74,7 @@ void Update()
         propPhotonView.GetComponent<MeshFilter>().mesh = clone.gameObject.GetComponent<MeshFilter>().mesh;
         propPhotonView.GetComponent<Renderer>().materials = cloneRenderer.materials;
         propPhotonView.GetComponent<Renderer>().materials[0].color = cloneRenderer.materials[0].color;
-        //controller.radius = hit.collider.bounds.extents.x;
+        controller.radius = hit.collider.bounds.extents.x;
         controller.height = hit.collider.bounds.extents.y;
         if (hit.collider.GetType() == typeof(BoxCollider)) controller.center = clone.GetComponent<BoxCollider>().center;
         if (Prop != gameObject)
