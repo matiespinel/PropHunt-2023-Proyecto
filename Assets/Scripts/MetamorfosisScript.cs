@@ -54,7 +54,7 @@ void Update()
             {
 
                 oneRequestBool = false;
-                view.RPC("Metamorph", RpcTarget.All, hit.collider.GetComponent<PhotonView>().ViewID);
+                view.RPC("Metamorph", RpcTarget.AllBuffered, hit.collider.GetComponent<PhotonView>().ViewID);
                 StartCoroutine(MetaCooldown());
             }
         }
