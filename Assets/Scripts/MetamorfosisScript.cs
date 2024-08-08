@@ -89,6 +89,7 @@ void Update()
     IEnumerator MetaCooldown()
     {
         Prop.GetComponent<Renderer>().materials[0].shader = Shader.Find("Standard");
+        hit.collider.GetComponent<Outline>()?.ToggleHighlight(false);
         yield return new WaitForSeconds(3);
         oneRequestBool = true;
     }
