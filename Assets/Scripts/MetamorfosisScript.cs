@@ -47,6 +47,7 @@ void Update()
         if(Physics.Raycast(ray, out hit, 10, ignoreLayer))
         {
             hit.collider.GetComponent<Outline>()?.ToggleHighlight(true);
+            Debug.Log("PRENDIDO");
 
             if (Input.GetKey(KeyCode.Tab) && oneRequestBool)
             {
@@ -64,7 +65,6 @@ void Update()
     private void Metamorph(int id)
     {
         PhotonView clone = PhotonView.Find(id);
-        Debug.Log("Metamorfosis ejecutada");
         Renderer cloneRenderer = clone.gameObject.GetComponent<Renderer>();
     
         
