@@ -9,7 +9,7 @@ public class Whistle : MonoBehaviour
     private AudioSource _audioSource;
     bool whistlerequestBool = true;
 
-    [SerializeField] int delay = 10;
+    [SerializeField] int delay = 15;
     PhotonView view;
     void Awake()
     {

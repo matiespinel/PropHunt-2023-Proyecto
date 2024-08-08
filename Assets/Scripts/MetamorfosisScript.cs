@@ -67,7 +67,7 @@ void Update()
         Debug.Log("Metamorfosis ejecutada");
         Renderer cloneRenderer = clone.gameObject.GetComponent<Renderer>();
     
-        metamorphSmoke.Play();
+        
 
         propPhotonView.GetComponent<MeshFilter>().mesh = clone.gameObject.GetComponent<MeshFilter>().mesh;
         propPhotonView.GetComponent<Renderer>().materials = cloneRenderer.materials;
@@ -82,7 +82,7 @@ void Update()
             Destroy(gameObject);
         }
         isTransformed = true;
-        
+        metamorphSmoke.Play();
     }
 
 
