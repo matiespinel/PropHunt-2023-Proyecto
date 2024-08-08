@@ -73,7 +73,7 @@ void Update()
         propPhotonView.GetComponent<MeshFilter>().mesh = clone.gameObject.GetComponent<MeshFilter>().mesh;
         propPhotonView.GetComponent<Renderer>().materials = cloneRenderer.materials;
         propPhotonView.GetComponent<Renderer>().materials[0].color = cloneRenderer.materials[0].color;
-        controller.radius = hit.collider.bounds.extents.x;
+        //controller.radius = hit.collider.bounds.extents.x;
         controller.height = hit.collider.bounds.extents.y;
         if (hit.collider.GetType() == typeof(BoxCollider)) controller.center = clone.GetComponent<BoxCollider>().center;
         if (Prop != gameObject)
